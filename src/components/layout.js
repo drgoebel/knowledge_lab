@@ -7,9 +7,9 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
 import "./layout.css"
+import "../components/gridder.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +24,20 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <div class="grid-container">
+        <div class="grid-div-container">
+          <div class="grid-div"></div>
+          <div class="grid-div"></div>
+          <div class="grid-div"></div>
+          <div class="grid-div"></div>
+          <div class="grid-div"></div>
+          <div class="grid-div"></div>
+        </div>
+      <div className="grid-gradient"></div>
+      
+      <Header siteTitle={data.site.siteMetadata?.title || `Knowlege Lab`} />
+
+      
       <div
         style={{
           margin: `0 auto`,
@@ -39,10 +52,9 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          © {new Date().getFullYear()} &middot; Knowledge Lab
         </footer>
+      </div>
       </div>
     </>
   )
