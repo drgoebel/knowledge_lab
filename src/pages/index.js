@@ -146,6 +146,8 @@ const IndexPage = () => {
         style={{
           marginBottom: `var(--space-3)`,
           display: "block",
+          color: "white",
+          backgroundColor: `white`,
           width: "90%",
           marginLeft: "auto",
           marginRight: "auto",
