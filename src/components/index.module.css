@@ -52,3 +52,21 @@
   max-width: none;
   line-height: var(--line-height-loose);
 }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
+  font-weight: 900;
+  line-height: var(--line-height-dense);
+}
+h2 {
+  font-size: clamp(16px, 4cqw, 40px)
+}
+h4 {
+  margin-bottom: var(--space-1)
+}
+img {
+  margin-bottom: var(--space-2)
+}
+p {
+  line-height: var(--line-height-loose);
+}

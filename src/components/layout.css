@@ -1,13 +1,14 @@
 :root {
   --border-radius: 4px;
-  --color-text: #333;
+  --color-text: #1B2B62;
   --color-primary: #7026b9;
-  --color-code-bg: #fff4db;
-  --color-code: #8a6534;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --color-secondary: #9F1FA1;
+  --color-code-bg: #EBFF00;
+  --color-tertiary: #DFF3FF;
+  --font-sans: 'Hind', sans-serif;
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
+  --font-xl: 24px;
   --font-lg: 18px;
   --font-md: 16px;
   --font-sm: 14px;
@@ -21,6 +22,7 @@
   --space-4: 24px;
   --space-5: 32px;
   --space-6: 64px;
+  --space-7: 96px;
   --size-content: 54rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
@@ -29,9 +31,11 @@ html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   font: sans-serif;
-  font-size: var(--font-md);
+  font-size: var(--font-sans);
   line-height: var(--line-height-normal);
   overflow-y: scroll;
+  margin: 0;
+  padding: 0;
 }
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -41,6 +45,7 @@ body {
   font-family: var(--font-sans);
   font-weight: normal;
   margin: 0;
+  padding: 0;
   word-wrap: break-word;
 }
 a {
@@ -70,6 +75,7 @@ strong {
 dfn {
   font-style: italic;
 }
+
 h1 {
   margin: 0;
   margin-bottom: 3rem;
@@ -178,6 +184,8 @@ li > p {
 }
 p {
   max-width: 680px;
+  font-family: var(--font-sans);
+  font-weight: 300;
 }
 code {
   font-size: 0.875rem;
@@ -221,4 +229,138 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
+}
+
+/* +++++++  */
+
+#gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.footer {
+  z-index: 2;
+}
+
+button {
+  background-color: var( --color-code-bg);
+  border: 0;
+  border-radius: var(--space-2) !important;
+  padding: var(--space-2);
+  font-weight: 900;
+  
+}
+button::after {
+  content: " >"
+}
+a > button {
+  margin-bottom: var(--space-7);
+}
+
+
+#numbers {
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-7);
+  color: var(--color-text);
+  
+}
+#numbers h2 {
+  font-size: 60px;
+}
+#numbers h2, .numbers-style p{
+  color: var(--color-text);
+  position: relative;
+}
+#numbers h2::before {
+  content: "\007c";
+  color: #9F1FA1;
+  position: absolute;
+  left: calc(-1 * var(--font-md) - 4px);
+  /* margin-left: calc(-1 * var(--font-md)); */
+}
+
+#research p {
+  font-size: var(--font-xl);
+}
+
+#initiatives {
+  padding-bottom: var(--space-6);
+}
+#initiatives h2, #initiatives p{
+  line-height: var(--line-height-dense);
+}
+
+#partners {
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-7);
+}
+#partners .container .row:nth-of-type(even) {
+  padding-bottom: var(--space-7);
+
+}
+#partners h2 {
+  color: var(--color-secondary);
+}
+
+#careers-header > .container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 30vw;
+}
+
+#careers-header h1, #careers-header p {
+  color: white;
+  line-height: var(--line-height-normal);
+  
+} 
+#careers-header h1 {
+  font-size: 60px;
+}
+#careers-header p {
+  font-size: var(--font-xl)
+}
+#careers-header .background{
+  position: absolute;
+  height: 30vw;
+  width: 100vw;
+  background-image: linear-gradient(-10deg, #9F1FA1 30%,  #55C1FD 70%);
+  background-repeat: no-repeat;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 80%, 100% 0); /* Triangle shape */
+  z-index: -2;
+}
+#careers h2 {
+  color: var(--color-text);
+}
+#careers .container .sidebar > div {
+ padding: clamp(10px, 3cqw, 28px);
+  
+}
+#careers button {
+  background-color: var(--color-secondary);
+  color: white;
+}
+#careers .container .sidebar > div:nth-of-type(1){
+  background-color: var(--color-code-bg);
+  border-left: 10px solid rgba(0,0,0,.2);
+  margin-bottom: var(--space-5);
+}
+#careers .container .sidebar > div:nth-of-type(2){
+  background-color: var(--color-tertiary);
+  border-left: 10px solid rgba(0,0,0,.2);
+}
+#careers .container .sidebar > div > h3 {
+  font-size: var(--font-lg);
+  color: var(--color-text);
+}
+#careers .container .sidebar > div > ol{
+  font-size: var(--font-sm);
+  margin-left: 0;
+  padding-left: var(--font-sm);
 }

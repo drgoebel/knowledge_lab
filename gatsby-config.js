@@ -39,5 +39,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `hind\:400,500,600,700` // Specify font weights you need
+        ],
+        display: 'swap', // Ensures text is visible while webfonts are loading
+      },
+    },
   ],
 }
