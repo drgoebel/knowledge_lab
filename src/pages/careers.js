@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import Nav from "../components/nav";
 import { Container, Row, Col } from "react-bootstrap";
 import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
@@ -61,11 +62,8 @@ const moreLinks = [
 
 const SecondPage = () => (
   <Layout>
-    <Container>
-      <Row>
-        <nav>this is the nav</nav>
-      </Row>
-    </Container>
+    <Nav />
+    
     <Container fluid id="careers-header">
       <div className="background"></div>
       <Container>

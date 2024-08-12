@@ -60,6 +60,7 @@ const IndexPage = () => {
     color: "white",
     zIndex: 1,
     position: `relative`,
+    clipPath: `polygon(0% 0%, 1000% 0%, 100% 90%, 0% 100%)`,
   };
 
   const featureStyle = {

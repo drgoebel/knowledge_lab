@@ -259,9 +259,7 @@ button {
 button::after {
   content: " >"
 }
-a > button {
-  margin-bottom: var(--space-7);
-}
+
 
 
 #numbers {
@@ -289,11 +287,39 @@ a > button {
   font-size: var(--font-xl);
 }
 
+#initiatives-header {
+  margin-top: clamp(100px, 5cqw, 300px);
+}
+
 #initiatives {
   padding-bottom: var(--space-6);
 }
 #initiatives h2, #initiatives p{
   line-height: var(--line-height-dense);
+}
+
+#initiatives .morph {
+  position: relative;
+}
+
+#initiatives .morph img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #023F92;
+  width: 50vmax;
+  z-index: -1;
+  /* animation: move 10s ease-in-out infinite; */
+  transform-origin: 50% 50%;
+}
+
+@keyframes move {
+  0%   { transform: scale(1)   translate(10px, -30px); }
+  38%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+  40%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+  78%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+  80%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+  100% { transform: scale(1)   translate(10px, -30px); }
 }
 
 #partners {
@@ -320,6 +346,7 @@ a > button {
   line-height: var(--line-height-normal);
   
 } 
+
 #careers-header h1 {
   font-size: 60px;
 }
@@ -332,12 +359,18 @@ a > button {
   width: 100vw;
   background-image: linear-gradient(-10deg, #9F1FA1 30%,  #55C1FD 70%);
   background-repeat: no-repeat;
-  clip-path: polygon(0% 0%, 0% 100%, 100% 80%, 100% 0); /* Triangle shape */
+  clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0); /* Triangle shape */
   z-index: -2;
 }
 #careers h2 {
   color: var(--color-text);
+  max-width: 680px;
+  margin-top: var(--space-6);
 }
+#careers a > button {
+  margin-bottom: var(--space-5);
+}
+
 #careers .container .sidebar > div {
  padding: clamp(10px, 3cqw, 28px);
   
@@ -363,4 +396,22 @@ a > button {
   font-size: var(--font-sm);
   margin-left: 0;
   padding-left: var(--font-sm);
+}
+
+#team img {
+  border-radius: 50%;
+  width: 100%;
+  /* margin-bottom: var(--space-7); */
+}
+#team .container .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#team .container .row > .row {
+  margin-bottom: var(--space-7);
+}
+#team button {
+  background-color: var(--color-secondary);
+  color: white;
 }
