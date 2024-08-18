@@ -92,7 +92,12 @@
 
 .grid-div {
     width:1px;
-    background: linear-gradient(180deg, rgb(235, 288, 243), rgb(198, 188, 188) 51%,transparent 0,transparent);
+    background: linear-gradient(180deg, 
+    rgb(235, 288, 243) 0%, 
+    rgb(198, 188, 188) 50%, 
+    rgb(198, 188, 188) 50%, 
+    transparent 50%, 
+    transparent 100%);
     background-size: 1px 8px;
     height: 100%;
 }

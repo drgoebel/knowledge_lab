@@ -59,7 +59,8 @@ h1, h2, h3, h4 {
   line-height: var(--line-height-dense);
 }
 h2 {
-  font-size: clamp(16px, 4cqw, 40px)
+  font-size: clamp(16px, 4cqw, 40px);
+  
 }
 h4 {
   margin-bottom: var(--space-1)

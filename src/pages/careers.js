@@ -4,6 +4,8 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Nav from "../components/nav";
 import { Container, Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
 
@@ -94,7 +96,7 @@ const SecondPage = () => (
                   <h2>{career.title}</h2>
                   <p>{career.text}</p>
                   <Link to={career.url}>
-                    <button>Learn More and Apply</button>
+                    <button>Learn More and Apply <FontAwesomeIcon icon={faCaretRight}/></button>
                   </Link>
                 </>
               );

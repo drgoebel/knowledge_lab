@@ -1,10 +1,12 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import Header from "./header";
 import "./layout.css";
 import "../components/gridder.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import UCShield from "../images/ucshield.svg";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,7 +21,7 @@ const Layout = ({ children }) => {
 
   const footerStyle = {
     background:
-      "linear-gradient(0deg, #34224D  0%, #34224D 32%,  #3953A4 100%)",
+      "linear-gradient(0deg, #34224D  0%, #34224D 32%,  #9F1FA1 100%)",
     paddingLeft: "clamp(var(--space-5),var(--space-6), var(--space-6))",
     paddingRight: "clamp(var(--space-5), var(--space-6), var(--space-6))",
     // paddingBottom: "clamp(var(--space-5),var(--space-6), var(--space-6))",
@@ -29,7 +31,34 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Container class="grid-container">
+      
+       
+       
+          <div
+        style={{
+          // backgroundColor: `rgba(240,240,240,.5)`,
+          position: `absolute`,
+          minHeight: `100%`,
+          width: `1320px`,
+          display: `grid`,
+          gridTemplateColumns: `repeat(4, 1fr)`,
+          left: `50%`,
+          transform: `translateX(-50%)`,
+          zIndex: `-2`,
+
+        }}
+      >
+          
+              <div className={`grid-div`}></div>
+              <div className={`grid-div`}></div>
+              <div className={`grid-div`}></div>
+              <div className={`grid-div `}></div>
+              <div className={`grid-div-last`}></div>
+           
+            </div>
+         
+      
+      {/* <Container class="grid-container">
         <Row style={{ position: `relative` }}>
           <Col xs={12}className={`grid-div-container`}>
             <Col xs={3}>
@@ -49,8 +78,7 @@ const Layout = ({ children }) => {
             </Col>
           </Col>
         </Row>
-      </Container>
-     
+      </Container> */}
 
       <Container fluid style={{ flexGrow: `1` }}>
         <Header siteTitle={data.site.siteMetadata?.title || `Knowlege Lab`} />
@@ -69,7 +97,21 @@ const Layout = ({ children }) => {
               height: `5vh`,
             }}
           >
-            © {new Date().getFullYear()} &middot; Knowledge Lab
+            <Row>
+              <Col xs={2}>
+                <img src={UCShield} />
+                <br />
+                <small>
+                  1155 E 60th Street Room 211
+                  <br />
+                  Chicago, IL 60637
+                </small>
+              </Col>
+              <Col xs={8}>
+                {" "}
+                © {new Date().getFullYear()} &middot; Knowledge Lab
+              </Col>
+            </Row>
           </footer>
         </Container>
       </Container>

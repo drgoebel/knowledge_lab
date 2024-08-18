@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import * as styles from "../components/index.module.css";
+import "../components/index.module.css";
 import "../components/oval.css";
 import "../components/gridder.css";
 import Rings from "../images/rings.svg";
@@ -12,6 +12,15 @@ import SantaFe from "../images/santafe.png";
 import UsScience from "../images/us-science-found.png";
 import KoreaU from "../images/korea-university.png";
 import Northwestern from "../images/northwestern.png";
+import Carnegie from "../images/carnegie.png";
+import UChicago from "../images/uchicago.png"
+import AFF from "../images/aff.png"
+import IndianaU from "../images/indianau.png"
+import AI2 from "../images/ai2.jpeg"
+import UPenn from "../images/upenn.jpeg"
+import GeorgiaState from "../images/georgiastate.jpg"
+import AniNav from "../components/animatedNav";
+
 
 // const samplePageLinks = [
 //   {
@@ -152,6 +161,7 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
+       
       <div className="grid-gradient"></div>
         <Container>
           <Row>
@@ -181,27 +191,8 @@ const IndexPage = () => {
 
         <Container>
           <Row>
-            {/* <h1>
-              Knowledge <b>Lab</b>
-            </h1> */}
-
-            {/* <div className={"oval-container"}>
-      <div className={"oval-list"}>
-        {links.map((link) => (
-          
-          <a key={link.url} href={link.url} className={`${!initiateRemoved ? 'initiate' : ''} ${hovering ? 'hovering oval' : 'oval'}  ${link.color}`}
-          onMouseEnter={handleMouseEnter} 
-          onMouseLeave={handleMouseLeave}
-          >
-           
-              <span>{link.text}</span>
+          <AniNav />
             
-            <h1 className={styles.listItemDescription}>{link.description}</h1>
-          </a>
-          
-        ))}
-      </div>
-    </div> */}
           </Row>
         </Container>
 
@@ -324,16 +315,28 @@ const IndexPage = () => {
           </Row>
           <Row>
             <Col xs={6} md={3}>
-              <img src={SantaFe} alt="Santa Fe" />
+              <img src={UChicago} alt="The University of Chicago" />
             </Col>
             <Col xs={6} md={3}>
-              <img src={UsScience} alt="US Science Foundation" />
+              <img src={Carnegie} alt="Carnegie Mellon University" />
             </Col>
             <Col xs={6} md={3}>
-              <img src={KoreaU} alt="Korea University" />
+              <img src={AFF} alt="America's Frontier Fund" />
             </Col>
             <Col xs={6} md={3}>
               <img src={Northwestern} alt="Northwestern University" />
+            </Col>
+            <Col xs={6} md={3}>
+              <img src={IndianaU} alt="Indiana University" />
+            </Col>
+            <Col xs={6} md={3}>
+              <img src={AI2} alt="Allen Institute for Artificial Intelligence" />
+            </Col>
+            <Col xs={6} md={3}>
+              <img src={UPenn} alt="Univesity of Pennsylvania" />
+            </Col>
+            <Col xs={6} md={3}>
+              <img src={GeorgiaState} alt="Georgia State University" />
             </Col>
           </Row>
           </Container>

@@ -5,11 +5,10 @@ import Nav from "../components/nav";
 import Seo from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import "../components/gridder.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import Trianges from "../images/triangles.svg";
 import Neural from "../images/neural.webp"
 
-const sampleInitiatives = [
+const about = [
   {
     title: "General Postdoctoral Scholar Positions at the Knowledge Lab",
     tagLine: "this is the tagline",
@@ -63,48 +62,43 @@ const moreLinks = [
   { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
 ];
 
-const Initiatives = () => (
+const SecondPage = () => (
   <Layout>
     <Nav />
 
-    <Container fluid id="initiatives-header">
+    <Container fluid id="about-header">
       <div className="background"></div>
       <Container>
         <Row>
           <Col xs={12} sm={9}>
-            <h1>Initiatives at Knowledge Lab</h1>
+            <h1>About Knowledge Lab</h1>
             <p>
-              Knowledge Lab harnesses the power of artificial intelligence to
-              unravel complex scientific and societal problems, bridging the gap
-              between data-driven insights and real-world applications. This
-              innovative group collaborates with interdisciplinary experts to
-              develop AI tools and methodologies that advance our understanding
-              of knowledge creation and dissemination.
+            Knowledge Lab at the University of Chicago focuses on using Big Data, machine learning, and crowd-sourcing techniques to analyze how knowledge is generated, used, and forgotten. By studying the dynamics of information across various fields, the lab seeks to enhance knowledge management, representation, and innovation. It emphasizes interdisciplinary research to explore the mechanisms behind human understanding and discovery, aiming to improve the creation and application of knowledge in various contexts. 
             </p>
           </Col>
           <Col sm={3} className="d-none d-sm-block">
-            <img src="https://placeholder.com/300x200" />
+            <img src={Trianges} alt="connected triagle shapes" />
           </Col>
         </Row>
       </Container>
     </Container>
-    <Container fluid id="initiatives">
+    <Container fluid id="about">
       <Container>
         <Row>
-          {sampleInitiatives.map((initiative) => {
+          {about.map((ab) => {
             return (
               <>
                 <Col sm={3} className="d-none d-sm-block morph">
                   <img src={Neural} />
                 </Col>
                 <Col xs={9}>
-                  <h2>{initiative.title}</h2>
-                  <h4>{initiative.tagLine}</h4>
-                  <p>{initiative.description}</p>
-                  <p>{initiative.grantsPress}</p>
-                  <p>{initiative.papers}</p>
-                  <Link to={initiative.url}>
-                    <button>Learn More and Apply <FontAwesomeIcon icon={faCaretRight} /></button>
+                  <h2>{ab.title}</h2>
+                  <h4>{ab.tagLine}</h4>
+                  <p>{ab.description}</p>
+                  <p>{ab.grantsPress}</p>
+                  <p>{ab.papers}</p>
+                  <Link to={ab.url}>
+                    <button>Learn More and Apply</button>
                   </Link>
                 </Col>
               </>
@@ -118,4 +112,4 @@ const Initiatives = () => (
 
 export const Head = () => <Seo title="Page two" />;
 
-export default Initiatives;
+export default SecondPage;
