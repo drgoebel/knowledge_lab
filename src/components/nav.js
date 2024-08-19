@@ -33,11 +33,11 @@ const Nav = () => {
     padding: "0",
   };
   const navLinkStyles = {
-    padding: "1rem",
+    padding: "clamp(10px, 1cqw, 16px)",
     textDecoration: "none",
     color: "var(--color-text)",
     textTransform: "uppercase",
-    fontSize: "var(--font-sx)",
+    fontSize: "clamp(9px, 1cqw, 14px)",
     margin: "0",
   };
   const containerStyle = {

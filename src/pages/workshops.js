@@ -64,7 +64,7 @@ const Workshops = () => (
                 <Col sm={2} className="d-none d-sm-block morph">
                   <img src={work.logo}/>
                 </Col>
-                <Col xs={7}>
+                <Col xs={12} sm={5}>
                   <h2>{work.title}</h2>
                   <p>{work.description}</p>
                   <p><strong>Date:</strong> {work.date}</p>

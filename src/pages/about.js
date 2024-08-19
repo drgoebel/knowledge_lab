@@ -6,7 +6,7 @@ import Seo from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
-import Neural from "../images/neural.webp"
+import Office from "../images/klab-office.webp"
 
 const about = [
   {
@@ -51,14 +51,14 @@ const About = () => (
       <div className="background"></div>
       <Container>
         <Row>
-          <Col xs={12} sm={9}>
+          <Col xs={12} sm={7}>
             <h1>About Knowledge Lab</h1>
             <p>
             Knowledge Lab at the University of Chicago focuses on using Big Data, machine learning, and crowd-sourcing techniques to analyze how knowledge is generated, used, and forgotten. By studying the dynamics of information across various fields, the lab seeks to enhance knowledge management, representation, and innovation. It emphasizes interdisciplinary research to explore the mechanisms behind human understanding and discovery, aiming to improve the creation and application of knowledge in various contexts. 
             </p>
           </Col>
-          <Col sm={3} className="d-none d-sm-block">
-            <img src={Trianges} alt="connected triagle shapes" />
+          <Col xs={12} sm={5} >
+            <img src={Office} alt="connected triagle shapes" />
           </Col>
         </Row>
       </Container>

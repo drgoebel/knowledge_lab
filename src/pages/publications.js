@@ -9,6 +9,7 @@ import Trianges from "../images/triangles.svg";
 import Neural from "../images/neural.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileLines } from '@fortawesome/free-solid-svg-icons';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 const publications = [
   {
@@ -410,7 +411,7 @@ const Publications = () => (
         <Row>
           <Col xs={12} sm={9}>
             <h1>Publications</h1>
-            <p>Here is a list of recent publications</p>
+            <p>Knowledge Lab is dedicated to the transformative power of knowledge and we are committed to advancing the frontiers of understanding through rigorous, data-driven research. Our publications, ranging from detailed studies to insightful articles,  serve as vital resources for scholars, policymakers, and the curious public. Our aim is to foster collaboration, drive innovation, and contribute to informed decision-making across various disciplines. Explore our work to discover how our research is shaping the future of knowledge creation and application.</p>
           </Col>
           <Col sm={3} className="d-none d-sm-block">
             <img src={Trianges} alt="connected triagle shapes" />
@@ -442,6 +443,10 @@ const Publications = () => (
                     <p>
                       <strong>Publication: </strong>
                       {pub.publication}
+                    </p>
+                    <p>
+                      <a href={pub.link} target="_blank">Read Publication <FontAwesomeIcon icon={faCaretRight} /></a>
+                      
                     </p>
                   </Col>
                   </Row>

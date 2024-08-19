@@ -377,7 +377,10 @@ button {
   z-index: -3;
 }
 
-#initiatives-header h1,
+#initiatives-header h1 {
+  line-height: var(--line-height-dense);
+  color: var(--color-secondary);
+}
 #initiatives-header p {
   color: var(--color-text);
   line-height: var(--line-height-normal);
@@ -423,7 +426,8 @@ button {
 
 
 #initiatives-header h1 {
-  font-size: clamp(20px, 5cqw, 60px);
+  font-size: clamp(40px, 5cqw, 60px);
+  line-height: var(--line-height-dense);
 
 }
 
@@ -488,14 +492,18 @@ button {
 }
 
 
-#careers-header h1,
+#careers-header h1{
+  color:white;
+  line-height: var(--line-height-dense);
+}
 #careers-header p {
   color: white;
   line-height: var(--line-height-normal);
 }
 
 #careers-header h1 {
-  font-size: clamp(20px, 5cqw, 60px);
+  font-size: clamp(40px, 5cqw, 60px);
+  line-height: var(--line-height-dense);
 }
 
 #careers-header p {
@@ -589,13 +597,15 @@ button {
   z-index: -2;
 }
 
-#team-header h1,
+
 #team-header p {
   color: white;
   line-height: var(--line-height-normal);
 }
 #team-header h1 {
-  font-size: clamp(20px, 3cqw, 60px);
+  font-size: clamp(40px, 3cqw, 60px);
+  color: white;
+  line-height: var(--line-height-dense);
 }
 #team h2 {
   font-size: clamp(16px, 1.5cqw, 40px);
@@ -679,6 +689,7 @@ button {
   padding-bottom: var(--space-7);
 }
 
+
 #about-header>.container {
   display: flex;
   justify-content: center;
@@ -688,16 +699,24 @@ button {
 
 
 }
+#about-header img {
+  box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+  border-radius: var(--border-radius);
+}
 
 #about-header h1 {
-  font-size: clamp(20px, 3cqw, 60px);
+  font-size: clamp(40px, 3cqw, 60px);
+  line-height: var(--line-height-dense);
 }
 
 #about-header p {
   font-size: var(--font-xl)
 }
 
-#about-header h1,
+#about-header h1 {
+  color: white;
+  line-height: var(--line-height-dense);
+}
 #about-header p {
   color: white;
   line-height: var(--line-height-normal);
@@ -727,7 +746,8 @@ button {
 }
 
 #workshops-header h1 {
-  font-size: clamp(20px, 3cqw, 60px);
+  font-size: clamp(40px, 3cqw, 60px);
+  line-height: var(--line-height-dense);
 
 }
 
@@ -736,7 +756,10 @@ button {
   font-size: var(--font-xl)
 }
 
-#workshops-header h1,
+#workshops-header h1 {
+  line-height: var(--line-height-dense);
+  color: white;
+}
 #workshops-header p {
   color: white;
   line-height: var(--line-height-normal);
@@ -781,6 +804,9 @@ button {
 }
 #publications p {
   margin: 0;
+}
+#publications p > a {
+  color: var(--color-quadrary);
 }
 #publications .sidebar {
   padding: clamp(16px, 2cqw, 20px);

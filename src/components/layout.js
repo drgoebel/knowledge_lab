@@ -80,10 +80,15 @@ const Layout = ({ children }) => {
               fontSize: `var(--font-sm)`,
               color: `white`,
               height: `5vh`,
+              display: `flex`,
+              flexDirection: `column`,
+              justifyContent: `center`,
+              textAlign: `right`,
+              lineHeight: `var(--line-height-dense)`
             }}
           >
             <Row>
-              <Col xs={2}>
+              <Col xs={3} sm={3}>
                 <img src={UCShield} />
                 <br />
                 <small>
@@ -92,7 +97,7 @@ const Layout = ({ children }) => {
                   Chicago, IL 60637
                 </small>
               </Col>
-              <Col xs={8}>
+              <Col xs={9} sm={9}>
                 {" "}
                 © {new Date().getFullYear()} &middot; Knowledge Lab
               </Col>

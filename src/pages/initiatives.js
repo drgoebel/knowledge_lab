@@ -79,7 +79,7 @@ const Initiatives = () => {
                 understanding of knowledge creation and dissemination.
               </p>
             </Col>
-            <Col sm={3} className="d-none d-sm-block">
+            <Col xs={12} sm={3} className="d-sm-block">
               <img src="https://placeholder.com/300x200" />
             </Col>
           </Row>
@@ -91,10 +91,10 @@ const Initiatives = () => {
             {sampleInitiatives.map((initiative) => {
               return (
                 <>
-                  <Col sm={3} className="d-none d-sm-block morph">
+                  <Col xs={12} md={3} >
                     <img src={initiative.image} />
                   </Col>
-                  <Col xs={8}>
+                  <Col xs={12} md={9}>
                     <h2>{initiative.title}</h2>
                     <h4>{initiative.tagLine}</h4>
                     <p>{initiative.teaser}</p>
