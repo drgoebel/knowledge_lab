@@ -1,120 +1,128 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
 import Seo from "../components/seo";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Accordion, Card, Button } from "react-bootstrap";
 import "../components/gridder.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
-import Neural from "../images/neural.webp"
+import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import Neural from "../images/neural.webp";
+import Burst from "../images/burst.jpg";
+import Extract from "../images/extract.png";
 
 const sampleInitiatives = [
   {
-    title: "General Postdoctoral Scholar Positions at the Knowledge Lab",
-    tagLine: "this is the tagline",
-    papers: "papers",
-    grantsPress: "grants and press releases",
+    title: "Deep Neural Networks",
+    tagLine: "Unleashing the Power with Deep Learning",
+    teaser:
+      "A deluge of digital content is generated daily by web-based platforms and sensors that capture digital traces of communication and connection, and complex states of society, the economy, and the world.",
     description:
-      "A deluge of digital content is generated daily by web-based platforms and sensors that capture digital traces of communication and connection, and complex states of society, the economy, and the world. Emerging deep learning methods enable the integration and analysis of these complex data in order to address real-world problems by designing and discovering successful solutions. We take the position that the real power of deep learning is unleashed by thinking with deep learning to reformulate and solve problems traditional machine learning methods cannot address. These include fusing diverse data like text, images, tabular and network data into integrated and comprehensive “digital doubles” of the scenarios you want to model, the generation of promising recommendations, and the creation of AI assistants that radically augment an analyst or system's intelligence.",
+      "Emerging deep learning methods enable the integration and analysis of these complex data in order to address real-world problems by designing and discovering successful solutions. We take the position that the real power of deep learning is unleashed by thinking with deep learning to reformulate and solve problems traditional machine learning methods cannot address. These include fusing diverse data like text, images, tabular and network data into integrated and comprehensive “digital doubles” of the scenarios you want to model, the generation of promising recommendations, and the creation of AI assistants that radically augment an analyst or system's intelligence.",
+    papers:
+      "This project will culminate in a book and code resources to be published by O’Reilly Publishing, titled “Thinking with Deep Learning”",
+    grantsPress: "grants and press releases",
+
     url: "/link-to-paper",
-    image: "Initiative image",
+    image: Neural,
   },
   {
-    title: "Postdoctoral Scholar Positions in Science and Technology Policy",
-    text:
-      "We seek outstanding candidates for government and philanthropically funded postdoctoral positions to explore the dynamics of science, technology, and product innovation, examine the global science and technology ecosystem, and explore novel approaches to predict and causally identify the impact of innovation policies. Specifically, postdocs will participate in a broader team of researchers to develop large-scale models to (1) observe the global system of science and technology at scale; (2) predict future science and technology; and (3) experimentally explore alternative futures and how to configure the world to achieve them. Postdocs will work at the interface of the science of science and innovation. They will also interact with researchers on how to wrangle/build data-driven and AI-powered approaches that assist this goal Candidates will work in the Knowledge Lab, directed by Max Palevsky Prof. of Sociology James Evans, and engage with a number of social scientists and scholars across the collaborative project in the social sciences (e.g., economics and sociology), complex systems (e.g., network science, physics, ecology), and computer science.",
-    url: "using-typescript",
+    title: "Aesthetics of Explanation",
+    tagLine: "Exploring the variation in structural and aesthetic properties of explanation",
+    teaser: "How do some people (or nations) become so much wealthier, healthier, or happier than others?",
+    description: "<p>Most knowledge-making processes aim at explanation. How do some people (or nations) become so much wealthier, healthier, or happier than others? How does an organism's genome “determine” its size, shape color, behavior, or risk of disease? Why is gravity so much weaker than the other fundamental forces? Why did my “check engine” light just turn on? </p><p>A moment's reflection on common explanatory answers to these questions suggests that some kinds of explanation are more satisfying or aesthetically pleasing than others — and that humans vary in their preference over such kinds as both individuals and groups. Some people prefer to explain social inequality by reference to “intrinsic” properties of individuals (the poor are lazy or unintelligent, while the rich are hard-working or talented); others prefer “structural” explanations (the very structure of society is warped to continually advantage the already advantaged and keep the disadvantaged down). Simple, linear models of genetic influence (e.g., the central dogma of molecular biology, that information flows unidirectionally from DNA to RNA to proteins and thence to cellular and organismal phenotype) are still popular with lay readers (who yearn to learn about genes that “explain” language, intelligence, homosexuality, or obesity) despite the ongoing revision of such simple stories through RNA interference, post-transcriptional modification, various forms of epigenetic information, etc. The physics community made tremendous progress over the 20th century following an aesthetic preference for “elegant” explanation based on mathematical principles like symmetry and concision, only recently considering explanations that boil down to total contingency (the anthropic principle) or historical necessity (cosmological darwinism). It is clear that, in all of these cases, preferences cannot be justified by a naive appeal to “experiment” or nature. <p>In this project, we aim to explore the variation in structural and aesthetic properties of explanation; variation in preferences over these properties; and the social, cognitive, and historical origin of such variations.</p> <p>In a world increasingly dominated by knowledge and knowledge-making processes, understanding the structure and aesthetics of satisfying explanation becomes increasingly urgent. Indeed, the obstacles to tackling many pressing social and environmental challenges may lie as much in judgment and aesthetics as in technical difficulty. The four main strands of this project will produce metaknowledge that begins to explain why some explanations are so appealing—and convincing.</p>",
+    image: Burst,
+    papers:
+      "TBD",
+    grantsPress: "TBD",
+
+    url: "/link-to-paper",
   },
 
   {
-    title:
-      "Postdoctoral Scholar Positions on AI, Science & Technology Prediction",
-    text:
-      "We seek outstanding candidates for government and philanthropically funded postdoctoral positions developing large language models (LLMs) and associated AI systems to (1) observe the global system of science and technology at scale; (2) predict future science and technology; and (3) experimentally explore alternative futures and how to configure the world to achieve them. Postdoctoral Scholars will work at the interface of AI research on transformers and novel deep learning designs and realized large-scale systems in collaboration with the Allen Institute for Artificial Intelligence (e.g., its AI-powered Semantic Scholar and Open Language Model, OLMo) and the U.S. Department of Energy's Trillion Parameter Consortium. This work will be in collaboration with computational social scientists (e.g., economists, sociologists, physicists) furthering the science of science and innovation in order to guide U.S. and global strategic investments in science and technology.",
-    url: "using-ssr",
-  },
-  {
-    title: "Postdoctoral Scholar Positions in Complementary AI",
-    text:
-      "We seek outstanding candidates for a funded postdoctoral position at the University of Chicago exploring complementary artificial intelligence. Under the supervision of James A. Evans and Chenhao Tan in the Data Science Institute at UChicago, postdocs will work at the interface of machine learning (e.g., generative models, large text and multi-model models), human-computer interaction (HCI), and the social and behavioral sciences to engage in empirical research that advances the theory and evidence-base for complementary AI. By this, we mean novel and powerful AI designed not to match and substitute for human capacity, but to compensate for and complement it. The notion of “Artificial Intelligence” as a mimicry of human intelligence has dominated computational intelligence designs for more than half a century and inspired growing interest and concern regarding artificial general intelligence (AGI).",
-    url: "using-dsg",
+    title: "Learning human-interpretable concepts from information lattices",
+    tagLine: "Can AI learn music theory from music in a human-interpretable form like textbooks?",
+    teaser: "Extracting interpretable rules/concepts from data like what we do is key to knowledge discovery and problem solving in creative domains like art and science.",
+    description: "Can AI learn music theory from music in a human-interpretable form like textbooks? Extracting interpretable rules/concepts from data like what we do is key to knowledge discovery and problem solving in creative domains like art and science. We develop new, white-box learning paradigms that are both self-explanatory and self-exploratory. There, we build information lattices and perform lattice learning to mimic humans' conceptualization processes. The basic idea is an iterative discovery algorithm with a student-teacher architecture that operates on a generalization of Claude Shannon's information lattice, which itself encodes a hierarchy of abstractions and is grown algorithimically from universal priors (symmetries, basic arithmetic, partial orders) built on group-theoretic foundations. Our new learning framework is efficient in recovering music theory from sheet music and chemical laws from molecular databases, as well as discovering undocumented new rules and bridging knowledge between disciplines.",
+    image: Extract,
+    papers:
+      "TBD",
+    grantsPress: "TBD",
+
+    url: "/link-to-paper",
   },
 ];
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-];
+const Initiatives = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-const Initiatives = () => (
-  <Layout>
-    <Nav />
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
 
-    <Container fluid id="initiatives-header">
-      <div className="background"></div>
-      <Container>
-        <Row>
-          <Col xs={12} sm={9}>
-            <h1>Initiatives at Knowledge Lab</h1>
-            <p>
-              Knowledge Lab harnesses the power of artificial intelligence to
-              unravel complex scientific and societal problems, bridging the gap
-              between data-driven insights and real-world applications. This
-              innovative group collaborates with interdisciplinary experts to
-              develop AI tools and methodologies that advance our understanding
-              of knowledge creation and dissemination.
-            </p>
-          </Col>
-          <Col sm={3} className="d-none d-sm-block">
-            <img src="https://placeholder.com/300x200" />
-          </Col>
-        </Row>
+  return (
+    <Layout>
+      <Nav />
+
+      <Container fluid id="initiatives-header">
+        <div className="background"></div>
+        <Container>
+          <Row>
+            <Col xs={12} sm={9}>
+              <h1>Initiatives at Knowledge Lab</h1>
+              <p>
+                Knowledge Lab harnesses the power of artificial intelligence to
+                unravel complex scientific and societal problems, bridging the
+                gap between data-driven insights and real-world applications.
+                This innovative group collaborates with interdisciplinary
+                experts to develop AI tools and methodologies that advance our
+                understanding of knowledge creation and dissemination.
+              </p>
+            </Col>
+            <Col sm={3} className="d-none d-sm-block">
+              <img src="https://placeholder.com/300x200" />
+            </Col>
+          </Row>
+        </Container>
       </Container>
-    </Container>
-    <Container fluid id="initiatives">
-      <Container>
-        <Row>
-          {sampleInitiatives.map((initiative) => {
-            return (
-              <>
-                <Col sm={3} className="d-none d-sm-block morph">
-                  <img src={Neural} />
-                </Col>
-                <Col xs={9}>
-                  <h2>{initiative.title}</h2>
-                  <h4>{initiative.tagLine}</h4>
-                  <p>{initiative.description}</p>
-                  <p>{initiative.grantsPress}</p>
-                  <p>{initiative.papers}</p>
-                  <Link to={initiative.url}>
-                    <button>Learn More and Apply <FontAwesomeIcon icon={faCaretRight} /></button>
-                  </Link>
-                </Col>
-              </>
-            );
-          })}
-        </Row>
+      <Container fluid id="initiatives">
+        <Container>
+          <Row>
+            {sampleInitiatives.map((initiative) => {
+              return (
+                <>
+                  <Col sm={3} className="d-none d-sm-block morph">
+                    <img src={initiative.image} />
+                  </Col>
+                  <Col xs={8}>
+                    <h2>{initiative.title}</h2>
+                    <h4>{initiative.tagLine}</h4>
+                    <p>{initiative.teaser}</p>
+                    <p>
+                      <strong>Grants:</strong> {initiative.grantsPress}
+                    </p>
+                    <p>
+                      <strong>Papers</strong> {initiative.papers}
+                    </p>
+                    <Accordion defaultActiveKey="">
+                      <Accordion.Item eventKey="0">
+                        <Accordion.Header>Read More</Accordion.Header>
+                        <Accordion.Body>
+                          {/* {initiative.description} */}
+                          <div dangerouslySetInnerHTML={ {__html: initiative.description} } />
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
+                  </Col>
+                </>
+              );
+            })}
+          </Row>
+        </Container>
       </Container>
-    </Container>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export const Head = () => <Seo title="Page two" />;
 

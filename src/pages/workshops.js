@@ -54,7 +54,7 @@ const Workshops = () => (
         </Row>
       </Container>
     </Container>
-    <Container fluid id="news">
+    <Container fluid id="workshops">
       <Container>
       {workshops.map((work) => {
             return (
@@ -67,8 +67,8 @@ const Workshops = () => (
                 <Col xs={7}>
                   <h2>{work.title}</h2>
                   <p>{work.description}</p>
-                  <p>{work.date}</p>
-                  <p>{work.link}</p>
+                  <p><strong>Date:</strong> {work.date}</p>
+                  <p><a href={work.link} target="_blank">Visit Website</a></p>
                   
                 </Col>
               </>

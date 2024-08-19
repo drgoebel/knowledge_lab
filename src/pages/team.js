@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Nav from "../components/nav";
 import { Container, Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
 import James from "../images/james-evans.png";
@@ -18,6 +22,7 @@ const klabTeams = [
     name: "James A. Evans",
     title:
       "Director, Knowledge Lab; Professor, Sociology, University of Chicago; Faculty Director, Masters Program in Computational Social Sciences; External Professor, Santa Fe Institute",
+    bio: "James Evans is Director of Knowledge Lab, Professor of Sociology, Faculty Director of the Computational Social Science program, and member of the Committee on Conceptual and Historical Studies of Science at the University of Chicago. I am also an External Professor at the Santa Fe Institute. His research focuses on the collective system of thinking and knowing, ranging from the distribution of attention and intuition, the origin of ideas and shared habits of reasoning to processes of agreement (and dispute), accumulation of certainty (and doubt), and the texture–novelty, ambiguity, topology–of human understanding. He is especially interested in innovation–how new ideas and technologies emerge–and the role that social and technical institutions (e.g., the Internet, markets, collaborations) play in collective cognition and discovery. Much of his work has focused on areas of modern science and technology, but he is also interested in other domains of knowledge–news, law, religion, gossip, hunches and historical modes of thinking and knowing. He supports the creation of novel observatories for human understanding and action through crowd sourcing, information extraction from text and images, and the use of distributed sensors (e.g., RFID tags, cell phones). He uses machine learning, generative modeling, social and semantic network representations to explore knowledge processes, scale up interpretive and field-methods, and create alternatives to current discovery regimes. His research is funded by the National Science Foundation, the National Institutes of Health, DARPA, Facebook, IBM, the Sloan Foundation, Jump! Trading and other sources, and has been published in Science, PNAS, Nature Human Behavior, Nature Biotech, American Journal of Sociology, American Sociological Review, Social Studies of Science, Administrative Science Quarterly, PLoS Computational Biology and other journals. His work has been featured in Nature, the Economist, Atlantic Monthly, Wired, NPR, BBC, El País, CNN and many other outlets.",
     url: "page-2",
     bioLink: "this",
     bioImg: James,
@@ -27,6 +32,7 @@ const klabTeams = [
     name: "Jacy Reese Anthis",
     title: "Graduate Student, University of Chicago",
     url: "page-2",
+    bio: "Jacy Reese Anthis is a joint PhD student with the Sociology department and the Econometrics & Statistics group at the Booth School of Business. He is the co-founder of the Sentience Institute, a nonprofit interdisciplinary think tank focused on social and technological change. His 2018 book, The End of Animal Farming, analyzes the emergence of food technologies such as cell-cultured meat. Anthis’ current projects focus on the technical and social dimensions of artificial intelligence. His research has been featured in The Guardian, Vox, Forbes, and other global media outlets, and he has presented at conferences and seminars in over 20 countries.",
     bioLink: "this",
     bioImg: Jacy,
     size: "half",
@@ -426,7 +432,7 @@ const klabMeta = [
       "Director, Knowledge Lab; Professor, Sociology, University of Chicago; Faculty Director, Masters Program in Computational Social Sciences; External Professor, Santa Fe Institute",
     description:
       "James Evans is Director of Knowledge Lab, Professor of Sociology, Faculty Director of the Computational Social Science program, and member of the Committee on Conceptual and Historical Studies of Science at the University of Chicago. I am also an External Professor at the Santa Fe Institute. His research focuses on the collective system of thinking and knowing, ranging from the distribution of attention and intuition, the origin of ideas and shared habits of reasoning to processes of agreement (and dispute), accumulation of certainty (and doubt), and the texture-novelty, ambiguity, topology-of human understanding. He is especially interested in innovation-how new ideas and technologies emerge-and the role that social and technical institutions (e.g., the Internet, markets, collaborations) play in collective cognition and discovery. Much of his work has focused on areas of modern science and technology, but he is also interested in other domains of knowledge-news, law, religion, gossip, hunches and historical modes of thinking and knowing. He supports the creation of novel observatories for human understanding and action through crowd sourcing, information extraction from text and images, and the use of distributed sensors (e.g., RFID tags, cell phones). He uses machine learning, generative modeling, social and semantic network representations to explore knowledge processes, scale up interpretive and field-methods, and create alternatives to current discovery regimes. His research is funded by the National Science Foundation, the National Institutes of Health, DARPA, Facebook, IBM, the Sloan Foundation, Jump! Trading and other sources, and has been published in Science, PNAS, Nature Human Behavior, Nature Biotech, American Journal of Sociology, American Sociological Review, Social Studies of Science, Administrative Science Quarterly, PLoS Computational Biology and other journals. His work has been featured in Nature, the Economist, Atlantic Monthly, Wired, NPR, BBC, El País, CNN and many other outlets.",
-      bioImg: James,
+    bioImg: James,
 
     size: "half",
   },
@@ -664,10 +670,36 @@ const klabMeta = [
   },
 ];
 
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Modal heading
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>{props.bio}</p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 
 const TabsComponent = () => {
   // State to track the active tab
-  const [activeTab, setActiveTab] = useState('Knowledge Lab Team');
+  const [activeTab, setActiveTab] = useState("Knowledge Lab Team");
+
+  const [modalShow, setModalShow] = React.useState(false);
+  const [openModalIndex, setOpenModalIndex] = useState(null);
 
   // Function to handle tab click
   const handleTabClick = (tab) => {
@@ -677,67 +709,77 @@ const TabsComponent = () => {
   return (
     <Container id="tabs">
       <Row className="team-tabber">
-      <Col xs={3}
-          onClick={() => handleTabClick('Knowledge Lab Team')}
-          className={activeTab === 'Knowledge Lab Team' ? 'active' : ''}
-          style={{ cursor: 'pointer'}}
+        <Col
+          xs={3}
+          onClick={() => handleTabClick("Knowledge Lab Team")}
+          className={activeTab === "Knowledge Lab Team" ? "active" : ""}
+          style={{ cursor: "pointer" }}
         >
           Knowledge Lab Team
         </Col>
-        <Col xs={3}
-          onClick={() => handleTabClick('Metaknowlege Research Network')}
-          className={activeTab === 'Metaknowlege Research Network' ? 'active' : ''}
-          style={{ cursor: 'pointer' }}
+        <Col
+          xs={3}
+          onClick={() => handleTabClick("Metaknowlege Research Network")}
+          className={
+            activeTab === "Metaknowlege Research Network" ? "active" : ""
+          }
+          style={{ cursor: "pointer" }}
         >
           Metaknowlege Research Network
         </Col>
-        <Col xs={3}
-          onClick={() => handleTabClick('Knowledge Lab Alumni')}
-          className={activeTab === 'Knowledge Lab Alumni' ? 'active' : ''}
-          style={{ cursor: 'pointer' }}
+        <Col
+          xs={3}
+          onClick={() => handleTabClick("Knowledge Lab Alumni")}
+          className={activeTab === "Knowledge Lab Alumni" ? "active" : ""}
+          style={{ cursor: "pointer" }}
         >
           KLab Alumni
         </Col>
-        </Row>
-        
-
+      </Row>
 
       {/* Conditionally render content based on active tab */}
-      {activeTab === 'Knowledge Lab Team' && <Row>
-          {klabTeams.map((team) => {
+      {activeTab === "Knowledge Lab Team" && (
+        <Row>
+          {klabTeams.map((team, index) => {
             return (
-              <>
-                {team.size === "full" ? (
-                  <Row>
-                    <Col xs={12} md={3}>
+              <>  
+              
+                    <Col xs={team.size === "full" ? 12 : 4 } md={team.size === "full" ? 3 : 2 } key={index}>
                       <img src={team.bioImg} alt={team.name} />
                     </Col>
-                    <Col xs={12} md={9}>
+                    <Col xs={team.size === "full" ? 12 : 8 } md={team.size === "full" ? 9 : 4}>
                       <h2>{team.name}</h2>
                       <p>{team.title}</p>
-                      <Link to={team.url}>
+                      {/* <Link to={team.url}>
                         <button>Read Bio</button>
-                      </Link>
+                      </Link> */}
+
+                      <Button
+                        variant="primary"
+                        onClick={() => setOpenModalIndex(index)}
+                      >
+                        Read Bio <FontAwesomeIcon icon={faCaretRight} />
+                      </Button>
+
+                      <MyVerticallyCenteredModal
+                        show={openModalIndex === index}
+                        onHide={() => setOpenModalIndex(null)}
+                        bio={team.bio}
+                      />
                     </Col>
-                  </Row>
-                ) : (
-                  <>
-                    <Col xs={12} md={2}>
-                      <img src={team.bioImg} alt={team.name} />
-                    </Col>
-                    <Col xs={12} md={4}>
-                      <h2>{team.name}</h2>
-                      <p>{team.title}</p>
-                      <Link to={team.url}>Read bio</Link>
-                    </Col>
+                    
+                    
+                 
+                
                   </>
                 )}
-              </>
-            );
-          })}
+              
+            )
+          }
         </Row>
-        }
-      {activeTab === 'Metaknowlege Research Network' && <Row>
+      )}
+      {activeTab === "Metaknowlege Research Network" && (
+        <Row>
           {klabMeta.map((team) => {
             return (
               <>
@@ -769,8 +811,10 @@ const TabsComponent = () => {
               </>
             );
           })}
-        </Row>}
-      {activeTab === 'Knowledge Lab Alumni' && <Row>
+        </Row>
+      )}
+      {activeTab === "Knowledge Lab Alumni" && (
+        <Row>
           {klabAlumni.map((team) => {
             return (
               <>
@@ -802,48 +846,45 @@ const TabsComponent = () => {
               </>
             );
           })}
-        </Row>}
+        </Row>
+      )}
     </Container>
   );
 };
 
+const Team = () => {
+  return (
+    <Layout>
+      <Nav />
 
-const Team = () => (
-
-  <Layout>
-    
-    <Nav />
-
-    <Container fluid id="team-header">
-      <div className="background"></div>
-      <Container>
-        <Row>
-          <Col xs={12} sm={9}>
-            <h1>Knowledge Lab Team</h1>
-            <p>
-              As Knowledge Lab and the Metaknowledge Research Network crank out
-              results, those results will populate this space. Our goal is to
-              present citations (and links) to published research, as well as
-              preprints, articles and prospectives, responses, as well as
-              presentations of our work and results formatted for a general
-              audience.
-            </p>
-          </Col>
-          <Col sm={3} className="d-none d-sm-block">
-            <img src={Trianges} alt="connected triagle shapes" />
-          </Col>
-        </Row>
+      <Container fluid id="team-header">
+        <div className="background"></div>
+        <Container>
+          <Row>
+            <Col xs={12} sm={9}>
+              <h1>Knowledge Lab Team</h1>
+              <p>
+              Our multidisciplinary teams are at the center of everything we do. Comprising experts from diverse fields such as data science, social sciences, computational modeling, and artificial intelligence, we collaborate to push the boundaries of research and innovation. Working in partnership with universities, industry leaders, and government organizations, we tackle some of the most pressing challenges of our time. By blending academic rigor with cutting-edge technology, our teams are dedicated to generating impactful insights that drive meaningful change across sectors.
+              </p>
+            </Col>
+            <Col sm={3} className="d-none d-sm-block">
+              <img src={Trianges} alt="connected triagle shapes" />
+            </Col>
+          </Row>
+        </Container>
       </Container>
-    </Container>
-    <Container fluid id="team">
-      <Container>
-        <Row> <TabsComponent /></Row>
-        
+      <Container fluid id="team">
+        <Container>
+          <Row>
+            {" "}
+            <TabsComponent />
+          </Row>
+        </Container>
       </Container>
-    </Container>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
-export const Head = () => <Seo title="Page two" />;
+export const Head = () => <Seo title="Knowledge Lab Team" />;
 
 export default Team;

@@ -41,28 +41,9 @@ const about = [
   },
 ];
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-];
 
-const SecondPage = () => (
+
+const About = () => (
   <Layout>
     <Nav />
 
@@ -88,7 +69,7 @@ const SecondPage = () => (
           {about.map((ab) => {
             return (
               <>
-                <Col sm={3} className="d-none d-sm-block morph">
+                {/* <Col sm={3} className="d-none d-sm-block morph">
                   <img src={Neural} />
                 </Col>
                 <Col xs={9}>
@@ -100,7 +81,7 @@ const SecondPage = () => (
                   <Link to={ab.url}>
                     <button>Learn More and Apply</button>
                   </Link>
-                </Col>
+                </Col> */}
               </>
             );
           })}
@@ -110,6 +91,6 @@ const SecondPage = () => (
   </Layout>
 );
 
-export const Head = () => <Seo title="Page two" />;
+export const Head = () => <Seo title="About Page" />;
 
-export default SecondPage;
+export default About;

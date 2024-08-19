@@ -31,22 +31,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      
-       
-       
-          <div
-        style={{
-          // backgroundColor: `rgba(240,240,240,.5)`,
-          position: `absolute`,
-          minHeight: `100%`,
-          width: `1320px`,
-          display: `grid`,
-          gridTemplateColumns: `repeat(4, 1fr)`,
-          left: `50%`,
-          transform: `translateX(-50%)`,
-          zIndex: `-2`,
-
-        }}
+          <div className={`grid-container`}
       >
           
               <div className={`grid-div`}></div>
@@ -80,7 +65,7 @@ const Layout = ({ children }) => {
         </Row>
       </Container> */}
 
-      <Container fluid style={{ flexGrow: `1` }}>
+      <Container fluid style={{ flexGrow: `1`, minHeight: `100vh` }}>
         <Header siteTitle={data.site.siteMetadata?.title || `Knowlege Lab`} />
 
         <Container fluid>{children}</Container>

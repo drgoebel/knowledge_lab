@@ -7,6 +7,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
 import Neural from "../images/neural.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileLines } from '@fortawesome/free-solid-svg-icons';
 
 const publications = [
   {
@@ -398,7 +400,9 @@ const publications = [
 
 const Publications = () => (
   <Layout>
+   
     <Nav />
+    <div style={{position: `absolute`, height: `80vh`, backgroundColor: `#f6f6f6`, width: `100%`, zIndex: `-3`, clipPath: `polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%)`}}></div>
 
     <Container fluid id="publications-header">
       <div className="background"></div>
@@ -424,7 +428,7 @@ const Publications = () => (
                 <>
                 <Row>
                   <Col xs={1} className="d-none d-sm-block morph">
-                    <img src="https://placeholder.com/80x100" />
+                    <FontAwesomeIcon icon={faFileLines} className="document-icon"/>
                   </Col>
                   <Col xs={7}>
                     <h3>
@@ -447,7 +451,9 @@ const Publications = () => (
           </Col>
 
           <Col xs={12} sm={3}>
-            sidebar
+            <div className="sidebar"><h4>Initiatives</h4><p>See what we've been working on.</p></div>
+            <div className="sidebar"><h4>News & Events</h4><p>See what's in the news</p></div>
+            <div className="sidebar"><h4>Workshops & Conferences</h4><p>See conference and workshops</p></div>
           </Col>
         </Row>
       </Container>

@@ -161,6 +161,7 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
+     
        
       <div className="grid-gradient"></div>
         <Container>
@@ -174,14 +175,14 @@ const IndexPage = () => {
               placeholder="blurred"
               layout="fullWidth"
               style={{
-                marginBottom: `var(--space-5)`,
+                marginBottom: `0`,
                 marginTop: `var(--space-5)`,
                 marginLeft: `auto`,
                 marginRight: `auto`,
                 display: "block",
                 color: "white",
                 backgroundColor: "white",
-                width: "46%",
+                width: "25%",
                 zIndex: "100",
                 padding: "0",
               }}
@@ -190,7 +191,7 @@ const IndexPage = () => {
         </Container>
 
         <Container>
-          <Row>
+          <Row style={{justifyContent: 'center'}}>
           <AniNav />
             
           </Row>
@@ -341,6 +342,7 @@ const IndexPage = () => {
           </Row>
           </Container>
         </Container>
+        
       </Layout>
     </>
   );

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
-import animationData from "../json/career-lines-2.json";
+import animationData from "../json/klabnav.json";
 
 const AniNav = () => {
   const animationContainer = useRef(null);
@@ -29,8 +29,11 @@ const AniNav = () => {
         path.addEventListener("click", () => {
           // Create a mapping of data attribute values to their corresponding URLs
           const urlMap = {
-            "value-39": "/careers",
-            "value-21": "/team",
+            "value-199": "/careers",
+            "value-86": "/team",
+            "value-66": "/team",
+            "value-44": "/news",
+            "value-25": "/workshops",
             // Add more mappings as needed
             "value-17": "/example", // Example for additional mapping
           };
@@ -54,7 +57,7 @@ const AniNav = () => {
   return (
     <div
       ref={animationContainer}
-      style={{ width: 1320, height: 800 }}
+      style={{ width: 1200, height: 660 }}
       id="aninav"
     >
       {/* The Lottie animation will be rendered here */}
