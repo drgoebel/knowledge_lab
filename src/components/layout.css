@@ -360,7 +360,7 @@ button {
 #initiatives-header.container-fluid {
   margin-bottom: var(--space-7);
     position: relative;
-    padding-top: var(--space-5);
+    padding-top: var(--space-7);
     padding-bottom: var(--space-7);
   
 }
@@ -490,6 +490,9 @@ button {
   justify-content: center;
   flex-direction: column;
 }
+#careers-header.container-fluid > .container {
+  padding-top: var(--space-1);
+}
 
 
 #careers-header h1{
@@ -521,6 +524,8 @@ button {
   /* Triangle shape */
   z-index: -2;
 }
+
+
 
 #careers h2 {
   color: var(--color-text);
@@ -595,6 +600,10 @@ button {
   background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0);
   z-index: -2;
+}
+
+#team-header.container-fluid > .container {
+  padding-top: var(--space-6);
 }
 
 
@@ -697,7 +706,6 @@ button {
   padding-top: 5cqh;
   padding-bottom: 5cqh;
 
-
 }
 #about-header img {
   box-shadow: 0px 0px 15px rgba(0,0,0,.35);
@@ -738,11 +746,13 @@ button {
   width: 100vw;
   top: 0;
   background: linear-gradient(176deg, #6fccdc 0%, #3a53a4 50%, #ed1c7e 100%);
-  
   background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0);
   /* Triangle shape */
   z-index: -2;
+}
+#workshops-header.container-fluid > .container {
+  padding-top: var(--space-5);
 }
 
 #workshops-header h1 {

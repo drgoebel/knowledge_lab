@@ -4,6 +4,7 @@ import animationData from "../json/klabnav.json";
 
 const AniNav = () => {
   const animationContainer = useRef(null);
+  const hasLoopedOnce = useRef(false);
 
   useEffect(() => {
     // Initialize the Lottie animation
@@ -14,7 +15,7 @@ const AniNav = () => {
       autoplay: true,
       animationData: animationData,
     });
-
+    
     // After animation is loaded, we can manipulate it
     anim.addEventListener("DOMLoaded", () => {
       // Access the layers in the animation
@@ -29,14 +30,14 @@ const AniNav = () => {
         path.addEventListener("click", () => {
           // Create a mapping of data attribute values to their corresponding URLs
           const urlMap = {
-            "value-199": "/careers",
-            "value-177": "/team",
-            "value-146": "/initiatives",
-            "value-120": "/news",
-            "value-97": "/give",
-            "value-55": "/workshops",
-            // Add more mappings as needed
-            "value-31": "/about", // Example for additional mapping
+            "value-212": "/careers",
+            "value-190": "/team",
+            "value-147": "/initiatives",
+            "value-143": "/publications",
+            "value-121": "/news",
+            "value-98": "/give",
+            "value-56": "/workshops",
+            "value-32": "/about",
           };
 
           // Get the data attribute value
@@ -48,6 +49,23 @@ const AniNav = () => {
           }
         });
       });
+    });
+
+    // Event listener for when the animation completes
+    anim.addEventListener("complete", () => {
+      if (!hasLoopedOnce.current) {
+        // Mark that the first playthrough has completed
+        hasLoopedOnce.current = true;
+        // Set the animation to loop from now on
+        anim.loop = true;
+        // Move the playhead to the 1-second mark and start looping from there
+        // Calculate the frame range for looping
+        const totalFrames = anim.totalFrames;
+        const oneSecondFrame = anim.frameRate * .9; // 1 second converted to frame number
+
+        // Play from 1-second mark to the end, looping
+        anim.playSegments([oneSecondFrame, totalFrames], true);
+      }
     });
 
     return () => {

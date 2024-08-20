@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
@@ -6,7 +6,7 @@ import Seo from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
-import Office from "../images/klab-office.webp"
+import Office from "../images/klab-office.webp";
 
 const about = [
   {
@@ -36,40 +36,57 @@ const about = [
   {
     title: "Postdoctoral Scholar Positions in Complementary AI",
     text:
-      "We seek outstanding candidates for a funded postdoctoral position at the University of Chicago exploring complementary artificial intelligence. Under the supervision of James A. Evans and Chenhao Tan in the Data Science Institute at UChicago, postdocs will work at the interface of machine learning (e.g., generative models, large text and multi-model models), human-computer interaction (HCI), and the social and behavioral sciences to engage in empirical research that advances the theory and evidence-base for complementary AI. By this, we mean novel and powerful AI designed not to match and substitute for human capacity, but to compensate for and complement it. The notion of “Artificial Intelligence” as a mimicry of human intelligence has dominated computational intelligence designs for more than half a century and inspired growing interest and concern regarding artificial general intelligence (AGI).",
+      "We seek outstanding candidates for a funded postdoctoral position at the University of Chicago exploring complementary artificial intelligence. Under the supervision of James A. Evans and Chenhao Tan in the Data Science Institute at UChicago, postdocs will work at the interface of machine learning (e.g., generative models, large text and multi-model models), human-computer interaction (HCI), and the social and behavioral sciences to engage in empirical research that advances the theory and evidence-base for complementary AI. By this, we mean novel and powerful AI designed not to match and substitute for human capacity, but to compensate for and complement it. The notion of “Artificial Intelligence” as a mimicry of human intelligence has dominated computational intelligence designs for more than half a century and inspired growing interest and concern regarding artificial general intelligence (AGI).",
     url: "using-dsg",
   },
 ];
 
+const About = () => {
+  useEffect(() => {
+    const script1 = document.createElement("script");
 
+    script1.src = "https://lab.hakim.se/blob/03/js/blob.js";
+    // "../components/blob.js";
 
-const About = () => (
-  <Layout>
-    <Nav />
+    document.body.appendChild(script1);
+  }, []);
 
-    <Container fluid id="about-header">
-      <div className="background"></div>
-      <Container>
-        <Row>
-          <Col xs={12} sm={7}>
-            <h1>About Knowledge Lab</h1>
-            <p>
-            Knowledge Lab at the University of Chicago focuses on using Big Data, machine learning, and crowd-sourcing techniques to analyze how knowledge is generated, used, and forgotten. By studying the dynamics of information across various fields, the lab seeks to enhance knowledge management, representation, and innovation. It emphasizes interdisciplinary research to explore the mechanisms behind human understanding and discovery, aiming to improve the creation and application of knowledge in various contexts. 
-            </p>
-          </Col>
-          <Col xs={12} sm={5} >
-            <img src={Office} alt="connected triagle shapes" />
-          </Col>
-        </Row>
-      </Container>
-    </Container>
-    <Container fluid id="about">
-      <Container>
-        <Row>
-          {about.map((ab) => {
-            return (
-              <>
-                {/* <Col sm={3} className="d-none d-sm-block morph">
+  return (
+    <>
+      <Layout>
+        <Nav />
+
+        <Container fluid id="about-header">
+          <div className="background"></div>
+          <Container>
+            <Row>
+              <Col xs={12} sm={7}>
+                <h1>About Knowledge Lab</h1>
+                <p>
+                  Knowledge Lab at the University of Chicago focuses on using
+                  Big Data, machine learning, and crowd-sourcing techniques to
+                  analyze how knowledge is generated, used, and forgotten. By
+                  studying the dynamics of information across various fields,
+                  the lab seeks to enhance knowledge management, representation,
+                  and innovation. It emphasizes interdisciplinary research to
+                  explore the mechanisms behind human understanding and
+                  discovery, aiming to improve the creation and application of
+                  knowledge in various contexts.
+                </p>
+              </Col>
+              <Col xs={12} sm={5}>
+                <img src={Office} alt="connected triagle shapes" />
+              </Col>
+            </Row>
+          </Container>
+        </Container>
+        <Container fluid id="about">
+          <Container>
+            <Row>
+              {about.map((ab) => {
+                return (
+                  <>
+                    {/* <Col sm={3} className="d-none d-sm-block morph">
                   <img src={Neural} />
                 </Col>
                 <Col xs={9}>
@@ -82,14 +99,40 @@ const About = () => (
                     <button>Learn More and Apply</button>
                   </Link>
                 </Col> */}
-              </>
-            );
-          })}
-        </Row>
-      </Container>
-    </Container>
-  </Layout>
-);
+                  </>
+                );
+              })}
+            </Row>
+          </Container>
+        </Container>
+      </Layout>
+      <div style={{ width: `100%`, height: `100%`, position: `relative` }}>
+        <p>
+          Double click to split.{" "}
+          <a id="keyboardUp" href="#">
+            Increase
+          </a>{" "}
+          /{" "}
+          <a id="keyboardDown" href="#">
+            decrease
+          </a>{" "}
+          size or{" "}
+          <a id="keyboardLeft" href="#">
+            Previous
+          </a>{" "}
+          /{" "}
+          <a id="keyboardRight" href="#">
+            Next
+          </a>{" "}
+          skin.
+        </p>
+        <canvas id="world" style={{ width: `100%`, height: `100%` }}>
+          .....
+        </canvas>
+      </div>
+    </>
+  );
+};
 
 export const Head = () => <Seo title="About Page" />;
 
