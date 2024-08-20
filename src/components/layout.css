@@ -873,3 +873,6 @@ button {
 
 }
 
+nav ul li:hover {
+  color: var(--color-quadrary);
+}

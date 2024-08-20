@@ -7,6 +7,7 @@ import { faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
 import "./layout.css";
 import "../components/gridder.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../components/nav.css"
 
 const Nav = () => {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
@@ -35,6 +36,7 @@ const Nav = () => {
     height: "50px",
     alignSelf: "flex-start",
     marginTop: "15px",
+    marginRight: "15px",
     backgroundColor: "var(--color-secondary)",
     outline: "none",
     border: "none"
@@ -44,6 +46,7 @@ const Nav = () => {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    backgroundColor: "white",
   };
   const navLogoStyleMobile = {
     width: "50%",
@@ -71,6 +74,7 @@ const Nav = () => {
   const navItemStyles = {
     margin: "0",
     padding: "0",
+    borderBottom: isMobileView && isMobileMenuVisible ? "1px solid #f8f8f8" : "none"
   };
   const navLinkStyles = {
     display: isMobileView ? (isMobileMenuVisible ? "block" : "none") : "flex",
@@ -81,7 +85,9 @@ const Nav = () => {
     fontSize: isMobileView && isMobileMenuVisible ? "clamp(16px, 1.5cqw, 24px)" : "clamp(9px, 1cqw, 14px)",
     // borderBottom: isMobileView && isMobileMenuVisible ? "1px dotted #333" : "none",
     margin: "0",
+    
   };
+  
   const containerStyle = {
     background:
       "linear-gradient(0deg, rgb(235, 288, 243), rgb(198, 188, 188) 51%,transparent 0,transparent)",
