@@ -8,17 +8,20 @@ import "../components/index.module.css";
 import "../components/oval.css";
 import "../components/gridder.css";
 import Rings from "../images/rings.svg";
-import SantaFe from "../images/santafe.png";
 import UsScience from "../images/us-science-found.png";
-import KoreaU from "../images/korea-university.png";
-import Northwestern from "../images/northwestern.png";
-import Carnegie from "../images/carnegie.png";
-import UChicago from "../images/uchicago.png"
-import AFF from "../images/aff.png"
-import IndianaU from "../images/indianau.png"
-import AI2 from "../images/ai2.jpeg"
-import UPenn from "../images/upenn.jpeg"
-import GeorgiaState from "../images/georgiastate.jpg"
+import Nih from "../images/nih.webp";
+import Afosr from "../images/afosr.webp";
+import Darpa from "../images/darpa.webp"
+import Novo from "../images/novo.webp"
+import Templeton from "../images/templeton.png";
+import Sloan from "../images/sloan.webp";
+import Microsoft from "../images/microsoft.webp";
+import Meta from "../images/meta.webp";
+import Dsi from "../images/data-science-inst.webp";
+import Cfaai from "../images/center-for-applied.webp";
+import SantaFe from "../images/santafe.png"
+import Computational from "../images/uchicago-computational.webp";
+import Complexity from "../images/complexity.webp";
 import AniNav from "../components/animatedNav";
 
 
@@ -252,10 +255,16 @@ const IndexPage = () => {
               </p>
             </Col>
             <Col xs={{offset: 1, span: 5}}>
-              <h2>50+</h2>
+              <h2>100+</h2>
               <p>
                 To date, Knowlege Lab has published over 50 papers in various
                 publications
+              </p>
+            </Col>
+            <Col xs={5}>
+              <h2>10,000+</h2>
+              <p>
+              Citations to Knowledge Lab publications
               </p>
             </Col>
           </Row>
@@ -284,61 +293,70 @@ const IndexPage = () => {
           <Container>
           <Row>
             <Col xs={12}>
-              <h2>Funding Partners</h2>
+              <h2>Supported By</h2>
               {/* <p>
                 We couldn't have done it without the generous support of these
                 institutions.
               </p> */}
             </Col>
           </Row>
-          <Row>
-            <Col xs={6} md={3}>
-              <img src={SantaFe} alt="Santa Fe" />
-            </Col>
-            <Col xs={6} md={3}>
+          <Row className="justify-content-center">
+          <Col xs={3}>
               <img src={UsScience} alt="US Science Foundation" />
             </Col>
-            <Col xs={6} md={3}>
-              <img src={KoreaU} alt="Korea University" />
+            <Col xs={3}>
+              <img src={Nih} alt="National Insitute of Health" />
             </Col>
-            <Col xs={6} md={3}>
-              <img src={Northwestern} alt="Northwestern University" />
+            
+            <Col xs={3}>
+              <img src={Afosr} alt="Air Force Office of Scientific Research" />
+            </Col>
+            <Col xs={3}>
+              <img src={Darpa} alt="DARPA" />
+            </Col>
+            <Col xs={3}>
+              <img src={Novo} alt="Novo Nordisk Foundation" />
+            </Col>
+            <Col xs={3}>
+              <img src={Templeton} alt="John Templeton Foundation" />
+            </Col>
+            <Col xs={3}>
+              <img src={Sloan} alt="Alfred P. Sloan Foundation" />
+            </Col>
+            <Col xs={3}>
+              <img src={Microsoft} alt="Microsoft" />
+            </Col>
+            <Col xs={3}>
+              <img src={Meta} alt="Meta" />
             </Col>
           </Row>
           <Row>
             <Col xs={12}>
-              <h2>Institutional Partners</h2>
+              <h2>Partners</h2>
               {/* <p>
                 We couldn't have done it without the generous support of these
                 institutions.
               </p> */}
             </Col>
           </Row>
-          <Row>
-            <Col xs={6} md={3}>
-              <img src={UChicago} alt="The University of Chicago" />
+          <Row className="justify-content-center">
+            <Col xs={3}>
+              <img src={Dsi} alt="Data Science Institute" />
             </Col>
-            <Col xs={6} md={3}>
-              <img src={Carnegie} alt="Carnegie Mellon University" />
+            <Col xs={3}>
+              <img src={Cfaai} alt="Center for Applied AI" />
             </Col>
-            <Col xs={6} md={3}>
-              <img src={AFF} alt="America's Frontier Fund" />
+            <Col xs={3}>
+              <img src={SantaFe} alt="Santa Fe Institute" />
             </Col>
-            <Col xs={6} md={3}>
-              <img src={Northwestern} alt="Northwestern University" />
+            <Col xs={3}>
+              <img src={Complexity} alt="Complexity" />
             </Col>
-            <Col xs={6} md={3}>
-              <img src={IndianaU} alt="Indiana University" />
+            <Col xs={3}>
+              <img src={Computational} alt="UChicago Computational Social Science" />
             </Col>
-            <Col xs={6} md={3}>
-              <img src={AI2} alt="Allen Institute for Artificial Intelligence" />
-            </Col>
-            <Col xs={6} md={3}>
-              <img src={UPenn} alt="Univesity of Pennsylvania" />
-            </Col>
-            <Col xs={6} md={3}>
-              <img src={GeorgiaState} alt="Georgia State University" />
-            </Col>
+            
+            
           </Row>
           </Container>
         </Container>

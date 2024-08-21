@@ -117,8 +117,8 @@ const Nav = () => {
               </Link>
               <ul style={navListStyles}>
                 <li style={navItemStyles}>
-                  <Link style={navLinkStyles} to={`/careers`}>
-                    careers
+                  <Link style={navLinkStyles} to={`/join`}>
+                    join
                   </Link>
                 </li>
                 <li style={navItemStyles}>

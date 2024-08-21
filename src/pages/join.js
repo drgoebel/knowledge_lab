@@ -71,7 +71,7 @@ const SecondPage = () => (
       <Container>
         <Row>
           <Col xs={12} sm={9}>
-            <h1>Careers</h1>
+            <h1>Join KLab</h1>
             <p>
               Become part of the research and innovation at Knowledge Lab. Apply
               Now for New Postdoctoral Scholar Positions at the Knowledge Lab at

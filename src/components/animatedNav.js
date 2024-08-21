@@ -30,7 +30,7 @@ const AniNav = () => {
         path.addEventListener("click", () => {
           // Create a mapping of data attribute values to their corresponding URLs
           const urlMap = {
-            "value-212": "/careers",
+            "value-212": "/join",
             "value-190": "/team",
             "value-147": "/initiatives",
             "value-143": "/publications",
