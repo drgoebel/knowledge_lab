@@ -476,7 +476,7 @@ const Initiatives = () => {
                     <h4>{initiative.tagline}</h4>
                     {Array.isArray(initiative.grants) ? (
                       <p>
-                        <strong>Grants: </strong>
+                        <strong>Grants </strong><br />
                         <span
                           dangerouslySetInnerHTML={{
                             __html: initiative.grants,
@@ -486,13 +486,13 @@ const Initiatives = () => {
                     ) : null}
                     {Array.isArray(initiative.papers) ? (
                       <>
-                      <p><strong>Papers: </strong></p>
+                      <p><strong>Papers </strong></p>
                         {initiative.papers.map((paper, index) => (
                           <div className="paper">
-                            <p key={index}><em><strong>Title: </strong>{paper.title}</em>
-                            {(paper.authors) ? <span><strong > Author(s): </strong>{paper.authors}</span> : null}
-                            {(paper.publication) ? <span><strong> Publication: </strong>{paper.publication}</span> : null}
-                            {(paper.year) ? <span><strong> Year: </strong>{paper.year}</span> : null}
+                            <p key={index}><em>{paper.title}</em><br />
+                            {(paper.authors) ? <span><strong >Author(s): </strong>{paper.authors}</span> : null}
+                            {(paper.publication) ? <span><strong> | Publication: </strong>{paper.publication}</span> : null}
+                            {(paper.year) ? <span><strong> | Year: </strong>{paper.year}</span> : null}
                             <br />
                             </p>
                             </div>

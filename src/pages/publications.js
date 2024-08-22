@@ -8,10 +8,67 @@ import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
 import Neural from "../images/neural.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileLines } from '@fortawesome/free-solid-svg-icons';
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { faFileLines } from "@fortawesome/free-solid-svg-icons";
+import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import Nature1 from "../images/nature-small-teams.png"
+import Nature2 from "../images/nature-dead.png"
+import Pnas1 from "../images/pnas-1.webp"
+import Pnas2 from "../images/pnas-2.webp"
+
+const features = [
+
+  {
+    title:
+      "Large teams develop and small teams disrupt science and technology.",
+    link: "https://www.nature.com/articles/s41586-019-0941-9",
+    "author(s)": "Lingfei Wu, Dashun Wang, and James A. Evans",
+    publication: "Nature 566, no. 7744 (2019): 378-382",
+    image: Nature1
+  },
+  {
+    title:
+      "Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy.",
+    link: "https://www.pnas.org/content/115/50/12630",
+    "author(s)":
+      "Katy Börner, Olga Scrivner, Mike Gallant, Shutian Ma, Xiaozhong Liu, Keith Chewning, Lingfei Wu, and James A. Evans",
+    publication:
+      "Proceedings of the National Academy of Sciences 115, no. 50 (2018): 12630-12637",
+      image: Pnas1  
+  },
+  {
+    title:
+      "Flat teams drive scientific innovation",
+    link: "https://www.pnas.org/eprint/5SCQ7PK5J3MVUWRWWXX2/full",
+    "author(s)":
+      "Fengli Xu, Lingfei Wu, and James Evans",
+    publication:
+      "Proceedings of the National Academy of Sciences.",
+      image: Pnas2  
+  },
+  
+];
 
 const publications = [
+  {
+    title:
+      "Human Languages with Greater Information Density Increase Communication Speed, but Decrease Conversation Breadth.",
+    link: "https://www.nature.com/articles/s41562-024-01815-w",
+    "author(s)": "Pedro Aceves and James Evans. 2024.",
+    publication: "Nature Human Behaviour.",
+  },
+  {
+    title:
+      "Local similarity and global variability characterize the semantic space of human languages.",
+    link: "https://www.pnas.org/doi/10.1073/pnas.2300986120",
+    "author(s)": "Molly Lewis and James Evans. 2023.",
+    publication: "Proceedings of the National Academy of Sciences.",
+  },
+  {
+    title: "Disrupted Routines Anticipate Musical Exploration.",
+    link: "https://www.pnas.org/doi/10.1073/pnas.2306549121",
+    "author(s)": "Kim Khwan, Noah Askin, and James Evans. 2024.",
+    publication: "Proceedings of the National Academy of Sciences.",
+  },
   {
     title:
       "Human Languages with Greater Information Density Increase Communication Speed, but Decrease Conversation Breadth.",
@@ -53,13 +110,7 @@ const publications = [
     "author(s)": "Jamshid Sourati and James Evans. 2023.",
     publication: "Nature Human Behaviour.",
   },
-  {
-    title:
-      "Large teams develop and small teams disrupt science and technology.",
-    link: "https://www.nature.com/articles/s41586-019-0941-9",
-    "author(s)": "Lingfei Wu, Dashun Wang, and James A. Evans",
-    publication: "Nature 566, no. 7744 (2019): 378-382",
-  },
+  
   {
     title: "Ambiguity and engagement.",
     link: "https://www.journals.uchicago.edu/doi/full/10.1086/701298",
@@ -86,15 +137,7 @@ const publications = [
     publication:
       "Proceedings of the AAAI Conference on Artificial Intelligence, vol. 33, no. 01, pp. 3630-3637. 2019",
   },
-  {
-    title:
-      "Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy.",
-    link: "https://www.pnas.org/content/115/50/12630",
-    "author(s)":
-      "Katy Börner, Olga Scrivner, Mike Gallant, Shutian Ma, Xiaozhong Liu, Keith Chewning, Lingfei Wu, and James A. Evans",
-    publication:
-      "Proceedings of the National Academy of Sciences 115, no. 50 (2018): 12630-12637",
-  },
+  
   {
     title: "Toward a more scientific science.",
     link: "https://www.science.org/doi/full/10.1126/science.aav2484",
@@ -401,9 +444,17 @@ const publications = [
 
 const Publications = () => (
   <Layout>
-   
     <Nav />
-    <div style={{position: `absolute`, height: `80vh`, backgroundColor: `#f6f6f6`, width: `100%`, zIndex: `-3`, clipPath: `polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%)`}}></div>
+    <div
+      style={{
+        position: `absolute`,
+        height: `80vh`,
+        backgroundColor: `#f6f6f6`,
+        width: `100%`,
+        zIndex: `-3`,
+        clipPath: `polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%)`,
+      }}
+    ></div>
 
     <Container fluid id="publications-header">
       <div className="background"></div>
@@ -419,36 +470,75 @@ const Publications = () => (
         </Row>
       </Container>
     </Container>
+
     <Container fluid id="publications">
       <Container>
         <Row>
           <Col xs={12} sm={9}>
+            <Row id="feature-pubs">
+              {features.map((pub) => {
+                return (
+                  <>
+                    <Col xs={4}>
+                      <Col xs={12} className="d-none d-sm-block">
+                      <a href={pub.link} target="_blank"><img src={pub.image}/></a>
+                      </Col>
+                      <Col xs={12}>
+                        <h3>
+                          <a href={pub.link} target="_blank">
+                            {pub.title}
+                          </a>
+                        </h3>
+                        <p>
+                          <strong>Authors:</strong> {pub["author(s)"]}
+                        </p>
+                        <p>
+                          <strong>Publication: </strong>
+                          {pub.publication}
+                        </p>
+                        <p>
+                          <a href={pub.link} target="_blank">
+                            Read Publication
+                            <FontAwesomeIcon icon={faCaretRight} />
+                          </a>
+                        </p>
+                      </Col>
+                    </Col>
+                  </>
+                );
+              })}
+            </Row>
+          
             {publications.map((pub) => {
-              
               return (
                 <>
-                <Row>
-                  <Col xs={1} className="d-none d-sm-block morph">
-                    <FontAwesomeIcon icon={faFileLines} className="document-icon"/>
-                  </Col>
-                  <Col xs={7}>
-                    <h3>
-                      <a href={pub.link} target="_blank">
-                        {pub.title}
-                      </a>
-                    </h3>
-                    <p>
-                      <strong>Authors:</strong> {pub["author(s)"]}
-                    </p>
-                    <p>
-                      <strong>Publication: </strong>
-                      {pub.publication}
-                    </p>
-                    <p>
-                      <a href={pub.link} target="_blank">Read Publication <FontAwesomeIcon icon={faCaretRight} /></a>
-                      
-                    </p>
-                  </Col>
+                  <Row>
+                    <Col xs={1} className="d-none d-sm-block morph">
+                      <FontAwesomeIcon
+                        icon={faFileLines}
+                        className="document-icon"
+                      />
+                    </Col>
+                    <Col xs={7}>
+                      <h3>
+                        <a href={pub.link} target="_blank">
+                          {pub.title}
+                        </a>
+                      </h3>
+                      <p>
+                        <strong>Authors:</strong> {pub["author(s)"]}
+                      </p>
+                      <p>
+                        <strong>Publication: </strong>
+                        {pub.publication}
+                      </p>
+                      <p>
+                        <a href={pub.link} target="_blank">
+                          Read Publication{" "}
+                          <FontAwesomeIcon icon={faCaretRight} />
+                        </a>
+                      </p>
+                    </Col>
                   </Row>
                 </>
               );
@@ -456,9 +546,18 @@ const Publications = () => (
           </Col>
 
           <Col xs={12} sm={3}>
-            <div className="sidebar"><h4>Initiatives</h4><p>See what we've been working on.</p></div>
-            <div className="sidebar"><h4>News & Events</h4><p>See what's in the news</p></div>
-            <div className="sidebar"><h4>Workshops & Conferences</h4><p>See conference and workshops</p></div>
+            <div className="sidebar">
+              <h4>Initiatives</h4>
+              <p>See what we've been working on.</p>
+            </div>
+            <div className="sidebar">
+              <h4>News & Events</h4>
+              <p>See what's in the news</p>
+            </div>
+            <div className="sidebar">
+              <h4>Workshops & Conferences</h4>
+              <p>See conference and workshops</p>
+            </div>
           </Col>
         </Row>
       </Container>
