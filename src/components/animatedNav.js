@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
-import animationData from "../json/klabnav.json";
+import animationData from "../json/klabnav-alt1.json";
 
 const AniNav = () => {
   const animationContainer = useRef(null);
