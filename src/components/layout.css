@@ -415,14 +415,36 @@ button {
   font-weight: 900;
 }
 #initiatives h2{
+  font-size: clamp(20px, 2cqw, 32px);
   color: var(--color-text);
+  line-height: var(--line-height-dense);
 }
 #initiatives h4 {
   color: var(--color-secondary);
 }
-#initiatives h2,
 #initiatives p {
   line-height: var(--line-height-normal);
+}
+
+.container-fluid #initiatives .container [class^="col-"] {
+  align-self: flex-start
+}
+
+.paper ul{
+  padding-left: 0;
+}
+
+.paper ul li {
+font-size: clamp(11px, .8cqw, 16px)
+}
+.paper ul li em a{
+  color: var(--color-secondary)
+}
+
+#initiatives button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
 }
 
 #initiatives .accordion {
@@ -487,12 +509,7 @@ button {
 #initiatives .paper p {
   line-height: var(--line-height-normal)
 }
-#initiatives .paper em{
-text-decoration: underline;
-font-size: clamp(12px, 1cqw, 20px);
-display: inline-block;
-margin-bottom: var(--space-2);
-}
+
 
 @keyframes move {
   0% {
