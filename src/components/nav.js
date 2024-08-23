@@ -127,7 +127,7 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li style={navItemStyles}>
-                  <Link style={navLinkStyles} to={`/pubby`}>
+                  <Link style={navLinkStyles} to={`/publications`}>
                     Publications
                   </Link>
                 </li>
@@ -137,8 +137,8 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li style={navItemStyles}>
-                  <Link style={navLinkStyles} to={`/workshops`}>
-                    Workshops/Conferences
+                  <Link style={navLinkStyles} to={`/events`}>
+                    Events
                   </Link>
                 </li>
                 <li style={navItemStyles}>

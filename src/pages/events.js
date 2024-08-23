@@ -9,7 +9,7 @@ import Trianges from "../images/triangles.svg";
 import icssi from "../images/icssi.png"
 import mcsscw from "../images/mcsscw.png"
 
-const workshops = [
+const events = [
     
         {
           title: "8th International Conference on Computational Social Science (IC2S2)",
@@ -34,7 +34,7 @@ const workshops = [
       
 ];
 
-const Workshops = () => (
+const Events = () => (
   <Layout>
     <Nav />
 
@@ -56,7 +56,7 @@ const Workshops = () => (
     </Container>
     <Container fluid id="workshops">
       <Container>
-      {workshops.map((work) => {
+      {events.map((work) => {
             return (
         <Row>
           
@@ -83,4 +83,4 @@ const Workshops = () => (
 
 export const Head = () => <Seo title="Page two" />;
 
-export default Workshops;
+export default Events;
