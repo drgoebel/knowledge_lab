@@ -25,42 +25,6 @@ import Complexity from "../images/complexity.webp";
 import AniNav from "../components/animatedNav";
 
 
-// const samplePageLinks = [
-//   {
-//     text: "Page 2",
-//     url: "page-2",
-//     badge: false,
-//     description:
-//       "A simple example of linking to another page within a Gatsby site",
-//   },
-//   { text: "TypeScript", url: "using-typescript" },
-//   { text: "Server Side Rendering", url: "using-ssr" },
-//   { text: "Deferred Static Generation", url: "using-dsg" },
-// ]
-
-// const moreLinks = [
-//   { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-//   {
-//     text: "Documentation",
-//     url: "https://gatsbyjs.com/docs/",
-//   },
-//   {
-//     text: "Starters",
-//     url: "https://gatsbyjs.com/starters/",
-//   },
-//   {
-//     text: "Showcase",
-//     url: "https://gatsbyjs.com/showcase/",
-//   },
-//   {
-//     text: "Contributing",
-//     url: "https://www.gatsbyjs.com/contributing/",
-//   },
-//   { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-// ]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`;
-
 const IndexPage = () => {
   const researchStyle = {
     backgroundImage: `url(${Rings}), linear-gradient(-22deg, #B9529F  -10%, #B9529F 32%,  #3953A4 100%)`,
@@ -79,87 +43,6 @@ const IndexPage = () => {
     zIndex: 2,
   };
 
-  const links = [
-    {
-      text: "Conferences/Workshops",
-      url: "conferences-workshops",
-      color: "red",
-      // description:
-      //   "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    },
-    {
-      text: "Research",
-      url: "/research",
-      color: "yellow",
-      // description:
-      //   "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-    },
-    {
-      text: "Careers",
-      url: "/careers",
-      color: "purple",
-      // description:
-      //   "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    },
-    {
-      text: "Give",
-      url: "/give",
-      color: "blue",
-      // description:
-      //   "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    },
-    {
-      text: "About",
-      url: "/about",
-      color: "green",
-      // description:
-      //   "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    },
-    {
-      text: "Team",
-      url: "/team",
-      color: "orange",
-      // description:
-      //   "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    },
-    {
-      text: "News/Events",
-      url: "/news-events",
-      color: "olive",
-      // description:
-      //   "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    },
-    {
-      // text: "Knowledge Lab",
-      url: "/",
-      color: "sizer",
-      description: "Knowledge Lab",
-    },
-  ];
-
-  const [hovering, setHovering] = useState(false);
-  const [reverse, setReverse] = useState(false);
-  const [initiateRemoved, setInitiateRemoved] = useState(false);
-
-  useEffect(() => {
-    if (reverse) {
-      const swatch = document.querySelector(".olive");
-      // Force reflow to restart the transition
-      // void swatch.offsetWidth;
-      // swatch.classList.remove('reverse');
-      setReverse(false); // Reset reverse state after forcing reflow
-    }
-  }, [reverse]);
-
-  const handleMouseEnter = () => {
-    setHovering(true);
-    setInitiateRemoved(true); // Remove the "initiate" class on mouse enter
-  };
-
-  const handleMouseLeave = () => {
-    setHovering(false);
-    setReverse(true);
-  };
 
   return (
     <>
@@ -173,7 +56,7 @@ const IndexPage = () => {
               src="../images/klab-logo.svg"
               loading="eager"
               quality={100}
-              formats={["auto", "webp", "avif"]}
+              formats={["auto", "webp"]}
               alt="Knowledge Lab"
               placeholder="blurred"
               layout="fullWidth"
@@ -185,7 +68,7 @@ const IndexPage = () => {
                 display: "block",
                 color: "white",
                 backgroundColor: "white",
-                width: "25%",
+                width: "50%",
                 zIndex: "100",
                 padding: "0",
               }}
@@ -211,17 +94,17 @@ const IndexPage = () => {
             </Col>
           </Row>
           <Row>
-            <Col xs={3} style={featureStyle}>
+            <Col xs={6} md={3} style={featureStyle}>
               <img src="https://placeholder.com/340x200" />
               <h4>Tile of Initiative</h4>
               <p>Small Text on initiative</p>
             </Col>
-            <Col xs={3} style={featureStyle}>
+            <Col xs={6} md={3} style={featureStyle}>
               <img src="https://placeholder.com/340x200" />
               <h4>Tile of Initiative</h4>
               <p>Small Text on initiative</p>
             </Col>
-            <Col xs={3} style={featureStyle}>
+            <Col xs={6} md={3} style={featureStyle}>
               <img src="https://placeholder.com/340x200" />
               <h4>Tile of Initiative</h4>
               <p>Small Text on initiative</p>
@@ -233,12 +116,12 @@ const IndexPage = () => {
               <h4>Tile of Initiative</h4>
               <p>Small Text on initiative</p>
             </Col>
-            <Col xs={3} style={featureStyle}>
+            <Col xs={6} md={3} style={featureStyle}>
               <img src="https://placeholder.com/340x200" />
               <h4>Tile of Initiative</h4>
               <p>Small Text on initiative</p>
             </Col>
-            <Col xs={3} style={featureStyle}>
+            <Col xs={6} md={3} style={featureStyle}>
               <img src="https://placeholder.com/340x200" />
               <h4>Tile of Initiative</h4>
               <p>Small Text on initiative</p>
@@ -247,24 +130,30 @@ const IndexPage = () => {
         </Container>
         <Container id="numbers">
           <Row>
-            <Col xs={5}>
+            <Col xs={6} md={3}>
               <h2>$20M</h2>
               <p>
                 Knowledge Lab was recently awarded $20 million by NSF Assessing
                 and Predicting Technology Outcomes (APTO) to further our work
               </p>
             </Col>
-            <Col xs={{offset: 1, span: 5}}>
+            <Col xs={6} md={3}>
               <h2>100+</h2>
               <p>
                 To date, Knowlege Lab has published over 50 papers in various
                 publications
               </p>
             </Col>
-            <Col xs={5}>
+            <Col xs={6} md={3}>
               <h2>10,000+</h2>
               <p>
-              Citations to Knowledge Lab publications
+              To date, more than 10k citations have been made to Knowledge Lab publications
+              </p>
+            </Col>
+            <Col xs={6} md={3}>
+              <h2>20+</h2>
+              <p>
+              More than 20 research affilaties contribute directly to the research conducted at Knowledge Lab
               </p>
             </Col>
           </Row>
@@ -301,32 +190,32 @@ const IndexPage = () => {
             </Col>
           </Row>
           <Row className="justify-content-center">
-          <Col xs={3}>
+          <Col xs={6} md={3}>
               <img src={UsScience} alt="US Science Foundation" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Nih} alt="National Insitute of Health" />
             </Col>
             
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Afosr} alt="Air Force Office of Scientific Research" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Darpa} alt="DARPA" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Novo} alt="Novo Nordisk Foundation" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Templeton} alt="John Templeton Foundation" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Sloan} alt="Alfred P. Sloan Foundation" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Microsoft} alt="Microsoft" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Meta} alt="Meta" />
             </Col>
           </Row>
@@ -340,19 +229,19 @@ const IndexPage = () => {
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Dsi} alt="Data Science Institute" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Cfaai} alt="Center for Applied AI" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={SantaFe} alt="Santa Fe Institute" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Complexity} alt="Complexity" />
             </Col>
-            <Col xs={3}>
+            <Col xs={6} md={3}>
               <img src={Computational} alt="UChicago Computational Social Science" />
             </Col>
             

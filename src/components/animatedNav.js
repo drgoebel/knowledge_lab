@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
-import animationData from "../json/klabnav-alt1.json";
+import animationData from "../json/rubber.json";
 
 const AniNav = () => {
   const animationContainer = useRef(null);
@@ -30,14 +30,13 @@ const AniNav = () => {
         path.addEventListener("click", () => {
           // Create a mapping of data attribute values to their corresponding URLs
           const urlMap = {
-            "value-212": "/join",
-            "value-190": "/team",
-            "value-147": "/initiatives",
-            "value-143": "/publications",
-            "value-121": "/news",
-            "value-98": "/give",
-            "value-56": "/workshops",
-            "value-32": "/about",
+            "value-30": "/join",
+            "value-123": "/team",
+            "value-55": "/initiatives",
+            "value-60": "/publications",
+            "value-87": "/news",
+            "value-100": "/give",
+            "value-114": "/events",
           };
 
           // Get the data attribute value
@@ -61,7 +60,7 @@ const AniNav = () => {
         // Move the playhead to the 1-second mark and start looping from there
         // Calculate the frame range for looping
         const totalFrames = anim.totalFrames;
-        const oneSecondFrame = anim.frameRate * .9; // 1 second converted to frame number
+        const oneSecondFrame = anim.frameRate * 1; // 1 second converted to frame number
 
         // Play from 1-second mark to the end, looping
         anim.playSegments([oneSecondFrame, totalFrames], true);

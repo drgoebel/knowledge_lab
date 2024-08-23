@@ -644,7 +644,7 @@ margin-bottom: var(--space-2);
   height: 100%;
   width: 100vw;
   top: 0;
-  background: linear-gradient(176deg, #ED2024 0%, #3953A4 50%, #b9529e 100%);
+  background: linear-gradient(176deg, #D4605D 0%, #4f1e40 50%, #5e77c3 100%);
   background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0);
   z-index: -2;
@@ -854,6 +854,7 @@ margin-bottom: var(--space-2);
 }
 #publications .document-icon {
   width: 80%;
+  max-width: 70px;
   height: fit-content;
   color: var(--color-quadrary);
   align-self: flex-start;
