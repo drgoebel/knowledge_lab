@@ -8,56 +8,51 @@ import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileLines, faCaretRight } from "@fortawesome/free-solid-svg-icons";
-import data from "../json/publications.json"; 
-import Nature1 from "../images/nature-small-teams.png"
-import Nature2 from "../images/nature-dead.png"
-import Nature4 from "../images/nature-4.webp"
-import Pnas1 from "../images/pnas-1.webp"
-import Pnas2 from "../images/pnas-2.webp"
+import data from "../json/publications.json";
+import Nature1 from "../images/nature-small-teams.png";
+import Nature2 from "../images/nature-dead.png";
+import Nature4 from "../images/nature-4.webp";
+import Pnas1 from "../images/pnas-1.webp";
+import Pnas2 from "../images/pnas-2.webp";
 
 const features = [
-    {
-        title:
-          "Onsite teams conceive and remote teams execute ideas.",
-        link: "https://www.nature.com/articles/s41586-019-0941-9",
-        "author(s)": "Lingfei Wu, Dashun Wang, and James A. Evans",
-        publication: "Nature 566, no. 7744 (2019): 378-382",
-        image: Nature4
-      },
+  {
+    title: "Onsite teams conceive and remote teams execute ideas.",
+    link: "https://www.nature.com/articles/s41586-019-0941-9",
+    "author(s)": "Lingfei Wu, Dashun Wang, and James A. Evans",
+    publication: "Nature 566, no. 7744 (2019): 378-382",
+    image: Nature4,
+  },
 
-    {
-      title:
-        "Large teams develop and small teams disrupt science and technology.",
-      link: "https://www.nature.com/articles/s41586-019-0941-9",
-      "author(s)": "Lingfei Wu, Dashun Wang, and James A. Evans",
-      publication: "Nature 566, no. 7744 (2019): 378-382",
-      image: Nature1
-    },
-    {
-      title:
-        "Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy.",
-      link: "https://www.pnas.org/content/115/50/12630",
-      "author(s)":
-        "Katy Börner, Olga Scrivner, Mike Gallant, Shutian Ma, Xiaozhong Liu, Keith Chewning, Lingfei Wu, and James A. Evans",
-      publication:
-        "Proceedings of the National Academy of Sciences 115, no. 50 (2018): 12630-12637",
-        image: Pnas1  
-    },
-    {
-      title:
-        "Flat teams drive scientific innovation",
-      link: "https://www.pnas.org/eprint/5SCQ7PK5J3MVUWRWWXX2/full",
-      "author(s)":
-        "Fengli Xu, Lingfei Wu, and James Evans",
-      publication:
-        "Proceedings of the National Academy of Sciences.",
-        image: Pnas2  
-    },
-    
-  ];
+  {
+    title:
+      "Large teams develop and small teams disrupt science and technology.",
+    link: "https://www.nature.com/articles/s41586-019-0941-9",
+    "author(s)": "Lingfei Wu, Dashun Wang, and James A. Evans",
+    publication: "Nature 566, no. 7744 (2019): 378-382",
+    image: Nature1,
+  },
+  {
+    title:
+      "Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy.",
+    link: "https://www.pnas.org/content/115/50/12630",
+    "author(s)":
+      "Katy Börner, Olga Scrivner, Mike Gallant, Shutian Ma, Xiaozhong Liu, Keith Chewning, Lingfei Wu, and James A. Evans",
+    publication:
+      "Proceedings of the National Academy of Sciences 115, no. 50 (2018): 12630-12637",
+    image: Pnas1,
+  },
+  {
+    title: "Flat teams drive scientific innovation",
+    link: "https://www.pnas.org/eprint/5SCQ7PK5J3MVUWRWWXX2/full",
+    "author(s)": "Fengli Xu, Lingfei Wu, and James Evans",
+    publication: "Proceedings of the National Academy of Sciences.",
+    image: Pnas2,
+  },
+];
 
 const Pubby = () => {
-  const [selectedGroups, setSelectedGroups] = useState([]);
+  const [selectedGroup, setSelectedGroup] = useState(null);
 
   const groupEntries = () => {
     const groups = {};
@@ -75,7 +70,7 @@ const Pubby = () => {
       H: "Human Language",
       L: "Deep Learning",
       SS: "Computational Social Science",
-      PP: "Political Polarization"
+      PP: "Political Polarization",
     };
 
     data.forEach((item) => {
@@ -96,17 +91,11 @@ const Pubby = () => {
   const groupedEntries = groupEntries();
 
   const handleButtonClick = (group) => {
-    setSelectedGroups((prevSelectedGroups) => {
-      if (prevSelectedGroups.includes(group)) {
-        return prevSelectedGroups.filter((g) => g !== group);
-      } else {
-        return [...prevSelectedGroups, group];
-      }
-    });
+    setSelectedGroup(group === "all" ? null : group);
   };
 
   const isGroupSelected = (groupKey) =>
-    selectedGroups.length === 0 || selectedGroups.includes(groupKey);
+    selectedGroup === null || selectedGroup === groupKey;
 
   return (
     <Layout>
@@ -130,7 +119,7 @@ const Pubby = () => {
               <h1>Publications</h1>
             </Col>
             <Col sm={3} className="d-none d-sm-block">
-              <img src={Trianges} alt="connected triangle shapes" />
+              {/* <img src={Trianges} alt="connected triangle shapes" /> */}
             </Col>
           </Row>
         </Container>
@@ -138,65 +127,162 @@ const Pubby = () => {
 
       <Container fluid id="publications">
         <Container>
-        <Row id="feature-pubs">
-              {features.map((pub) => {
-                return (
-                  <>
-                    <Col xs={3}>
-                      <Col xs={12} className="d-none d-sm-block">
-                      <a href={pub.link} target="_blank"><img src={pub.image}/></a>
-                      </Col>
-                      <Col xs={12}>
-                        <h3>
-                          <a href={pub.link} target="_blank">
-                            {pub.title}
-                          </a>
-                        </h3>
-                        <p>
-                          <strong>Authors:</strong> {pub["author(s)"]}
-                        </p>
-                        <p>
-                          <strong>Publication: </strong>
-                          {pub.publication}
-                        </p>
-                        <p>
-                          <a href={pub.link} target="_blank">
-                            Read Publication
-                            <FontAwesomeIcon icon={faCaretRight} />
-                          </a>
-                        </p>
-                      </Col>
+          <Row id="feature-pubs">
+            {features.map((pub) => {
+              return (
+                <>
+                  <Col xs={3}>
+                    <Col xs={12} className="d-none d-sm-block">
+                      <a href={pub.link} target="_blank">
+                        <img src={pub.image} />
+                      </a>
                     </Col>
-                  </>
-                );
-              })}
-            </Row>
+                    <Col xs={12}>
+                      <h3>
+                        <a href={pub.link} target="_blank">
+                          {pub.title}
+                        </a>
+                      </h3>
+                      <p>
+                       {pub["author(s)"]}
+                      </p>
+                      <p>
+                       
+                        {pub.publication}
+                      </p>
+                      <p>
+                        <a href={pub.link} target="_blank">
+                          Read Publication
+                          <FontAwesomeIcon icon={faCaretRight} />
+                        </a>
+                      </p>
+                    </Col>
+                  </Col>
+                </>
+              );
+            })}
+          </Row>
 
+          <Row>
+            <h3>Additional Publications</h3>
+          </Row>
 
           {/* Buttons for group selection */}
-          <div style={{ marginBottom: "20px" }}>
-            {Object.keys(groupedEntries).map((groupKey) => (
-              <Button
-                key={groupKey}
-                variant={selectedGroups.includes(groupKey) ? "primary" : "outline-primary"}
-                onClick={() => handleButtonClick(groupKey)}
-                style={{ marginRight: "10px", marginBottom: "10px" }}
-              >
-                {groupKey}
-              </Button>
-            ))}
-          </div>
+
+          <Row id="pub-filters" className="justify-content-center">
+            <Col xs={12} sm={{span: 10, offset: 1}} md={{ span: 8, offset: 2 }}>
+              {/* First Row: 3 Buttons */}
+              <Row className="justify-content-center">
+                {Object.keys(groupedEntries)
+                  .slice(0, 4)
+                  .map((groupKey) => (
+                    <Col xs={4} className="single-button" key={groupKey}>
+                      <Button
+                        variant={
+                          selectedGroup === groupKey
+                            ? "primary"
+                            : "outline-primary"
+                        }
+                        onClick={() => handleButtonClick(groupKey)}
+                        style={{ marginRight: "10px", marginBottom: "10px" }}
+                      >
+                        {groupKey}
+                      </Button>
+                    </Col>
+                  ))}
+              </Row>
+
+              {/* Second Row: 4 Buttons */}
+              <Row className="justify-content-center">
+                {Object.keys(groupedEntries)
+                  .slice(4, 9)
+                  .map((groupKey) => (
+                    <Col xs={3} className="single-button" key={groupKey}>
+                      <Button
+                        variant={
+                          selectedGroup === groupKey
+                            ? "primary"
+                            : "outline-primary"
+                        }
+                        onClick={() => handleButtonClick(groupKey)}
+                        style={{ marginRight: "10px", marginBottom: "10px" }}
+                      >
+                        {groupKey}
+                      </Button>
+                    </Col>
+                  ))}
+              </Row>
+
+              {/* Third Row: 4 Buttons */}
+              <Row className="justify-content-center">
+                {Object.keys(groupedEntries)
+                  .slice(9, 14)
+                  .map((groupKey) => (
+                    <Col xs={3} className="single-button" key={groupKey}>
+                      <Button
+                        variant={
+                          selectedGroup === groupKey
+                            ? "primary"
+                            : "outline-primary"
+                        }
+                        onClick={() => handleButtonClick(groupKey)}
+                        style={{ marginRight: "10px", marginBottom: "10px" }}
+                      >
+                        {groupKey}
+                      </Button>
+                    </Col>
+                  ))}
+              </Row>
+
+              {/* Fourth Row: 3 Buttons */}
+              {/* <Row className="justify-content-center">
+                {Object.keys(groupedEntries)
+                  .slice(14, 19)
+                  .map((groupKey) => (
+                    <Col xs={4} className="single-button" key={groupKey}>
+                      <Button
+                        variant={
+                          selectedGroup === groupKey
+                            ? "primary"
+                            : "outline-primary"
+                        }
+                        onClick={() => handleButtonClick(groupKey)}
+                        style={{ marginRight: "10px", marginBottom: "10px" }}
+                      >
+                        {groupKey}
+                      </Button>
+                    </Col>
+                  ))}
+              </Row> */}
+
+              {/* Show All button */}
+              {/* <Row className="justify-content-center">
+                <Col xs={4} className="single-button">
+                  <Button
+                    key="all"
+                    variant={
+                      selectedGroup === null ? "primary" : "outline-primary"
+                    }
+                    onClick={() => handleButtonClick("all")}
+                    style={{ marginRight: "10px", marginBottom: "10px" }}
+                  >
+                    Show All
+                  </Button>
+                </Col>
+              </Row> */}
+            </Col>
+          </Row>
 
           {/* Displaying the filtered entries */}
           {Object.keys(groupedEntries)
             .filter((groupKey) => isGroupSelected(groupKey))
             .map((groupKey) => (
-              <Row key={groupKey}>
-                <h2>{groupKey}</h2>
+              <Row id="pub-group" key={groupKey}>
+                <h3>{groupKey}</h3>
                 {groupedEntries[groupKey].map((entry, index) => (
-                  <Col xs={6} sm={3} key={index}>
+                  <Col xs={12} sm={9} key={index}>
                     <Row>
-                      <Col xs={2} sm={12}>
+                      {/* <Col xs={2} sm={12}>
                       <a
                           href={entry.link}
                           target="_blank"
@@ -205,24 +291,23 @@ const Pubby = () => {
                           icon={faFileLines}
                           className="document-icon"
                         /></a>
-                      </Col>
-                      <Col xs={9} sm={12}>
-                      <a
-                          href={entry.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        ><strong>{entry.title}</strong></a><br />
-                       {entry.authors}<br />
-                       {entry.outlet || "No outlet"}{" "}
-                        <br />
-
-                        {/* <a
+                      </Col> */}
+                      <Col xs={9} sm={9}>
+                        <h5><a
                           href={entry.link}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          Read More <FontAwesomeIcon icon={faCaretRight} />
-                        </a> */}
+                          <strong>{entry.title}</strong>
+                        </a></h5>
+                       
+                       <small>{entry.authors}</small>
+                        <br />
+                        <a
+                          href={entry.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >{entry.outlet || "No outlet"} <FontAwesomeIcon icon={faCaretRight} /></a> <br />
                       </Col>
                     </Row>
                   </Col>

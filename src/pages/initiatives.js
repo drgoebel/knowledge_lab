@@ -20,26 +20,27 @@ function CenteredModal(props) {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">{props.title}</Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">
+          {props.title}
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <h4>{props.shorter}</h4>
         <p>{props.description}</p>
-        <div className="paper">{props.papers}</div>
         <p>{props.grants}</p>
         <p>{props.partners}</p>
         <p>{props.talks}</p>
+        <div className="paper">{props.papers}</div>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+        <Button className="init-btn" onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
   );
 }
 
 const Initiatives = () => {
-
-    const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow, setModalShow] = React.useState(false);
   const [openModalIndex, setOpenModalIndex] = useState(null);
   return (
     <Layout>
@@ -68,129 +69,145 @@ const Initiatives = () => {
       <Container fluid id="initiatives">
         <Container>
           <Row>
-          
-              {initiatives.map((initiative, index) => (
-                <Col xs={12} sm={6} md={3} key={index} style={{ marginBottom: "30px" }}>
-                     <img src={initiative.image} />
-                  {/* Initiative Name */}
-                  {initiative.name && <h2>{initiative.name}</h2>}
+            {initiatives.map((initiative, index) => (
+              <Col
+                xs={12}
+                sm={6}
+                md={3}
+                key={index}
+                style={{ marginBottom: "30px" }}
+              >
+                 <a
+                  variant="primary"
+                  onClick={() => setOpenModalIndex(`L` + index)}
+                > <img src={initiative.image} /></a>
+                {/* Initiative Name */}
+                <a
+                  variant="primary"
+                  onClick={() => setOpenModalIndex(`L` + index)}
+                > 
+                {initiative.name && <h2 dangerouslySetInnerHTML={{ __html: initiative.name}} />}</a>
 
-                  {/* Tagline */}
-                  {initiative.tagline && (
-                    <p>
-                      <strong>Tagline: </strong>
-                      {initiative.tagline}
-                    </p>
-                  )}
+                {/* Tagline */}
+                {initiative.tagline && (
+                  <p><a
+                  variant="primary"
+                  onClick={() => setOpenModalIndex(`L` + index)}
+                > 
+                
+                    {initiative.tagline}</a>
+                  </p>
+                )}
 
-                  <Button
-                    variant="primary"
-                    onClick={() => setOpenModalIndex(`L` + index)}
-                  >
-                    Read More <FontAwesomeIcon icon={faCaretRight} />
-                  </Button>
+                {/* <a
+                  variant="primary"
+                  onClick={() => setOpenModalIndex(`L` + index)}
+                >
+                  Read More <FontAwesomeIcon icon={faCaretRight} />
+                </a> */}
 
-                  <CenteredModal
-                    title={initiative.name}
-                    show={openModalIndex === `L` + index}
-                    onHide={() => setOpenModalIndex(null)}
-                    shorter={
-                      initiative.shorter_tagline && (
-                        <p>
-                          <strong>
-                          {initiative.shorter_tagline}</strong>
-                        </p>
-                      )
-                    }
-                    description={
-                      initiative.description && (
-                        <p>
-                          <strong>Description: </strong>
-                          {initiative.description}
-                        </p>
-                      )
-                    }
-                    partners={
-                      initiative.partners && (
-                        <p>
-                          <strong>Partners: </strong>
-                          {initiative.partners.join(", ")}
-                        </p>
-                      )
-                    }
-                    grants={
-                      initiative.grants && (
-                        <p>
-                          <strong>Grants: </strong>
-                          {initiative.grants.join(", ")}
-                        </p>
-                      )
-                    }
-                    papers={
-                      initiative.papers && (
-                        <>
-                          <strong>Papers:</strong>
-                          <ul>
-                            {initiative.papers.map((paper, idx) => (
-                              <li key={idx}>
-                                {/* If paper is an object and has a URL, render as a hyperlink */}
-                                {typeof paper === "object" && paper.url ? (
-                                  <em><a
+                <CenteredModal
+                  title={initiative.name}
+                  show={openModalIndex === `L` + index}
+                  onHide={() => setOpenModalIndex(null)}
+                  shorter={
+                    initiative.shorter_tagline && (
+                      <p>
+                        <strong>{initiative.shorter_tagline}</strong>
+                      </p>
+                    )
+                  }
+                  description={
+                    initiative.description && (
+                      <p>
+                        
+                        {initiative.description}
+                      </p>
+                    )
+                  }
+                  partners={
+                    initiative.partners && (
+                      <p>
+                        <strong>Partners: </strong>
+                        {initiative.partners.join(", ")}
+                      </p>
+                    )
+                  }
+                  grants={
+                    initiative.grants && (
+                      <p>
+                        <strong>Founders: </strong>
+                        {initiative.grants.join(", ")}
+                      </p>
+                    )
+                  }
+                  papers={
+                    initiative.papers && (
+                      <>
+                       <p> <strong>Papers: </strong></p>
+                        <ul>
+                          {initiative.papers.map((paper, idx) => (
+                            <li key={idx}>
+                              {/* If paper is an object and has a URL, render as a hyperlink */}
+                              {typeof paper === "object" && paper.url ? (
+                                <em>
+                                  <a
                                     href={paper.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
                                     {paper.title}
-                                  </a></em>
-                                ) : // Otherwise, render as plain text
-                                typeof paper === "object" ? (
-                                  paper.title
-                                ) : (
-                                  paper
-                                )}<br />
-                                {paper.journal}<br /> {paper.year}{' '}  
-                                {paper.volume && `Vol: ${paper.volume}`}{' '} 
-                                {paper.issue && `Issue: ${paper.issue}`}{' '}  
-                                {paper.pages && `Paper: ${paper.pages}`}{' '} 
-                                
-                              </li>
-                            ))}
-                          </ul>
-                        </>
-                      )
-                    }
-                    talks={
-                      initiative.talks && (
-                        <div>
-                          <strong>Talks:</strong>
-                          <ul>
-                            {initiative.talks.map((talk, idx) => (
-                              <li key={idx}>
-                                <a
-                                  href={talk.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  {talk.title}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )
-                    }
-                    press={
-                      initiative.press && (
-                        <p>
-                          <strong>Press: </strong>
-                          {initiative.press}
-                        </p>
-                      )
-                    }
-                  />
-                </Col>
-              ))}
-            
+                                  </a>
+                                </em>
+                              ) : // Otherwise, render as plain text
+                              typeof paper === "object" ? (
+                                paper.title
+                              ) : (
+                                paper
+                              )}
+                              <br />
+                              {paper.journal}
+                              <br /> {paper.year}{" "}
+                              {paper.volume && `Vol: ${paper.volume}`}{" "}
+                              {paper.issue && `Issue: ${paper.issue}`}{" "}
+                              {paper.pages && `Paper: ${paper.pages}`}{" "}
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )
+                  }
+                  talks={
+                    initiative.talks && (
+                      <div>
+                        <strong>Talks:</strong>
+                        <ul>
+                          {initiative.talks.map((talk, idx) => (
+                            <li key={idx}>
+                              <a
+                                href={talk.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {talk.title}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )
+                  }
+                  press={
+                    initiative.press && (
+                      <p>
+                        <strong>Press: </strong>
+                        {initiative.press}
+                      </p>
+                    )
+                  }
+                />
+              </Col>
+            ))}
           </Row>
         </Container>
       </Container>

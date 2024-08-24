@@ -70,7 +70,6 @@ const newsItems = [
 const News = () => (
   <Layout>
     <Nav />
-   
 
     <Container fluid id="news-header">
       <div className="background"></div>
@@ -78,9 +77,9 @@ const News = () => (
 
         <Row>
           <Col xs={12} sm={9}>
-            <h1>Recent News on Knowledge Lab</h1>
+            <h1>Knowledge Lab News</h1>
             <p>
-              Knowledge Litem.harnesses the power of artificial intelligence to
+              Knowledge Lab harnesses the power of artificial intelligence to
               unravel complex scientific and societal problems, bridging the gap
               between data-driven insights and real-world applications. This
               innovative group collitem.rates with interdisciplinary experts to

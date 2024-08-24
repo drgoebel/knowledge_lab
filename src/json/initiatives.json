@@ -28,9 +28,8 @@
             "year": 2023,
             "note": "Launch events at Congress and OSTP in Washington D.C. on October 24",
             "url": "https://www.ostp.gov/reports/Securing_Americas_Future.pdf"
-          },
-          "China teams with Renli & Chris (Pre-Preprint)",
-          "International innovation with Jeff (Pre-Preprint)"
+          }
+
         ]
       },
       {
@@ -205,7 +204,7 @@
         ]
       },
       {
-        "name": "Science2",
+        "name": "Science<sup>2</sup>",
         "image": "/images/science2.webp",
         "tagline": "How can science about the scientific process improve the rate, character, and capacity of knowledge about the world?",
         "shorter_tagline": "What conditions enable science to flourish?",

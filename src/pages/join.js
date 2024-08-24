@@ -79,7 +79,7 @@ const SecondPage = () => (
             </p>
           </Col>
           <Col sm={3} className="d-none d-sm-block">
-            <img src={Trianges} alt="connected triagle shapes" />
+            <div className="apply-now"><a href="#">Apply to Knowledge Lab</a></div>
           </Col>
         </Row>
       </Container>
