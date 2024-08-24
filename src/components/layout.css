@@ -982,7 +982,7 @@ a .give-div small {
 .give-div h3, .give-div span {
  color: white;
  padding: 0;
- margin: 0;
+ margin: var(--space-1);
 }
 
 nav ul li:hover {
