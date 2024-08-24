@@ -23,6 +23,12 @@ import SantaFe from "../images/santafe.png"
 import Computational from "../images/uchicago-computational.webp";
 import Complexity from "../images/complexity.webp";
 import AniNav from "../components/animatedNav";
+import OpenPhil from "../images/open-phil.webp";
+import Mellon from "../images/mellon.webp"
+import Minerva from "../images/minerva.webp"
+import Allen from "../images/allen.webp"
+import Planck from "../images/planck.webp"
+import Sicss from "../images/sicss.webp"
 
 
 const IndexPage = () => {
@@ -151,9 +157,9 @@ const IndexPage = () => {
               </p>
             </Col>
             <Col xs={6} md={3}>
-              <h2>20+</h2>
+              <h2>50+</h2>
               <p>
-              More than 20 research affilaties contribute directly to the research conducted at Knowledge Lab
+              More than 50 research affilaties contribute directly to the research conducted at Knowledge Lab
               </p>
             </Col>
           </Row>
@@ -218,6 +224,16 @@ const IndexPage = () => {
             <Col xs={6} md={3}>
               <img src={Meta} alt="Meta" />
             </Col>
+            <Col xs={6} md={3}>
+              <img src={OpenPhil} alt="Open Philanthropy" />
+            </Col>
+            <Col xs={6} md={3}>
+              <img src={Mellon} alt="Mellon Foundation" />
+            </Col>
+            <Col xs={6} md={3}>
+              <img src={Minerva} alt="Minerva Research Institute" />
+            </Col>
+            
           </Row>
           <Row>
             <Col xs={12}>
@@ -243,6 +259,15 @@ const IndexPage = () => {
             </Col>
             <Col xs={6} md={3}>
               <img src={Computational} alt="UChicago Computational Social Science" />
+            </Col>
+            <Col xs={6} md={3}>
+              <img src={Allen} alt="Allen AI Institute" />
+            </Col>
+            <Col xs={6} md={3}>
+              <img src={Planck} alt="Max Planck Institute" />
+            </Col>
+            <Col xs={6} md={3}>
+              <img src={Sicss} alt="Summer Institute of Computational Social Science" />
             </Col>
             
             

@@ -62,8 +62,10 @@ const Give = () => (
               community.
             </p>
           </Col>
-          <Col sm={3} className="d-none d-sm-block">
-            <img src={Trianges} alt="connected triagle shapes" />
+          <Col sm={3}>
+            <a href="https://giving.uchicago.edu/site/Donation2" target="_blank"><div className="give-div"><span>Give to</span><h3>Knowledge Lab</h3>
+            <small><strong>School or Division</strong>: Social Sciences<br /><strong>Specific Fund</strong>: Knowledge Lab</small></div></a>
+            
           </Col>
         </Row>
       </Container>

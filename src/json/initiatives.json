@@ -207,7 +207,7 @@
       {
         "name": "Science2",
         "image": "/images/science2.webp",
-        "tagline": "How can science about the scientific process improve the rate character and capacity of knowledge about the world?",
+        "tagline": "How can science about the scientific process improve the rate, character, and capacity of knowledge about the world?",
         "shorter_tagline": "What conditions enable science to flourish?",
         "description": "Science is a global social process of knowledge generation accumulation and synthesis. Through a complex interplay of researchers laboratories institutions journals governments and funding agencies discovery is born and ideas diffuse. Research at Knowledge Lab advances the Science of Science by analyzing networks of collaboration citation and concept propagation as they evolve across space and time. Our work aims to identify the conditions under which science thrives or flounders to distinguish the research teams that disrupt science from those that advance it incrementally and to predict which ideas will revolutionize and which will perish. These studies provide the necessary insight for building a better science one that cultivates creative exploration generates fruitful innovation and steers us in the direction of knowledge relevant to humanity’s greatest challenges.",
         "grants": ["NSF", "AFOSR"],

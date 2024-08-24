@@ -212,17 +212,17 @@ const Pubby = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         ><strong>{entry.title}</strong></a><br />
-                        <strong>Author(s):</strong> {entry.authors}<br />
-                        <strong>Publication: </strong>{entry.outlet || "No outlet"}{" "}
+                       {entry.authors}<br />
+                       {entry.outlet || "No outlet"}{" "}
                         <br />
 
-                        <a
+                        {/* <a
                           href={entry.link}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           Read More <FontAwesomeIcon icon={faCaretRight} />
-                        </a>
+                        </a> */}
                       </Col>
                     </Row>
                   </Col>
