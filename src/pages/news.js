@@ -7,76 +7,113 @@ import Seo from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
-import Neural from "../images/neural.webp"
-import TedX from "../images/james-tedtx.webp"
-import Cutlure from "../images/culture-by-design.webp"
-import Complexity from "../images/complexity.webp"
-import IRIS from "../images/iris.webp"
-import Teams from "../images/teams.webp"
-import Wiki from "../images/wiki.webp"
+// import Neural from "../images/neural.webp"
+// import TedX from "../images/james-tedtx.webp"
+// import Cutlure from "../images/culture-by-design.webp"
+// import Complexity from "../images/complexity.webp"
+// import IRIS from "../images/iris.webp"
+// import Teams from "../images/teams.webp"
+// import Wiki from "../images/wiki.webp"
+import SmallerTeams from "../images/smallerteams.webp"
+import Doomed from "../images/doomed.webp"
+import TooBig from "../images/toobig.webp"
+import WSJ from "../images/wsj.webp"
+import GreatMinds from "../images/greatminds.webp"
+import BBC from "../images/bbc.webp"
+import FastCo from "../images/fastcompany.webp"
+import Wired from "../images/wired.webp"
+import HBR from "../images/hbr.webp"
+import Forbes2 from "../images/Forbes2.webp"
+import LeMonde from "../images/lamonde.webp"
+import DieZeit from "../images/diezeit.webp"
+import Nature from "../images/nature.webp"
+import Science from "../images/science.webp"
+import JoeRogan from "../images/joerogan.webp"
 
 
 const newsItems = [
-  {
-    title: "The case for alien AI | James Evans | TEDxChicago",
-    description: "James Evans asks a critical question as we ponder our AI-driven future: “What AI do we deserve?” He then takes us on a journey making the case that alien intelligence and thus alien AI that we grow and care for will be the most impactful on us as a human society.",
-    link: "https://youtu.be/87zET-4IQws",
-    image: TedX,
-    cta: "Watch Now"
-  },
-  {
-    title: "Culture by Design Podcast: Surfing the Boundaries of Order and Chaos with James Evans",
-    description: "This week on Culture by Design, Timothy R. Clark is joined by James Evans, Director of Knowledge Lab at the University of Chicago. They talk about how to activate diversity, how to harness collective intelligence, and the paradoxical interplay between innovation and execution.",
-    link: "https://open.spotify.com/episode/3PG6RFSjmyyNquiZYEeyS9",
-    image: Cutlure,
-    cta: "Listen Now"
-  },
-
-  {
-    title: "James Evans on Social Computing and Diversity by Design",
-    description: "Join Michael Garfield, the host of Complexity, the official podcast of the Santa Fe Institute for a conversation with Prof. James Evans about his new work in, and journal of, social computing — how AI transforms the practice of scientific study and the study of scientific practice; what his research reveals about the importance of diversity in team-building and innovation; and what it means to accept our place beside machines in the pursuit of not just novel scientific insight, but true wisdom.",
-    link: "https://complexity.simplecast.com/episodes/55?fbclid=IwAR3bM4LFqKWXbxn3S7R1cHvbi-dGNO_ctXswvD0OWalGnrgMSz6C8XzMd8s",
-    image: Complexity,
-    cta: "Listen Now"
-  },
-  {
-    title: "Knowledge Lab team wins the IRIS Researcher Award",
-    description: "Prof. James Evans (pictured on the right), postdoctoral scholar, Brendan Chambers (pictured on the left) and PhD student, Donghyun Kang (pictured in the center), were awarded the IRIS Researcher Award for their project, titled, “Impact of strategic funding on research type and content”.",
-    link: "https://www.knowledgelab.org/sample-page-2/knowledge-lab-team-wins-the-iris-researcher-award/",
-    image: IRIS,
-    cta: "Learn More"
-  },
-
-  {
-    title: "Analysis of Wikipedia finds politically polarized teams produce better work",
-    description: "Academic ecologies need a diverse set of research programs: programs that receive few citations, but publish important research with long-term effects; that publish anchoring paradigmatic work, or conversely, disruptive innovative work; programs driving interdisciplinary exchange. All of these qualities are important, even if sometimes at the cost of a lower H‐index or less immediate exposure. Simplified scalar measures fail to capture these multidimensional cultures of success.",
-    link: "https://www.knowledgelab.org/sample-page-2/analysis-of-wikipedia-finds-politically-polarized-teams-produce-better-work/",
-    image: Wiki,
-    cta: "Learn More"
-  },
-  {
-    title: "Bigger teams aren’t always better in science and tech",
-    description: "Communication and transportation technologies have facilitated the emergence of large and persistent teams in the development of science and technology. How does team size contstraint the search for ideas and impact the future? We analyzed teamwork from more than 65 million papers, patents and software products over 100 years ahd showed that small teams are more likely to disrupt existing scientific and technological paradigms, whereas large teams tend to develop them. We also showed that small teams tend to search out and build on older and less prevalent ideas, while larger teams tend to develop more popular, recent ideas.",
-    link: "https://news.uchicago.edu/story/bigger-teams-arent-always-better-science-and-tech",
-    image: Teams,
-    cta: "Learn More"
-  },
   
-
- 
- 
-
+    {
+        "title": "New Yorker",
+        "image": Doomed,
+        "url": "https://www.newyorker.com/magazine/2024/06/10/are-we-doomed-heres-how-to-think-about-it"
+    },
+    {
+        "title": "NYT",
+        "image": TooBig,
+        "url": "https://www.nytimes.com/2019/02/13/science/science-research-psychology.html"
+    },
+    {
+        "title": "Atlantic",
+        "image": SmallerTeams,
+        "url": "https://www.theatlantic.com/science/archive/2019/02/why-small-science-still-matters/582685/"
+    },
+    {
+        "title": "Wall Street Journal",
+        "image": WSJ,
+        "url": "https://www.wsj.com/articles/SB10001424052702304066504576341280447107102"
+    },
+    {
+        "title": "The Economist",
+        "image": GreatMinds,
+        "url": "https://www.economist.com/science-and-technology/2008/07/17/great-minds-think-too-much-alike"
+    },
+    {
+        "title": "BBC",
+        "image": BBC,
+        "url": "https://www.sciencefocus.com/news/algorithm-predict-future-crimes-90-accuracy-heres-why-creator-thinks-tech-wont-be-abused"
+    },
+    {
+        "title": "Fast Company",
+        "image": FastCo,
+        "url": "https://www.fastcompany.com/90451983/science-reveals-the-tipping-point-between-success-and-failure"
+    },
+    {
+        "title": "Wired",
+        "image": Wired,
+        "url": "https://www.wired.com/2008/07/is-the-internet/"
+    },
+    {
+        "title": "HBR",
+        "image": HBR,
+        "url": "https://hbr.org/2019/02/research-when-small-teams-are-better-than-big-ones"
+    },
+    {
+        "title": "Forbes",
+        "image": Forbes2,
+        "url": "https://www.forbes.com/sites/billfischer/2019/02/15/it-takes-more-than-members-to-make-a-team/?sh=2c3a41946016"
+    },
+    {
+        "title": "Le Monde",
+        "image": LeMonde,
+        "url": "https://www.lemonde.fr/sciences/article/2019/02/18/en-science-les-plus-petites-equipes-sont-les-plus-innovantes_5424938_1650684.html"
+    },
+    {
+        "title": "Der Zeit",
+        "image": DieZeit,
+        "url": "https://www.zeit.de/wissen/2014-02/wissenschaft-james-evans-forschung-computer"
+    },
+    {
+        "title": "Nature",
+        "image": Nature,
+        "url": "https://www.nature.com/articles/d41586-023-03596-0"
+    },
+    {
+        "title": "Science",
+        "image": Science,
+        "url": "https://www.science.org/content/article/larger-teams-worsen-academic-career-prospects"
+    },
+    {
+        "title": "The Joe Rogan Experience",
+        "image": JoeRogan,
+        "url": "https://drive.google.com/file/d/1lTfWSU7KUvQoTSMAO-4AGS7mdaxfUf51/view?usp=sharing"
+    }
 ];
 
 const News = () => (
   <Layout>
     <Nav />
-    <Container>
-          <Row>
-          <Scroll  />
-          </Row>
-        </Container>
-
+   
     <Container fluid id="news-header">
       <div className="background"></div>
       <Container>
@@ -104,6 +141,14 @@ const News = () => (
 
       </Container>
     </Container>
+
+    <Container fluid><Container >
+          <Row>
+          <Scroll  />
+          </Row>
+        </Container>
+        </Container>
+
    
     
    
@@ -113,20 +158,17 @@ const News = () => (
           {newsItems.map((item) => {
             return (
               <>
-              <Col sm={6} className="h-100">
+              <Col sm={3} className="h-100 news-item">
                 <Col sm={12} className="d-none d-sm-block morph">
-                  <img src={item.image} />
+                <a href={item.url} target="_blank" ><img src={item.image} /></a>
                   {/* <img src="https://placeholder.com/400x200" /> */}
                 </Col>
                 <Col xs={12}>
-                  <h2>{item.title}</h2>
-                  <h4>{item.tagLine}</h4>
-                  <p>{item.description}</p>
-                  
+                  <h3><a href={item.url} target="_blank" >{item.title}</a></h3>
+                
                 </Col>
-                <Link to={item.url} >
-                    <button>{item.cta}</button>
-                  </Link>
+                
+                   
                </Col>
               </>
             );

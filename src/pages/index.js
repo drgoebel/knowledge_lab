@@ -90,11 +90,11 @@ const IndexPage = () => {
           </Row>
         </Container>
 
-        <Container>
+        {/* <Container>
           <Row>
           <Scroll  />
           </Row>
-        </Container>
+        </Container> */}
 
 
        

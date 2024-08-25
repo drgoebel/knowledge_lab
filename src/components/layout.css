@@ -582,7 +582,7 @@ font-size: clamp(11px, .8cqw, 16px)
 }
 #careers-header .apply-now {
   width: 100%;
-
+  position: relative;
   border-radius: 50%;
   background-color: var(--color-klab-yellow);
   position: absolute;
@@ -611,6 +611,8 @@ font-size: clamp(11px, .8cqw, 16px)
   font-size: clamp(16px, 3cqw, 32px);
   text-align: center;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -1135,8 +1137,16 @@ font-size: clamp(11px, .8cqw, 16px)
 #news img {
   margin-bottom: var(--space-4);
 }
-#news .h-100 {
-  margin-bottom: var(--space-7);
+
+#news .news-item img {
+  margin-top: var(--space-7);
+  box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+  width: 66%;
+}
+#news .news-item h3 a{
+  color: var(--color-klab-blue);
+  text-decoration: none;
+  
 }
 
 
