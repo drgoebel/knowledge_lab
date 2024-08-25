@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import Scroll from "../components/scroll";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
 import Seo from "../components/seo";
@@ -70,12 +71,19 @@ const newsItems = [
 const News = () => (
   <Layout>
     <Nav />
+    <Container>
+          <Row>
+          <Scroll  />
+          </Row>
+        </Container>
 
     <Container fluid id="news-header">
       <div className="background"></div>
       <Container>
+      
 
         <Row>
+        
           <Col xs={12} sm={9}>
             <h1>Knowledge Lab News</h1>
             <p>
@@ -90,9 +98,15 @@ const News = () => (
           <Col sm={3} className="d-none d-sm-block">
             <img src={Trianges} alt="connected triagle shapes" />
           </Col>
+          
+          
         </Row>
+
       </Container>
     </Container>
+   
+    
+   
     <Container fluid id="news">
       <Container>
         <Row>
@@ -120,7 +134,9 @@ const News = () => (
         </Row>
       </Container>
     </Container>
+
   </Layout>
+  
 );
 
 export const Head = () => <Seo title="Page two" />;

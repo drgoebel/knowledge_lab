@@ -1,20 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
 import animationData from "../json/rubber.json";
 
 const AniNav = () => {
   const animationContainer = useRef(null);
   const hasLoopedOnce = useRef(false);
-  const [initialized, setInitialized] = useState(false);
 
   useEffect(() => {
-    // Trigger animation initialization after the first render
-    setInitialized(true);
-  }, []);
-
-  useEffect(() => {
-    if (!initialized) return;
-
     // Initialize the Lottie animation
     const anim = lottie.loadAnimation({
       container: animationContainer.current,
@@ -23,7 +15,7 @@ const AniNav = () => {
       autoplay: true,
       animationData: animationData,
     });
-
+    
     // After animation is loaded, we can manipulate it
     anim.addEventListener("DOMLoaded", () => {
       // Access the layers in the animation
@@ -66,6 +58,7 @@ const AniNav = () => {
         // Set the animation to loop from now on
         anim.loop = true;
         // Move the playhead to the 1-second mark and start looping from there
+        // Calculate the frame range for looping
         const totalFrames = anim.totalFrames;
         const oneSecondFrame = anim.frameRate * 1; // 1 second converted to frame number
 
@@ -77,7 +70,7 @@ const AniNav = () => {
     return () => {
       anim.destroy(); // Clean up the animation on component unmount
     };
-  }, [initialized]);
+  }, []);
 
   return (
     <div
@@ -89,5 +82,4 @@ const AniNav = () => {
     </div>
   );
 };
-
 export default AniNav;

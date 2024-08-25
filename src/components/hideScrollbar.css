@@ -1,0 +1,34 @@
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .react-horizontal-scrolling-menu--scroll-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+   
+  }
+  .react-horizontal-scrolling-menu--arrow-left, .react-horizontal-scrolling-menu--arrow-right {
+    align-items: center;
+  }
+
+  #scroller [type=button]:not(:disabled), #scroller [type=reset]:not(:disabled),
+  #scroller [type=submit]:not(:disabled),#scroller button:not(:disabled) {
+    cursor: pointer;
+    width: 10cqw;
+    height: 10cqw;
+    border-radius: 50% !important;
+}
+#scroller [type=button]:disabled,
+#scroller [type=reset]:disabled,
+#scroller [type=submit]:disabled,
+#scroller button:disabled {
+  cursor: pointer;
+  width: 10cqw;
+  height: 10cqw;
+  border-radius: 50% !important;
+}
+
+#scroller .card {
+  height: 100%;
+}
+  
