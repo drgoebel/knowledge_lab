@@ -6,6 +6,7 @@ import Nav from "../components/nav";
 import Seo from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import "../components/gridder.css";
+
 import Trianges from "../images/triangles.svg";
 // import Neural from "../images/neural.webp"
 // import TedX from "../images/james-tedtx.webp"
@@ -142,11 +143,11 @@ const News = () => (
       </Container>
     </Container>
 
-    <Container fluid><Container >
+    <Container fluid style={{width: "100%", maxWidth: "1400px"}}>
           <Row>
           <Scroll  />
           </Row>
-        </Container>
+        
         </Container>
 
    

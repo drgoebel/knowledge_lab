@@ -14,21 +14,34 @@
   #scroller [type=button]:not(:disabled), #scroller [type=reset]:not(:disabled),
   #scroller [type=submit]:not(:disabled),#scroller button:not(:disabled) {
     cursor: pointer;
-    width: 10cqw;
-    height: 10cqw;
+    width: 7cqw;
+    height: 7cqw;
     border-radius: 50% !important;
+    background-color: var(--color-gray);
 }
 #scroller [type=button]:disabled,
 #scroller [type=reset]:disabled,
 #scroller [type=submit]:disabled,
 #scroller button:disabled {
   cursor: pointer;
-  width: 10cqw;
-  height: 10cqw;
+  width: 7cqw;
+  height: 7cqw;
   border-radius: 50% !important;
+  background-color: var(--color-gray);
 }
 
 #scroller .card {
   height: 100%;
+    padding: clamp(16px, 1.5cqw, 44px);
+}
+
+#scroller .card h2 a{
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 900;
+  
 }
   
+#scroller .card h2 {
+  margin-top: clamp(16px, 2cqw, 32px) !important;
+}
