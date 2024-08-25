@@ -11,6 +11,7 @@ import Nav from "../components/nav";
 import initiatives from "../json/initiatives.json"; // Adjust the path if necessary
 import AIGroup from "../images/ai-group.png";
 
+
 function CenteredModal(props) {
   return (
     <Modal

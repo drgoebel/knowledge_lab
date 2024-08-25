@@ -1,7 +1,7 @@
 [
       {
         "name": "Global Innovation Observatory",
-        "image": "../images/global-observe.webp",
+        "image": "/images/global-observe.webp",
         "tagline": "How can we use AI and big data improve our awareness of worldwide investment production position and trajectory in science and technology (S&T)?",
         "shorter_tagline": "Charting the trajectory for science and tech",
         "description": "Modern large language models (LLMs) rely on the Transformer architecture to encode language networks and other unstructured data into powerful models that form 'digital doubles' of the systems they represent. In this initiative we seek to build improved Transformer models that better map current S&T developments predict future S&T advancement and prospectively recognize the implications of S&T breakthroughs. This system will offer critical new insights into national regional and global scientific advances and technological capabilities. To enable holistic exploration we will construct powerful LLMs atop data on global S&T research technology funding intellectual property products and their mentions in news linked together by the people places and organizations engaging with them. With this approach we will dynamically account for complex and emergent interdependencies among diverse scientific and technological domains and predict the emergence of critical technologies and their key performance advances.",
