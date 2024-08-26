@@ -12,6 +12,8 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
 import James from "../images/james-evans.png";
+import Austin from "../images/austink.webp";
+import Alexis from "../images/alexisp.webp";
 import Jacy from "../images/jacy-reese.jpg";
 import Jake from "../images/jake-buchard.png";
 import Likun from "../images/likun-cao.png";
@@ -33,193 +35,581 @@ const klabLeadership = [
     bioImg: Person,
     name: "Austin Kozlowski",
     title: "Graduate RA, University of Chicago",
+    bioImg: Austin,
     bio:
       "I am a doctoral candidate in the Chicago sociology department. My research focuses on the questions of how belief systems are structured and why certain ideas “go together.” By applying state-of-the-art computational methods, I attempt to shed new light on these age-old questions from the sociology of knowledge and culture. At Knowledge Lab, I have developed ways to use word embedding models to discover cultural categories and associations in text. This work has culminated in a recent article, co-authored with James Evans and Matt Taddy, published in the American Sociological Review. I am now engaged in a project with James Evans and Hyunku Kwon that explores how AI can be harnessed for social scientific analysis. Before coming to the University of Chicago, I earned my BA in Sociology at the University of Michigan and worked as a research associate with the Chitwan Valley Family Study at the UM Institute for Social Research. During my time at Michigan, I conducted research on the effects of agricultural technology adoption among subsistence farm households in Nepal.",
     size: "half",
   },
   {
     name: "Alexis Puzon",
-    title: "D",
+    title: "Program Manager at Social Sciences Research Center",
     bio:
-      "James Evans is Director of Knowledge Lab, Professor of Sociology, Faculty Director of the Computational Social Science program, and member of the Committee on Conceptual and Historical Studies of Science at the University of Chicago. I am also an External Professor at the Santa Fe Institute. His research focuses on the collective system of thinking and knowing, ranging from the distribution of attention and intuition, the origin of ideas and shared habits of reasoning to processes of agreement (and dispute), accumulation of certainty (and doubt), and the texture–novelty, ambiguity, topology–of human understanding. He is especially interested in innovation–how new ideas and technologies emerge–and the role that social and technical institutions (e.g., the Internet, markets, collaborations) play in collective cognition and discovery. Much of his work has focused on areas of modern science and technology, but he is also interested in other domains of knowledge–news, law, religion, gossip, hunches and historical modes of thinking and knowing. He supports the creation of novel observatories for human understanding and action through crowd sourcing, information extraction from text and images, and the use of distributed sensors (e.g., RFID tags, cell phones). He uses machine learning, generative modeling, social and semantic network representations to explore knowledge processes, scale up interpretive and field-methods, and create alternatives to current discovery regimes. His research is funded by the National Science Foundation, the National Institutes of Health, DARPA, Facebook, IBM, the Sloan Foundation, Jump! Trading and other sources, and has been published in Science, PNAS, Nature Human Behavior, Nature Biotech, American Journal of Sociology, American Sociological Review, Social Studies of Science, Administrative Science Quarterly, PLoS Computational Biology and other journals. His work has been featured in Nature, the Economist, Atlantic Monthly, Wired, NPR, BBC, El País, CNN and many other outlets.",
+      "Experienced Business Administrator with a demonstrated history of working in the higher education industry. Skilled in Human Resources, Office Management, Operations, Recruitment, HRIS, and Campaign Finance. Strong administrative professional with a Master’s Degree (in progress) focused in Liberal Arts and History from Northwestern University.",
     url: "page-2",
     bioLink: "this",
-    bioImg: Person,
+    bioImg: Alexis,
     size: "full",
   },
 ];
 
 const klabAffiliated = [
   {
-    name: "Jacy Reese Anthis",
-    title: "Graduate Student, University of Chicago",
-    url: "page-2",
-    bio:
-      "Jacy Reese Anthis is a joint PhD student with the Sociology department and the Econometrics & Statistics group at the Booth School of Business. He is the co-founder of the Sentience Institute, a nonprofit interdisciplinary think tank focused on social and technological change. His 2018 book, The End of Animal Farming, analyzes the emergence of food technologies such as cell-cultured meat. Anthis’ current projects focus on the technical and social dimensions of artificial intelligence. His research has been featured in The Guardian, Vox, Forbes, and other global media outlets, and he has presented at conferences and seminars in over 20 countries.",
-    bioLink: "this",
-    bioImg: Jacy,
-    size: "half",
+    "name": "Eamon Duede",
+    "email": "eduede@purdue.edu",
+    "affiliation": "Purdue University",
+    "bio": "Eamon is an epistemologist of science focusing on three streams of research. His theoretical work in the philosophy of science focuses on the epistemology of emerging technologies, principally artificial intelligence (AI). His empirical work investigates and evaluates roles and capabilities of AI in enhancing the effectiveness and scalability of innovative, data-driven, and algorithm-assisted operational frameworks for scientific discovery.\n\nBefore joining Purdue, Eamon was a Postdoctoral Fellow at Harvard University, affiliated with the Digital Data Design Institute at Harvard Business School and the Embedded EthiCS program in the Philosophy and Computer Science departments. He earned a joint Ph.D. in Philosophy and Conceptual and Historical Studies of Science from the University of Chicago, where he was also an NSF-funded Fellow at the Pritzker School of Molecular Engineering.",
+    "website": "https://www.eamonduede.com",
+    "publications": [
+      {
+        "title": "Deep learning opacity in scientific discovery.",
+        "journal": "Philosophy of Science",
+        "volume": 90,
+        "issue": 5,
+        "year": 2023,
+        "pages": "1089-1099"
+      },
+      {
+        "title": "Instruments, agents, and artificial intelligence: novel epistemic categories of reliability.",
+        "journal": "Synthese",
+        "volume": 200,
+        "issue": 6,
+        "year": 2022,
+        "pages": "491"
+      },
+      {
+        "title": "Apriori Knowledge in an Era of Computational Opacity: The Role of AI in Mathematical Discovery.",
+        "journal": "Philosophy of Science",
+        "status": "Forthcoming"
+      },
+      {
+        "title": "Confabulation: The Surprising Value of Large Language Model Hallucinations.",
+        "journal": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+        "year": 2024,
+        "status": "Forthcoming"
+      }
+    ],
+    "role": "Affiliate Faculty",
+    "cv_link": "https://drive.google.com/file/d/1IfMlnKeCxuo2oqDITFjzmQMwwCKu8XVw/view?usp=drive_link"
   },
   {
-    name: "Jake Burchard",
-    title: "Graduate RA, University of Chicago",
-    url: "page-2",
-    bioLink: "this",
-    bioImg: Jake,
-    bio:
-      "Jake Burchard is a PhD student in the department of sociology at the University of Chicago interested in political economy, financialization, class analysis, networks, and general social theory. He also holds a BA in mathematics from Cornell University. His work has been published in Social Networks and The Journal of Mathematical Sociology.",
-    size: "half",
+    "name": "Bowen Lou",
+    "email": "bowenlou@usc.edu",
+    "affiliation": "USC",
+    "bio": "Bowen Lou is an Assistant Professor of Data Sciences and Operations at the Marshall School of Business, University of Southern California. Professor Lou’s research primarily lies in economics of artificial intelligence (AI), innovation and entrepreneurship, and future of work. Broadly, he is extremely passionate about studying emerging technology-enabled phenomena in business and society (including but not limited to topics on AI, big data analytics, digital platform, FinTech, healthcare IT, and social media). He works on the new waves of digitization and technological innovation spanning a wide spectrum of industry sectors, by collaborating with leading analytics companies that track technology, labor and innovation trends. Linking macro patterns to micro activities, his studies leverage a variety of interdisciplinary methodologies (including but not limited to bio/chem-informatics, econometrics, game-theoretical modeling, randomized field experiments, machine learning, and network analysis).",
+    "website": "https://bowenlou.org/",
+    "publications": [
+      {
+        "title": "Proposing Ties in a Dense Hypergraph of Academics.",
+        "journal": "Social Informatics: 7th International Conference, SocInfo 2015",
+        "location": "Beijing, China",
+        "year": 2015,
+        "pages": "209-226",
+        "publisher": "Springer International Publishing"
+      },
+      {
+        "title": "AI on Drugs: Can Artificial Intelligence Accelerate Drug Development? Evidence from a Large-Scale Examination of Bio-Pharma Firms.",
+        "journal": "MIS Quarterly",
+        "volume": 45,
+        "issue": 3,
+        "year": 2021,
+        "pages": "1451-1482"
+      },
+      {
+        "title": "Innovation Strategy After IPO: How AI Analytics Spurs Innovation After IPO.",
+        "journal": "Management Science",
+        "year": 2024
+      },
+      {
+        "title": "Unintended Consequences of Advances in Matching Technologies: Information Revelation and Strategic Participation on Gig-economy Platforms.",
+        "journal": "Management Science",
+        "volume": 70,
+        "issue": 3,
+        "year": 2024,
+        "pages": "1729-1754"
+      },
+      {
+        "title": "Artificial Intelligence, CEO Turnover, and Directional Change in Firm Innovation.",
+        "journal": "ICIS 2023 Proceedings",
+        "year": 2023
+      }
+    ],
+    "role": "Affiliate Faculty",
+    "cv_link": "https://drive.google.com/file/d/1Ag3QaKofm1sLDwimGBG4rIHY9cvZXmP8/view?usp=drive_link"
   },
   {
-    name: "Likun Cao",
-    title: "Graduate Student, University of Chicago",
-    url: "page-2",
-    bioLink: "this",
-    bioImg: Likun,
-    bio:
-      "I am currently a first-year Ph.D. student in the sociology department at the University of Chicago. My research interests are sociology of knowledge and organizational study, and I use computational tools to explore those fields. Specifically, I am interested in the interaction between the economic structures and the human knowledge system. How are technological and cultural knowledge produced in modern capitalism? And how does this knowledge reshape the institutional background where it comes from? In my research, I try to trace the social processes and mechanisms of this interaction. Before coming to Chicago, I received a B.A. and an M.A. in sociology from Tsinghua University, China. My previous work concerns the social network of venture capital firms in China and the dynamics of its evolution. Currently, at knowledge lab, I apply word embedding techniques on data about business strategies of start-ups in the U.S., trying to figure out how the business landscape is formed and transformed by technological innovation, and how this social process on the macro level shapes social lives and division of labor of millions of employers and employees.",
-    size: "half",
+    "name": "Jar-Der Luo",
+    "email": "jarderluo@126.com",
+    "affiliation": "Tsinghua University",
+    "bio": "Jar-Der is a Joint Appointed Professor, Social Science School and Public Administration School, Tsinghua University (Beijing), Chief Editor, Journal of Social Computing, and PI, Tsinghua U. Computational Social Sciences & National Governance Lab, Social Sec. He earned his Ph.D degree in Sociology Dept. of State U. of New York at Stony Brook. He researches numerous topics in social network studies, including social capital, trust, social network in big data, network dynamics, emergence of collective intelligence, self-organization process and Chinese indigenous management researches, such as guanxi, guanxi circle, favor exchange, Yin and Yang, and dynamic balance theory.",
+    "role": "Affiliate Faculty",
+    "cv_link": "https://drive.google.com/file/d/1c_xTvKe6KLgLmmnS44ld_k_pBdSSQ92a/view?usp=drive_link"
   },
   {
-    bioImg: Person,
-    name: "Ziwen Chen",
-    title:
-      "Ph.D. student of Organizational Behavior at the Standford University Graduate School of Business",
-    bio:
-      "Ziwen is currently a Ph.D. student of Organizational Behavior at the Standford University Graduate School of Business and previously received her MA in the Computational Social Science program at UChicago. She has a broad interest in data science for social good. Specifically, she is interested in identifying dynamics of human knowledge and behaviors using advanced computing techniques (social network, NLP and Machine learning), especially under urban or geographical contexts. At Knowledge Lab, she is working on the Social MIND project which utilizes AI models to explain, predict and influence a simulated urban world. Before coming to UChicago, she received her B.S. in Geographical Information Science at Wuhan University, China. Her previous works include using social network analysis to predict food crisis response, and exploring regional variation of human values and Machiavellianism culture based on online crowd-sourcing data.",
-    size: "half",
+    "name": "Iyad Rahwan",
+    "email": "rahwan@mpib-berlin.mpg.de",
+    "affiliation": "MPG-Berlin",
+    "bio": "Iyad Rahwan is director of the Max Planck Institute for Human Development in Berlin, where he founded and directs the Center for Humans & Machines. He is also an honorary professor of Electrical Engineering and Computer Science at the Technical University of Berlin. Prior to moving to Berlin, he was an Associate Professor of Media Arts & Sciences at the Massachusetts Institute of Technology (MIT). A native of Aleppo, Syria, Rahwan holds a PhD from the University of Melbourne, Australia.",
+    "website": "https://www.rahwan.me/",
+    "publications": [
+      {
+        "title": "The moral machine experiment.",
+        "journal": "Nature",
+        "volume": 563,
+        "issue": 7729,
+        "year": 2018,
+        "pages": "59-64"
+      },
+      {
+        "title": "Machine culture.",
+        "journal": "Nature Human Behaviour",
+        "volume": 7,
+        "issue": 11,
+        "year": 2023,
+        "pages": "1855-1868"
+      },
+      {
+        "title": "Machine behaviour.",
+        "journal": "Nature",
+        "volume": 568,
+        "issue": 7753,
+        "year": 2019,
+        "pages": "477-486"
+      },
+      {
+        "title": "Time-critical social mobilization.",
+        "journal": "Science",
+        "volume": 334,
+        "issue": 6055,
+        "year": 2011,
+        "pages": "509-512"
+      },
+      {
+        "title": "Cooperating with machines.",
+        "journal": "Nature Communications",
+        "volume": 9,
+        "issue": 1,
+        "year": 2018,
+        "pages": "233"
+      }
+    ],
+    "role": "Affiliate Faculty",
+    "cv_link": "https://urldefense.com/v3/__https://www.rahwan.me/s/Iyad_Rahwan_3452-cropped.jpg__;!!BpyFHLRN4TMTrA!7yS3nkmD7wSgw2KKC7D7pPMlXFNmSttUjWeHHzAUuRS3c0nC3PS5kt3O4-cLIazGcxr7nMyKlaC5lVmiaQLm_CEwVis$"
   },
   {
-    bioImg: Person,
-    name: "Haochuan Cui",
-    title: "Graduate Student, Bejing Normal University",
-    bio:
-      "Haochuan is a Ph.D. student in the School of Systems Science at Beijing Normal University. He has been visiting the Knowledge Lab since September 2019. His research topics are Science of Science and evolution of complex systems. Using complex network analysis, he hopes to quantify the evolution process of the science system and to find out how to keep sustainable development for emerging disciplines. He is also interested in the representation of learning on the multi-layer network and predicting the performance of collaboration with deep learning tools. He also works as the TA for the AI & Society workshop at Nanjing University and the TA of Graph Neural Network Paper Club at SwarmAI. He now leads an online nestedness network research group to understand organizational structure and the fate of the organization.",
-    size: "half",
+    "name": "Lingfei Wu",
+    "email": "wlf850927@gmail.com",
+    "affiliation": "University of Pittsburgh",
+    "bio": "Lingfei Wu is an Assistant Professor of Information Science at the University of Pittsburgh. He leverages big data, complexity sciences, and AI to understand how science and technology can advance through collaborative teamwork, contributing to the field of Team Science and Innovation. His research has been published in Nature and PNAS and featured in The New York Times, The Atlantic, and Scientific American, earning him accolades such as the NSF Career Award and Oxford Martin School Fellowship. Wu also advises organizations like Novo Nordisk Fonden and John Templeton Foundation on research evaluation.",
+    "website": "https://lingfeiwu.github.io/",
+    "publications": [
+      {
+        "title": "Flat teams drive scientific innovation.",
+        "journal": "Proceedings of the National Academy of Sciences",
+        "volume": 119,
+        "issue": 23,
+        "year": 2022,
+        "pages": "e2200927119"
+      },
+      {
+        "title": "Large teams develop and small teams disrupt science and technology.",
+        "journal": "Nature",
+        "volume": 566,
+        "issue": 7744,
+        "year": 2019,
+        "pages": "378-382"
+      },
+      {
+        "title": "Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy.",
+        "journal": "Proceedings of the National Academy of Sciences",
+        "volume": 115,
+        "issue": 50,
+        "year": 2018,
+        "pages": "12630-12637"
+      }
+    ],
+    "role": "Affiliate Faculty"
   },
   {
-    bioImg: Person,
-    name: "Chris Esposito",
-    title:
-      "Knowledge Lab and Mansueto Institute Postdoctoral Fellow, University of Chicago",
-    bio:
-      "Chris researches technological disruption and its impacts on inventors, teams, and cities. His current research uses large historical datasets to study how the rate of technological disruption changed across U.S. history, to identify strategies for inventors and organizations to avert knowledge obsolescence, and to analyze the ability for inventors to create novel technologies when they collaborate remotely. In prior research, Chris showed how disruptive innovation leads to the emergence of new geographical centers of innovation and increases the spatial inequality of innovative activity.",
-    size: "half",
+    "name": "Ufuk Akcigit",
+    "email": "uakcigit@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "role": "Affiliate Faculty"
   },
   {
-    bioImg: Person,
-    name: "Stefan de Jong",
-    title: "Marie Curie Fellow, University of Chicago",
-    bio:
-      "Stefan de Jong is a Marie Curie Fellow at the Knowledge Lab and an assistant professor at the Department of Organization Studies of Tilburg University in the Netherlands. He is interested in how science and broader society influence each other. The European Commission sponsors his current project ‘Invisible Forces', which aims to understand the contribution of professional staff of universities to academic knowledge development. To this end Stefan combines network analysis with ethnographic research. More information about this project and other ongoing work is available on his personal website. He has written about the societal impact and evaluation of academic research and about attitudes toward science. Stefan has published in scientific journals such as Research Policy, Research Evaluation and Public Understanding of Science. He regularly hosts national and international workshops on societal impact strategies for academics and professional staff. Stefan has previously worked as a post-doctoral researcher at the Manchester Institute of Innovation Research of The University of Manchester in the UK. The Dutch Research Council funded his project ‘Professional Practices'. The project unraveled the influence of university strategies on societal impact practices of academics. Prior to that, he was a researcher at the Rathenau Institute of the Royal Netherlands Academy of Arts and Sciences. He completed his doctoral research at the Centre for Science and Technology Studies of Leiden University in the Netherlands in 2015. Stefan has a master's degree in innovation studies (Utrecht University) and a bachelor's degree in biology (Wageningen University).",
-    size: "half",
+    "name": "Yong-Yeol Ahn",
+    "email": "yyahn@iu.edu",
+    "affiliation": "Indiana University",
+    "role": "Affiliate Faculty"
   },
   {
-    bioImg: Person,
-    name: "Eamon Duede",
-    title:
-      "Department of Philosophy, Committee on the Conceptual and Historical Studies of Science, Knowledge Lab, University of Chicago",
-    bio:
-      "Eamon's work is broadly at the intersection of the philosophy of science and the computational science of science. In the philosophy of science, he focuses on formal aspects of artificial intelligence and machine learning in scientific knowledge. In the computational science of science, his focus is on the contribution of epistemic commitments to the dynamics of knowledge production.",
-    size: "half",
+    "name": "Chenhao Tan",
+    "email": "chenhao@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "role": "Affiliate Faculty"
   },
   {
-    bioImg: Person,
-    name: "Donghyun Kang",
-    title: "Graduate Student, University of Chicago",
-    bio:
-      "Donghyun Kang is a Ph.D. candidate at the University of Chicago Sociology Department, affiliated with Knowledge Lab. His academic interest centers on understanding social conditions and processes that lead to robust scientific progress and dissemination of ideas. Donghyun aspires to extend insights from science studies and the history of sciences with natural language processing and network embedding models. Before Chicago, he received a B.A. in Business Administration and M.A. in Sociology at Seoul National University.",
-    size: "half",
+    "name": "Ben Blaiszik",
+    "email": "blaiszik@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "role": "Affiliate Faculty"
   },
   {
-    bioImg: Person,
-    name: "Junsol Kim",
-    title: "Graduate Student, University of Chicago",
-    bio:
-      "I am a third-year Ph.D. student in Sociology at the University of Chicago. My research intersects computational social science, large language models (LLMs), social media, and causal inference. My recent work focuses on fine-tuning LLMs using social survey data, aiming to predict unmeasured public opinions. Additionally, I have applied quasi-experimental, causal inference methods to large-scale social media data to study how misinformation moderation could unintentionally reinforce echo chambers. My works have been published in Proceedings of the National Academy of Sciences (PNAS) and other venues. You can find my CV here.",
-    size: "half",
+    "name": "Lav Varshney",
+    "email": "varshney@illinois.edu",
+    "affiliation": "University of Illinois",
+    "role": "Affiliate Faculty"
   },
   {
-    bioImg: Person,
-    name: "Hyunku Kwon",
-    title: "Graduate RA, University of Chicago",
-    bio:
-      "Hyunku Kwon is a PhD student in sociology at the University of Chicago. His work applies computational, archival, and statistical methods to study American political history, the state and the market, social networks, and political polarization. He is particularly interested in the relationship between social structures and political beliefs (especially those pertaining to nativism, populism, and racism). He is a member of three research groups at the University of Chicago: Culture and Action Network, Knowledge Lab, and Committee on Quantitative Methods in Social, Behavioral, and Health Science. Prior to coming to the University of Chicago, he received a B.A. in Public Administration and Political Science at Yonsei University.",
-    size: "half",
+    "name": "Ian Foster",
+    "email": "foster@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "role": "Affiliate Faculty"
   },
   {
-    bioImg: Person,
-    name: "Jeff Lockhart",
-    title: "James S. McDonnell Postdoctoral Fellow, University of Chicago",
-    bio:
-      "Jeff Lockhart is a James S. McDonnell Postdoctoral Fellow in Sociology and the Knowledge Lab at the University of Chicago. He received his PhD in sociology from the University of Michigan, as well as masters degrees in gender studies and computer science from the University of Cambridge and Fordham University. He works on a variety of projects related to the co-construction of knowledge and identities using both computational and qualitative methods. His latest project examines how the scientific production of sex and race, once tightly entwined, came to be separate fields with stark differences in institutional support.",
-    size: "half",
+    "name": "Bernard Koch",
+    "email": "bernardkoch@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "bio": "Bernard Koch is an assistant professor in the sociology department. His research develops and deploys mechanistic models to explain the evolution of scientific and cultural fields. Current questions include how AI became dominated by deep learning, why problematic race science persists in psychology, and how music genres develop. He also has eccentric interests in deep learning, causal inference, networks & Bayesian modeling. His work has been published at Sociological Methods and Research, Sociological Methodology, NeurIPS, and WWW, among other venues.",
+    "website": "https://bernardjkoch.com",
+    "publications": [
+      {
+        "title": "Deep Learning for Causal Inference.",
+        "journal": "Sociological Methods & Research",
+        "authors": [
+          "Koch BJ",
+          "Sainburg T",
+          "Geraldo PE",
+          "Jiang S",
+          "Sun Y",
+          "Foster JG"
+        ]
+      },
+      {
+        "title": "Reduced, reused and recycled: The life of a machine learning dataset.",
+        "journal": "NeurIPS",
+        "year": 2021,
+        "pages": "1-13",
+        "presentation_type": "oral"
+      },
+      {
+        "title": "HINTS: time series prediction via dynamic heterogeneous information network embedding.",
+        "journal": "WWW",
+        "year": 2021,
+        "pages": "3158-3167"
+      },
+      {
+        "title": "Uncovering sociological effect heterogeneity using tree-based machine learning.",
+        "journal": "Sociological Methodology",
+        "year": 2021,
+        "pages": "189-223"
+      }
+    ],
+    "role": "Affiliate Faculty"
+  }
+]
+
+const klabResearchPost = [
+  {
+    "name": "Yujin Potter",
+    "email": "yujinyujin9393@gmail.com",
+    "institution": "UC Berkeley",
+    "bio": "She is currently a postdoc in EECS at UC Berkeley. Her interests span a wide range of topics within AI alignment/ethics, including examining the societal impacts of AI, identifying AI misalignment, studying AI behaviors in multi-agent settings, and addressing AI bias. Previously, she conducted research on decentralization technologies such as blockchain, DeFi, and DAOs. Before joining UC Berkeley, she got a PhD from KAIST.",
+    "publications": "Evolving AI Collectives to Enhance Human Diversity and Enable Self-Regulation, ICML 2024",
+    "position": "Affiliate Postdoc"
   },
   {
-    bioImg: Person,
-    name: "Adarsh Mathew",
-    title: "Masters student, University of Chicago",
-    bio:
-      "I'm a computational social scientist working to straddle the worlds of sociology, network science, and machine learning. I'm interested in exploring the relationship between networked identities and the propagation of knowledge: how individuals and communities work to form and evaluate epistemological practices; the role their networks and identities play in this process; the effect of hierarchies and narrative structures in this dialectical process. At the Knowledge Lab, I work on projects that examine ideology and conflict in online communities, using networks and language processing methods to describe user and community behaviour, especially in contentious and radical political communities. My research interests also span the philosophy of science and computing, formal network epistemology, and the interplay between algorithmic decision-making and the structural imperatives that make data collection possible. I'm currently pursuing an MA in Computational Social Science at the University of Chicago. Before my time at the University of Chicago, I worked for a tech firm based in the Bay Area, and as an international development consultant. I have a Masters' and Bachelors' degree in Industrial & Systems Engineering from IIT Kharagpur, which served as my introduction to statistical learning, and optimization & heuristic methods. I call Hyderabad home, and have a soft corner for speculative science fiction (Ted Chiang & Ken Liu) and high fantasy, along with general soccer nerdiness.",
-    size: "half",
+    "name": "Shilin Jia",
+    "email": "shilinj@stanford.edu",
+    "institution": "Stanford University",
+    "bio": "Shilin Jia is the 2023-24 Shorenstein Postdoctoral Fellow on Contemporary Asia at Stanford University. His scholarly interest lies in applying computational methods to the study of political culture and organizations, with a special focus on post-reform China. Shilin’s research analyzes job transfers of Communist Party elites in China by using machine learning to code party elites' CVs. His objective is to grasp the evolution of the party-state through the division of labor and circulation of its elite members. He also conducts a computational content analysis of 60 years of the People's Daily, the official mouthpiece of the Communist Party of China, tracking ideological changes. More recently, He has been working on building a hundred years of word-embedding models based on multiple languages of Google N-grams and studying identity formation and international relations across language communities. Shilin received a Ph.D. in sociology from the University of Chicago.",
+    "website": "https://shevajia.github.io/",
+    "position": "Affiliate Postdoc"
   },
   {
-    bioImg: Person,
-    name: "Jeremiah Milbauer",
-    title: "Graduate Student, Carnegie Mellon University",
-    bio:
-      "I am an artificial intelligence researcher, software engineer, and occasional writer. I am interested in exploring the relationships between language, knowledge, and society. At Knowledge Lab, I work on projects that use machine learning and natural language processing techniques to discover concept structures and worldviews across a variety of data sources. Before joining Knowledge Lab, I spent time as a research assistant with John Lafferty, Ben Zhao, and John Goldsmith working on a variety of natural language processing projects. On the engineering side, I did an internship at Alphabet's autonomous vehicle division Waymo (at Google X), and was the machine learning lead at Simmer (a YCombinator-backed startup). My writing has been featured by the Berkman-Klein Center for Internet & Society, and The Economist. I grew up in New York City (where, as a matter of survival, I quickly learned my way around both gallery openings and giant rats). I graduated from the University of Chicago in 2019 with degrees in Computer Science and Philosophy.",
-    size: "half",
+    "name": "Haochuan Cui",
+    "email": "hcui94@hotmail.com",
+    "institution": "Beijing Normal University",
+    "bio": "Haochuan earned his PhD in School of System Sciences at Beijing Normal University. He is the Pre-Assistant Professor of School of Information Management at Nanjing University. His interests focus on the complexity of cognitive behavior within scientific discovery and knowledge diffusion. He is currently using big language models and network analysis techniques to study the influence of workforce aging on Science and Technology and the labor division within organizations.",
+    "website": "https://hashc.github.io/about/",
+    "position": "Affiliate Researcher",
+    "additionalLink": "https://drive.google.com/file/d/1t1Y_O7Lzb05SEcU62Zw2Xjn3oaKWpmYR/view?usp=drive_link"
   },
   {
-    bioImg: Person,
-    name: "Peter Muhlberger",
-    title: "Research Scientist, University of Chicago",
-    bio:
-      "Peter Muhlberger is a Research Scientist at University of Chicago's Knowledge Lab, where his interests include public understanding of science, misinformation, and the application of neural natural language understanding. Previously, he was a National Science Foundation (NSF) Program Director for data-intensive research and political science. He also served as a senior analyst for NSF's National Center for Science and Engineering Statistics. Dr. Muhlberger designed and directed research on Carnegie Mellon University's Virtual Agora Project, a NSF-funded project investigating the political, social, and psychological effects of computer-mediated political engagement. He was also principal investigator on the Deliberative E-Rulemaking Project, a NSF-funded project applying multi-level deliberation to federal agency online rulemaking. Dr. Muhlberger received his Ph.D. in political science from the University of Michigan. He has published in such journals as Political Psychology, Political Communication, the Journal of Information Technology and Politics, and Information Polity.",
-    size: "half",
+    "name": "Chris Esposito",
+    "email": "Christopher.Esposito@anderson.ucla.edu",
+    "institution": "UCLA",
+    "bio": "Chris is the Osborne Postdoctoral Fellow at the UCLA Anderson School of Management. He studies innovation in science and technology using computational and econometric techniques. His dissertation developed centuries of new historical data to uncover the common processes that cities pass through as they emerge as centers for innovation. More recently, he has studied knowledge obsolescence and its impact on the changing structure of the innovative economy. In ongoing collaborations with the Knowledge Lab, he is analyzing the shifting balance of global power in scientific and technological innovation.",
+    "website": "http://cresposito.com",
+    "publications": [
+      "https://academic.oup.com/joeg/article/23/1/209/6646557",
+      "https://www.sciencedirect.com/science/article/pii/S004873332300094X",
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4444732#:~:text=Linking%20age%20and%20death%20information,inventors%20who%20lose%20mid%2Dcareer",
+      "https://arxiv.org/abs/2406.05917"
+    ],
+    "position": "Affiliate Researcher",
+    "additionalLink": "https://drive.google.com/file/d/1s8TtY31eFUhMi564UgoLn94trUxo29yf/view?usp=drive_link"
   },
   {
-    bioImg: Person,
-    name: "Jamshid Sourati",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "My research interest revolves around machine learning and its applications in discovering underlying patterns in real-world data. At the Knowledge lab, my goal is to apply computational tools for processing enormous textual data sets and to develop novel learning models that give better insights into how humans think and interact collectively. I received my doctorate in Electrical and Computer Engineering at Northeastern University. During the course of my Ph.D., my focus was primarily on generic analysis of learning models in theoretical levels. Prior to joining Knowledge lab, as a post-doctoral researcher in Harvard medical school, I conducted research in development and rigorous analysis of machine learning algorithms for automatic medical image processing.",
-    size: "half",
+    "name": "Doug Guilbeault",
+    "email": "dguilb@stanford.edu",
+    "institution": "Stanford University",
+    "bio": "Guilbeault received dual bachelor’s degrees in philosophy and rhetoric (with a minor in cognitive science) from the University of Waterloo, an MA in Cognitive Linguistics from the University of British Columbia, and a PhD from the University of Pennsylvania’s Annenberg School for Communication. He is co-director of the Berkeley-Stanford Computational Culture Lab, and a founding member of the theoretical cognitive science and machine learning collective comp-syn (“computational synesthesia”). His work has appeared in a number of top journals, including Nature, Nature Communications, The Proceedings of the National Academy of the Sciences, and Management Science, as well as in popular news outlets, such as The Atlantic, Wired, and The Harvard Business Review. He has received top research awards from The International Conference on Computational Social Science, The Cognitive Science Society, and The International Communication Association.",
+    "website": "https://www.gsb.stanford.edu/faculty-research/faculty/douglas-r-guilbeault",
+    "publications": [
+      "Guilbeault, Douglas, Solene Delecourt, Tasker Hull, Bhargav Srinivasa Desikan, Mark Chu, and Ethan Nadler. 2024. Online Images Amplify Gender Bias. Nature. Best Paper Award, 2022 International Conference on Computational Social Science.",
+      "Nadler, Ethan, Elise Darragh-Ford, Bhargav Srinivasa Desikan, Christian Conaway, Mark Chu, Tasker Hull, and Douglas Guilbeault. Divergences in Color Perception between Deep Neural Networks and Humans. Cognition (241): 105621.",
+      "Chu, Mark, Bhargav Desikan, Ethan Nadler, Ruggiero Lo Sardo, Elise Dallagh-Ford, Douglas Guilbeault. Signal in Noise: Exploring Meaning Encoded in Random Character Sequences with Character-Aware Language Models. Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics.",
+      "Guilbeault, Douglas and Damon Centola. Topological Measures for Identifying and Predicting the Spread of Complex Contagions. Nature Communications 12 (4430).",
+      "Guilbeault, Douglas, Andrea Baronchelli, and Damon Centola. Experimental Evidence for Scale Induced Category Convergence across Populations. Nature Communications 12 (327).",
+      "Desikan, Bhargav, Tasker Hull, Ethan Nadler, Douglas Guilbeault, Aabir Abubaker, Mark Chu, Ruggiero Lo Sardo. Compsyn: Perceptually Grounded Word Embeddings with Color. Proceedings of the 28th International Conference on Computational Linguistics (COLING @ ACL).",
+      "Guilbeault, Douglas, Ethan Nadler, Mark Chu, Ruggiero Lo Sardo, Aabir Abubaker, and Bhargav Desikan. Color Associations in Abstract Semantic Domains. Cognition (201): 104306."
+    ],
+    "position": "Affiliate Researcher",
+    "additionalLink": "https://drive.google.com/file/d/1GK7ZiEyYljr0s-Xy6UxfTywoAXJe8zbU/view?usp=drive_link"
   },
   {
-    bioImg: Person,
-    name: "Simon Schachter",
-    title: "Graduate student, University of Chicago",
-    bio:
-      "Simon Yamawaki Shachter is a Ph.D. student at the University of Chicago Sociology Department. He is interested in philanthropy and the nonprofit sector, especially how public and private systems of funding alter field-level outcomes. He utilizes historical, statistical, and computational tools to understand how public and private efforts to serve the public good influence each other. He is particularly drawn to research that exposes when these, often well-intentioned, efforts work to perpetuate certain forms of inequality while seeking to alleviate others. Prior to coming to the University of Chicago, Simon received a B.S. in Computer Science at Stanford University. In the Bay Area he worked for several private philanthropic foundations and founded YCore, a San Francisco-based non-profit that brings young professionals together to support equity-building work in their local communities.",
-    size: "half",
+    "name": "Partha Kadambi",
+    "email": "parthaskadambi@gmail.com",
+    "institution": "tbd",
+    "bio": "tbd",
+    "position": "Affiliate Researcher"
   },
   {
-    bioImg: Person,
-    name: "Nak Won Rim",
-    title: "Masters student, University of Chicago",
-    bio:
-      "Nak Won is a MA student in the Computational Social Science program at the University of Chicago. He is broadly interested in how the human mind incorporates new knowledge into their thought systems and how humans make inferences and decisions based on their priors. At the Knowledge Lab, he is focusing on using high-throughput virtual lab experiments to research how people work together as groups. Before coming to the University of Chicago, Nak Won received a B.A. degree in Psychology and a B.S. degree in Brain Cognitive Science at Korea University, Republic of Korea. His undergraduate works focused on the cognitive control of humans using classical distractor tasks such as the Simon task.",
-    size: "half",
+    "name": "Alejandro Sarria-Morales",
+    "email": "asarria@uchicago.edu",
+    "institution": "University of Chicago",
+    "bio": "Alejandro is currently pursuing a Masters in Computational Social Science at the University of Chicago. He is interested in computational approaches to Latin American political communication, with a focus on the intersection of emotion, ideology, and populism in political speech. His research aims to uncover how these factors contribute to novel understandings of politics in Latin America. Alejandro’s current work involves analyzing presidential addresses and large-scale corpora using natural language processing to identify emergent political ideological categories. Before coming to Chicago, he earned a B.A. in Psychology with minors in Economics and Comparative Political Science, from the University of the Andes in Bogotá, Colombia.",
+    "position": "Affiliate Researcher",
+    "additionalLink": "https://drive.google.com/file/d/1QMvzkofNbXoTXjSJHpl1iaKsha-V0ZfT/view?usp=drive_link"
   },
   {
-    bioImg: Person,
-    name: "Fengli Xu",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "My research interests include data science, machine learning and computational social science. My current research focuses on modeling and understanding the dynamics of scientific development. My long-term research goal is to harness the power of increasingly available behavioral big data to facilitate advanced human-centric computing. My personal website is : fenglixu.com",
-    size: "half",
+    "name": "Bill Shi",
+    "email": "fbillshi@gmail.com",
+    "institution": "Pond",
+    "bio": "Bill has been wearing multiple hats – researcher, engineer, and lately, tech adventurer. Currently, he is the co-founder and CTO of Pond, a startup focused on building the foundation model for crypto AI. Throughout his career, whether in industry (TigerGraph, Amazon) or academia (UNC, UChicago), Bill has been driven by a passion for applying mathematical modeling and machine learning to solve real-world challenges. His work spans a wide range of fields, from graph AI, recommender systems, to computational social science and biomedicine.",
+    "website": "https://www.billshi.net/",
+    "publications": [
+      "Zhang, Yang; Shi, Feng; The micro-foundations of elite politics: conversation networks and elite conflict during China’s reform era,Theory and Society,53,1,193-237,2024",
+      "Shi, Feng; Evans, James; Surprising combinations of research contents and contexts are related to impact and emerge with scientific outsiders from distant disciplines,Nature Communications,14,1,1641,2023",
+      "Evans, James; Shi, Feng; Sourati, Jamshid; Systems and methods for high-order modeling of predictive hypotheses,,,,,2022",
+      "Ke, Zheng Tracy; Shi, Feng; Xia, Dong; Community detection for hypergraph networks via regularized tensor power iteration,arXiv preprint arXiv:1909.06503,,,,2019",
+      "Shi, Feng; Teplitskiy, Misha; Duede, Eamon; Evans, James A; The wisdom of polarized crowds,Nature human behaviour,3,4,329-336,2019",
+      "Gerow, Aaron; Zhou, Mingyang; Matwin, Stan; Shi, Feng; Reflexive Regular Equivalence for Bipartite Data,Advances in Artificial Intelligence: 30th Canadian Conference on Artificial Intelligence, Canadian AI 2017, Edmonton, AB, Canada, May 16-19, 2017, Proceedings 30,,,71-77,2017",
+      "Shi, Feng; Shi, Yongren; Dokshin, Fedor A; Evans, James A; Macy, Michael W; Millions of online book co-purchases reveal partisan differences in the consumption of science,Nature Human Behaviour,1,4,0079,2017",
+      "Shi, Feng; Foster, Jacob G; Evans, James A; Weaving the fabric of science: Dynamic network models of science's unfolding structure,Social Networks,43,,73-85,2015"
+    ],
+    "position": "Affiliate Researcher",
+    "additionalLink": "https://drive.google.com/file/d/1PVchSEg62x3cK0WyS8BiFFcQ3w8AQtTw/view?usp=drive_link"
   },
   {
-    bioImg: Person,
-    name: "Haizi Yu",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "Haizi has a Ph.D. in Computer Science. His research interests include interpretable AI and machine learning, automatic knowledge discovery, and music intelligence. He received his doctoral degree from the University of Illinois at Urbana-Champaign. He received his M.S. degree in Computer Science from Stanford University, and his B.S. degree from the Department of Automation at Tsinghua University.",
-    size: "half",
+    "name": "Nicolás Torres-Echeverry",
+    "email": "nte@uchicago.edu",
+    "institution": "University of Chicago",
+    "bio": "tbd",
+    "position": "Affiliate Researcher"
   },
-];
+  {
+    "name": "Dashun Wang",
+    "email": "dashun.wang@kellogg.northwestern.edu",
+    "institution": "Northwestern University",
+    "bio": "Dashun Wang is a Professor of Management and Organizations at the Kellogg School of Management, and the McCormick School of Engineering, at Northwestern University. At Kellogg, he is the Founding Co-Director of the Ryan Institute on Complexity and the Founding Director of the Center for Science of Science and Innovation (CSSI). He is also a core faculty at the Northwestern Institute on Complex Systems (NICO). Dashun is a recipient of multiple awards for his research and teaching, including the AFOSR Young Investigator award, Poets & Quants Best 40 Under 40 Professors, Junior Scientific Award from the Complex Systems Society, the Erdos-Renyi Prize, Thinkers50 Radar 2021, and more.",
+    "website": "www.dashunwang.com",
+    "publications": "https://www.dashunwang.com/academic-articles.",
+    "position": "Affiliate Researcher",
+    "additionalLink": "https://drive.google.com/file/d/1x54WQ5dPRj955B9_HC_DGNEMf2SMOFwk/view?usp=drive_link"
+  },
+  {
+    "name": "Zhao Wang",
+    "email": "zwang13@uchicago.edu",
+    "institution": "University of Chicago",
+    "bio": "Dr. Wang is an Assistant Instructional Professor in the Masters in Computational Social Science program at The University of Chicago. She is a computer scientist focusing on machine learning, natural language processing, causal inference, and social network analysis. Her research leverages computer science techniques to analyze large-scale online data and explore problems of social importance.",
+    "website": "https://zhaowang-uc.github.io/",
+    "publications": [
+      "Identifying spurious correlations for robust text classification",
+      "Robustness to spurious correlations in text classification via automatically generated counterfactuals",
+      "Enhancing model robustness and fairness with causality: A regularization approach"
+    ],
+    "position": "Affiliate Researcher",
+    "additionalLink": "https://drive.google.com/file/d/1Gp5La4RU6S-2wAh5xS4vlXLGGMej-eUA/view?usp=drive_link"
+  },
+  {
+    "name": "Dan Weld",
+    "email": "danw@alllenai.org",
+    "institution": "Allen Institute",
+    "bio": "Daniel S. Weld is Chief Scientist and General Manager of Semantic Scholar at the Allen Institute of Artificial Intelligence and Professor Emeritus at the University of Washington. After formative education at Phillips Academy, he received bachelor’s degrees in both Computer Science and Biochemistry at Yale University in 1982 and a Ph.D. from the MIT Artificial Intelligence Lab in 1988. Weld received a Presidential Young Investigator’s award and an Office of Naval Research Young Investigator’s award; he is a Fellow of the Association for Artificial Intelligence (AAAI), the American Association for the Advancement of Science (AAAS), and the Association for Computing Machinery (ACM).",
+    "website": "https://www.cs.washington.edu/people/faculty/weld/",
+    "position": "Affiliate Researcher",
+    "additionalLink": "https://drive.google.com/file/d/1MEWhzw7k9eyxpNCxz-q2Gd39reIJBZL0/view?usp=drive_link"
+  },
+  {
+    "name": "Haizi Yu",
+    "email": "haiziyu@uchicago.edu",
+    "institution": "University of Chicago",
+    "bio": "Haizi has a Ph.D. in Computer Science. His research interests include white-box AGI, interpretable machine learning, automatic knowledge discovery, and music intelligence. He received his doctoral degree from the University of Illinois at Urbana-Champaign, his M.S. degree in Computer Science from Stanford University, and his B.S. degree from the Department of Automation at Tsinghua University.",
+    "position": "Affiliate Researcher",
+    "additionalLink": "https://drive.google.com/file/d/1LdiAciLoFfQ6BYP3_KlDKptI5eEfli5K/view?usp=drive_link"
+  }
+]
+
+const klabStudents = [
+  {
+    "name": "Qixin Lin",
+    "email": "qxlin@uchicago.edu",
+    "institution": "University of Chicago",
+    "bio": "Qixin is a second-year master's student in the Computational Social Science program with a concentration in sociology at the University of Chicago. Leveraging a diverse computational toolkit that includes text analysis, Large Language Models (LLMs) and various modeling techniques, she investigates complex datasets to understand the intricate dynamics of labor markets and knowledge networks. Her research interests lie at the intersections of labor, working skills and employment issues, ambitiously aiming to enhance access to quality jobs and career opportunities while bolstering workers' rights and well-being. Beyond her core research, Qixin is passionate about interdisciplinary approaches and complex systems, actively expanding her expertise in fields such as ecology and physics - a curiosity that extends to all forms of new knowledge, experiences, and food.",
+    "website": "https://qixin-lin.github.io/",
+    "title": "Masters Student",
+    "cv_link": "https://drive.google.com/file/d/1AH-8pA3pPQNUcRwF5l7bp1k5ESNWfDvD/view?usp=drive_link"
+  },
+  {
+    "name": "Xiaodi Yang",
+    "email": "xiaodiyang@uchicago.edu",
+    "institution": "University of Chicago",
+    "bio": "Xiaodi Yang is a master's student in the Social Sciences Program at the University of Chicago. She uses language models to study how people form group cognition and ideologies through social contagion, with a focus on the role of digital media technologies in this process. She is also curious about the transformations in knowledge production brought about by AI technologies. Before joining the University of Chicago, she earned her bachelor's degree in sociology from Xi'an Jiaotong University. Her undergraduate research primarily focused on social network relationships and interpersonal communication.",
+    "website": "",
+    "title": "Masters Student",
+    "cv_link": "https://drive.google.com/file/d/1HDhNFjJkgK5-ewYwPKgYLl-od-PqH2HP/view?usp=drive_link"
+  },
+  {
+    "name": "Carolina Biliotti",
+    "email": "carolina.biliotti@imtlucca.it",
+    "institution": "IMT School for Advanced Studies Lucca, Italy",
+    "bio": "Carolina Biliotti is a fourth-year PhD student in Economics, Networks and Business Analytics (ENBA) at the IMT School for Advanced Studies Lucca, and a visiting student at Knowledge Lab. Her research interests include applications of causal inference, econometrics, and machine learning, focusing on policy evaluation and gender bias in science. At Knowledge Lab, her purpose is to investigate the interplay of gender, recognition, and innovation within the scientific community. She received a Bachelor’s degree in Political Sciences and a Master’s degree in Economics from the University of Florence.",
+    "website": "https://www.researchgate.net/profile/Carolina-Biliotti",
+    "title": "PhD Student",
+    "cv_link": "https://drive.google.com/file/d/1ScN4Cj7iUKXkPJAYehQYRQytuPYBx8CH/view?usp=drive_link"
+  },
+  {
+    "name": "Shiyang Lai",
+    "email": "shiyanglai@uchicago.edu",
+    "institution": "",
+    "bio": "I am a Ph.D. student in the Department of Sociology at the University of Chicago. Before this, I held a visiting fellow position at Northwestern University's Kellogg School of Management and received an M.A. in Computational Social Science from the University of Chicago. My current research agenda broadly encompasses societal computing and collective intelligence. In societal computing, I am developing a new computational framework to model social entities and systems, drawing inspiration from quantum physics. This approach aims to introduce a new lens for understanding the social world and to improve inference and predictions of a wide range of social activities, with an initial focus on scientific and technological innovations. In the realm of collective intelligence, my work explores the emergence of the wisdom of crowds and how it can be more effectively harnessed in open environments with minimal regulations from an evolutionary perspective. My scope extends beyond merely human entities to include artificial intelligence, acknowledging their increasing significance in the contemporary landscape of social learning.",
+    "website": "https://shiyang-term.com/",
+    "title": "PhD Student",
+    "cv_link": ""
+  },
+  {
+    "name": "Ningzi Li",
+    "email": "ningzi@uchicago.edu",
+    "institution": "University of Chicago",
+    "bio": "Ningzi is a professional research specialist at the Data Science Institute (DSI) and an adjunct assistant professor at the Booth School of Business at the University of Chicago. She obtained Ph.D. in sociology from Cornell University. Ningzi studies communication and behavior in organizations. She particularly focuses on how firms strategically communicate to influence stakeholder behaviors in the context of earnings calls, venture capital investments, and ESG reports. She also studies how stakeholders' communication influences firm behaviors in the context of employee reviews and product recalls. Her analysis heavily relies on natural experiments and natural language processing tools.",
+    "website": "http://ningzili.com",
+    "title": "PhD Student",
+    "cv_link": ""
+  },
+  {
+    "name": "Chen Lin",
+    "email": "lchencu@connect.ust.hk",
+    "institution": "Hong Kong University of Science and Technology",
+    "bio": "Lin is currently a near-graduating CS PhD candidate at the Hong Kong University of Science and Technology. She visited Knowledge Lab in 2022~2023. Her research interests lie in data-driven understanding of human-place visitation and human-human interaction patterns in complex urban environments, specifically focusing on topics including inequality, segregation, and resilience. She is also exploring using large language models for network learning and Science of Science (collective research attention).",
+    "website": "https://linchen-65.github.io/linchen/",
+    "publications": [
+      "Chen, L., Xu, F., Han, Z., Tang, K., Hui, P., Evans, J. and Li, Y., 2022. Strategic COVID-19 vaccine distribution can simultaneously elevate social utility and equity. Nature Human Behaviour, 6(11), pp.1503-1514.",
+      "Zhang, Y., Xu, F., Chen, L., Yuan, Y., Evans, J., Bettencourt, L. and Li, Y., 2024. Counterfactual mobility network embedding reveals prevalent accessibility gaps in US cities. Humanities and Social Sciences Communications, 11(1), pp.1-12."
+    ],
+    "title": "PhD Student",
+    "cv_link": "https://drive.google.com/file/d/1MdyQWwgBQZbFNJKVHHeNjj90hk9TcVut/view?usp=drive_link"
+  },
+  {
+    "name": "Hongkai Mao",
+    "email": "hm404@stanford.edu",
+    "institution": "Stanford University",
+    "bio": "Hongkai Mao is a PhD student in the Organizational Behavior Program at the Graduate School of Business, Stanford University. His research focuses on negative social interactions, such as toxicity, conflicts, and polarization, across both interpersonal and organizational levels. He aims to understand how people perceive their surroundings and how these perceptions can lead to unfavorable behavior in a socio-techno environment. As a potential approach to achieving this, he is interested in leveraging Large Language Models as digital doubles for simulated experiments to explore these complex dynamics.",
+    "website": "",
+    "title": "PhD Student",
+    "cv_link": ""
+  },
+  {
+    "name": "Rui Pan",
+    "email": "rui.pan@kellogg.northwestern.edu",
+    "institution": "Northwestern University",
+    "bio": "tbd",
+    "website": "tbd",
+    "title": "PhD Student",
+    "cv_link": ""
+  },
+  {
+    "name": "Nakwon Rim",
+    "email": "nwrim@uchicago.edu",
+    "institution": "University of Chicago",
+    "bio": "Nakwon is a Ph.D. student in the Department of Psychology at the University of Chicago. He is interested in how people represent and compress information about the complex environment around us and how that information gives rise to innovations, cognitive processes, and/or biases. Before coming to the University of Chicago, he received his bachelor's degree in Psychology and Brain Cognitive Science from Korea University.",
+    "website": "https://nwrim.github.io/",
+    "title": "PhD Student",
+    "cv_link": "https://drive.google.com/file/d/1FseFEh89PFo8023-pyB3BJkH1GVapMhr/view?usp=drive_link"
+  },
+  {
+    "name": "Wenxuan Shi",
+    "email": "wenxuanshi@whu.edu.cn",
+    "institution": "Wuhan University",
+    "bio": "Wenxuan Shi is a Ph.D. candidate at the School of Information Management, Wuhan University, China. She has been affiliated with the Knowledge Lab since June 2022. Her research centers on the science of science and scientific evaluation, with a particular focus on the processes of knowledge combination and innovation diffusion, the career trajectories of scientists, and the composition of research teams. Her work aims to provide insights that help scientists better organize and lead teams to foster scientific innovation and breakthroughs.",
+    "website": "",
+    "publications": [
+      "Shi, W., & Wu, R. (2024). Women’s Strength in Science: Exploring the Influence of Female Participation on Research Impact and Innovation. Scientometrics, 129(7), 4529-4551.",
+      "Tang, X., Shi, W., Wu, R., & Li, S. (2023). The expansion of team size in library and information science (LIS): Is bigger always better? Journal of Information Science, 01655515231204800."
+    ],
+    "title": "PhD Student",
+    "cv_link": "https://drive.google.com/file/d/1-U2gYQyso-E208RSV2iRE7ul1nUFB3Xd/view?usp=drive_link"
+  },
+  {
+    "name": "Haohan Shi",
+    "email": "haohanshi2028@u.northwestern.edu",
+    "institution": "Northwestern University",
+    "bio": "Haohan Shi is a Ph.D. student in the Media, Technology, and Society program at Northwestern University. At Northwestern, he collaborates in the Lab on Innovation, Networks, and Knowledge under the guidance of Dr. Agnes Horvat. He is broadly interested in misinformation, the science of science, online democracy, computational social science, and AI for social good. His work focuses on advancing online scholarly communication and promoting the democratization of science through digital science dissemination. He holds an M.A. in Computational Social Science from the University of Chicago and a B.S. in Mathematics/Computer Science and Psychology/Linguistics from Emory University.",
+    "website": "https://hshi420.github.io/",
+    "title": "PhD Student",
+    "cv_link": ""
+  },
+  {
+    "name": "Di Tong",
+    "email": "ditong@mit.edu",
+    "institution": "MIT",
+    "bio": "Di is a PhD candidate at MIT Sloan school of management, affiliated with the Institute for Work and Employment Research. Her research interests include organizational change, sociology of work, inequality, and social activism. She applies computational text analyses to study how firms respond to institutional, social, economic, and technological environments to change the organization of work and workers. She graduated with a M.A. in Computational Social Science from the University of Chicago and a B.A. in English Language and Literature from Tsinghua University.",
+    "website": "https://di-tong.github.io/",
+    "title": "PhD Student",
+    "cv_link": "https://drive.google.com/file/d/1j7YrTGq-UA4CvL1vAg8WcOz8D-M5CAkj/view?usp=sharing"
+  },
+  {
+    "name": "Renli Wu",
+    "email": "renly@uchicago.edu",
+    "institution": "Wuhan University",
+    "bio": "Renli Wu is a Ph.D. candidate at the School of Information Management, Wuhan University. He has been training at the Knowledge Lab for two years, since October 2021. His research primarily focuses on the Science of Science and Information Science, investigating the evolution of disciplines and cross-disciplinary knowledge flows. This encompasses examining the heterogeneity and differentiation in knowledge diffusion across various fields, uncovering hierarchies and biases within disciplinary networks, and studying the emergence and aging of domains. His work aims to provide valuable insights into the occurrence of innovations and the propagation of knowledge across different domains. Additionally, his studies delve into the dynamics of scientific teams and the career trajectories of scientists, exploring aspects such as team leadership, team size, and gender. Moving forward, he aims to explore the potential of leveraging LLMs and AI to discover new perspectives and make predictions about knowledge creation and scientific innovation.",
+    "website": "",
+    "title": "PhD Student",
+    "cv_link": "https://drive.google.com/file/d/1bRk8a64R5_A-CIgTx2OllAn--pE16HLi/view?usp=drive_link"
+  },
+  {
+    "name": "Yuanyi Zhen",
+    "email": "zhenyy21@maills.tsinghua.edu.cn",
+    "institution": "Tsinghua University",
+    "bio": "Yuanyi Zhen is a Ph.D. candidate in the Sociology Department at Tsinghua University and has been visiting the Knowledge Lab since March 2023. Her academic interests focus on the science of science, computational social science, and the sociology of science. Specifically, she seeks to understand how national culture, values, and norms shape the social relationships between innovators and how they influence disruptive innovation, tracing these social dynamics and mechanisms using network simulations and computational methods such as NLP and machine learning. Yuanyi holds a master's degree in Educational Technology from Beijing Normal University, specializing in Artificial Intelligence in Education (AIED), with a focus on the automatic construction of knowledge graphs in computer-supported collaborative learning and the evaluation of intelligent tools.",
+    "website": "https://scholar.google.com/citations?user=tQm_0ZAAAAAJ&hl=zh-CN&oi=ao",
+    "title": "PhD Student",
+    "cv_link": "https://drive.google.com/file/d/10DYc1Lv5vZnwCXbHUoMv_hijaA-JbB5J/view?usp=drive_link"
+  },
+  {
+    "name": "Hyunku Kwon",
+    "email": "hyunkukwon@uchicago.edu",
+    "institution": "University of Chicago",
+    "bio": "Hyunku Kwon is a PhD candidate in sociology at the University of Chicago. He uses computational and geostatistical methods to study political economy, race, and the environment in the Postbellum US South, with a focus on agricultural land use arrangements, labor contracts and cotton. His dissertation examines the role that Black federal troops played in shaping land use (e.g., plantations, sharecropping, etc.) and crop monoculture in the Postbellum US South. His research has been published or is forthcoming in the American Political Science Review and Sociological Science. Before joining the University of Chicago, he received a BA in Public Administration and Political Science from Yonsei University.",
+    "website": "hyunkukwon.com",
+    "publications": [
+      "“Black Troops, White Rage, and Political Violence in the Postbellum American South,” forthcoming in the American Political Science Review (with Joshua Byun)",
+      "“Subjective Political Polarization,” Sociological Science, 2023 (with John Levi Martin)"
+    ],
+    "title": "PhD Student",
+    "cv_link": ""
+  },
+  {
+    "name": "Honglin Bao",
+    "email": "honglinbao@uchicago.edu",
+    "institution": "University of Chicago",
+    "bio": "Honglin Bao (he/him) is a doctoral student in the Knowledge Lab and Data Science Institute at the University of Chicago. His research focuses on uncovering the driving forces behind science and innovation. In his research he uses and develops computational tools, including network analysis, machine learning, and simulation modeling.",
+    "website": "www.hbao.info",
+    "title": "PhD Student",
+    "cv_link": ""
+  }
+]
+
 
 const klabAlumni = [
   {
@@ -430,445 +820,9 @@ const klabAlumni = [
     title: "Postdoctoral Scholar, University of Chicago",
     bio:
       "My research interest is the sciences of collaboration and innovation. I apply mathematical models and machine learning techniques to analyze collective knowledge production systems, including Web of Science, U.S. patents, Stack Exchange, GitHub. My works were published in journals including Nature, Physical Review E, Scientific Reports, PloS ONE, and also generated broad interest among diverse audiences in New Scientists and Science Daily. I got my PhD in Communication from the City University of Hong Kong in 2013. Overlapping with the PhD program I spent a year in Baidu as an algorithm engineer (internship). I joined Knowledge Lab in 2016 after working two years in the Center for Behavior, Institutions and the Environment at Arizona State University as a post-doc researcher. I am a core member of Swarma Club, a research network in Beijing with a vision to bridge academia, industry, and government.",
-  },
+  }
 ];
 
-const klabResearchPost = [
-  {
-    name: "James A. Evans",
-    title:
-      "Director, Knowledge Lab; Professor, Sociology, University of Chicago; Faculty Director, Masters Program in Computational Social Sciences; External Professor, Santa Fe Institute",
-    bio:
-      "James Evans is Director of Knowledge Lab, Professor of Sociology, Faculty Director of the Computational Social Science program, and member of the Committee on Conceptual and Historical Studies of Science at the University of Chicago. I am also an External Professor at the Santa Fe Institute. His research focuses on the collective system of thinking and knowing, ranging from the distribution of attention and intuition, the origin of ideas and shared habits of reasoning to processes of agreement (and dispute), accumulation of certainty (and doubt), and the texture-novelty, ambiguity, topology-of human understanding. He is especially interested in innovation-how new ideas and technologies emerge-and the role that social and technical institutions (e.g., the Internet, markets, collaborations) play in collective cognition and discovery. Much of his work has focused on areas of modern science and technology, but he is also interested in other domains of knowledge-news, law, religion, gossip, hunches and historical modes of thinking and knowing. He supports the creation of novel observatories for human understanding and action through crowd sourcing, information extraction from text and images, and the use of distributed sensors (e.g., RFID tags, cell phones). He uses machine learning, generative modeling, social and semantic network representations to explore knowledge processes, scale up interpretive and field-methods, and create alternatives to current discovery regimes. His research is funded by the National Science Foundation, the National Institutes of Health, DARPA, Facebook, IBM, the Sloan Foundation, Jump! Trading and other sources, and has been published in Science, PNAS, Nature Human Behavior, Nature Biotech, American Journal of Sociology, American Sociological Review, Social Studies of Science, Administrative Science Quarterly, PLoS Computational Biology and other journals. His work has been featured in Nature, the Economist, Atlantic Monthly, Wired, NPR, BBC, El País, CNN and many other outlets.",
-    bioImg: James,
-
-    size: "half",
-  },
-  {
-    name: "Jacob G. Foster",
-    title: "Assistant Professor, Sociology, UCLA",
-    bio:
-      "I was originally trained as a statistical physicist. Like many physicists, I was drawn to the study of complex systems because it licensed me (after a fashion) to work on all sorts of systems that physicists aren't “supposed” to—complex networks, evolutionary dynamics, etc. As a graduate student (in physics), I took a spectacular seminar on classical social theory (Marx, Weber, Durkheim, Parsons, Merton, Elias, etc.). I was instantly converted by rich theoretical and empirical resources of the sociological tradition. Markets, manners, state formation, systems of cultural and scientific production — now here were complex systems! Sociology also looked like it would give me the intellectual space to weave together my quantitative training with long-term passions for the history of ideas, cultural and biological evolution, and interpretive modes of scholarship. After a postdoc in the sociology department at the University of Chicago, I joined the sociology department at UCLA as an assistant professor in 2013. I am interested in the evolution and population dynamics of ideas (broadly construed). How are new ideas born? Why do some spread? What role do ideas play in organizing social structures? And how do social structures affect the genesis, diffusion, and ultimate extinction of ideas? Currently, I work on a particular subset of the world of ideas: the beliefs, practices, and theories that make up scientific knowledge. By fitting rich computational models of discovery and impact to data extracted from articles and patents, I infer the preferences and social processes that give scientific knowledge its particular shape and trajectory. Broadly speaking, I aim to generate new knowledge about the process of knowledge-making; to identify and understand the heuristics, strategies, and institutions that guide scientists as they make sense of the natural world.",
-
-    size: "half",
-  },
-  {
-    name: "Luís Amaral",
-    title:
-      "Professor, Chemical and Biological Engineering Professor, Medicine; HHMI Early Career Scientist, Northwestern University",
-    bio:
-      "Professor Amaral, a native of Portugal, conducts and directs research that provides insight into the emergence, evolution, and stability of complex social and biological systems. His research aims to address some of the most pressing challenges facing human societies and the world's ecosystems, including the mitigation of errors in healthcare settings, the characterization of the conditions fostering innovation and creativity, or the growth limits imposed by sustainability. Recently, Amaral proposed the development of cartographic methods for the representation of complex biological networks. These methods will enable researchers to accomplish something similar to what travelers now can easily accomplish with, for example, Google Maps, that is, to glean the important information on a given system at the scale of interest to the researcher. These tools hold the promise to enable biomedical researcher to design or re-engineer biological systems for therapeutic purposes.",
-
-    size: "half",
-  },
-  {
-    name: "David Blei",
-    title: "Professor, Statistics and Computer Science, Columbia University",
-    bio:
-      "I am a professor of Statistics and Computer Science at Columbia University. I am also a member of the Institute for Data Sciences and Engineering. I work in the fields of machine learning and Bayesian statistics. David's Ph.D. advisor was Michael Jordan at U.C. Berkeley Computer Science. David was a postdoctoral researcher with John Lafferty at CMU in the Machine Learning department. His research interests include: Probabilistic graphical models and approximate posterior inference; Topic models, information retrieval, and text processing; Bayesian nonparametric statistics.",
-
-    size: "half",
-  },
-  {
-    name: "Ian Foster",
-    title:
-      "Director, Computation Institute; Senior Scientist, Mathematics and Computer Science (MCS) at Argonne National Laboratory; Executive Advisory Committee Member and Senior Fellow, Institute for Genomics and Systems Biology (IGSB); Professor, Computer Science, University of Chicago; Professor, Physical Sciences, University of Chicago; Distinguished Fellow, Argonne National Laboratory, University of Chicago",
-    bio:
-      "Ian Foster is Director of the Computation Institute, a joint institute of the University of Chicago and Argonne National Laboratory. He is also an Argonne Senior Scientist and Distinguished Fellow and the Arthur Holly Compton Distinguished Service Professor of Computer Science. Ian received a BSc (Hons I) degree from the University of Canterbury, New Zealand, and a PhD from Imperial College, United Kingdom, both in computer science. His research deals with distributed, parallel, and data-intensive computing technologies, and innovative applications of those technologies to scientific problems in such domains as climate change and biomedicine. Methods and software developed under his leadership underpin many large national and international cyberinfrastructures.",
-
-    size: "half",
-  },
-
-  {
-    name: "John P. Ioannidis",
-    title:
-      "C. F. Rehnborg Professor in Disease Prevention, Medicine; Professor, Health Research & Policy; Professor (By courtesy), Statistics, Stanford University",
-    bio:
-      "I have worked in the fields of evidence-based medicine, clinical investigation, clinical and molecular epidemiology, clinical research methodology, empirical research methods, statistics, and genomics. I have a strong interest in large-scale evidence (in particular randomized trials and meta-analyses) and in appraisal and control of diverse biases in biomedical research. I am interested in developing and applying new research methods, and in the interdisciplinary enhancement of existing research methods for study design and analysis in biomedicine. Some of my most influential papers in terms of citations are those addressing issues of replication validity of genetic association studies, biases in biomedical research, research synthesis methods, extensions of meta-analysis, genome-wide association studies and agnostic evaluation of associations, and validity of randomized trials and observational research. I have also designed, steered and participated in influential randomized trials (in particular, the major trials that changed decisively the management and outcome of HIV infection, but also trials in nephrology, and in antibiotic use in the community), and large international consortia that have helped transform the efficiency of research in diverse fields of genomic, molecular and clinical epidemiology. I enjoy working with a diverse array of colleagues from very diverse disciplines and to have an opportunity to learn from both senior and junior investigators, and particularly students at all levels.",
-
-    size: "half",
-  },
-  {
-    name: "David Krakauer",
-    title:
-      "Director, Wisconsin Institute for Discovery; Co-Director, Center for Complexity and Collective Computation; Professor, Genetics, University of Wisconsin, Madison",
-    bio:
-      "A graduate of the University of London, where he went on to earn a master's degree in computer science and mathematics, David Krakauer received his D.Phil. in evolutionary theory from Oxford University in 1995. He remained at Oxford as a postdoctoral research fellow and two years later was named a Wellcome Research Fellow in mathematical biology and lecturer at Pembroke College. In 1999, he accepted an appointment to the Institute for Advanced Study at Princeton University and served as visiting professor of evolution. He moved on to the Santa Fe Institute as a professor three years later and was made faculty chair in 2009. Krakauer has been a visiting fellow at the Genomics Frontiers Institute at the University of Pennsylvania and a Sage Fellow at the Sage Center for the Study of the Mind at the University of California, Santa Barbara. Krakauer's research focuses on the evolutionary history of information processing mechanisms in biology and culture. This includes genetic, neural, linguistic and cultural mechanisms. The research spans multiple levels of organization, seeking analogous patterns and principles in genetics, cell biology, microbiology and in organismal behavior and society. At the cellular level, Krakauer has been interested in molecular processes, which rely on volatile, error-prone, asynchronous, mechanisms, which can be used as a basis for decision making and patterning. He also investigates how signaling interactions at higher levels, including microbial and organismal, are used to coordinate complex life cycles and social systems, and under what conditions we observe the emergence of proto-grammars. Much of this work is motivated by the search for ‘noisy-design' principles in biology and culture emerging through evolutionary dynamics that span hierarchical structures.",
-
-    size: "half",
-  },
-  {
-    name: "Andrey Rzhetsky",
-    title:
-      "Professor, Department of Medicine; Professor, Department of Human Genetics; Senior Fellow, Computation Institute; Senior Fellow, Institute for Genomics and Systems Biology, University of Chicago",
-    bio:
-      "My main interest is in gaining an (asymptotic) understanding how phenotypes, such as human healthy diversity and maladies, are implemented at the level of genes and networks of interacting molecules. To harvest as much information about known molecular interactions as possible, my group runs a large-scale text-mining effort aiming at analysis of a vast corpus of biomedical publications. Currently we can extract from text automatically about 500 distinct flavors of relations among biomedical entities (such as bind, activate, merystilate, and transport). To sharpen our text-mining axes, we are actively designing related models and computational applications. Furthermore, in cooperation with our experimentally talented colleagues, we are striving to use text-mined networks to understand, interpret and refine high- or low-throughput experimental data. We are also computationally generating biological hypotheses that our generous collaborators are attempting to test experimentally. My older passion is in developing and applying computational methods related to phylogenetics and evolutionary biology.",
-
-    size: "half",
-  },
-  {
-    name: "Michael Alfaro",
-    title:
-      "Associate Professor, Department of Ecology and Evolutionary Biology & Institute for Society and Genetics, UCLA",
-    bio:
-      "ISG Fellow Dr. Michael Alfaro is an Associate Professor in the Ecology and Evolutionary Biology department where he and ISG Associate Director Dr. Jessica Lynch Alfaro run the UCLA Alfaro Lab. The goal of his research is to understand the factors that govern the evolutionary dynamics of organismal diversification. Why are some groups morphologically diverse? Are there general laws or themes that can be used to explain the uneven distribution of diversity in physiological traits across lineages? Does morphological diversity always signal mechanical, functional, or ecological diversity? To address these questions, Alfaro works largely on marine fishes. His research approach is interdisciplinary and quantitative and crosses traditional boundaries among evolutionary morphology, molecular phylogenetics, and theoretical evolution. He identifies and quantifies organismal diversity using morphological and functional morphological techniques; constructs evolutionary trees and tests evolutionary hypotheses using phylogenetic statistical methods; and uses models of trait evolution to explore form-function dynamics.",
-
-    size: "half",
-  },
-  {
-    name: "Carl Bergstrom",
-    title: "Professor, Biology, University of Washington",
-    bio:
-      "Carl is a professor in the Department of Biology at the University of Washington and a member of the External Faculty at the Santa Fe Institute. He received his bachelor's degree from Harvard University in 1993, where he worked with Naomi Pierce and David Haig. Carl did his Ph.D. work in Biological Sciences at Stanford University with Marc Feldman. processes. After leaving Stanford, he did two years of postdoctoral work at Emory University with Bruce Levin.",
-
-    size: "half",
-  },
-  {
-    name: "Edward Boyden",
-    title:
-      "Associate Professor, MIT Media Lab and McGovern Institute for Brain Research at MIT, MIT",
-    bio:
-      "Professor Boyden leads the MIT Media Lab's Synthetic Neurobiology research group, which develops tools for mapping, controlling, observing, and building dynamic circuits of the brain, and uses these neurotechnologies to understand how cognition and emotion arise from brain network operation, as well as to enable systematic repair of intractable brain disorders such as epilepsy, Parkinson's disease, and post-traumatic stress disorder. His research group has invented a suite of “optogenetic” tools that are now in use by thousands of research groups around the world for activating and silencing neurons with light. Boyden was named to the “Top 35 Innovators Under the Age of 35” by Technology Review in 2006, and to the “Top 20 Brains Under Age 40” by Discover magazine in 2008. He has received the Gabbay Award, National Institutes of Health (NIH) Director's Pioneer Award and Transformative Research Award, the Society for Neuroscience Research Award for Innovation in Neuroscience, the NSF CAREER Award, the Paul Allen Distinguished Investigator Award, and the New York Stem Cell Robertson Investigator Award. In 2010, his work was recognized as the “Method of the Year” by the journal Nature Methods. Most recently he shared the 2013 Grete Lundbeck European Brain Research Prize for outstanding contributions to European neuroscience-the largest neuroscience prize in the world.",
-
-    size: "half",
-  },
-  {
-    name: "Stephen V. David",
-    title:
-      "Assistant Professor, Oregon Hearing Research Center, Oregon Health and Science University",
-    bio:
-      "Neuroscience is a new but rapidly growing field, drawing ideas and methodologies from many other fields, including biology, psychology, physics, mathematics and philosophy. Each neuroscientist brings a unique perspective into their work that reflects this diversity. We are studying how academic mentorship, the hands-on training received at the doctoral and postdoctoral level, influences the work of individuals and permits the synthesis of new experimental approaches. Neurotree is a collaborative, open-access website that tracks and visualizes the academic genealogy. After nine years of growth driven by user-generated content, the site has captured information about the mentorship of over 45,000 neuroscientists. It has become a unique tool for a community of primary researchers, students, journal editors, and the press. The database allows us to explore the evolution of new ideas and how mentorship has contributed their development. We are exploring new ways to improve the quality of the existing data and ways to link Neurotree to other datasets, such as publication and grant databases. Inspired by Neurotree's example, genealogies have been launched for a number of other fields under auspices of the Academic Family Tree, which aims to build a single genealogy across all academic fields.",
-
-    size: "half",
-  },
-  {
-    name: "Jessica Flack",
-    title:
-      "Co-Director, Center for Complexity and Collective Computation, University of Wisconsin-Madison",
-    bio:
-      "Jessica's research focuses on uncertainty reduction, coarse-graining and collective computation in nature and their role in the origins of biological space-time—that is, the evolution and development of hierarchical structure with multiple, functionally significant time and space scales. Jessica and her colleagues study a wide range of collectives, from group of cells forming neural tissue, to groups of macaques forming animal societies, to groups of online gamers forming virtual societies. Jessica received her BA with honors from Cornell University in 1996, studying anthropology, evolutionary theory, and biology. She received her PhD from Emory University in 2004, studying animal behavior, cognitive science, and evolutionary theory. For the next eight years she was in residence at the Santa Fe Institute, first as a Postdoctoral Fellow and then as Research Professor, and finally as Professor. She moved to the University of Wisconsin, Madison in 2011. Jessica's research has empirical and theoretical components and sits at the interface of evolutionary theory, pattern formation, behavior, cognitive science, computer science, information theory, and statistical mechanics. Although most of her work now is of a computational nature, she has spent thousands of hours collecting large behavioral data sets, including highly resolved time-series, from animal societies, and she conducted the first behavioral knockout study on social systems. In that study, she designed an experiment to disable a critical conflict management function—policing—to quantify its role in social system robustness in an animal society.",
-
-    size: "half",
-  },
-  {
-    name: "Mark Green",
-    title: "Professor Emeritus, Mathematics, UCLA",
-    bio: "",
-
-    size: "half",
-  },
-  {
-    name: "César A. Hidalgo",
-    title: "Assistant Professor, Media Arts and Sciences, MIT Media Lab",
-    bio:
-      "César A. Hidalgo heads the Macro Connections group at The MIT Media Lab and is also the ABC Career Development Professor of Media Arts and Sciences at MIT. Hidalgo's work focuses on understanding the evolution of information in natural, social, and economic systems, and on the development of big data visualization engines designed to make available unwieldy volumes of data. Hidalgo's academic publications have been cited more than 4,500 times and his visualization engines have received more than 5 million visits. He is the author of Why Information Grows (Penguin UK, Basic Books US, Forthcoming June 2, 2015) and the co-author of The Atlas of Economic Complexity (MIT Press).",
-
-    size: "half",
-  },
-  {
-    name: "Konrad Kording",
-    title:
-      "Associate Professor, Physical Medicine and Rehabilitation/Physiology, Northwestern University",
-    bio:
-      "The research of the Bayesian Behavior group shows that movement and movement learning can be understood in terms of statistical principles. Our Sensors (Eyes, Ears, Skin etc) are not perfect but are noisy. Moreover, our muscles are noisy and if we try to do the same movement over and over it will be different each time. This means that if we make a movement, say swing a golf club, we will have uncertainty in the potential movement outcomes. Our group studies how people make movement decisions in the presence of such uncertainty. Our research has four main thrusts: We advance big Data approaches to neuroscience. We study experimentally how people move and how their movements are affected by uncertainty. We build computational models using Bayesian statistics to calculate how people could move optimally or learn to move optimally. We build Bayesian Algorithms to solve problems that we find interesting. For example we analyze how neurons are connected in the nervous system. The main thrust of our current research is to allow for better rehabilitation procedures through an understanding of motor learning. Our lab is part of Northwestern University, Departments Physiology and PM&R. It is associated with Northwestern Department of applied math. Our laboratory is part of the rehabilitation institute of Chicago.",
-
-    size: "half",
-  },
-  {
-    name: "Hannah Landecker",
-    title: "Associate Professor, Sociology, UCLA",
-    bio:
-      "My work takes place at the intersection of the life and social sciences. In general, the social and historical study of biotechnology and life science, from 1900 to now, is my area of specialization. I am currently writing a book called “American Metabolism,” which looks at transformations to the metabolic sciences wrought by the rise of epigenetics, microbiomics, cell signaling and hormone biology. A related project concerns the history of metabolic hormones after 1960 and the rise of the cellular “signal” as a central category of thought and practice in the life sciences.",
-
-    size: "half",
-  },
-  {
-    name: "Christopher Lee",
-    title:
-      "Professor, Department of Computer Science; Professor, Department of Chemistry & Biochemistry, UCLA",
-    bio:
-      "Prof. Lee has been a Faculty member in the Department of Chemistry and Biochemistry since 1998. His training provided an unusual combination of experimental cell biology, biophysics, and algorithm development, which he has applied at UCLA to bioinformatics analysis of genome evolution. He has led efforts to establish a bioinformatics Ph.D. program at UCLA. He has served on the Board of Scientific Counselors, NIH National Center for Biotechnology Information, and serves on the editorial board of Biology Direct. His current research focuses on alternative splicing and its role in genome evolution. Research Interest: Bioinformatics: alternative splicing and genome evolution: genome-wide analysis of the types and functions of alternative splicing, and its apparent role in evolution of mammalian genomes. Alternative splicing appears to have greatly accelerated major evolutionary events such as exon creation, and now is an exciting new area of research in genome evolution protein evolutionary pathways. Using a massive dataset of clinical HIV sequences, we have developed new methods to decode the evolutionary pathways by which HIV evolves drug resistance. We have just shown that our methods can measure the detailed “fitness landscape” describing how HIV proteins can evolve, as a kinetic network showing the actual rate of evolution along every possible evolutionary pathway graph databases for bioinformatics and genomics. We have developed a general framework for working with genomic data as an abstract graph database, for fundamental problems such as multiple genome alignment query and protein interaction network analysis.",
-
-    size: "half",
-  },
-  {
-    name: "Hod Lipson",
-    title:
-      "Associate Professor, Department of Mechanical and Aerospace Engineering, Cornell University",
-    bio:
-      "Hod Lipson is a professor of engineering at Cornell University in Ithaca, New York, and a co-author of the recent book “Fabricated: The New World of 3D printing”. His work on self-aware and self-replicating robots, food printing, and bio-printing has received widespread media coverage including The New York Times, The Wall Street Journal, Newsweek, Time, CNN, and the National Public Radio. Lipson has co-authored over 200 technical papers and speaks frequently at high-profile venues such as TED and the US National Academies. Hod directs the Creative Machines Lab, which pioneers new ways to make machines that create, and machines that are creative. Research Interests: My relatively broad spectrum of research projects focus on what I consider to be two “grand challenges” of engineering: (a) Can we design machines that can design other machines, and (b) Can we make machines that can make other machines. Both of these questions lie at the crux of understanding the engineering process itself, and progress on these fronts can offer huge leverage in our ability to design, make and maintain increasingly complex systems in the future. Biological life has answered these challenges in ways that dwarf the best teams of human engineers; I therefore use primarily biologically-inspired approaches, as they bring new ideas to engineering and new engineering insight into biology.",
-
-    size: "half",
-  },
-  {
-    name: "Hyot Long",
-    title:
-      "Associate Professor, Japanese Literature, East Asian Languages and Civilizations; Co-Director, Text Lab, University of Chicago",
-    bio:
-      "Hoyt comes to Metaknowledge with an interest in how social network analysis, corpus analysis, and other computational methods can facilitate large-scale comparative inquiries into the social dynamics of cultural production. Specifically, he is interested in what these methods can tell us about the diffusion of artistic style and form, the role of formal and informal social ties in shaping such processes, and the emergence of system-level dynamics across linguistic and political boundaries. Along these lines, he Directs a collaborative initiative with Richard Jean So called ‘Text Lab', which applies these methods to the study of global modernism in the early 20th century. Hoyt's research and teaching center on modern Japan, with particular interests in regional literature, publishing history, media and communication, and environmental history. He also has an interest in the application of social-scientific methods to the study of how texts and ideas emerge and circulate within social and material systems. In a current book project, Hoyt joins this sociological interest with his interest in the history of communication in Japan. Specifically, Hoyt looks at how developments in communications technology at the turn of the last century impacted practices of writing, patterns of social association, and ideas of communication itself. Utilizing a variety of materials (epistolary fiction, letter-writing manuals, correspondence magazines), he uncovers emerging fantasies and beliefs about the meaning of connection in a postal age, particularly as they related to changing notions about handwriting, voice, memory, and brevity.",
-
-    size: "half",
-  },
-  {
-    name: "Gary Lupyan",
-    title: "Assistant Professor, Psychology, University of Wisconsin Madison",
-    bio:
-      "Language is one of the defining traits of our species. It, of course, allows for the accumulation and communication of knowledge. But in addition to its uses in communication, the acquisition and use of language appears to augment the human brain in important ways. The aim of my primary line of research is to investigate and delineate these extra-communicative functions of language: How is our ability to place objects into categories altered by language? Does language literally change what we see? How does naming an object affect visual representations? How does using language change our memories? Do people who speak different languages see and remember things differently? Are there ideas that are unthinkable without language? In addition, I have investigated the relationship between grammatical structure and social structure (Lupyan & Dale, 2010) and have a continued interest in the ways that the communicative (and cognitive) needs of a population shape the grammatical structure of languages. I also have a broad interest in the dynamics of neural coding and the way in which perceptual and conceptual representations are dynamically shaped by an individual's goals, expectations, and task context. I have employed a wide range of experimental paradigms and tools to address the questions that interest me. These have included behavioral experiments, neural network modeling, large-scale corpus analysis, eye-tracking, neuroimaging (fMRI), transcranial magnetic stimulation (TMS), and transcranial direct current stimulation (tDCS).",
-
-    size: "half",
-  },
-  {
-    name: "Hoifung Poon",
-    title: "Researcher, Microsoft Research",
-    bio:
-      "I am a researcher at Microsoft Research in Redmond, WA. My research interest is in advancing machine learning and natural language processing to automate discovery in genomics and precision medicine. My most recent work focuses on scaling semantic parsing to Pubmed for extracting biological pathways, and on developing probabilistic methods to incorporate pathways with high-throughput genomics data in cancer system biology. I have received Best Paper Awards in NAACL, EMNLP, and UAI.",
-
-    size: "half",
-  },
-  {
-    name: "Daniel Lord Small",
-    title: "Professor, History, Harvard University",
-    bio:
-      "I am a student of early human history; in my teaching and research, I cover a span of time from humanity's deep history in Africa to Mediterranean Europe in the later middle ages. The overarching intellectual project of my work in recent years has been to identify and develop new frames or narratives for binding human history together into a seamless whole. I work under the assumption that history is not a political science designed to explain the present. It is an anthropological science designed to help us understand humanity. In everything I do, I hope to show how the intellectual projects that drive transnational and global histories work equally well across time, and to offer the deep past as the new intellectual frontier of historical research and historical framing in the twenty-first century.",
-
-    size: "half",
-  },
-  {
-    name: "Richard Jean So",
-    title:
-      "Assistant Professor, English; Co-Director, Text Lab, University of Chicago",
-    bio:
-      "Broadly speaking, Richard's teaching and research interests center on modern American literature in a transnational context. Within this area, he is interested in theories of cultural transnationalism, the history of media and communications, and the “Pacific” (which includes U.S., Asian American, and East Asian cultures) as a coherent area of study. Richard also does substantial work in the digital humanities. In particular, he is interested in the use of new computational and social scientific methods, such as text mining, to model a form of textual criticism that mediates between distant and close reading approaches.",
-
-    size: "half",
-  },
-  {
-    name: "Rebecca C. Steorts",
-    title: "Assistant Professor of Statistical Science, Duke University",
-    bio:
-      "Rebecca C. Steorts is an Assistant Professor of Statistical Science at Duke University with affiliations in the information initiative at Duke (iid) and the Social Science Research Institute (SSRI). She received her B.S. in Mathematics in 2005 from Davidson College, her MS in Mathematical Sciences in 2007 from Clemson University, and her PhD in 2012 from the Department of Statistics at the University of Florida under the supervision of Malay Ghosh. She is currently a Visiting Assistant Professor in the Statistics Department at Carnegie Mellon University. Rebecca is a recipient of the Graduate Alumni Fellowship Award (2007-2010) from the University of Florida and the U.S. Census Bureau Dissertation Fellowship Award (2010-2011). In 2011, she was awarded the UF Innovation through Institutional Integration Program (I-Cubed) and NSF for development of an introductory Bayesian course for undergraduates. She has also been awarded Finalist for the 2012 Leonard J. Savage Thesis Award in Applied Methodology. She is interested in scalable computational methods for social science applications. Her current works focuses on recovering high dimensional objects from degraded data and determining how to recover the underlying structure. Methods used for this are entity resolution, small area estimation, locality sensitive hashing, and privacy-preserving record linkage as applied to medical studies, fmri studies, human rights violations, and estimation of poverty rates in hard to reach domains. Her research was on record linkage and sparse clustering was recently funded by the John Templeton Foundation, MetaKnowledge Network Grants Awarded, November 2014. Also, her work on privacy and record linkage was just funded by the National Science Foundation. She was recently named to MIT Technology Review's 35 Innovators Under 35 for 2015 as a humantarian in the field of software. Her work will be profiled in the September/October issue of MIT Technology Review and she will be recognized at a special ceremony along with an invited talk at EmTech in November 2015.",
-
-    size: "half",
-  },
-  {
-    name: "Tim Weininger",
-    title:
-      "Assistant Professor, Department of Computer Science and Engineering, University of Notre Dame",
-    bio:
-      "I'm an assistant professor in the College of Engineering at the University of Notre Dame, with appointments in the Interdisciplinary Center for Network Science and Applications (iCeNSA) and the Department of Computer Science and Engineering. I joined the faculty in August 2013, after completing my Ph.D. in Computer Science at the University of Illinois Urbana-Champaign. I work in network science, with a particular focus on multimodal/heterogeneous information networks. My research lies at the intersection of machine learning and databases and information retrieval.",
-
-    size: "half",
-  },
-  {
-    name: "Jevin D. West",
-    title: "Assistant Professor, Information School, University of Washington",
-    bio:
-      "I am an assistant professor in the Information School at the University of Washington. We like maps and information. The research I do aims to map large networks in order to understand the flow of information. I co-founded Eigenfactor.org. This research project aims to rank and map science, in hopes of building better tools for navigating the ever expanding scholarly literature. I have been lucky in my research journal so far. I have had the best graduate and post-doctoral mentors a graduate. I have worked in departments and universities that encourage the type of interdisciplinary work I enjoy doing, and I have pursued questions that keep me thinking inside and outside the lab. I grew up in the small town of Ammon, Idaho. It doesn't house any great scientists, but it does offer close proximity to skiing and the outdoors—something I enjoy very much. I attended Utah Sate University, originally to play tennis and to enjoy some of the best snow on earth. After finishing a bachelor's degree in biology, I took a two year tennis-pro hiatus and traveled. I returned to USU and completed a Masters degree with Keith Mott and David Peak. The research I did with them explored a topic at the cross section of physics, biology and computer science. I looked at how stomatal networks on the surface of a leaf perform a distributed computation. This work hooked my interests to the field of complexity—an area of science that is ambiguous, messy and full of questions that will take generations to sort out. In the fall of 2004, I visited the University of Washington and met with Carl Bergstrom in the Department of Biology. After a three-day conversation in three hours about the role of information in biology, I knew I had found the right place. During my PhD, I was introduced to citation networks as a model system for studying information flow in social and biological systems. It is also ignited my passion for improving scholarly communication and led to the Eigenfactor Project. The project continues to grow and now includes research in mapping, information visualization, gender research, economics of scholarly publishing, and recommendation For my post-doc, I was fortunate to continue working in the area of networks and mapping while working with Martin Rosvall at Umea University (Sweden).",
-
-    size: "half",
-  },
-  {
-    name: "Lynne G. Zucker",
-    title:
-      "Professor, Department of Sociology; Director, Center for International Science, Technology, and Cultural Policy, UCLA",
-    bio:
-      "My training is in organizational sociology, institutional theory, economic sociology, and social psychology. My current major interests are on processes and impact of knowledge transmission from basic science to commercial use, especially impact on economic performance of firms, creation of new organizational populations (some of which become new industries), and on productivity growth. I share with Michael Darby an interest in identifying the major mechanisms of knowledge transfer and the institutional infrastructure that cause metamorphic industry change and rapid economic growth. Within the context of basic scientific breakthroughs that are commercially applicable, we are exploring other measures of success such as IPO returns and examining the impact of other means of knowledge transfer such as joint ventures. We are now studying many of the same processes in nanoscience, a newly emerging basic research area with significant commercial potential. To identify institutional infrastructure effects, we are completing a comparative study of biotech in Japan and the U.S. and embarking on a set of major international analyses of the transmission of scientific breakthroughs to commercial use in nanotechnology.",
-
-    size: "half",
-  },
-];
-
-const klabStudents = [
-  {
-    name: "Jacob G. Foster",
-    title: "Assistant Professor, Sociology, UCLA",
-    bio:
-      "I was originally trained as a statistical physicist. Like many physicists, I was drawn to the study of complex systems because it licensed me (after a fashion) to work on all sorts of systems that physicists aren't “supposed” to—complex networks, evolutionary dynamics, etc. As a graduate student (in physics), I took a spectacular seminar on classical social theory (Marx, Weber, Durkheim, Parsons, Merton, Elias, etc.). I was instantly converted by rich theoretical and empirical resources of the sociological tradition. Markets, manners, state formation, systems of cultural and scientific production — now here were complex systems! Sociology also looked like it would give me the intellectual space to weave together my quantitative training with long-term passions for the history of ideas, cultural and biological evolution, and interpretive modes of scholarship. After a postdoc in the sociology department at the University of Chicago, I joined the sociology department at UCLA as an assistant professor in 2013. I am interested in the evolution and population dynamics of ideas (broadly construed). How are new ideas born? Why do some spread? What role do ideas play in organizing social structures? And how do social structures affect the genesis, diffusion, and ultimate extinction of ideas? Currently, I work on a particular subset of the world of ideas: the beliefs, practices, and theories that make up scientific knowledge. By fitting rich computational models of discovery and impact to data extracted from articles and patents, I infer the preferences and social processes that give scientific knowledge its particular shape and trajectory. Broadly speaking, I aim to generate new knowledge about the process of knowledge-making; to identify and understand the heuristics, strategies, and institutions that guide scientists as they make sense of the natural world.",
-
-    size: "half",
-  },
-  {
-    name: "Luís Amaral",
-    title:
-      "Professor, Chemical and Biological Engineering Professor, Medicine; HHMI Early Career Scientist, Northwestern University",
-    bio:
-      "Professor Amaral, a native of Portugal, conducts and directs research that provides insight into the emergence, evolution, and stability of complex social and biological systems. His research aims to address some of the most pressing challenges facing human societies and the world's ecosystems, including the mitigation of errors in healthcare settings, the characterization of the conditions fostering innovation and creativity, or the growth limits imposed by sustainability. Recently, Amaral proposed the development of cartographic methods for the representation of complex biological networks. These methods will enable researchers to accomplish something similar to what travelers now can easily accomplish with, for example, Google Maps, that is, to glean the important information on a given system at the scale of interest to the researcher. These tools hold the promise to enable biomedical researcher to design or re-engineer biological systems for therapeutic purposes.",
-
-    size: "half",
-  },
-  {
-    name: "David Blei",
-    title: "Professor, Statistics and Computer Science, Columbia University",
-    bio:
-      "I am a professor of Statistics and Computer Science at Columbia University. I am also a member of the Institute for Data Sciences and Engineering. I work in the fields of machine learning and Bayesian statistics. David's Ph.D. advisor was Michael Jordan at U.C. Berkeley Computer Science. David was a postdoctoral researcher with John Lafferty at CMU in the Machine Learning department. His research interests include: Probabilistic graphical models and approximate posterior inference; Topic models, information retrieval, and text processing; Bayesian nonparametric statistics.",
-
-    size: "half",
-  },
-  {
-    name: "Ian Foster",
-    title:
-      "Director, Computation Institute; Senior Scientist, Mathematics and Computer Science (MCS) at Argonne National Laboratory; Executive Advisory Committee Member and Senior Fellow, Institute for Genomics and Systems Biology (IGSB); Professor, Computer Science, University of Chicago; Professor, Physical Sciences, University of Chicago; Distinguished Fellow, Argonne National Laboratory, University of Chicago",
-    bio:
-      "Ian Foster is Director of the Computation Institute, a joint institute of the University of Chicago and Argonne National Laboratory. He is also an Argonne Senior Scientist and Distinguished Fellow and the Arthur Holly Compton Distinguished Service Professor of Computer Science. Ian received a BSc (Hons I) degree from the University of Canterbury, New Zealand, and a PhD from Imperial College, United Kingdom, both in computer science. His research deals with distributed, parallel, and data-intensive computing technologies, and innovative applications of those technologies to scientific problems in such domains as climate change and biomedicine. Methods and software developed under his leadership underpin many large national and international cyberinfrastructures.",
-
-    size: "half",
-  },
-
-  {
-    name: "John P. Ioannidis",
-    title:
-      "C. F. Rehnborg Professor in Disease Prevention, Medicine; Professor, Health Research & Policy; Professor (By courtesy), Statistics, Stanford University",
-    bio:
-      "I have worked in the fields of evidence-based medicine, clinical investigation, clinical and molecular epidemiology, clinical research methodology, empirical research methods, statistics, and genomics. I have a strong interest in large-scale evidence (in particular randomized trials and meta-analyses) and in appraisal and control of diverse biases in biomedical research. I am interested in developing and applying new research methods, and in the interdisciplinary enhancement of existing research methods for study design and analysis in biomedicine. Some of my most influential papers in terms of citations are those addressing issues of replication validity of genetic association studies, biases in biomedical research, research synthesis methods, extensions of meta-analysis, genome-wide association studies and agnostic evaluation of associations, and validity of randomized trials and observational research. I have also designed, steered and participated in influential randomized trials (in particular, the major trials that changed decisively the management and outcome of HIV infection, but also trials in nephrology, and in antibiotic use in the community), and large international consortia that have helped transform the efficiency of research in diverse fields of genomic, molecular and clinical epidemiology. I enjoy working with a diverse array of colleagues from very diverse disciplines and to have an opportunity to learn from both senior and junior investigators, and particularly students at all levels.",
-
-    size: "half",
-  },
-  {
-    name: "David Krakauer",
-    title:
-      "Director, Wisconsin Institute for Discovery; Co-Director, Center for Complexity and Collective Computation; Professor, Genetics, University of Wisconsin, Madison",
-    bio:
-      "A graduate of the University of London, where he went on to earn a master's degree in computer science and mathematics, David Krakauer received his D.Phil. in evolutionary theory from Oxford University in 1995. He remained at Oxford as a postdoctoral research fellow and two years later was named a Wellcome Research Fellow in mathematical biology and lecturer at Pembroke College. In 1999, he accepted an appointment to the Institute for Advanced Study at Princeton University and served as visiting professor of evolution. He moved on to the Santa Fe Institute as a professor three years later and was made faculty chair in 2009. Krakauer has been a visiting fellow at the Genomics Frontiers Institute at the University of Pennsylvania and a Sage Fellow at the Sage Center for the Study of the Mind at the University of California, Santa Barbara. Krakauer's research focuses on the evolutionary history of information processing mechanisms in biology and culture. This includes genetic, neural, linguistic and cultural mechanisms. The research spans multiple levels of organization, seeking analogous patterns and principles in genetics, cell biology, microbiology and in organismal behavior and society. At the cellular level, Krakauer has been interested in molecular processes, which rely on volatile, error-prone, asynchronous, mechanisms, which can be used as a basis for decision making and patterning. He also investigates how signaling interactions at higher levels, including microbial and organismal, are used to coordinate complex life cycles and social systems, and under what conditions we observe the emergence of proto-grammars. Much of this work is motivated by the search for ‘noisy-design' principles in biology and culture emerging through evolutionary dynamics that span hierarchical structures.",
-
-    size: "half",
-  },
-  {
-    name: "Andrey Rzhetsky",
-    title:
-      "Professor, Department of Medicine; Professor, Department of Human Genetics; Senior Fellow, Computation Institute; Senior Fellow, Institute for Genomics and Systems Biology, University of Chicago",
-    bio:
-      "My main interest is in gaining an (asymptotic) understanding how phenotypes, such as human healthy diversity and maladies, are implemented at the level of genes and networks of interacting molecules. To harvest as much information about known molecular interactions as possible, my group runs a large-scale text-mining effort aiming at analysis of a vast corpus of biomedical publications. Currently we can extract from text automatically about 500 distinct flavors of relations among biomedical entities (such as bind, activate, merystilate, and transport). To sharpen our text-mining axes, we are actively designing related models and computational applications. Furthermore, in cooperation with our experimentally talented colleagues, we are striving to use text-mined networks to understand, interpret and refine high- or low-throughput experimental data. We are also computationally generating biological hypotheses that our generous collaborators are attempting to test experimentally. My older passion is in developing and applying computational methods related to phylogenetics and evolutionary biology.",
-
-    size: "half",
-  },
-  {
-    name: "Michael Alfaro",
-    title:
-      "Associate Professor, Department of Ecology and Evolutionary Biology & Institute for Society and Genetics, UCLA",
-    bio:
-      "ISG Fellow Dr. Michael Alfaro is an Associate Professor in the Ecology and Evolutionary Biology department where he and ISG Associate Director Dr. Jessica Lynch Alfaro run the UCLA Alfaro Lab. The goal of his research is to understand the factors that govern the evolutionary dynamics of organismal diversification. Why are some groups morphologically diverse? Are there general laws or themes that can be used to explain the uneven distribution of diversity in physiological traits across lineages? Does morphological diversity always signal mechanical, functional, or ecological diversity? To address these questions, Alfaro works largely on marine fishes. His research approach is interdisciplinary and quantitative and crosses traditional boundaries among evolutionary morphology, molecular phylogenetics, and theoretical evolution. He identifies and quantifies organismal diversity using morphological and functional morphological techniques; constructs evolutionary trees and tests evolutionary hypotheses using phylogenetic statistical methods; and uses models of trait evolution to explore form-function dynamics.",
-
-    size: "half",
-  },
-  {
-    name: "Carl Bergstrom",
-    title: "Professor, Biology, University of Washington",
-    bio:
-      "Carl is a professor in the Department of Biology at the University of Washington and a member of the External Faculty at the Santa Fe Institute. He received his bachelor's degree from Harvard University in 1993, where he worked with Naomi Pierce and David Haig. Carl did his Ph.D. work in Biological Sciences at Stanford University with Marc Feldman. processes. After leaving Stanford, he did two years of postdoctoral work at Emory University with Bruce Levin.",
-
-    size: "half",
-  },
-  {
-    name: "Edward Boyden",
-    title:
-      "Associate Professor, MIT Media Lab and McGovern Institute for Brain Research at MIT, MIT",
-    bio:
-      "Professor Boyden leads the MIT Media Lab's Synthetic Neurobiology research group, which develops tools for mapping, controlling, observing, and building dynamic circuits of the brain, and uses these neurotechnologies to understand how cognition and emotion arise from brain network operation, as well as to enable systematic repair of intractable brain disorders such as epilepsy, Parkinson's disease, and post-traumatic stress disorder. His research group has invented a suite of “optogenetic” tools that are now in use by thousands of research groups around the world for activating and silencing neurons with light. Boyden was named to the “Top 35 Innovators Under the Age of 35” by Technology Review in 2006, and to the “Top 20 Brains Under Age 40” by Discover magazine in 2008. He has received the Gabbay Award, National Institutes of Health (NIH) Director's Pioneer Award and Transformative Research Award, the Society for Neuroscience Research Award for Innovation in Neuroscience, the NSF CAREER Award, the Paul Allen Distinguished Investigator Award, and the New York Stem Cell Robertson Investigator Award. In 2010, his work was recognized as the “Method of the Year” by the journal Nature Methods. Most recently he shared the 2013 Grete Lundbeck European Brain Research Prize for outstanding contributions to European neuroscience-the largest neuroscience prize in the world.",
-
-    size: "half",
-  },
-  {
-    name: "Stephen V. David",
-    title:
-      "Assistant Professor, Oregon Hearing Research Center, Oregon Health and Science University",
-    bio:
-      "Neuroscience is a new but rapidly growing field, drawing ideas and methodologies from many other fields, including biology, psychology, physics, mathematics and philosophy. Each neuroscientist brings a unique perspective into their work that reflects this diversity. We are studying how academic mentorship, the hands-on training received at the doctoral and postdoctoral level, influences the work of individuals and permits the synthesis of new experimental approaches. Neurotree is a collaborative, open-access website that tracks and visualizes the academic genealogy. After nine years of growth driven by user-generated content, the site has captured information about the mentorship of over 45,000 neuroscientists. It has become a unique tool for a community of primary researchers, students, journal editors, and the press. The database allows us to explore the evolution of new ideas and how mentorship has contributed their development. We are exploring new ways to improve the quality of the existing data and ways to link Neurotree to other datasets, such as publication and grant databases. Inspired by Neurotree's example, genealogies have been launched for a number of other fields under auspices of the Academic Family Tree, which aims to build a single genealogy across all academic fields.",
-
-    size: "half",
-  },
-  {
-    name: "Jessica Flack",
-    title:
-      "Co-Director, Center for Complexity and Collective Computation, University of Wisconsin-Madison",
-    bio:
-      "Jessica's research focuses on uncertainty reduction, coarse-graining and collective computation in nature and their role in the origins of biological space-time—that is, the evolution and development of hierarchical structure with multiple, functionally significant time and space scales. Jessica and her colleagues study a wide range of collectives, from group of cells forming neural tissue, to groups of macaques forming animal societies, to groups of online gamers forming virtual societies. Jessica received her BA with honors from Cornell University in 1996, studying anthropology, evolutionary theory, and biology. She received her PhD from Emory University in 2004, studying animal behavior, cognitive science, and evolutionary theory. For the next eight years she was in residence at the Santa Fe Institute, first as a Postdoctoral Fellow and then as Research Professor, and finally as Professor. She moved to the University of Wisconsin, Madison in 2011. Jessica's research has empirical and theoretical components and sits at the interface of evolutionary theory, pattern formation, behavior, cognitive science, computer science, information theory, and statistical mechanics. Although most of her work now is of a computational nature, she has spent thousands of hours collecting large behavioral data sets, including highly resolved time-series, from animal societies, and she conducted the first behavioral knockout study on social systems. In that study, she designed an experiment to disable a critical conflict management function—policing—to quantify its role in social system robustness in an animal society.",
-
-    size: "half",
-  },
-  {
-    name: "Mark Green",
-    title: "Professor Emeritus, Mathematics, UCLA",
-    bio: "",
-
-    size: "half",
-  },
-  {
-    name: "César A. Hidalgo",
-    title: "Assistant Professor, Media Arts and Sciences, MIT Media Lab",
-    bio:
-      "César A. Hidalgo heads the Macro Connections group at The MIT Media Lab and is also the ABC Career Development Professor of Media Arts and Sciences at MIT. Hidalgo's work focuses on understanding the evolution of information in natural, social, and economic systems, and on the development of big data visualization engines designed to make available unwieldy volumes of data. Hidalgo's academic publications have been cited more than 4,500 times and his visualization engines have received more than 5 million visits. He is the author of Why Information Grows (Penguin UK, Basic Books US, Forthcoming June 2, 2015) and the co-author of The Atlas of Economic Complexity (MIT Press).",
-
-    size: "half",
-  },
-  {
-    name: "Konrad Kording",
-    title:
-      "Associate Professor, Physical Medicine and Rehabilitation/Physiology, Northwestern University",
-    bio:
-      "The research of the Bayesian Behavior group shows that movement and movement learning can be understood in terms of statistical principles. Our Sensors (Eyes, Ears, Skin etc) are not perfect but are noisy. Moreover, our muscles are noisy and if we try to do the same movement over and over it will be different each time. This means that if we make a movement, say swing a golf club, we will have uncertainty in the potential movement outcomes. Our group studies how people make movement decisions in the presence of such uncertainty. Our research has four main thrusts: We advance big Data approaches to neuroscience. We study experimentally how people move and how their movements are affected by uncertainty. We build computational models using Bayesian statistics to calculate how people could move optimally or learn to move optimally. We build Bayesian Algorithms to solve problems that we find interesting. For example we analyze how neurons are connected in the nervous system. The main thrust of our current research is to allow for better rehabilitation procedures through an understanding of motor learning. Our lab is part of Northwestern University, Departments Physiology and PM&R. It is associated with Northwestern Department of applied math. Our laboratory is part of the rehabilitation institute of Chicago.",
-
-    size: "half",
-  },
-  {
-    name: "Hannah Landecker",
-    title: "Associate Professor, Sociology, UCLA",
-    bio:
-      "My work takes place at the intersection of the life and social sciences. In general, the social and historical study of biotechnology and life science, from 1900 to now, is my area of specialization. I am currently writing a book called “American Metabolism,” which looks at transformations to the metabolic sciences wrought by the rise of epigenetics, microbiomics, cell signaling and hormone biology. A related project concerns the history of metabolic hormones after 1960 and the rise of the cellular “signal” as a central category of thought and practice in the life sciences.",
-
-    size: "half",
-  },
-  {
-    name: "Christopher Lee",
-    title:
-      "Professor, Department of Computer Science; Professor, Department of Chemistry & Biochemistry, UCLA",
-    bio:
-      "Prof. Lee has been a Faculty member in the Department of Chemistry and Biochemistry since 1998. His training provided an unusual combination of experimental cell biology, biophysics, and algorithm development, which he has applied at UCLA to bioinformatics analysis of genome evolution. He has led efforts to establish a bioinformatics Ph.D. program at UCLA. He has served on the Board of Scientific Counselors, NIH National Center for Biotechnology Information, and serves on the editorial board of Biology Direct. His current research focuses on alternative splicing and its role in genome evolution. Research Interest: Bioinformatics: alternative splicing and genome evolution: genome-wide analysis of the types and functions of alternative splicing, and its apparent role in evolution of mammalian genomes. Alternative splicing appears to have greatly accelerated major evolutionary events such as exon creation, and now is an exciting new area of research in genome evolution protein evolutionary pathways. Using a massive dataset of clinical HIV sequences, we have developed new methods to decode the evolutionary pathways by which HIV evolves drug resistance. We have just shown that our methods can measure the detailed “fitness landscape” describing how HIV proteins can evolve, as a kinetic network showing the actual rate of evolution along every possible evolutionary pathway graph databases for bioinformatics and genomics. We have developed a general framework for working with genomic data as an abstract graph database, for fundamental problems such as multiple genome alignment query and protein interaction network analysis.",
-
-    size: "half",
-  },
-  {
-    name: "Hod Lipson",
-    title:
-      "Associate Professor, Department of Mechanical and Aerospace Engineering, Cornell University",
-    bio:
-      "Hod Lipson is a professor of engineering at Cornell University in Ithaca, New York, and a co-author of the recent book “Fabricated: The New World of 3D printing”. His work on self-aware and self-replicating robots, food printing, and bio-printing has received widespread media coverage including The New York Times, The Wall Street Journal, Newsweek, Time, CNN, and the National Public Radio. Lipson has co-authored over 200 technical papers and speaks frequently at high-profile venues such as TED and the US National Academies. Hod directs the Creative Machines Lab, which pioneers new ways to make machines that create, and machines that are creative. Research Interests: My relatively broad spectrum of research projects focus on what I consider to be two “grand challenges” of engineering: (a) Can we design machines that can design other machines, and (b) Can we make machines that can make other machines. Both of these questions lie at the crux of understanding the engineering process itself, and progress on these fronts can offer huge leverage in our ability to design, make and maintain increasingly complex systems in the future. Biological life has answered these challenges in ways that dwarf the best teams of human engineers; I therefore use primarily biologically-inspired approaches, as they bring new ideas to engineering and new engineering insight into biology.",
-
-    size: "half",
-  },
-  {
-    name: "Hyot Long",
-    title:
-      "Associate Professor, Japanese Literature, East Asian Languages and Civilizations; Co-Director, Text Lab, University of Chicago",
-    bio:
-      "Hoyt comes to Metaknowledge with an interest in how social network analysis, corpus analysis, and other computational methods can facilitate large-scale comparative inquiries into the social dynamics of cultural production. Specifically, he is interested in what these methods can tell us about the diffusion of artistic style and form, the role of formal and informal social ties in shaping such processes, and the emergence of system-level dynamics across linguistic and political boundaries. Along these lines, he Directs a collaborative initiative with Richard Jean So called ‘Text Lab', which applies these methods to the study of global modernism in the early 20th century. Hoyt's research and teaching center on modern Japan, with particular interests in regional literature, publishing history, media and communication, and environmental history. He also has an interest in the application of social-scientific methods to the study of how texts and ideas emerge and circulate within social and material systems. In a current book project, Hoyt joins this sociological interest with his interest in the history of communication in Japan. Specifically, Hoyt looks at how developments in communications technology at the turn of the last century impacted practices of writing, patterns of social association, and ideas of communication itself. Utilizing a variety of materials (epistolary fiction, letter-writing manuals, correspondence magazines), he uncovers emerging fantasies and beliefs about the meaning of connection in a postal age, particularly as they related to changing notions about handwriting, voice, memory, and brevity.",
-
-    size: "half",
-  },
-  {
-    name: "Gary Lupyan",
-    title: "Assistant Professor, Psychology, University of Wisconsin Madison",
-    bio:
-      "Language is one of the defining traits of our species. It, of course, allows for the accumulation and communication of knowledge. But in addition to its uses in communication, the acquisition and use of language appears to augment the human brain in important ways. The aim of my primary line of research is to investigate and delineate these extra-communicative functions of language: How is our ability to place objects into categories altered by language? Does language literally change what we see? How does naming an object affect visual representations? How does using language change our memories? Do people who speak different languages see and remember things differently? Are there ideas that are unthinkable without language? In addition, I have investigated the relationship between grammatical structure and social structure (Lupyan & Dale, 2010) and have a continued interest in the ways that the communicative (and cognitive) needs of a population shape the grammatical structure of languages. I also have a broad interest in the dynamics of neural coding and the way in which perceptual and conceptual representations are dynamically shaped by an individual's goals, expectations, and task context. I have employed a wide range of experimental paradigms and tools to address the questions that interest me. These have included behavioral experiments, neural network modeling, large-scale corpus analysis, eye-tracking, neuroimaging (fMRI), transcranial magnetic stimulation (TMS), and transcranial direct current stimulation (tDCS).",
-
-    size: "half",
-  },
-  {
-    name: "Hoifung Poon",
-    title: "Researcher, Microsoft Research",
-    bio:
-      "I am a researcher at Microsoft Research in Redmond, WA. My research interest is in advancing machine learning and natural language processing to automate discovery in genomics and precision medicine. My most recent work focuses on scaling semantic parsing to Pubmed for extracting biological pathways, and on developing probabilistic methods to incorporate pathways with high-throughput genomics data in cancer system biology. I have received Best Paper Awards in NAACL, EMNLP, and UAI.",
-
-    size: "half",
-  },
-  {
-    name: "Daniel Lord Small",
-    title: "Professor, History, Harvard University",
-    bio:
-      "I am a student of early human history; in my teaching and research, I cover a span of time from humanity's deep history in Africa to Mediterranean Europe in the later middle ages. The overarching intellectual project of my work in recent years has been to identify and develop new frames or narratives for binding human history together into a seamless whole. I work under the assumption that history is not a political science designed to explain the present. It is an anthropological science designed to help us understand humanity. In everything I do, I hope to show how the intellectual projects that drive transnational and global histories work equally well across time, and to offer the deep past as the new intellectual frontier of historical research and historical framing in the twenty-first century.",
-
-    size: "half",
-  },
-];
 
 function CenteredModal(props) {
   return (
@@ -880,11 +834,11 @@ function CenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
+         
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
+        <h4>{props.name}</h4>
         <p>{props.bio}</p>
       </Modal.Body>
       <Modal.Footer>
@@ -939,6 +893,7 @@ const TabsComponent = () => {
                     show={openModalIndex === `L` + index}
                     onHide={() => setOpenModalIndex(null)}
                     bio={team.bio}
+                    name={team.name}
                   />
                 </Col>
               </>
@@ -1016,6 +971,7 @@ const TabsComponent = () => {
                       show={openModalIndex === `A` + index}
                       onHide={() => setOpenModalIndex(null)}
                       bio={team.bio}
+                      name={team.name}
                     />
                   </Col>
                 </>
@@ -1061,6 +1017,7 @@ const TabsComponent = () => {
                           show={openModalIndex === `R` + index}
                           onHide={() => setOpenModalIndex(null)}
                           bio={team.bio}
+                          name={team.name}
                         />
                       </Col>
                     </>
@@ -1094,6 +1051,7 @@ const TabsComponent = () => {
                           show={openModalIndex === `A` + index}
                           onHide={() => setOpenModalIndex(null)}
                           bio={team.bio}
+                          name={team.name}
                         />
 
                       </Col>
@@ -1122,6 +1080,7 @@ const TabsComponent = () => {
                           show={openModalIndex === `A` + index}
                           onHide={() => setOpenModalIndex(null)}
                           bio={team.bio}
+                          name={team.name}
                         />
                       </Col>
                     </>
@@ -1155,6 +1114,7 @@ const TabsComponent = () => {
                           show={openModalIndex === `S` + index}
                           onHide={() => setOpenModalIndex(null)}
                           bio={team.bio}
+                          name={team.name}
                         />
                       </Col>
                     </Row>
@@ -1177,6 +1137,7 @@ const TabsComponent = () => {
                           show={openModalIndex === `S`+index}
                           onHide={() => setOpenModalIndex(null)}
                           bio={team.bio}
+                          name={team.name}
                         />
                       </Col>
                     </>

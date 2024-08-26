@@ -131,8 +131,8 @@ const Pubby = () => {
             {features.map((pub) => {
               return (
                 <>
-                  <Col xs={3}>
-                    <Col xs={12} className="d-none d-sm-block">
+                  <Col xs={6} sm={3}>
+                    <Col xs={12} className="d-sm-block">
                       <a href={pub.link} target="_blank">
                         <img src={pub.image} />
                       </a>

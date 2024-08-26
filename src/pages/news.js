@@ -159,15 +159,19 @@ const News = () => (
           {newsItems.map((item) => {
             return (
               <>
-              <Col sm={3} className="h-100 news-item">
-                <Col sm={12} className="d-none d-sm-block morph">
+              <Col xs={12} sm={3} className="h-100 news-item">
+              <Row>
+
+                <Col xs={3} sm={12} className="d-sm-block">
                 <a href={item.url} target="_blank" ><img src={item.image} /></a>
                   {/* <img src="https://placeholder.com/400x200" /> */}
                 </Col>
-                <Col xs={12}>
+
+                <Col xs={9} sm={12}>
                   <h3><a href={item.url} target="_blank" >{item.title}</a></h3>
                 
                 </Col>
+                </Row>
                 
                    
                </Col>

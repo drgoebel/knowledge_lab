@@ -1139,7 +1139,7 @@ font-size: clamp(11px, .8cqw, 16px)
 }
 
 #news .news-item img {
-  margin-top: var(--space-7);
+  margin-top: var(--space-2);
   box-shadow: 0px 10px 10px rgba(0,0,0,.2);
   width: 66%;
 }
@@ -1218,6 +1218,11 @@ nav ul li:hover {
   #partners .row .col-3 > img {
     width: 60%;
     height: auto;
+  }
+  #news .news-item img {
+    margin-top: var(--space-7);
+    box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+    width: 66%;
   }
   }
 

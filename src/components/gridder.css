@@ -115,27 +115,28 @@
 @media only screen and (min-width: 576px) {
     .grid-container {
     width: 100%;
-    max-width: 767px;
+    max-width: 540px;
   }
 }
 
 @media only screen and (min-width: 768px) {
     .grid-container {
         width: 100%;
-        max-width: 991px;
+        max-width: 720px;
       }
 }
 
 @media only screen and (min-width: 992px) {
     .grid-container {
         width: 100%;
-        max-width: 1199px;
+        max-width: 960px;
       }
 }
 
 @media only screen and (min-width: 1200px) {
     .grid-container {
         width: 100%;
-        max-width: 1320px;
+        max-width: 1140px;
+        --bs-gutter-x: 1.5rem;
       }
 }
