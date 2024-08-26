@@ -188,15 +188,7 @@ const IndexPage = () => {
               <Col xs={12} sm={8}>
                 <h2>Research at Knowledge Lab and Metaknowledge</h2>
                 <p>
-                Knowledge Lab at the University of Chicago focuses on using
-                  Big Data, machine learning, and crowd-sourcing techniques to
-                  analyze how knowledge is generated, used, and forgotten. By
-                  studying the dynamics of information across various fields,
-                  the lab seeks to enhance knowledge management, representation,
-                  and innovation. It emphasizes interdisciplinary research to
-                  explore the mechanisms behind human understanding and
-                  discovery, aiming to improve the creation and application of
-                  knowledge in various contexts.
+                Knowledge underlies society's potential to adapt, innovate, and flourish. Artificial intelligence and the explosion of digital information offer unprecedented opportunities to study, model, and transform the nature of human and post-human understanding, from its emergence in discovery and invention to its realization in innovation and growth. 
                 </p>
                
               </Col>
