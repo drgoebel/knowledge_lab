@@ -583,19 +583,16 @@ font-size: clamp(11px, 1cqw, 16px)
   position: relative;
 }
 #careers-header .apply-now {
-  width: 100%;
-  position: relative;
+  width: 80%;
   border-radius: 50%;
-  background-color: var(--color-klab-yellow);
-  position: absolute;
-  padding-top: 100%;
-  /* top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
+  background-image: linear-gradient(150deg, var(--color-klab-yellow) 30%, var(--color-klab-orange ) 70%);
+  position: relative;
+  padding-top: 80%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.2);
   display: flex;
   justify-content: center;
   align-content: center;
+  margin: 0 auto;
 }
 #careers-header .apply-now a {
 
@@ -608,13 +605,14 @@ font-size: clamp(11px, 1cqw, 16px)
   flex-direction: column;
   align-items: center;
   align-self: center;
-  color: var(--color-klab-blue);
+  color: var(--color-text);
   text-decoration: none;
   font-size: clamp(16px, 3cqw, 32px);
   text-align: center;
   font-weight: 900;
   display: flex;
   justify-content: center;
+  padding: clamp(16px, 1cqw, 32px);
 
 }
 

@@ -36,7 +36,7 @@ const SecondPage = () => (
       <div className="background"></div>
       <Container>
         <Row>
-          <Col xs={12} sm={9}>
+          <Col xs={12} sm={8}>
             <h1>Join Knowledge Lab</h1>
             <p>
               Become part of the research and innovation at Knowledge Lab. Apply
@@ -44,7 +44,7 @@ const SecondPage = () => (
               the University of Chicago
             </p>
           </Col>
-          <Col sm={3} className="d-none d-sm-block">
+          <Col sm={4} >
             <div className="apply-now"><a href="https://form.jotform.com/241295631499062" target="_blank">Apply to Knowledge Lab</a></div>
           </Col>
         </Row>
