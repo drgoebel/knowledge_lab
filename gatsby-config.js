@@ -9,10 +9,12 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Knowledge Lab at The University of Chicago`,
+    description: ` Knowledge Lab focuses on using
+                  Big Data, machine learning, and crowd-sourcing techniques to
+                  analyze how knowledge is generated, used, and forgotten.`,
+    author: `Knowledge Lab`,
+    siteUrl: `https://knowledgelab.org`,
   },
   plugins: [
     `gatsby-plugin-image`,

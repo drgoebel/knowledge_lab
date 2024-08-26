@@ -185,14 +185,17 @@ const IndexPage = () => {
               <Col xs={12} sm={8}>
                 <h2>Research at Knowledge Lab and Metaknowledge</h2>
                 <p>
-                  As Knowledge Lab and the Metaknowledge Research Network crank
-                  out results, those results will populate this space. Our goal
-                  is to present citations (and links) to published research, as
-                  well as preprints, articles and prospectives, responses, as
-                  well as presentations of our work and results formatted for a
-                  general audience.
+                Knowledge Lab at the University of Chicago focuses on using
+                  Big Data, machine learning, and crowd-sourcing techniques to
+                  analyze how knowledge is generated, used, and forgotten. By
+                  studying the dynamics of information across various fields,
+                  the lab seeks to enhance knowledge management, representation,
+                  and innovation. It emphasizes interdisciplinary research to
+                  explore the mechanisms behind human understanding and
+                  discovery, aiming to improve the creation and application of
+                  knowledge in various contexts.
                 </p>
-                <button>Learn More</button>
+               
               </Col>
               <Col></Col>
             </Row>
