@@ -936,18 +936,17 @@ font-size: clamp(11px, 1cqw, 16px)
 /* PUBLICATIONS */
 
 #publications-header {
-  /* margin-bottom: var(--space-7);
-  padding-bottom: var(--space-7); */
+  margin-bottom: var(--space-6);;
   position: relative;
-  padding-top: clamp(80px, 3cqh,150px);
-  height: clamp(250px, 20cqh, 330px);
+  /* padding-top: clamp(80px, 3cqh,150px); */
+  height: auto;
 }
 #publications-header h1 {
   color: var(--color-klab-lavender)
 }
 #publications #pub-filters {
-  margin-bottom: var(--space-6);
-  margin-top: var(--space-6);
+  margin-bottom: var(--space-1);
+  margin-top: var(--space-1);
 }
 #publications .single-button {
   width: clamp(70px, 8cqw, 140px);

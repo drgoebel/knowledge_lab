@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
+import ScrollPubs from "../components/scrollPubs";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
@@ -100,7 +101,7 @@ const Pubby = () => {
   return (
     <Layout>
       <Nav />
-      <div
+      {/* <div
         style={{
           position: `absolute`,
           height: `80vh`,
@@ -109,25 +110,25 @@ const Pubby = () => {
           zIndex: `-3`,
           clipPath: `polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%)`,
         }}
-      ></div>
+      ></div> */}
 
       <Container fluid id="publications-header">
         <div className="background"></div>
-        <Container>
+        <Container fluid id="scroller-pubs" style={{backgroundColor: "#efefef"}}>
+          <Container>
+            <Row><h2>Featured Publications</h2></Row>
           <Row>
-            <Col xs={12} sm={9}>
-              <h1>Publications</h1>
-            </Col>
-            <Col sm={3} className="d-none d-sm-block">
-              {/* <img src={Trianges} alt="connected triangle shapes" /> */}
+            <Col>
+              <ScrollPubs />
             </Col>
           </Row>
+        </Container>
         </Container>
       </Container>
 
       <Container fluid id="publications">
         <Container>
-          <Row id="feature-pubs">
+          {/* <Row id="feature-pubs">
             {features.map((pub) => {
               return (
                 <>
@@ -161,16 +162,20 @@ const Pubby = () => {
                 </>
               );
             })}
-          </Row>
+          </Row> */}
 
           <Row>
-            <h3>Additional Publications</h3>
+            <h3>Publications</h3>
           </Row>
 
           {/* Buttons for group selection */}
 
           <Row id="pub-filters" className="justify-content-center">
-            <Col xs={12} sm={{span: 10, offset: 1}} md={{ span: 8, offset: 2 }}>
+            <Col
+              xs={12}
+              sm={{ span: 10, offset: 1 }}
+              md={{ span: 8, offset: 2 }}
+            >
               {/* First Row: 3 Buttons */}
               <Row className="justify-content-center">
                 {Object.keys(groupedEntries)
@@ -293,21 +298,26 @@ const Pubby = () => {
                         /></a>
                       </Col> */}
                       <Col xs={9} sm={9}>
-                        <h5><a
-                          href={entry.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <strong>{entry.title}</strong>
-                        </a></h5>
-                       
-                       <small>{entry.authors}</small>
+                        <h5>
+                          <a
+                            href={entry.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <strong>{entry.title}</strong>
+                          </a>
+                        </h5>
+                        <small>{entry.authors}</small>
                         <br />
                         <a
                           href={entry.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                        >{entry.outlet || "No outlet"} <FontAwesomeIcon icon={faCaretRight} /></a> <br />
+                        >
+                          {entry.outlet || "No outlet"}{" "}
+                          <FontAwesomeIcon icon={faCaretRight} />
+                        </a>{" "}
+                        <br />
                       </Col>
                     </Row>
                   </Col>

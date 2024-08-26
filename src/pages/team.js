@@ -43,10 +43,10 @@ const klabLeadership = [
   {
     bioImg: Person,
     name: "Austin Kozlowski",
-    title: "Graduate RA, University of Chicago",
+    title: "Assistant Director and Senior Research Associate at Knowledge Lab",
     bioImg: Austin,
     bio:
-      "I am a doctoral candidate in the Chicago sociology department. My research focuses on the questions of how belief systems are structured and why certain ideas “go together.” By applying state-of-the-art computational methods, I attempt to shed new light on these age-old questions from the sociology of knowledge and culture. At Knowledge Lab, I have developed ways to use word embedding models to discover cultural categories and associations in text. This work has culminated in a recent article, co-authored with James Evans and Matt Taddy, published in the American Sociological Review. I am now engaged in a project with James Evans and Hyunku Kwon that explores how AI can be harnessed for social scientific analysis. Before coming to the University of Chicago, I earned my BA in Sociology at the University of Michigan and worked as a research associate with the Chitwan Valley Family Study at the UM Institute for Social Research. During my time at Michigan, I conducted research on the effects of agricultural technology adoption among subsistence farm households in Nepal.",
+      "Austin Kozlowski is the Assistant Director and Senior Research Associate at the Knowledge Lab. His work combines machine learning with theories of culture to investigate how ideas come together to form systems of meaning, both in human and in algorithms. He has published research on the evolution of political polarization, the roles of status and politics in the social sciences, and the representation of cultural categories in neural network models of language. In his current research, Kozlowski is developing techniques to explore the “world models” contained within large language models and multimodal AI systems. He leads the AI Interpretability Group at Knowledge Lab.",
     size: "half",
   },
   {
