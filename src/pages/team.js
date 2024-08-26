@@ -991,7 +991,7 @@ const TabsComponent = () => {
           <Col
             xs={3}
             onClick={() => handleTabClick("Alumni")}
-            className={activeTab === "Aluni" ? "active" : ""}
+            className={activeTab === "Alumni" ? "active" : ""}
             style={{ cursor: "pointer" }}
           >
             Alumni

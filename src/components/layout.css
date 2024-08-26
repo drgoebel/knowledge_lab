@@ -328,7 +328,7 @@ button {
 }
 
 #numbers h2 {
-  font-size: 60px;
+  font-size: clamp(30px, 11cqw, 60px);
 }
 
 #numbers h2,
@@ -801,7 +801,9 @@ font-size: clamp(11px, 1cqw, 16px)
   transition: .6s all;
   align-self: stretch;
   align-content: center;
+  font-size: clamp(12px, 2cqw, 22px);
 }
+
 #team .team-tabber>div:hover {
   background-color: var(--color-quadrary);
 }
