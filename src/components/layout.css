@@ -455,11 +455,13 @@ button {
 .paper ul{
   padding-left: 0;
 }
-
-.paper ul li {
-font-size: clamp(11px, .8cqw, 16px)
+.paper ul li span {
+  font-weight: 900;
 }
-.paper ul li em a{
+.paper ul li {
+font-size: clamp(11px, 1cqw, 16px)
+}
+.paper ul li a{
   color: var(--color-secondary)
 }
 

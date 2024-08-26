@@ -150,7 +150,7 @@ const initiatives = [
         {
           "authors": ["Lai Shiyang", "Yujin Potter", "Junsol Kim", "Richard Zhuang", "Dawn Song", "James Evans"],
           "title": "Evolving AI Collectives to Enhance Human Diversity and Enable Self-Regulation",
-          "journal": "arXiv preprint",
+          "journal": "arXiv",
           "arxiv_id": "2402.12590",
           "year": 2024,
           "url": "https://arxiv.org/abs/2402.12590"
@@ -178,7 +178,7 @@ const initiatives = [
         {
           "authors": ["Kozlowski Austin C.", "Hyunku Kwon", "James A. Evans"],
           "title": "In Silico Sociology: Forecasting COVID-19 Polarization with Large Language Models",
-          "journal": "arXiv preprint",
+          "journal": "arXiv",
           "arxiv_id": "2407.11190",
           "year": 2024,
           "url": "https://arxiv.org/abs/2407.11190"
@@ -616,23 +616,25 @@ const Initiatives = () => {
                             <li key={idx}>
                               {/* If paper is an object and has a URL, render as a hyperlink */}
                               {typeof paper === "object" && paper.url ? (
-                                <em>
-                                  <a
-                                    href={paper.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
+                                
+                                  <span>
                                     {paper.title}
-                                  </a>
-                                </em>
+                                    </span>
+                                  
                               ) : // Otherwise, render as plain text
                               typeof paper === "object" ? (
-                                paper.title
+                                <span>
+                                    {paper.title}
+                                    </span>
                               ) : (
                                 paper
                               )}
                               <br />
-                              {paper.journal}
+                              <a
+                                    href={paper.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >{paper.journal}</a>
                               <br /> {paper.year}{" "}
                               {paper.volume && `Vol: ${paper.volume}`}{" "}
                               {paper.issue && `Issue: ${paper.issue}`}{" "}
