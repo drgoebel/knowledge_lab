@@ -771,6 +771,15 @@ font-size: clamp(11px, .8cqw, 16px)
   padding-right: 0;
 }
 
+#team #tabs img {
+  width: 66%;
+  margin-top: clamp(16px, 3cqw, 40px);
+
+}
+#team #tabs .col-sm-3.col-6 {
+  margin-bottom: clamp(16px, 3cqw, 40px);
+}
+
 #team .team-tabber {
   display: flex;
   flex-direction: row;
