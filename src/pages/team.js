@@ -53,7 +53,7 @@ const klabLeadership = [
     name: "Alexis Puzon",
     title: "Program Manager at Social Sciences Research Center",
     bio:
-      "Experienced Business Administrator with a demonstrated history of working in the higher education industry. Skilled in Human Resources, Office Management, Operations, Recruitment, HRIS, and Campaign Finance. Strong administrative professional with a Master’s Degree (in progress) focused in Liberal Arts and History from Northwestern University.",
+      "Alexis Puzon is the program manager for research centers and team science in the Social Sciences Research Center (SSRC). She supports research initiatives across the social science division. Prior to joining SSRC, Alexis was the Assistant Director of the Center for International Social Science Research (CISSR) at the University of Chicago, where she gained experience supporting global faculty research around the world. Before that, she was the HR/Faculty Affairs manager for the Department of Psychiatry and Behavioral Sciences at Northwestern University. She has a Bachelor’s Degree from the University of Wisconsin-Madison in Political Science and History with minors in European Studies and Medieval Studies. She also completed graduate courses at Northwestern University in Liberal Arts with a focus on history and media studies.",
     url: "page-2",
     bioLink: "this",
     bioImg: Alexis,
