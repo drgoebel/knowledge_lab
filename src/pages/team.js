@@ -359,7 +359,7 @@ const klabResearchPost = [
     "email": "Christopher.Esposito@anderson.ucla.edu",
     "institution": "UCLA",
     "bio": "Chris is the Osborne Postdoctoral Fellow at the UCLA Anderson School of Management. He studies innovation in science and technology using computational and econometric techniques. His dissertation developed centuries of new historical data to uncover the common processes that cities pass through as they emerge as centers for innovation. More recently, he has studied knowledge obsolescence and its impact on the changing structure of the innovative economy. In ongoing collaborations with the Knowledge Lab, he is analyzing the shifting balance of global power in scientific and technological innovation.",
-    "website": "http://cresposito.com",
+    "website": "https://cresposito.com",
     "publications": [
       "https://academic.oup.com/joeg/article/23/1/209/6646557",
       "https://www.sciencedirect.com/science/article/pii/S004873332300094X",
@@ -523,7 +523,7 @@ const klabStudents = [
     "email": "ningzi@uchicago.edu",
     "institution": "University of Chicago",
     "bio": "Ningzi is a professional research specialist at the Data Science Institute (DSI) and an adjunct assistant professor at the Booth School of Business at the University of Chicago. She obtained Ph.D. in sociology from Cornell University. Ningzi studies communication and behavior in organizations. She particularly focuses on how firms strategically communicate to influence stakeholder behaviors in the context of earnings calls, venture capital investments, and ESG reports. She also studies how stakeholders' communication influences firm behaviors in the context of employee reviews and product recalls. Her analysis heavily relies on natural experiments and natural language processing tools.",
-    "website": "http://ningzili.com",
+    "website": "https://ningzili.com",
     "title": "PhD Student",
     "bioImg": Person
   },
@@ -751,7 +751,7 @@ const klabAlumni = [
     name: "Molly Lewis",
     title: "Special Faculty, Carnegie Mellon University",
     bio:
-      "My research focuses on understanding how linguistic meaning-semantic space-is acquired in cognitive development, changes over historical time, and varies cross-linguistically. I am also interested in issues related to scientific replicability and reproducibility. I received my PhD in Developmental Psychology from Stanford University, where I worked with Michael Frank. Before that, I received a BA in Linguistics from Reed College. At the Knowledge Lab, my work examined cross-linguistic variability in the alignment of linguistic meaning using large scale corpora. I was co-advised by James Evans at the Knowledge Lab and Gary Lupyan in the Psychology Department at the University of Wisconsin-Madison. I am currently a faculty member in the Department of Psychology and Social and Decision sciences at Carnegie Mellon University. My personal website: http://www.andrew.cmu.edu/user/mollylew/",
+      "My research focuses on understanding how linguistic meaning-semantic space-is acquired in cognitive development, changes over historical time, and varies cross-linguistically. I am also interested in issues related to scientific replicability and reproducibility. I received my PhD in Developmental Psychology from Stanford University, where I worked with Michael Frank. Before that, I received a BA in Linguistics from Reed College. At the Knowledge Lab, my work examined cross-linguistic variability in the alignment of linguistic meaning using large scale corpora. I was co-advised by James Evans at the Knowledge Lab and Gary Lupyan in the Psychology Department at the University of Wisconsin-Madison. I am currently a faculty member in the Department of Psychology and Social and Decision sciences at Carnegie Mellon University. My personal website: https://www.andrew.cmu.edu/user/mollylew/",
     size: "half",
     bioImg: Person
   },
