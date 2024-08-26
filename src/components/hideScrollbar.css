@@ -30,9 +30,10 @@
   background-color: var(--color-gray);
 }
 
+
 #scroller .card {
   height: 100%;
-    padding: clamp(16px, 1.5cqw, 44px);
+  padding: clamp(16px, 1.5cqw, 44px);
 }
 
 #scroller .card h2 a{
@@ -44,4 +45,37 @@
   
 #scroller .card h2 {
   margin-top: clamp(16px, 2cqw, 32px) !important;
+}
+/* scroller home */
+#scroller-home h2 {
+  font-size: clamp(20px, 1.85cqw, 32px);
+  color: var(--color-secondary);
+  padding-top: clamp(18px, 1.25cqw, 32px);
+}
+
+#scroller-home button {
+  background-color: rgb(218, 218, 218);
+}
+
+#scroller-home .card {
+    height: 100%;
+    padding: clamp(16px, 1.5cqw, 44px);
+
+      border: none;
+      box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    
+}
+
+#scroller-home .card h3 a{
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: clamp(20px, 2cqw, 32px);
+  line-height: 1;
+  display: inline-block;
+}
+  
+#scroller-home .card h3 {
+  margin-top: clamp(16px, 2cqw, 32px) !important;
+  line-height: 1;
 }

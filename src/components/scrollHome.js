@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+import { Col } from "react-bootstrap";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -14,72 +15,54 @@ import Mapping from "../images/mapping.webp"
 import Mimic from "../images/mimic.webp"
 import Robot from "../images/robot.webp"
 import Slowing from "../images/slowing.webp"
+import Cultural from "../images/cultural.webp"
+import AISociety from "../images/aisociety.webp"
+import Global from "../images/global-observe.webp";
+import Policy from "../images/policy-lab.webp";
+import Computational from "../images/computational.webp"
+import Digital from "../images/digital-minds.webp"
 
 
-const newsFeatures = [
+const initiativeFeatures = [
   {
-    "title": "Big teams and small careers",
-    "description": "Larger teams worsen academic career prospects",
-    "image_url": BigTeams,
-    "link": "https://www.science.org/content/article/larger-teams-worsen-academic-career-prospects"
+    "title": "Global Innovation Observatory",
+    "description": "How can we use AI and big data improve our awareness of worldwide investment production position and trajectory in science and technology (S&T)?",
+    "image_url": Global,
+    "link": "/initiatives"
   },
   {
-    "title": "Are We Doomed?",
-    "description": "The New Yorker features James Evans & Daniel Holz' class exploring existential risk",
-    "image_url": AreWeDoomed,
-    "link": "https://drive.google.com/file/d/1cFWy_3cDGv-xrjwT4vTt7wl2-D2RM1fK/view?usp=sharing"
+    "title": "Innovation Policy Lab",
+    "description": "How can we use AI to construct a virtual laboratory that simulates policy outcomes for S&T innovation and competitiveness?",
+    "image_url": Policy,
+    "link": "/initiatives"
   },
   {
-    "title": "$20M for Tech Futures",
-    "description": "NSF invests $20M in Knowledge Lab to predict the future science and technology",
-    "image_url": NSF,
-    "link": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2404109&HistoricalAwards=false"
+    "title": "Modeling Cultural Worlds",
+    "description": "AI systems build models of the social cultural and language world. What can we learn from them?",
+    "image_url": Cultural,
+    "link": "/initiatives"
   },
   {
-    "title": "Wendy Schmidt Award",
-    "description": "Wendy Schmidt receives Science of Science Policy Leadership Award",
-    "image_url": Schmidt,
-    "link": "ACCEPTANCE VIDEO LINK YOUTUBE"
+    "title": "AI Societies",
+    "description": "How can we harness the emergent creativity of AI collectives?",
+    "image_url": AISociety,
+    "link": "/initiatives"
   },
   {
-    "title": "Science of Science & Innovation",
-    "description": "Knowledge hosts annual Innovation Conference at the National Academies in DC",
-    "image_url": ICSSI,
-    "link": "https://www.icssi.org/archive2024/speakers2024"
+    "title": "Computational Creativity",
+    "description": "How do we build AI that’s creative and augments human creativity?",
+    "image_url": Computational,
+    "link": "/initiatives"
   },
   {
-    "title": "Trends in AI",
-    "description": "James Evans discusses the unfolding future of AI in 2024 on ProMarket",
-    "image_url": Trends,
-    "link": "https://www.promarket.org/2024/01/12/the-ai-trends-that-will-define-society-and-the-political-economy-in-2024/"
-  },
-  {
-    "title": "Mapping Global Meanings",
-    "description": "Molly Lewis and James Evans explore the organization of meanings across the globe",
-    "image_url": Mapping,
-    "link": "https://news.uchicago.edu/story/uchicago-researchers-use-machine-learning-examine-meanings-across-languages"
-  },
-  {
-    "title": "AI as Alien Intelligence",
-    "description": "James Evans makes the case for Alien AI in Chicago TEDx talk",
-    "image_url": Mimic,
-    "link": "https://www.youtube.com/watch?v=87zET-4IQws"
-  },
-  {
-    "title": "Robot Scientists",
-    "description": "Hypotheses devised by AI could find ‘blind spots’ in research",
-    "image_url": Robot,
-    "link": "https://www.nature.com/articles/d41586-023-03596-0"
-  },
-  {
-    "title": "Science Slowing Down?",
-    "description": "Is Scientific Progress Slowing?",
-    "image_url": Slowing,
-    "link": "https://podcasts.apple.com/us/podcast/is-scientific-progress-slowing-with-james-evans/id1368737097?i=1000555819493"
+    "title": "Digital Minds",
+    "description": "Can we shine light into the 'black box' to better understand how AIs think?",
+    "image_url": Digital,
+    "link": "/initiatives"
   }
 ]
 
-function Scroll() {
+function ScrollHome() {
   const [selected, setSelected] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [modalContent, setModalContent] = useState(null);
@@ -110,10 +93,12 @@ function Scroll() {
 
   return (
     <>
-      <div id="scroller" className="container" style={{ position: "relative" }}>
+    
+      <div id="scroller-home" className="container" style={{ position: "relative", paddingBottom: "clamp(16px, 2cqw, 32px)"}}>
+      <h2>Featured Initiatives at Knowledge Lab</h2>
         {initialized && (
           <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-            {newsFeatures.map((newsItem, index) => (
+            {initiativeFeatures.map((newsItem, index) => (
               <Card
                 itemId={`element-${index}`}
                 key={`element-${index}`}
@@ -168,12 +153,12 @@ function Card({ onClick, selected, title, description, imageUrl, itemId, link })
     <>
       <div
         onClick={() => onClick(itemId)}
-        style={{ width: "30cqw", height: "100%", backgroundColor: "#efefef", padding: "10px", cursor: "pointer", paddingTop: "2cqw", marginBottom: "3cqw" }}
+        style={{ width: "clamp(250px, 20cqw, 500px)", height: "100%", backgroundColor: "#efefef", padding: "10px", cursor: "pointer"}}
         tabIndex={0}
       >
         <div className="card">
-          <a href={link} target="_blank"><img src={imageUrl} alt={title} style={{ width: "100%", height: "auto" }} /></a>
-          <h2><a href={link} target="_blank">{title}</a></h2>
+          <a href={link} ><img src={imageUrl} alt={title} style={{ width: "100%", height: "auto" }} /></a>
+          <h3><a href={link}>{title}</a></h3>
           <p>{description}</p>
           {/* <div>Visible: {JSON.stringify(visible)}</div>
           <div>Selected: {JSON.stringify(!!selected)}</div> */}
@@ -183,4 +168,4 @@ function Card({ onClick, selected, title, description, imageUrl, itemId, link })
   );
 }
 
-export default Scroll;
+export default ScrollHome;
