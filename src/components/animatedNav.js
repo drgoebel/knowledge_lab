@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import lottie from "lottie-web";
-import animationData from "../json/rubber.json";
+import animationData from "../json/rubber2.json";
 
 const AniNav = () => {
   const animationContainer = useRef(null);
@@ -40,11 +40,11 @@ const AniNav = () => {
           const urlMap = {
             "value-30": "/join",
             "value-123": "/team",
-            "value-55": "/initiatives",
+            "value-44": "/initiatives",
             "value-60": "/publications",
-            "value-87": "/news",
+            "value-83": "/news",
             "value-100": "/give",
-            "value-114": "/events",
+            "value-113": "/events",
           };
 
           // Get the data attribute value
@@ -67,7 +67,8 @@ const AniNav = () => {
         anim.loop = true;
         // Move the playhead to the 1-second mark and start looping from there
         const totalFrames = anim.totalFrames;
-        const oneSecondFrame = anim.frameRate * 1; // 1 second converted to frame number
+        const oneSecondFrame = anim.frameRate * 1.5; // 1 second converted to frame number
+
 
         // Play from 1-second mark to the end, looping
         anim.playSegments([oneSecondFrame, totalFrames], true);
