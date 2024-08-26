@@ -27,6 +27,7 @@ import Tong from "../images/tong.webp"
 import Yuanyi from "../images/yuanyi.webp"
 import Renwu from "../images/renwu.webp"
 import Chenlin from "../images/chenlin.webp"
+import Iyad from "../images/iyad.webp"
 
 const klabLeadership = [
   {
@@ -202,7 +203,7 @@ const klabAffiliated = [
       }
     ],
     "role": "Affiliate Faculty",
-    "bioImg": "https://urldefense.com/v3/__https://www.rahwan.me/s/Iyad_Rahwan_3452-cropped.jpg__;!!BpyFHLRN4TMTrA!7yS3nkmD7wSgw2KKC7D7pPMlXFNmSttUjWeHHzAUuRS3c0nC3PS5kt3O4-cLIazGcxr7nMyKlaC5lVmiaQLm_CEwVis$"
+    "bioImg": Iyad
   },
   {
     "name": "Lingfei Wu",
@@ -937,7 +938,7 @@ const TabsComponent = () => {
                   <img src={team.bioImg} alt={team.name} />
                 </Col>
                 <Col xs={6} md={4}>
-                  <h2>{team.name}</h2>
+                  <h3>{team.name}</h3>
                   <p>{team.title}</p>
                   {/* <Link to={team.url}>
                         <button>Read Bio</button>
@@ -1013,7 +1014,7 @@ const TabsComponent = () => {
                   <Col
                     xs={12}
                   >
-                    <h2>{team.name}</h2>
+                    <h3>{team.name}</h3>
                     <p>{team.title}</p>
                     {/* <Link to={team.url}>
                         <button>Read Bio</button>
@@ -1050,7 +1051,7 @@ const TabsComponent = () => {
                         <img src={team.bioImg} alt={team.name} />
                       </Col>
                       <Col xs={12} md={9}>
-                        <h2>{team.name}</h2>
+                        <h3>{team.name}</h3>
                         <p>{team.title}</p>
                         <Link to={team.url}>
                           <button>Read Bio</button>
@@ -1065,7 +1066,7 @@ const TabsComponent = () => {
                         <img src={team.bioImg} alt={team.name} />
                       </Col>
                       <Col xs={12}>
-                        <h2>{team.name}</h2>
+                        <h3>{team.name}</h3>
                         <p>{team.title}</p>
 
                         <Button
@@ -1101,7 +1102,7 @@ const TabsComponent = () => {
                         <img src={team.bioImg} alt={team.name} />
                       </Col>
                       <Col xs={12} md={9}>
-                        <h2>{team.name}</h2>
+                        <h3>{team.name}</h3>
                         <p>{team.title}</p>
                         <Button
                           variant="primary"
@@ -1131,7 +1132,7 @@ const TabsComponent = () => {
                         />
                       </Col>
                       <Col xs={12}>
-                        <h2>{team.name}</h2>
+                        <h3>{team.name}</h3>
                         <p>{team.title}</p>
 
                         <Button
@@ -1167,7 +1168,7 @@ const TabsComponent = () => {
                         <img src={team.bioImg} alt={team.name} key={`S${index}`}/>
                       </Col>
                       <Col xs={12} md={9}>
-                        <h2>{team.name}</h2>
+                        <h3>{team.name}</h3>
                         <p>{team.title}</p>
                         <Button
                           variant="primary"
@@ -1191,7 +1192,7 @@ const TabsComponent = () => {
                         <img src={team.bioImg} alt={team.name} />
                       </Col>
                       <Col xs={12}>
-                        <h2>{team.name}</h2>
+                        <h3>{team.name}</h3>
                         <p>{team.title}</p>
                         <Button
                           variant="primary"

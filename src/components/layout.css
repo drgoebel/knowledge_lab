@@ -607,7 +607,7 @@ font-size: clamp(11px, 1cqw, 16px)
   align-self: center;
   color: var(--color-text);
   text-decoration: none;
-  font-size: clamp(16px, 3cqw, 32px);
+  font-size: clamp(16px, 5cqw, 32px);
   text-align: center;
   font-weight: 900;
   display: flex;
@@ -743,7 +743,7 @@ font-size: clamp(11px, 1cqw, 16px)
   line-height: var(--line-height-dense);
 }
 #team h2 {
-  font-size: clamp(16px, 1.5cqw, 40px);
+  font-size: clamp(16px, 3cqw, 40px);
 }
 
 #team-header p {
@@ -799,7 +799,7 @@ font-size: clamp(11px, 1cqw, 16px)
   transition: .6s all;
   align-self: stretch;
   align-content: center;
-  font-size: clamp(12px, 2cqw, 22px);
+  font-size: clamp(12px, 1.2cqw, 22px);
 }
 
 #team .team-tabber>div:hover {
