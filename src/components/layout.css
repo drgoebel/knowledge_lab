@@ -317,12 +317,23 @@ button {
 }
 
 
-[data-custom-attribute="value-30"], [data-custom-attribute="value-60"]
+[data-custom-attribute="value-30"], 
+[data-custom-attribute="value-60"],
+[data-custom-attribute="value-83"],
+[data-custom-attribute="value-44"],
+[data-custom-attribute="value-100"],
+[data-custom-attribute="value-113"],
+[data-custom-attribute="value-123"]
 {
   transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
-[data-custom-attribute="value-30"]:hover,[data-custom-attribute="value-60"]:hover {
+[data-custom-attribute="value-30"]:hover,[data-custom-attribute="value-60"]:hover,
+[data-custom-attribute="value-83"]:hover,
+[data-custom-attribute="value-44"]:hover,
+[data-custom-attribute="value-100"]:hover,
+[data-custom-attribute="value-113"]:hover,
+[data-custom-attribute="value-123"]:hover {
   animation: scale-up-down 1.5s infinite ease-in-out; /* Looping animation */
 }
 
