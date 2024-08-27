@@ -154,25 +154,25 @@ const IndexPage = () => {
             <Col xs={6} md={3}>
               <h2>$20M</h2>
               <p>
-              Knowledge Lab was recently awarded $20 million by NSF Assessing and Predicting Technology Outcomes (APTO)
+              Knowledge Lab was recently awarded <strong>$20 million</strong> by NSF Assessing and Predicting Technology Outcomes (APTO)
               </p>
             </Col>
             <Col xs={6} md={3}>
-              <h2>100+ Publications</h2>
+              <h2>100+</h2>
               <p>
-              Knowledge Lab has published over 100 peer-reviewed articles in top journals across disciplines
+              Knowledge Lab has published over <strong>100 peer-reviewed articles</strong> in top journals across disciplines
               </p>
             </Col>
             <Col xs={6} md={3}>
-              <h2>10,000+ Citations</h2>
+              <h2>10,000+</h2>
               <p>
-              Knowledge Lab publications have been cited more than 10,000 times in academic literature.
+              Knowledge Lab publications have been <strong>cited more than 10,000</strong> times in academic literature.
               </p>
             </Col>
             <Col xs={6} md={3}>
-              <h2>50+ Researchers</h2>
+              <h2>50+</h2>
               <p>
-              More than 50 research affiliates contribute to the projects conducted at Knowledge Lab.
+              More than <strong>50 research affiliates</strong> contribute to the projects conducted at Knowledge Lab.
               </p>
             </Col>
           </Row>
@@ -181,13 +181,13 @@ const IndexPage = () => {
         <Container fluid id={`research`} style={researchStyle}>
           <Container id="research">
             <Row>
-              <Col xs={12} md={8}>
+              <Col xs={12} md={9}>
                 <p>
                 <strong>Knowledge</strong> underlies society’s potential to adapt, innovate, and flourish. Artificial intelligence and the explosion of digital information offer unprecedented opportunities to study, model, and transform the nature of human and post-human understanding, from its emergence in discovery and invention to its realization in innovation and growth.</p><p> 
 <strong>Knowledge Lab</strong> develops novel artificial intelligence, big data, and crowdsourced approaches to:
 <ul>
 <li>Discover, harvest, and represent knowledge from humans, artifacts, and machines</li>
-Understand how knowledge is constructed, deployed, and destroyed
+<li>Understand how knowledge is constructed, deployed, and destroyed</li>
 <li>Recombine and generate new knowledge for new problems</li>
 <li>Improve knowledge creation, management and innovation…everywhere.</li>
 </ul>

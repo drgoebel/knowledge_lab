@@ -360,6 +360,9 @@ button {
   align-self: flex-start;
 }
 
+#numbers p strong {
+  font-weight: 900;
+}
 #numbers h2 {
   font-size: clamp(30px, 11cqw, 60px);
 }
@@ -388,7 +391,10 @@ button {
   font-weight: 900;
   font-size: clamp(24px, 3cqw, 42px);
 }
-
+#research ul li {
+  line-height: 1.2;
+  margin-top: clamp(12px, 1cqw, 30px);
+}
 /* PARTNERS SECTION */
 
 #partners {
