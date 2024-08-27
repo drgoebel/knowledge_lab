@@ -21,10 +21,3 @@
 
 [build.processing.images]
   compress = true
-
-[[redirects]]
-from = "https://www.knowledgelab.org/*"
-to = "https://knowledgelab.org/:splat"
-status = 301
-force = true
-
