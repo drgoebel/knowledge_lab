@@ -1,0 +1,30 @@
+# Basic build settings
+[build]
+  command = "npm run build"  # Specify the build command for your project
+  # publish = "dist"          # Specify the directory to deploy
+
+# Environment variables
+[build.environment]
+  NODE_VERSION = "20"        # Set a specific Node.js version
+  CONTENTFUL_SPACE_ID = "xrhc6s36njjr"
+  CONTENTFUL_ACCESS_TOKEN = "a5PJzvsXav9R4ahr6AeRF-Na87tIUDTMbuiE9LonM3E"
+
+# Asset optimization and caching settings
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+  treeshake = true
+
+[build.processing.images]
+  compress = true
+
+[[redirects]]
+from = "https://www.knowledgelab.org/*"
+to = "https://knowledgelab.org/:splat"
+status = 301
+force = true
+
