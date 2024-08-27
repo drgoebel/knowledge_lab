@@ -128,7 +128,7 @@ const News = () => (
               Knowledge Lab harnesses the power of artificial intelligence to
               unravel complex scientific and societal problems, bridging the gap
               between data-driven insights and real-world applications. This
-              innovative group collitem.rates with interdisciplinary experts to
+              innovative group collaborates with interdisciplinary experts to
               develop AI tools and methodologies that advance our understanding
               of knowledge creation and dissemination.
             </p>

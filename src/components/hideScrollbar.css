@@ -58,12 +58,10 @@
 }
 
 #scroller-home .card {
-    height: 100%;
-    padding: clamp(16px, 1.5cqw, 44px);
-
-      border: none;
-      box-shadow: 0px 5px 5px rgba(0,0,0,.2);
-    
+  height: 100%;
+  padding: clamp(16px, 1.5cqw, 44px);
+  border: inherit;
+  background-color: inherit;
 }
 
 #scroller-home .card h3 a{

@@ -316,6 +316,28 @@ button {
   height: inherit;
 }
 
+
+[data-custom-attribute="value-30"], [data-custom-attribute="value-60"]
+{
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+[data-custom-attribute="value-30"]:hover,[data-custom-attribute="value-60"]:hover {
+  animation: scale-up-down 1.5s infinite ease-in-out; /* Looping animation */
+}
+
+@keyframes scale-up-down {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.2); /* Scale up */
+  }
+  100% {
+    transform: scale(1); /* Scale back down */
+  }
+}
+
 #numbers {
   padding-top: var(--space-5);
   padding-bottom: var(--space-7);
@@ -348,7 +370,12 @@ button {
 }
 
 #research p {
-  font-size: var(--font-xl);
+  font-size: clamp(16px, 2cqw, 24px);
+  max-width: inherit;
+}
+#research p strong {
+  font-weight: 900;
+  font-size: clamp(24px, 3cqw, 42px);
 }
 
 /* PARTNERS SECTION */

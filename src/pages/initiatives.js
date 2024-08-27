@@ -8,7 +8,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import Nav from "../components/nav";
-import AIGroup from "../images/ai-group.png";
+import AIGroup from "../images/aigroup.webp";
 import Global from "../images/global-observe.webp";
 import Policy from "../images/policy-lab.webp";
 import Computational from "../images/computational.webp"
@@ -487,7 +487,8 @@ function CenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          {props.title}
+        {props.title && <span dangerouslySetInnerHTML={{ __html: props.title}} />}
+          {/* {props.title} */}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -517,13 +518,7 @@ const Initiatives = () => {
           <Row>
             <Col xs={12} sm={8}>
               <h1>Initiatives at Knowledge Lab</h1>
-              <p>
-                Knowledge Lab harnesses the power of artificial intelligence to
-                unravel complex scientific and societal problems, bridging the
-                gap between data-driven insights and real-world applications.
-                This innovative group collaborates with interdisciplinary
-                experts to develop AI tools and methodologies that advance our
-                understanding of knowledge creation and dissemination.
+              <p>Knowledge Lab harnesses the power of artificial intelligence to unravel complex scientific and societal problems, bridging the gap between data-driven insights and real-world applications. This innovative group collaborates with interdisciplinary experts to develop AI tools and methodologies that advance our understanding of knowledge creation and dissemination.
               </p>
             </Col>
             <Col xs={12} sm={4} className="d-sm-block">
