@@ -99,6 +99,6 @@ const Events = () => (
   </Layout>
 );
 
-export const Head = () => <Seo title="Page two" />;
+export const Head = () => <Seo title="Events at Knowledge Lab" />;
 
 export default Events;

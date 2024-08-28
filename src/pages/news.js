@@ -186,6 +186,6 @@ const News = () => (
   
 );
 
-export const Head = () => <Seo title="Page two" />;
+export const Head = () => <Seo title="News for Knowledge Lab" />;
 
 export default News;

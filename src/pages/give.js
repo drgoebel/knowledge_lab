@@ -98,6 +98,6 @@ const Give = () => (
   </Layout>
 );
 
-export const Head = () => <Seo title="Page two" />;
+export const Head = () => <Seo title="Give to Knowledge Lab" />;
 
 export default Give;

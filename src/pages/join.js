@@ -139,6 +139,6 @@ const SecondPage = () => (
   </Layout>
 );
 
-export const Head = () => <Seo title="Page two" />;
+export const Head = () => <Seo title="Join Knowledge Lab" />;
 
 export default SecondPage;

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
+import Seo from "../components/seo";
 import ScrollPubs from "../components/scrollPubs";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "../components/gridder.css";
@@ -329,5 +330,5 @@ const Pubby = () => {
     </Layout>
   );
 };
-
+export const Head = () => <Seo title="Publications from Knowledge Lab" />;
 export default Pubby;

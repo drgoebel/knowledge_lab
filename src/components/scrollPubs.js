@@ -232,7 +232,7 @@ function Card({ onClick, selected, title, description, imageUrl, itemId, link })
         tabIndex={0}
       >
         <div className="card">
-          <a href={link} ><img src={imageUrl} target="_blank" alt={title} style={{ width: "100%", height: "auto" }} /></a>
+          <a href={link} target="_blank"><img src={imageUrl} target="_blank" alt={title} style={{ width: "100%", height: "auto" }} /></a>
           <h3><a href={link} target="_blank" >{title}</a></h3>
           <p>{description}</p>
           {/* <div>Visible: {JSON.stringify(visible)}</div>

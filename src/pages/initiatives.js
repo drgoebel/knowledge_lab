@@ -4,6 +4,7 @@ import { useState } from "react";
 import Layout from "../components/layout";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import Seo from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
@@ -677,5 +678,7 @@ const Initiatives = () => {
     </Layout>
   );
 };
+
+export const Head = () => <Seo title="Initiatives at Knowledge Lab" />;
 
 export default Initiatives;
