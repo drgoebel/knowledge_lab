@@ -85,11 +85,11 @@ const IndexPage = () => {
        
        
        
-        <Container>
+        {/* <Container>
           <Row style={{ justifyContent: "center" }}>
             <AniNav />
           </Row>
-        </Container>
+        </Container> */}
 
         <Container fluid style={{ backgroundColor: "#efefef"}} >
         <Container style={{width: "100%", maxWidth: "1400px"}} >
