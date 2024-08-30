@@ -15,3 +15,57 @@
 
 [build.processing.images]
   compress = true
+
+
+[[redirects]]
+from = "/about"
+to = "/team"
+status = 301
+
+
+[[redirects]]
+from = "/knowledge-lab-team"
+to = "/team"
+status = 301
+
+
+[[redirects]]
+from = "/metaknowledge-research-network"
+to = "/team"
+status = 301
+
+
+[[redirects]]
+from = "/opportunities"
+to = "/join"
+status = 301
+
+
+[[redirects]]
+from = "/research"
+to = "/initiatives"
+status = 301
+
+[[redirects]]
+from = "/projects"
+to = "/initiatives"
+status = 301
+
+[[redirects]]
+from = "/metaknowledge-research-network"
+to = "/team"
+status = 301
+
+
+[[redirects]]
+from = "/alumni"
+to = "/team"
+status = 301
+
+[[redirects]]
+from = "/projects/*"
+to = "/initiatives"
+status = 301
+
+
+

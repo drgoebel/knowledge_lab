@@ -10,8 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `Knowledge Lab at The University of Chicago`,
-    description: ` Knowledge Lab focuses on using
-                  Big Data, machine learning, and crowd-sourcing techniques to
+    description: ` Knowledge Lab focuses on using Big Data, machine learning, and crowd-sourcing techniques to
                   analyze how knowledge is generated, used, and forgotten.`,
     author: `Knowledge Lab`,
     siteUrl: `https://knowledgelab.org`,
