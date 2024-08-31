@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../components/layout";
 import ScrollHome from "../components/scrollHome";
+import ScrollTest from "../components/scrollTest";
 import Seo from "../components/seo";
 import "../components/index.module.css";
 import "../components/oval.css";
@@ -94,7 +95,7 @@ const IndexPage = () => {
         <Container fluid style={{ backgroundColor: "#efefef"}} >
         <Container style={{width: "100%", maxWidth: "1400px"}} >
           <Row>
-          <ScrollHome  />
+          <ScrollTest />
           </Row>
         </Container>
         </Container>

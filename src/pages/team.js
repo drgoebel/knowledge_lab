@@ -17,7 +17,8 @@ import Alexis from "../images/alexisp.webp";
 import Person from "../images/person.jpg";
 import Eamon from "../images/eamon.webp";
 import Bowen from "../images/bowenlou.webp"
-import Jar from "../images/lou.webp"
+import Jar from "../images/jarder.webp"
+import Ufuk from "../images/ufuk.webp"
 import Qixin from "../images/qixin.webp"
 import XYang from "../images/xyang.webp"
 import Biliotti from "../images/biliotti.webp"
@@ -28,6 +29,21 @@ import Yuanyi from "../images/yuanyi.webp"
 import Renwu from "../images/renwu.webp"
 import Chenlin from "../images/chenlin.webp"
 import Iyad from "../images/iyad.webp"
+import Zhao from "../images/zhao.webp"
+import Danw from "../images/danw.webp"
+import Danh from "../images/danh.webp"
+import Ling from "../images/lingfei.webp"
+import Misha from "../images/misha.webp"
+import Dashun from "../images/dashun.webp"
+import Dougg from "../images/dougg.webp"
+import Donghyung from "../images/donghyung.webp"
+import Fang from "../images/fang.webp" 
+import Esposito from "../images/esposito.webp" 
+import Cui from "../images/cui.webp" 
+import Haiziyu from "../images/haiziyu.webp" 
+import Bhargav from "../images/bhargav.webp"
+import Billshi from "../images/billshi.webp"
+import Mollyl from "../images/mollyl.webp"
 
 const klabLeadership = [
   {
@@ -238,50 +254,168 @@ const klabAffiliated = [
       }
     ],
     "role": "Affiliate Faculty",
-    "bioImg": Person
+    "bioImg": Ling
+  },
+  {
+    "name": "Doug Guilbeault",
+    "email": "dguilb@stanford.edu",
+    "affiliation": "Stanford University",
+    "bio": "Guilbeault received dual bachelor’s degrees in philosophy and rhetoric (with a minor in cognitive science) from the University of Waterloo, an MA in Cognitive Linguistics from the University of British Columbia, and a PhD from the University of Pennsylvania’s Annenberg School for Communication. He is co-director of the Berkeley-Stanford Computational Culture Lab, and a founding member of the theoretical cognitive science and machine learning collective comp-syn (“computational synesthesia”). His work has appeared in a number of top journals, including Nature, Nature Communications, The Proceedings of the National Academy of the Sciences, and Management Science, as well as in popular news outlets, such as The Atlantic, Wired, and The Harvard Business Review. He has received top research awards from The International Conference on Computational Social Science, The Cognitive Science Society, and The International Communication Association.",
+    "website": "https://www.gsb.stanford.edu/faculty-research/faculty/douglas-r-guilbeault",
+    "publications": [
+      {
+        "title": "Online Images Amplify Gender Bias",
+        "journal": "Nature",
+        "year": 2024,
+        "award": "Best Paper Award, 2022 International Conference on Computational Social Science"
+      },
+      {
+        "title": "Divergences in Color Perception between Deep Neural Networks and Humans",
+        "journal": "Cognition",
+        "volume": 241,
+        "year": 2023,
+        "pages": "105621",
+        "corresponding_authors": true
+      },
+      {
+        "title": "Signal in Noise: Exploring Meaning Encoded in Random Character Sequences with Character-Aware Language Models",
+        "journal": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
+        "year": 2022
+      },
+      {
+        "title": "Topological Measures for Identifying and Predicting the Spread of Complex Contagions",
+        "journal": "Nature Communications",
+        "volume": 12,
+        "issue": 4430,
+        "year": 2021,
+        "highlight": "Selected by editorial team as a featured article in Applied Physics and Mathematics"
+      },
+      {
+        "title": "Experimental Evidence for Scale Induced Category Convergence across Populations",
+        "journal": "Nature Communications",
+        "volume": 12,
+        "issue": 327,
+        "year": 2021,
+        "award": "Computational Modeling Prize in Applied Cognition, The Cognitive Science Society, 2020"
+      },
+      {
+        "title": "Compsyn: Perceptually Grounded Word Embeddings with Color",
+        "journal": "Proceedings of the 28th International Conference on Computational Linguistics (COLING @ ACL)",
+        "year": 2020,
+        "pages": "1744–1751"
+      },
+      {
+        "title": "Color Associations in Abstract Semantic Domains",
+        "journal": "Cognition",
+        "volume": 201,
+        "year": 2020,
+        "pages": "104306"
+      }
+    ],
+    "role": "Affiliate Faculty",
+    "bioImg": Dougg,
+  },
+  {
+    "name": "Misha Teplitskiy",
+    "email": "tepl@umich.edu",
+    "affiliation": "University of Michigan",
+    "bio": "Misha Teplitskiy is an Assistant Professor at the University of Michigan School of Information and the head of DiscoveryLab. He is a sociologist interested in the drivers of scientific and technological innovation, and especially the role that policy and technology can play in accelerating scientific discovery. His current work investigates 1) how individuals and organizations evaluate innovative ideas, and 2) how knowledge diffuses between scientists in-person and online.",
+    "website": "www.misha.mx",
+    "publications": [
+      {
+        "title": "Author mentions in science news reveal widespread disparities across name-inferred ethnicities.",
+        "journal": "Quantitative Science Studies",
+        "year": 2024,
+        "pages": "1-15"
+      },
+      {
+        "title": "Being Together in Place as a Catalyst for Scientific Advance.",
+        "journal": "Research Policy",
+        "volume": 53,
+        "issue": 2,
+        "year": 2024
+      },
+      {
+        "title": "The substantive effect of rhetorical citations in science.",
+        "journal": "Nature Communications",
+        "volume": 15,
+        "issue": 1,
+        "year": 2024,
+        "pages": "431"
+      }
+    ],
+    "role": "Affiliate Faculty",
+    "bioImg": Misha,
+  },
+  {
+    "name": "Dashun Wang",
+    "email": "dashun.wang@kellogg.northwestern.edu",
+    "affiliation": "Northwestern University",
+    "bio": "Dashun Wang is a Professor of Management and Organizations at the Kellogg School of Management, and the McCormick School of Engineering, at Northwestern University. At Kellogg, he is the Founding Co-Director of the Ryan Institute on Complexity and the Founding Director of the Center for Science of Science and Innovation (CSSI). He is also a core faculty at the Northwestern Institute on Complex Systems (NICO). Dashun is a recipient of multiple awards for his research and teaching, including the AFOSR Young Investigator award, Poets & Quants Best 40 Under 40 Professors, Junior Scientific Award from the Complex Systems Society, the Erdos-Renyi Prize, Thinkers50 Radar 2021, and more.",
+    "website": "www.dashunwang.com",
+    "publications": [
+      {
+        "title": "Academic articles",
+        "journal": "Academic website",
+        "year": 2024,
+        "pages": "https://www.dashunwang.com/academic-articles"
+      }
+    ],
+    "role": "Affiliate Faculty",
+    "bioImg": Dashun,
+  },
+  {
+    "name": "Daniel Holz",
+    "email": "blackhole@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "bio": "Holz is a professor at the University of Chicago in the Departments of Physics, Astronomy & Astrophysics, the Enrico Fermi Institute, and the Kavli Institute for Cosmological Physics. He works on black holes, gravitational waves, astrophysics, and cosmology. He is a member of the Laser Interferometer Gravitational-Wave Observatory (LIGO) collaboration, and was part of the team that announced the first detection of gravitational waves in early 2016. Holz is Chair of the Science and Security Board of the Bulletin of the Atomic Scientists, and in this role helps set the time of the Doomsday Clock. He is also director of the UChicago Existential Risk Laboratory (XLab), an interdisciplinary effort focused on understanding and mitigating existential risks, including nuclear war, climate change, and AI-fueled disinformation.",
+    "website": "https://holzlab.uchicago.edu",
+    "publications": [],
+    "bioImg": Danh,
   },
   {
     "name": "Ufuk Akcigit",
     "email": "uakcigit@uchicago.edu",
     "affiliation": "University of Chicago",
+    "bio":"Ufuk Akcigit is the Arnold C. Harberger Professor of Economics at the University of Chicago and a Research Associate at several prestigious institutions, including the National Bureau of Economic Research. His research focuses on economic growth, innovation, and firm dynamics, with his work published in top economics journals and featured in policy reports and popular media. He co-edited the book 'The Economics of Creative Destruction' and serves as the lead academic for the World Bank's World Development Report 2024. Akcigit's contributions have earned him numerous accolades, including the Max Planck-Humboldt Research Award, Guggenheim Fellowship, and Kiel Institute’s Global Economy Prize.",
     "role": "Affiliate Faculty",
-    "bioImg": Person
+    "bioImg": Ufuk
   },
-  {
-    "name": "Yong-Yeol Ahn",
-    "email": "yyahn@iu.edu",
-    "affiliation": "Indiana University",
-    "role": "Affiliate Faculty",
-    "bioImg": Person
-  },
-  {
-    "name": "Chenhao Tan",
-    "email": "chenhao@uchicago.edu",
-    "affiliation": "University of Chicago",
-    "role": "Affiliate Faculty",
-    "bioImg": Person
-  },
-  {
-    "name": "Ben Blaiszik",
-    "email": "blaiszik@uchicago.edu",
-    "affiliation": "University of Chicago",
-    "role": "Affiliate Faculty",
-    "bioImg": Person
-  },
-  {
-    "name": "Lav Varshney",
-    "email": "varshney@illinois.edu",
-    "affiliation": "University of Illinois",
-    "role": "Affiliate Faculty",
-    "bioImg": Person
-  },
-  {
-    "name": "Ian Foster",
-    "email": "foster@uchicago.edu",
-    "affiliation": "University of Chicago",
-    "role": "Affiliate Faculty",
-    "bioImg": Person
-  },
+  // {
+  //   "name": "Yong-Yeol Ahn",
+  //   "email": "yyahn@iu.edu",
+  //   "affiliation": "Indiana University",
+  //   "role": "Affiliate Faculty",
+  //   "bioImg": Person
+  // },
+  // {
+  //   "name": "Chenhao Tan",
+  //   "email": "chenhao@uchicago.edu",
+  //   "affiliation": "University of Chicago",
+  //   "role": "Affiliate Faculty",
+  //   "bioImg": Person
+  // },
+  // {
+  //   "name": "Ben Blaiszik",
+  //   "email": "blaiszik@uchicago.edu",
+  //   "affiliation": "University of Chicago",
+  //   "role": "Affiliate Faculty",
+  //   "bioImg": Person
+  // },
+  // {
+  //   "name": "Lav Varshney",
+  //   "email": "varshney@illinois.edu",
+  //   "affiliation": "University of Illinois",
+  //   "role": "Affiliate Faculty",
+  //   "bioImg": Person
+  // },
+  // {
+  //   "name": "Ian Foster",
+  //   "email": "foster@uchicago.edu",
+  //   "affiliation": "University of Chicago",
+  //   "role": "Affiliate Faculty",
+  //   "bioImg": Person
+  // },
   {
     "name": "Bernard Koch",
     "email": "bernardkoch@uchicago.edu",
@@ -323,130 +457,7 @@ const klabAffiliated = [
     ],
     "role": "Affiliate Faculty",
     "bioImg": Person
-  }
-]
-
-const klabResearchPost = [
-  {
-    "name": "Yujin Potter",
-    "email": "yujinyujin9393@gmail.com",
-    "institution": "UC Berkeley",
-    "bio": "She is currently a postdoc in EECS at UC Berkeley. Her interests span a wide range of topics within AI alignment/ethics, including examining the societal impacts of AI, identifying AI misalignment, studying AI behaviors in multi-agent settings, and addressing AI bias. Previously, she conducted research on decentralization technologies such as blockchain, DeFi, and DAOs. Before joining UC Berkeley, she got a PhD from KAIST.",
-    "publications": "Evolving AI Collectives to Enhance Human Diversity and Enable Self-Regulation, ICML 2024",
-    "position": "Affiliate Postdoc",
-    "bioImg": Person,
-  },
-  {
-    "name": "Shilin Jia",
-    "email": "shilinj@stanford.edu",
-    "institution": "Stanford University",
-    "bio": "Shilin Jia is the 2023-24 Shorenstein Postdoctoral Fellow on Contemporary Asia at Stanford University. His scholarly interest lies in applying computational methods to the study of political culture and organizations, with a special focus on post-reform China. Shilin’s research analyzes job transfers of Communist Party elites in China by using machine learning to code party elites' CVs. His objective is to grasp the evolution of the party-state through the division of labor and circulation of its elite members. He also conducts a computational content analysis of 60 years of the People's Daily, the official mouthpiece of the Communist Party of China, tracking ideological changes. More recently, He has been working on building a hundred years of word-embedding models based on multiple languages of Google N-grams and studying identity formation and international relations across language communities. Shilin received a Ph.D. in sociology from the University of Chicago.",
-    "website": "https://shevajia.github.io/",
-    "position": "Affiliate Postdoc",
-    "bioImg": Person,
-  },
-  {
-    "name": "Haochuan Cui",
-    "email": "hcui94@hotmail.com",
-    "institution": "Beijing Normal University",
-    "bio": "Haochuan earned his PhD in School of System Sciences at Beijing Normal University. He is the Pre-Assistant Professor of School of Information Management at Nanjing University. His interests focus on the complexity of cognitive behavior within scientific discovery and knowledge diffusion. He is currently using big language models and network analysis techniques to study the influence of workforce aging on Science and Technology and the labor division within organizations.",
-    "website": "https://hashc.github.io/about/",
-    "position": "Affiliate Researcher",
-    "bioImg": Person,
-    "additionalLink": "https://drive.google.com/file/d/1t1Y_O7Lzb05SEcU62Zw2Xjn3oaKWpmYR/view?usp=drive_link"
-  },
-  {
-    "name": "Chris Esposito",
-    "email": "Christopher.Esposito@anderson.ucla.edu",
-    "institution": "UCLA",
-    "bio": "Chris is the Osborne Postdoctoral Fellow at the UCLA Anderson School of Management. He studies innovation in science and technology using computational and econometric techniques. His dissertation developed centuries of new historical data to uncover the common processes that cities pass through as they emerge as centers for innovation. More recently, he has studied knowledge obsolescence and its impact on the changing structure of the innovative economy. In ongoing collaborations with the Knowledge Lab, he is analyzing the shifting balance of global power in scientific and technological innovation.",
-    "website": "https://cresposito.com",
-    "publications": [
-      "https://academic.oup.com/joeg/article/23/1/209/6646557",
-      "https://www.sciencedirect.com/science/article/pii/S004873332300094X",
-      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4444732#:~:text=Linking%20age%20and%20death%20information,inventors%20who%20lose%20mid%2Dcareer",
-      "https://arxiv.org/abs/2406.05917"
-    ],
-    "position": "Affiliate Researcher",
-    "bioImg": Person,
-    "additionalLink": "https://drive.google.com/file/d/1s8TtY31eFUhMi564UgoLn94trUxo29yf/view?usp=drive_link"
-  },
-  {
-    "name": "Doug Guilbeault",
-    "email": "dguilb@stanford.edu",
-    "institution": "Stanford University",
-    "bio": "Guilbeault received dual bachelor’s degrees in philosophy and rhetoric (with a minor in cognitive science) from the University of Waterloo, an MA in Cognitive Linguistics from the University of British Columbia, and a PhD from the University of Pennsylvania’s Annenberg School for Communication. He is co-director of the Berkeley-Stanford Computational Culture Lab, and a founding member of the theoretical cognitive science and machine learning collective comp-syn (“computational synesthesia”). His work has appeared in a number of top journals, including Nature, Nature Communications, The Proceedings of the National Academy of the Sciences, and Management Science, as well as in popular news outlets, such as The Atlantic, Wired, and The Harvard Business Review. He has received top research awards from The International Conference on Computational Social Science, The Cognitive Science Society, and The International Communication Association.",
-    "website": "https://www.gsb.stanford.edu/faculty-research/faculty/douglas-r-guilbeault",
-    "publications": [
-      "Guilbeault, Douglas, Solene Delecourt, Tasker Hull, Bhargav Srinivasa Desikan, Mark Chu, and Ethan Nadler. 2024. Online Images Amplify Gender Bias. Nature. Best Paper Award, 2022 International Conference on Computational Social Science.",
-      "Nadler, Ethan, Elise Darragh-Ford, Bhargav Srinivasa Desikan, Christian Conaway, Mark Chu, Tasker Hull, and Douglas Guilbeault. Divergences in Color Perception between Deep Neural Networks and Humans. Cognition (241): 105621.",
-      "Chu, Mark, Bhargav Desikan, Ethan Nadler, Ruggiero Lo Sardo, Elise Dallagh-Ford, Douglas Guilbeault. Signal in Noise: Exploring Meaning Encoded in Random Character Sequences with Character-Aware Language Models. Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics.",
-      "Guilbeault, Douglas and Damon Centola. Topological Measures for Identifying and Predicting the Spread of Complex Contagions. Nature Communications 12 (4430).",
-      "Guilbeault, Douglas, Andrea Baronchelli, and Damon Centola. Experimental Evidence for Scale Induced Category Convergence across Populations. Nature Communications 12 (327).",
-      "Desikan, Bhargav, Tasker Hull, Ethan Nadler, Douglas Guilbeault, Aabir Abubaker, Mark Chu, Ruggiero Lo Sardo. Compsyn: Perceptually Grounded Word Embeddings with Color. Proceedings of the 28th International Conference on Computational Linguistics (COLING @ ACL).",
-      "Guilbeault, Douglas, Ethan Nadler, Mark Chu, Ruggiero Lo Sardo, Aabir Abubaker, and Bhargav Desikan. Color Associations in Abstract Semantic Domains. Cognition (201): 104306."
-    ],
-    "position": "Affiliate Researcher",
-    "bioImg": Person,
-    "additionalLink": "https://drive.google.com/file/d/1GK7ZiEyYljr0s-Xy6UxfTywoAXJe8zbU/view?usp=drive_link"
-  },
-  {
-    "name": "Partha Kadambi",
-    "email": "parthaskadambi@gmail.com",
-    "institution": "tbd",
-    "bio": "tbd",
-    "position": "Affiliate Researcher",
-    "bioImg": Person,
-  },
-  {
-    "name": "Alejandro Sarria-Morales",
-    "email": "asarria@uchicago.edu",
-    "institution": "University of Chicago",
-    "bio": "Alejandro is currently pursuing a Masters in Computational Social Science at the University of Chicago. He is interested in computational approaches to Latin American political communication, with a focus on the intersection of emotion, ideology, and populism in political speech. His research aims to uncover how these factors contribute to novel understandings of politics in Latin America. Alejandro’s current work involves analyzing presidential addresses and large-scale corpora using natural language processing to identify emergent political ideological categories. Before coming to Chicago, he earned a B.A. in Psychology with minors in Economics and Comparative Political Science, from the University of the Andes in Bogotá, Colombia.",
-    "position": "Affiliate Researcher",
-    "bioImg": Person,
-    "additionalLink": "https://drive.google.com/file/d/1QMvzkofNbXoTXjSJHpl1iaKsha-V0ZfT/view?usp=drive_link"
-  },
-  {
-    "name": "Bill Shi",
-    "email": "fbillshi@gmail.com",
-    "institution": "Pond",
-    "bio": "Bill has been wearing multiple hats – researcher, engineer, and lately, tech adventurer. Currently, he is the co-founder and CTO of Pond, a startup focused on building the foundation model for crypto AI. Throughout his career, whether in industry (TigerGraph, Amazon) or academia (UNC, UChicago), Bill has been driven by a passion for applying mathematical modeling and machine learning to solve real-world challenges. His work spans a wide range of fields, from graph AI, recommender systems, to computational social science and biomedicine.",
-    "website": "https://www.billshi.net/",
-    "publications": [
-      "Zhang, Yang; Shi, Feng; The micro-foundations of elite politics: conversation networks and elite conflict during China’s reform era,Theory and Society,53,1,193-237,2024",
-      "Shi, Feng; Evans, James; Surprising combinations of research contents and contexts are related to impact and emerge with scientific outsiders from distant disciplines,Nature Communications,14,1,1641,2023",
-      "Evans, James; Shi, Feng; Sourati, Jamshid; Systems and methods for high-order modeling of predictive hypotheses,,,,,2022",
-      "Ke, Zheng Tracy; Shi, Feng; Xia, Dong; Community detection for hypergraph networks via regularized tensor power iteration,arXiv preprint arXiv:1909.06503,,,,2019",
-      "Shi, Feng; Teplitskiy, Misha; Duede, Eamon; Evans, James A; The wisdom of polarized crowds,Nature human behaviour,3,4,329-336,2019",
-      "Gerow, Aaron; Zhou, Mingyang; Matwin, Stan; Shi, Feng; Reflexive Regular Equivalence for Bipartite Data,Advances in Artificial Intelligence: 30th Canadian Conference on Artificial Intelligence, Canadian AI 2017, Edmonton, AB, Canada, May 16-19, 2017, Proceedings 30,,,71-77,2017",
-      "Shi, Feng; Shi, Yongren; Dokshin, Fedor A; Evans, James A; Macy, Michael W; Millions of online book co-purchases reveal partisan differences in the consumption of science,Nature Human Behaviour,1,4,0079,2017",
-      "Shi, Feng; Foster, Jacob G; Evans, James A; Weaving the fabric of science: Dynamic network models of science's unfolding structure,Social Networks,43,,73-85,2015"
-    ],
-    "position": "Affiliate Researcher",
-    "bioImg": Person,
-    "additionalLink": "https://drive.google.com/file/d/1PVchSEg62x3cK0WyS8BiFFcQ3w8AQtTw/view?usp=drive_link"
-  },
-  {
-    "name": "Nicolás Torres-Echeverry",
-    "email": "nte@uchicago.edu",
-    "institution": "University of Chicago",
-    "bio": "tbd",
-    "position": "Affiliate Researcher",
-    "bioImg": Person,
-  },
-  {
-    "name": "Dashun Wang",
-    "email": "dashun.wang@kellogg.northwestern.edu",
-    "institution": "Northwestern University",
-    "bio": "Dashun Wang is a Professor of Management and Organizations at the Kellogg School of Management, and the McCormick School of Engineering, at Northwestern University. At Kellogg, he is the Founding Co-Director of the Ryan Institute on Complexity and the Founding Director of the Center for Science of Science and Innovation (CSSI). He is also a core faculty at the Northwestern Institute on Complex Systems (NICO). Dashun is a recipient of multiple awards for his research and teaching, including the AFOSR Young Investigator award, Poets & Quants Best 40 Under 40 Professors, Junior Scientific Award from the Complex Systems Society, the Erdos-Renyi Prize, Thinkers50 Radar 2021, and more.",
-    "website": "www.dashunwang.com",
-    "publications": "https://www.dashunwang.com/academic-articles.",
-    "position": "Affiliate Researcher",
-    "bioImg": Person,
-    "additionalLink": "https://drive.google.com/file/d/1x54WQ5dPRj955B9_HC_DGNEMf2SMOFwk/view?usp=drive_link"
-  },
-  {
+  },{
     "name": "Zhao Wang",
     "email": "zwang13@uchicago.edu",
     "institution": "University of Chicago",
@@ -457,8 +468,8 @@ const klabResearchPost = [
       "Robustness to spurious correlations in text classification via automatically generated counterfactuals",
       "Enhancing model robustness and fairness with causality: A regularization approach"
     ],
-    "position": "Affiliate Researcher",
-    "bioImg": Person,
+    "position": "Affiliate Faculty",
+    "bioImg": Zhao,
     "additionalLink": "https://drive.google.com/file/d/1Gp5La4RU6S-2wAh5xS4vlXLGGMej-eUA/view?usp=drive_link"
   },
   {
@@ -467,19 +478,407 @@ const klabResearchPost = [
     "institution": "Allen Institute",
     "bio": "Daniel S. Weld is Chief Scientist and General Manager of Semantic Scholar at the Allen Institute of Artificial Intelligence and Professor Emeritus at the University of Washington. After formative education at Phillips Academy, he received bachelor’s degrees in both Computer Science and Biochemistry at Yale University in 1982 and a Ph.D. from the MIT Artificial Intelligence Lab in 1988. Weld received a Presidential Young Investigator’s award and an Office of Naval Research Young Investigator’s award; he is a Fellow of the Association for Artificial Intelligence (AAAI), the American Association for the Advancement of Science (AAAS), and the Association for Computing Machinery (ACM).",
     "website": "https://www.cs.washington.edu/people/faculty/weld/",
-    "position": "Affiliate Researcher",
-    "bioImg": Person,
+    "position": "Affiliate Faculty",
+    "bioImg": Danw,
     "additionalLink": "https://drive.google.com/file/d/1MEWhzw7k9eyxpNCxz-q2Gd39reIJBZL0/view?usp=drive_link"
+  },
+]
+
+const klabResearchPost = [
+  {
+    "name": "Molly Lewis",
+    "email": "mollyllewis@gmail.com",
+    "affiliation": "Meta",
+    "bio": "Molly is a computational social scientist interested in human learning and language. She uses a wide range of methods including behavioral experiments, LLMs, and analyses of large trace data. She earned her PhD in Psychology from Stanford University in 2016, and is currently a Quantitative Researcher at Meta.",
+    "website": "https://mllewis.github.io/",
+    "publications": [
+      {
+        "title": "Local similarity and global variability characterize the semantic space of human languages",
+        "journal": "PNAS",
+        "volume": "120",
+        "issue": "51",
+        "year": 2023,
+        "pages": "e2300986120"
+      },
+      {
+        "title": "Gender stereotypes are reflected in the distributional structure of 25 languages",
+        "journal": "Nature Human Behavior",
+        "volume": "4",
+        "issue": "10",
+        "year": 2020,
+        "pages": "1021-1028"
+      },
+      {
+        "title": "The puzzling relationship between multi-lab replications and meta-analyses of the rest of the literature",
+        "journal": "Royal Society Open Science",
+        "volume": null,
+        "issue": null,
+        "year": 2022,
+        "pages": null
+      }
+    ],
+    "role": "Affiliate Researcher",
+    "bioImg": Mollyl,
+  },
+  {
+    "name": "Bill Shi",
+    "email": "fbillshi@gmail.com",
+    "affiliation": "Pond",
+    "bio": "Bill has been wearing multiple hats – researcher, engineer, and lately, tech adventurer. Currently, he is the co-founder and CTO of Pond, a startup focused on building the foundation model for crypto AI. Throughout his career, whether in industry (TigerGraph, Amazon) or academia (UNC, UChicago), Bill has been driven by a passion for applying mathematical modeling and machine learning to solve real-world challenges. His work spans a wide range of fields, from graph AI, recommender systems, to computational social science and biomedicine.",
+    "website": "https://www.billshi.net/",
+    "publications": [
+      {
+        "title": "The micro-foundations of elite politics: conversation networks and elite conflict during China’s reform era",
+        "journal": "Theory and Society",
+        "volume": "53",
+        "issue": "1",
+        "year": 2024,
+        "pages": "193-237"
+      },
+      {
+        "title": "Surprising combinations of research contents and contexts are related to impact and emerge with scientific outsiders from distant disciplines",
+        "journal": "Nature Communications",
+        "volume": "14",
+        "issue": "1",
+        "year": 2023,
+        "pages": "1641"
+      },
+      {
+        "title": "Systems and methods for high-order modeling of predictive hypotheses",
+        "journal": null,
+        "volume": null,
+        "issue": null,
+        "year": 2022,
+        "pages": null
+      },
+      {
+        "title": "Community detection for hypergraph networks via regularized tensor power iteration",
+        "journal": "arXiv preprint arXiv:1909.06503",
+        "volume": null,
+        "issue": null,
+        "year": 2019,
+        "pages": null
+      },
+      {
+        "title": "The wisdom of polarized crowds",
+        "journal": "Nature Human Behaviour",
+        "volume": "3",
+        "issue": "4",
+        "year": 2019,
+        "pages": "329-336"
+      },
+      {
+        "title": "Reflexive Regular Equivalence for Bipartite Data",
+        "journal": "Advances in Artificial Intelligence: 30th Canadian Conference on Artificial Intelligence, Canadian AI 2017, Edmonton, AB, Canada, May 16-19, 2017, Proceedings 30",
+        "volume": null,
+        "issue": null,
+        "year": 2017,
+        "pages": "71-77"
+      },
+      {
+        "title": "Millions of online book co-purchases reveal partisan differences in the consumption of science",
+        "journal": "Nature Human Behaviour",
+        "volume": "1",
+        "issue": "4",
+        "year": 2017,
+        "pages": "0079"
+      },
+      {
+        "title": "Weaving the fabric of science: Dynamic network models of science's unfolding structure",
+        "journal": "Social Networks",
+        "volume": "43",
+        "issue": null,
+        "year": 2015,
+        "pages": "73-85"
+      }
+    ],
+    "role": "Affiliate Researcher",
+    "bioImg": Billshi,
   },
   {
     "name": "Haizi Yu",
     "email": "haiziyu@uchicago.edu",
-    "institution": "University of Chicago",
+    "affiliation": "University of Chicago",
     "bio": "Haizi has a Ph.D. in Computer Science. His research interests include white-box AGI, interpretable machine learning, automatic knowledge discovery, and music intelligence. He received his doctoral degree from the University of Illinois at Urbana-Champaign, his M.S. degree in Computer Science from Stanford University, and his B.S. degree from the Department of Automation at Tsinghua University.",
-    "position": "Affiliate Researcher",
+    "website": null,
+    "publications": [],
+    "role": "Affiliate Researcher",
+    "bioImg": Haiziyu,
+  },
+  {
+    "name": "Bhargav Desikan",
+    "email": "bhargavvader@gmail.com",
+    "affiliation": "Institute for Public Policy Research (IPPR)",
+    "bio": "Bhargav is a Senior Research Fellow at the Institute for Public Policy Research (IPPR) in London. At IPPR, he works on AI and Industrial Policy, focusing on social and economic policy to gear AI to providing maximum positive social impact. Bhargav is co-author on articles and workshops published at Nature, Cognition, ACL, NeurIPS, and more. He has previously written a book on NLP with Python and has authored multiple programming resources for social scientists. At the Knowledge Lab, he is an affiliate researcher working with Prof. James Evans on a book project titled \"Thinking with Deep Learning\", where they unravel modern deep learning to allow natural scientists, social scientists, and business practitioners to make the most of their complex data. He also holds research affiliations and consultancies with the University of Cambridge and Stanford University.",
+    "website": "https://urldefense.com/v3/__https:/scholar.google.com/citations?user=JSMnASoAAAAJ&hl=en__;!!BpyFHLRN4TMTrA!6DqKP_3_7s7FIcUNeDGw60HanhFOSvdvawemR_k1LjQHOOMV5PBAHqg1Xzj5hdUOKyqudwdTQOqS4PQ0UyJVZFuh$",
+    "publications": [],
+    "role": "Affiliate Researcher",
+    "bioImg": Bhargav,
+  },
+  {
+    "name": "Haochuan Cui",
+    "email": "hcui94@hotmail.com",
+    "affiliation": "Beijing Normal University",
+    "bio": "Haochuan earned his PhD in School of System Sciences at Beijing Normal University. He is the Pre-Assistant Professor of School of Information Management at Nanjing University. His interests focus on the complexity of cognitive behavior within scientific discovery and knowledge diffusion. He is currently using big language models and network analysis techniques to study the influence of workforce aging on Science and Technology and the labor division within organizations.",
+    "website": "https://hashc.github.io/about/",
+    "publications": [],
+    "role": "Postdoctoral Scholar",
+    "bioImg": Cui,
+  },
+  {
+    "name": "Chris Esposito",
+    "email": "Christopher.Esposito@anderson.ucla.edu",
+    "affiliation": "UCLA",
+    "bio": "Chris is the Osborne Postdoctoral Fellow at the UCLA Anderson School of Management. He studies innovation in science and technology using computational and econometric techniques. His dissertation developed centuries of new historical data to uncover the common processes that cities pass through as they emerge as centers for innovation. More recently, he has studied knowledge obsolescence and its impact on the changing structure of the innovative economy. In ongoing collaborations with the Knowledge Lab, he is analyzing the shifting balance of global power in scientific and technological innovation.",
+    "website": "http://cresposito.com",
+    "publications": [
+      {
+        "title": null,
+        "journal": "Journal of Economic Geography",
+        "volume": "23",
+        "issue": "1",
+        "year": 2023,
+        "pages": "209-234"
+      },
+      {
+        "title": null,
+        "journal": "Research Policy",
+        "volume": "52",
+        "issue": "6",
+        "year": 2023,
+        "pages": null
+      },
+      {
+        "title": null,
+        "journal": "SSRN",
+        "volume": null,
+        "issue": null,
+        "year": 2023,
+        "pages": null
+      },
+      {
+        "title": null,
+        "journal": "arXiv",
+        "volume": null,
+        "issue": null,
+        "year": 2023,
+        "pages": null
+      }
+    ],
+    "role": "Postdoctoral Scholar",
+    "bioImg": Esposito,
+  },
+  {
+    "name": "Hongbo Fang",
+    "email": "fanghongdoublebo@gmail.com",
+    "affiliation": "University of Chicago",
+    "bio": "Hongbo Fang is a computational social science researcher with broad interests in innovation processes, the evolution of online communities and social media activities, and the societal impact of large language models. Before beginning his postdoctoral research at UChicago, he earned a PhD in computer science from Carnegie Mellon University and a bachelor's degree in computer science from Zhejiang University, China.",
+    "website": null,
+    "publications": [
+      {
+        "title": "Novelty Begets Popularity, But Curbs Participation-A Macroscopic View of the Python Open-Source Ecosystem",
+        "journal": "ICSE",
+        "volume": null,
+        "issue": null,
+        "year": 2024,
+        "pages": null
+      },
+      {
+        "title": "\"This is damn slick!\" estimating the impact of tweets on open source project popularity and new contributors",
+        "journal": "ICSE",
+        "volume": null,
+        "issue": null,
+        "year": 2022,
+        "pages": null
+      }
+    ],
+    "role": "Postdoctoral Scholar",
+    "bioImg": Fang,
+  },
+  {
+    "name": "Donghyun Kang",
+    "email": "kangd@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "bio": "Donghyun Kang is a Postdoctoral Scholar at the Knowledge Lab. Donghyun's research aims to advance the understanding of the emergence, diffusion, and evolution of ideas and practices in science and technology and across civic domains by bridging computational large-scale analysis with theoretical insights from the sociology of knowledge, science, and organization. He received a B.A. in Business Administration and an M.A. in Sociology from Seoul National University, and a Ph.D. in Sociology from the University of Chicago.",
+    "website": "https://donghyun-kang-soc.github.io/",
+    "publications": [
+      {
+        "title": "Limited Diffusion of Scientific Knowledge Forecasts Collapse",
+        "journal": "Nature Human Behaviour",
+        "volume": null,
+        "issue": null,
+        "year": 2024,
+        "pages": null
+      },
+      {
+        "title": "Adaptation in Action: The Rise and Fall of Academic Publications from Korean High Schoolers, 2001–2021",
+        "journal": "British Journal of Sociology of Education",
+        "volume": "45",
+        "issue": "5",
+        "year": 2024,
+        "pages": "742–62"
+      },
+      {
+        "title": "Against method: Exploding the boundary between qualitative and quantitative studies of science",
+        "journal": "Quantitative Science Studies",
+        "volume": "1",
+        "issue": "3",
+        "year": 2020,
+        "pages": "930-944"
+      }
+    ],
+    "role": "Postdoctoral Scholar",
+    "bioImg": Donghyung,
+  },
+  {
+    "name": "Ningzi Li",
+    "email": "ningzi@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "bio": "Ningzi is a professional research specialist at the Data Science Institute (DSI) and an adjunct assistant professor at the Booth School of Business at the University of Chicago. She obtained Ph.D. in sociology from Cornell University. Ningzi studies communication and behavior in organizations. She particularly focuses on how firms strategically communicate to influence stakeholder behaviors in the context of earnings calls, venture capital investments, and ESG reports. She also studies how stakeholders' communication influences firm behaviors in the context of employee reviews and product recalls. Her analysis heavily relies on natural experiments and natural language processing tools.",
+    "website": "http://ningzili.com",
+    "publications": [],
+    "role": "Postdoctoral Scholar",
     "bioImg": Person,
-    "additionalLink": "https://drive.google.com/file/d/1LdiAciLoFfQ6BYP3_KlDKptI5eEfli5K/view?usp=drive_link"
-  }
+  },
+  {
+    "name": "Yujin Potter",
+    "email": "yujinyujin9393@gmail.com",
+    "affiliation": "UC Berkeley",
+    "bio": "She is currently a postdoc in EECS at UC Berkeley. Her interests span a wide range of topics within AI alignment/ethics, including examining the societal impacts of AI, identifying AI misalignment, studying AI behaviors in multi-agent settings, and addressing AI bias. Previously, she conducted research on decentralization technologies such as blockchain, DeFi, and DAOs. Before joining UC Berkeley, she got a PhD from KAIST.",
+    "website": null,
+    "publications": [
+      {
+        "title": "Evolving AI Collectives to Enhance Human Diversity and Enable Self-Regulation",
+        "journal": "ICML",
+        "volume": null,
+        "issue": null,
+        "year": 2024,
+        "pages": null
+      }
+    ],
+    "role": "Postdoctoral Scholar",
+    "bioImg": Person,
+  },
+  {
+    "name": "Shilin Jia",
+    "email": "shilinj@stanford.edu",
+    "affiliation": "Stanford University",
+    "bio": "Shilin Jia is the 2023-24 Shorenstein Postdoctoral Fellow on Contemporary Asia at Stanford University. His scholarly interest lies in applying computational methods to the study of political culture and organizations, with a special focus on post-reform China. Shilin’s research analyzes job transfers of Communist Party elites in China by using machine learning to code party elites' CVs. His objective is to grasp the evolution of the party-state through the division of labor and circulation of its elite members. He also conducts a computational content analysis of 60 years of the People's Daily, the official mouthpiece of the Communist Party of China, tracking ideological changes. More recently, He has been working on building a hundred years of word-embedding models based on multiple languages of Google N-grams and studying identity formation and international relations across language communities. Shilin received a Ph.D. in sociology from the University of Chicago.",
+    "website": "https://shevajia.github.io/",
+    "publications": [],
+    "role": "Postdoctoral Scholar",
+    "bioImg": Person,
+  },
+  // {
+  //   "name": "Yujin Potter",
+  //   "email": "yujinyujin9393@gmail.com",
+  //   "institution": "UC Berkeley",
+  //   "bio": "She is currently a postdoc in EECS at UC Berkeley. Her interests span a wide range of topics within AI alignment/ethics, including examining the societal impacts of AI, identifying AI misalignment, studying AI behaviors in multi-agent settings, and addressing AI bias. Previously, she conducted research on decentralization technologies such as blockchain, DeFi, and DAOs. Before joining UC Berkeley, she got a PhD from KAIST.",
+  //   "publications": "Evolving AI Collectives to Enhance Human Diversity and Enable Self-Regulation, ICML 2024",
+  //   "position": "Affiliate Postdoc",
+  //   "bioImg": Person,
+  // },
+  // {
+  //   "name": "Shilin Jia",
+  //   "email": "shilinj@stanford.edu",
+  //   "institution": "Stanford University",
+  //   "bio": "Shilin Jia is the 2023-24 Shorenstein Postdoctoral Fellow on Contemporary Asia at Stanford University. His scholarly interest lies in applying computational methods to the study of political culture and organizations, with a special focus on post-reform China. Shilin’s research analyzes job transfers of Communist Party elites in China by using machine learning to code party elites' CVs. His objective is to grasp the evolution of the party-state through the division of labor and circulation of its elite members. He also conducts a computational content analysis of 60 years of the People's Daily, the official mouthpiece of the Communist Party of China, tracking ideological changes. More recently, He has been working on building a hundred years of word-embedding models based on multiple languages of Google N-grams and studying identity formation and international relations across language communities. Shilin received a Ph.D. in sociology from the University of Chicago.",
+  //   "website": "https://shevajia.github.io/",
+  //   "position": "Affiliate Postdoc",
+  //   "bioImg": Person,
+  // },
+  // {
+  //   "name": "Haochuan Cui",
+  //   "email": "hcui94@hotmail.com",
+  //   "institution": "Beijing Normal University",
+  //   "bio": "Haochuan earned his PhD in School of System Sciences at Beijing Normal University. He is the Pre-Assistant Professor of School of Information Management at Nanjing University. His interests focus on the complexity of cognitive behavior within scientific discovery and knowledge diffusion. He is currently using big language models and network analysis techniques to study the influence of workforce aging on Science and Technology and the labor division within organizations.",
+  //   "website": "https://hashc.github.io/about/",
+  //   "position": "Affiliate Researcher",
+  //   "bioImg": Person,
+  //   "additionalLink": "https://drive.google.com/file/d/1t1Y_O7Lzb05SEcU62Zw2Xjn3oaKWpmYR/view?usp=drive_link"
+  // },
+  // {
+  //   "name": "Chris Esposito",
+  //   "email": "Christopher.Esposito@anderson.ucla.edu",
+  //   "institution": "UCLA",
+  //   "bio": "Chris is the Osborne Postdoctoral Fellow at the UCLA Anderson School of Management. He studies innovation in science and technology using computational and econometric techniques. His dissertation developed centuries of new historical data to uncover the common processes that cities pass through as they emerge as centers for innovation. More recently, he has studied knowledge obsolescence and its impact on the changing structure of the innovative economy. In ongoing collaborations with the Knowledge Lab, he is analyzing the shifting balance of global power in scientific and technological innovation.",
+  //   "website": "https://cresposito.com",
+  //   "publications": [
+  //     "https://academic.oup.com/joeg/article/23/1/209/6646557",
+  //     "https://www.sciencedirect.com/science/article/pii/S004873332300094X",
+  //     "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4444732#:~:text=Linking%20age%20and%20death%20information,inventors%20who%20lose%20mid%2Dcareer",
+  //     "https://arxiv.org/abs/2406.05917"
+  //   ],
+  //   "position": "Affiliate Researcher",
+  //   "bioImg": Person,
+  //   "additionalLink": "https://drive.google.com/file/d/1s8TtY31eFUhMi564UgoLn94trUxo29yf/view?usp=drive_link"
+  // },
+  // {
+  //   "name": "Partha Kadambi",
+  //   "email": "parthaskadambi@gmail.com",
+  //   "institution": "tbd",
+  //   "bio": "tbd",
+  //   "position": "Affiliate Researcher",
+  //   "bioImg": Person,
+  // },
+  // {
+  //   "name": "Alejandro Sarria-Morales",
+  //   "email": "asarria@uchicago.edu",
+  //   "institution": "University of Chicago",
+  //   "bio": "Alejandro is currently pursuing a Masters in Computational Social Science at the University of Chicago. He is interested in computational approaches to Latin American political communication, with a focus on the intersection of emotion, ideology, and populism in political speech. His research aims to uncover how these factors contribute to novel understandings of politics in Latin America. Alejandro’s current work involves analyzing presidential addresses and large-scale corpora using natural language processing to identify emergent political ideological categories. Before coming to Chicago, he earned a B.A. in Psychology with minors in Economics and Comparative Political Science, from the University of the Andes in Bogotá, Colombia.",
+  //   "position": "Affiliate Researcher",
+  //   "bioImg": Person,
+  //   "additionalLink": "https://drive.google.com/file/d/1QMvzkofNbXoTXjSJHpl1iaKsha-V0ZfT/view?usp=drive_link"
+  // },
+  // {
+  //   "name": "Bill Shi",
+  //   "email": "fbillshi@gmail.com",
+  //   "institution": "Pond",
+  //   "bio": "Bill has been wearing multiple hats – researcher, engineer, and lately, tech adventurer. Currently, he is the co-founder and CTO of Pond, a startup focused on building the foundation model for crypto AI. Throughout his career, whether in industry (TigerGraph, Amazon) or academia (UNC, UChicago), Bill has been driven by a passion for applying mathematical modeling and machine learning to solve real-world challenges. His work spans a wide range of fields, from graph AI, recommender systems, to computational social science and biomedicine.",
+  //   "website": "https://www.billshi.net/",
+  //   "publications": [
+  //     "Zhang, Yang; Shi, Feng; The micro-foundations of elite politics: conversation networks and elite conflict during China’s reform era,Theory and Society,53,1,193-237,2024",
+  //     "Shi, Feng; Evans, James; Surprising combinations of research contents and contexts are related to impact and emerge with scientific outsiders from distant disciplines,Nature Communications,14,1,1641,2023",
+  //     "Evans, James; Shi, Feng; Sourati, Jamshid; Systems and methods for high-order modeling of predictive hypotheses,,,,,2022",
+  //     "Ke, Zheng Tracy; Shi, Feng; Xia, Dong; Community detection for hypergraph networks via regularized tensor power iteration,arXiv preprint arXiv:1909.06503,,,,2019",
+  //     "Shi, Feng; Teplitskiy, Misha; Duede, Eamon; Evans, James A; The wisdom of polarized crowds,Nature human behaviour,3,4,329-336,2019",
+  //     "Gerow, Aaron; Zhou, Mingyang; Matwin, Stan; Shi, Feng; Reflexive Regular Equivalence for Bipartite Data,Advances in Artificial Intelligence: 30th Canadian Conference on Artificial Intelligence, Canadian AI 2017, Edmonton, AB, Canada, May 16-19, 2017, Proceedings 30,,,71-77,2017",
+  //     "Shi, Feng; Shi, Yongren; Dokshin, Fedor A; Evans, James A; Macy, Michael W; Millions of online book co-purchases reveal partisan differences in the consumption of science,Nature Human Behaviour,1,4,0079,2017",
+  //     "Shi, Feng; Foster, Jacob G; Evans, James A; Weaving the fabric of science: Dynamic network models of science's unfolding structure,Social Networks,43,,73-85,2015"
+  //   ],
+  //   "position": "Affiliate Researcher",
+  //   "bioImg": Person,
+  //   "additionalLink": "https://drive.google.com/file/d/1PVchSEg62x3cK0WyS8BiFFcQ3w8AQtTw/view?usp=drive_link"
+  // },
+  // {
+  //   "name": "Nicolás Torres-Echeverry",
+  //   "email": "nte@uchicago.edu",
+  //   "institution": "University of Chicago",
+  //   "bio": "tbd",
+  //   "position": "Affiliate Researcher",
+  //   "bioImg": Person,
+  // },
+  // {
+  //   "name": "Dashun Wang",
+  //   "email": "dashun.wang@kellogg.northwestern.edu",
+  //   "institution": "Northwestern University",
+  //   "bio": "Dashun Wang is a Professor of Management and Organizations at the Kellogg School of Management, and the McCormick School of Engineering, at Northwestern University. At Kellogg, he is the Founding Co-Director of the Ryan Institute on Complexity and the Founding Director of the Center for Science of Science and Innovation (CSSI). He is also a core faculty at the Northwestern Institute on Complex Systems (NICO). Dashun is a recipient of multiple awards for his research and teaching, including the AFOSR Young Investigator award, Poets & Quants Best 40 Under 40 Professors, Junior Scientific Award from the Complex Systems Society, the Erdos-Renyi Prize, Thinkers50 Radar 2021, and more.",
+  //   "website": "www.dashunwang.com",
+  //   "publications": "https://www.dashunwang.com/academic-articles.",
+  //   "position": "Affiliate Researcher",
+  //   "bioImg": Person,
+  //   "additionalLink": "https://drive.google.com/file/d/1x54WQ5dPRj955B9_HC_DGNEMf2SMOFwk/view?usp=drive_link"
+  // },
+  
+  // {
+  //   "name": "Haizi Yu",
+  //   "email": "haiziyu@uchicago.edu",
+  //   "institution": "University of Chicago",
+  //   "bio": "Haizi has a Ph.D. in Computer Science. His research interests include white-box AGI, interpretable machine learning, automatic knowledge discovery, and music intelligence. He received his doctoral degree from the University of Illinois at Urbana-Champaign, his M.S. degree in Computer Science from Stanford University, and his B.S. degree from the Department of Automation at Tsinghua University.",
+  //   "position": "Affiliate Researcher",
+  //   "bioImg": Person,
+  //   "additionalLink": "https://drive.google.com/file/d/1LdiAciLoFfQ6BYP3_KlDKptI5eEfli5K/view?usp=drive_link"
+  // }
 ]
 
 const klabStudents = [
