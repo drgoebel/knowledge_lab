@@ -95,7 +95,7 @@ const IndexPage = () => {
         <Container fluid style={{ backgroundColor: "#efefef"}} >
         <Container style={{width: "100%", maxWidth: "1400px"}} >
           <Row>
-          <ScrollTest />
+          <ScrollHome />
           </Row>
         </Container>
         </Container>
