@@ -83,7 +83,7 @@ const AniNav = () => {
   return (
     <div
       ref={animationContainer}
-      style={{ width: 1200, height: 660 }}
+      style={{ width: 1200, height: 'auto' }}
       id="aninav"
     >
       {/* The Lottie animation will be rendered here */}
