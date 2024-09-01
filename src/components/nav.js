@@ -122,6 +122,11 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li style={navItemStyles}>
+                  <Link style={navLinkStyles} to={`/team`}>
+                    Team
+                  </Link>
+                </li>
+                <li style={navItemStyles}>
                   <Link style={navLinkStyles} to={`/initiatives`}>
                     Initiatives
                   </Link>
@@ -132,20 +137,17 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li style={navItemStyles}>
-                  <Link style={navLinkStyles} to={`/team`}>
-                    Team
+                  <Link style={navLinkStyles} to={`/news`}>
+                    News
                   </Link>
                 </li>
+                
                 <li style={navItemStyles}>
                   <Link style={navLinkStyles} to={`/events`}>
                     Events
                   </Link>
                 </li>
-                <li style={navItemStyles}>
-                  <Link style={navLinkStyles} to={`/news`}>
-                    News
-                  </Link>
-                </li>
+                
                 <li style={navItemStyles}>
                   <Link style={navLinkStyles} to={`/give`}>
                     Give

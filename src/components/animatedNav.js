@@ -39,11 +39,11 @@ const AniNav = () => {
           // Create a mapping of data attribute values to their corresponding URLs
           const urlMap = {
             "value-30": "/join",
-            "value-123": "/team",
-            "value-44": "/initiatives",
-            "value-60": "/publications",
-            "value-83": "/news",
-            "value-100": "/give",
+            "value-53": "/initiatives",
+            "value-44": "/team",
+            "value-75": "/publications",
+            "value-100": "/news",
+            "value-123": "/give",
             "value-113": "/events",
           };
 

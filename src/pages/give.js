@@ -30,7 +30,7 @@ const Give = () => (
       <div className="background"></div>
       <Container>
         <Row>
-          <Col xs={12} sm={9}>
+          <Col xs={12} sm={8}>
             <h1>Give to Knowledge Lab</h1>
             <p>
               Knowledge Lab stands at the intersection of transformative
@@ -62,9 +62,9 @@ const Give = () => (
               community.
             </p>
           </Col>
-          <Col sm={3}>
-            <a href="https://giving.uchicago.edu/site/Donation2" target="_blank"><div className="give-div"><span>Give to</span><h3>Knowledge Lab</h3>
-            <small><strong>School or Division</strong>: Social Sciences<br /><strong>Specific Fund</strong>: Knowledge Lab</small></div></a>
+          <Col xs={12} sm={4}>
+            <div className="give-div"><a href="https://giving.uchicago.edu/site/Donation2" target="_blank"><span>Give to</span><h3>Knowledge Lab</h3>
+            <small><strong>School or Division</strong>: Social Sciences<br /><strong>Specific Fund</strong>: Knowledge Lab</small></a></div>
             
           </Col>
         </Row>
