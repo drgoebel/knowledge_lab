@@ -44,7 +44,11 @@ import Haiziyu from "../images/haiziyu.webp"
 import Bhargav from "../images/bhargav.webp"
 import Billshi from "../images/billshi.webp"
 import Mollyl from "../images/mollyl.webp"
-
+import Muhua from "../images/muhua.webp" 
+import Jacy from "../images/jacy.webp"
+import Sarria from "../images/sarria.webp" 
+import Partha from "../images/partha.webp"
+import Hsing from "../images/hsin.jpg"
 const klabLeadership = [
   {
     name: "James A. Evans",
@@ -813,23 +817,7 @@ const klabResearchPost = [
   //   "bioImg": Person,
   //   "additionalLink": "https://drive.google.com/file/d/1s8TtY31eFUhMi564UgoLn94trUxo29yf/view?usp=drive_link"
   // },
-  // {
-  //   "name": "Partha Kadambi",
-  //   "email": "parthaskadambi@gmail.com",
-  //   "institution": "tbd",
-  //   "bio": "tbd",
-  //   "position": "Affiliate Researcher",
-  //   "bioImg": Person,
-  // },
-  // {
-  //   "name": "Alejandro Sarria-Morales",
-  //   "email": "asarria@uchicago.edu",
-  //   "institution": "University of Chicago",
-  //   "bio": "Alejandro is currently pursuing a Masters in Computational Social Science at the University of Chicago. He is interested in computational approaches to Latin American political communication, with a focus on the intersection of emotion, ideology, and populism in political speech. His research aims to uncover how these factors contribute to novel understandings of politics in Latin America. Alejandro’s current work involves analyzing presidential addresses and large-scale corpora using natural language processing to identify emergent political ideological categories. Before coming to Chicago, he earned a B.A. in Psychology with minors in Economics and Comparative Political Science, from the University of the Andes in Bogotá, Colombia.",
-  //   "position": "Affiliate Researcher",
-  //   "bioImg": Person,
-  //   "additionalLink": "https://drive.google.com/file/d/1QMvzkofNbXoTXjSJHpl1iaKsha-V0ZfT/view?usp=drive_link"
-  // },
+
   // {
   //   "name": "Bill Shi",
   //   "email": "fbillshi@gmail.com",
@@ -883,6 +871,16 @@ const klabResearchPost = [
 
 const klabStudents = [
   {
+    "name": "Partha Kadambi",
+    "email": "parthaskadambi@gmail.com",
+    "affiliation": null,
+    "bio": "A graduate of the MACSS program at the University of Chicago, Partha Kadambi is interested in the application of computational linguistics to understand human behavior & culture. His thesis focused on investigating personality psychology using social media data. As an affiliate of the Knowledge Lab, Partha's research interests include understanding the cultural factors underpinning the economic outcomes of firms. He currently works as a Senior Data Scientist in the financial services industry, focusing on GenAI and NLP.",
+    "website": null,
+    "publications": [],
+    "role": "Masters Student",
+    "bioImg": Partha
+  },
+  {
     "name": "Qixin Lin",
     "email": "qxlin@uchicago.edu",
     "institution": "University of Chicago",
@@ -899,6 +897,36 @@ const klabStudents = [
     "website": "",
     "title": "Masters Student",
     "bioImg": XYang
+  },
+  {
+    "name": "Alejandro Sarria-Morales",
+    "email": "asarria@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "bio": "Alejandro is currently pursuing a Masters in Computational Social Science at the University of Chicago. He is interested in computational approaches to Latin American political communication, with a focus on the intersection of emotion, ideology, and populism in political speech. His research aims to uncover how these factors contribute to novel understandings of politics in Latin America. Alejandro’s current work involves analyzing presidential addresses and large-scale corpora using natural language processing to identify emergent political ideological categories. Before coming to Chicago, he earned a B.A. in Psychology with minors in Economics and Comparative Political Science, from the University of the Andes in Bogotá, Colombia.",
+    "website": null,
+    "publications": [],
+    "role": "Masters Student",
+    "bioImg": Sarria
+  },
+  {
+    "name": "Jacy Anthis",
+    "email": "anthis@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "bio": "Jacy Anthis is a joint PhD candidate with the Sociology department and the Econometrics & Statistics group at the Booth School of Business. He is the co-founder of the Sentience Institute, where he leads research on human-AI interaction and machine learning, particularly the rise of digital minds and how humanity can work together with highly capable AI systems. Previously his research focused on social and moral change in humanity's relationship with nonhuman animals. Anthis' research has been published in top academic venues, such as CHI, HRI, and NeurIPS, and featured in global media outlets, such as <i>The Guardian</i>, <i>Vox</i>, and <i>Forbes</i>. He has presented his work at conferences and seminars in over 20 countries, and he lives in San Francisco with his wife Kelly Anthis and their adopted dogs Apollo and Dio(nysus).",
+    "website": "https://jacyanthis.com",
+    "publications": [],
+    "role": "PhD Student",
+    "bioImg": Jacy
+  },
+  {
+    "name": "Muhua Huang",
+    "email": "muhua@uchicago.edu",
+    "affiliation": "University of Chicago",
+    "bio": "Muhua Huang is a master’s student in MACSS, with an interest in AI for social science. She holds a BA in Computer Science & Psychology from the University of British Columbia. Currently, she has two lines of research involving LLM-Agents: (1) creating LLM-Agents at scale using a psychometric approach for behavioral science studies, and (2) investigating how LLMs’ values evolve through multi-agent interaction. Using methods from machine learning, NLP, and quantitative psychology, her research experience spans Social & Personality Psychology, Human-Centered AI, and Psychometrics.",
+    "website": null,
+    "publications": [],
+    "role": "Masters Student",
+    "bioImg": Muhua
   },
   {
     "name": "Carolina Biliotti",
@@ -930,15 +958,29 @@ const klabStudents = [
   {
     "name": "Chen Lin",
     "email": "lchencu@connect.ust.hk",
-    "institution": "Hong Kong University of Science and Technology",
+    "affiliation": "Hong Kong University of Science and Technology",
     "bio": "Lin is currently a near-graduating CS PhD candidate at the Hong Kong University of Science and Technology. She visited Knowledge Lab in 2022~2023. Her research interests lie in data-driven understanding of human-place visitation and human-human interaction patterns in complex urban environments, specifically focusing on topics including inequality, segregation, and resilience. She is also exploring using large language models for network learning and Science of Science (collective research attention).",
     "website": "https://linchen-65.github.io/linchen/",
     "publications": [
-      "Chen, L., Xu, F., Han, Z., Tang, K., Hui, P., Evans, J. and Li, Y., 2022. Strategic COVID-19 vaccine distribution can simultaneously elevate social utility and equity. Nature Human Behaviour, 6(11), pp.1503-1514.",
-      "Zhang, Y., Xu, F., Chen, L., Yuan, Y., Evans, J., Bettencourt, L. and Li, Y., 2024. Counterfactual mobility network embedding reveals prevalent accessibility gaps in US cities. Humanities and Social Sciences Communications, 11(1), pp.1-12."
+      {
+        "title": "Strategic COVID-19 vaccine distribution can simultaneously elevate social utility and equity",
+        "journal": "Nature Human Behaviour",
+        "volume": "6",
+        "issue": "11",
+        "year": 2022,
+        "pages": "1503-1514"
+      },
+      {
+        "title": "Counterfactual mobility network embedding reveals prevalent accessibility gaps in US cities",
+        "journal": "Humanities and Social Sciences Communications",
+        "volume": "11",
+        "issue": "1",
+        "year": 2024,
+        "pages": "1-12"
+      }
     ],
-    "title": "PhD Student",
-    "bioImg": Chenlin
+    "role": "PhD Student",
+    "bioImg": Person
   },
   {
     "name": "Hongkai Mao",
@@ -949,15 +991,15 @@ const klabStudents = [
     "title": "PhD Student",
     "bioImg": Person
   },
-  {
-    "name": "Rui Pan",
-    "email": "rui.pan@kellogg.northwestern.edu",
-    "institution": "Northwestern University",
-    "bio": "tbd",
-    "website": "tbd",
-    "title": "PhD Student",
-    "bioImg": Person
-  },
+  // {
+  //   "name": "Rui Pan",
+  //   "email": "rui.pan@kellogg.northwestern.edu",
+  //   "institution": "Northwestern University",
+  //   "bio": "tbd",
+  //   "website": "tbd",
+  //   "title": "PhD Student",
+  //   "bioImg": Person
+  // },
   {
     "name": "Nakwon Rim",
     "email": "nwrim@uchicago.edu",
@@ -970,25 +1012,31 @@ const klabStudents = [
   {
     "name": "Wenxuan Shi",
     "email": "wenxuanshi@whu.edu.cn",
-    "institution": "Wuhan University",
+    "affiliation": "Wuhan University",
     "bio": "Wenxuan Shi is a Ph.D. candidate at the School of Information Management, Wuhan University, China. She has been affiliated with the Knowledge Lab since June 2022. Her research centers on the science of science and scientific evaluation, with a particular focus on the processes of knowledge combination and innovation diffusion, the career trajectories of scientists, and the composition of research teams. Her work aims to provide insights that help scientists better organize and lead teams to foster scientific innovation and breakthroughs.",
-    "website": "",
+    "website": null,
     "publications": [
-      "Shi, W., & Wu, R. (2024). Women’s Strength in Science: Exploring the Influence of Female Participation on Research Impact and Innovation. Scientometrics, 129(7), 4529-4551.",
-      "Tang, X., Shi, W., Wu, R., & Li, S. (2023). The expansion of team size in library and information science (LIS): Is bigger always better? Journal of Information Science, 01655515231204800."
+      {
+        "title": "Women’s Strength in Science: Exploring the Influence of Female Participation on Research Impact and Innovation",
+        "journal": "Scientometrics",
+        "volume": "129",
+        "issue": "7",
+        "year": 2024,
+        "pages": "4529-4551"
+      },
+      {
+        "title": "The expansion of team size in library and information science (LIS): Is bigger always better?",
+        "journal": "Journal of Information Science",
+        "volume": null,
+        "issue": null,
+        "year": 2023,
+        "pages": "01655515231204800"
+      }
     ],
-    "title": "PhD Student",
+    "role": "PhD Student",
     "bioImg": Wenxuan
   },
-  {
-    "name": "Haohan Shi",
-    "email": "haohanshi2028@u.northwestern.edu",
-    "institution": "Northwestern University",
-    "bio": "Haohan Shi is a Ph.D. student in the Media, Technology, and Society program at Northwestern University. At Northwestern, he collaborates in the Lab on Innovation, Networks, and Knowledge under the guidance of Dr. Agnes Horvat. He is broadly interested in misinformation, the science of science, online democracy, computational social science, and AI for social good. His work focuses on advancing online scholarly communication and promoting the democratization of science through digital science dissemination. He holds an M.A. in Computational Social Science from the University of Chicago and a B.S. in Mathematics/Computer Science and Psychology/Linguistics from Emory University.",
-    "website": "https://hshi420.github.io/",
-    "title": "PhD Student",
-    "bioImg": Person
-  },
+  
   {
     "name": "Di Tong",
     "email": "ditong@mit.edu",
@@ -1019,14 +1067,28 @@ const klabStudents = [
   {
     "name": "Hyunku Kwon",
     "email": "hyunkukwon@uchicago.edu",
-    "institution": "University of Chicago",
+    "affiliation": "University of Chicago",
     "bio": "Hyunku Kwon is a PhD candidate in sociology at the University of Chicago. He uses computational and geostatistical methods to study political economy, race, and the environment in the Postbellum US South, with a focus on agricultural land use arrangements, labor contracts and cotton. His dissertation examines the role that Black federal troops played in shaping land use (e.g., plantations, sharecropping, etc.) and crop monoculture in the Postbellum US South. His research has been published or is forthcoming in the American Political Science Review and Sociological Science. Before joining the University of Chicago, he received a BA in Public Administration and Political Science from Yonsei University.",
     "website": "hyunkukwon.com",
     "publications": [
-      "“Black Troops, White Rage, and Political Violence in the Postbellum American South,” forthcoming in the American Political Science Review (with Joshua Byun)",
-      "“Subjective Political Polarization,” Sociological Science, 2023 (with John Levi Martin)"
+      {
+        "title": "Black Troops, White Rage, and Political Violence in the Postbellum American South",
+        "journal": "American Political Science Review",
+        "volume": null,
+        "issue": null,
+        "year": 2024,
+        "pages": null
+      },
+      {
+        "title": "Subjective Political Polarization",
+        "journal": "Sociological Science",
+        "volume": null,
+        "issue": null,
+        "year": 2023,
+        "pages": null
+      }
     ],
-    "title": "PhD Student",
+    "role": "PhD Student",
     "bioImg": Person
   },
   {
@@ -1037,251 +1099,293 @@ const klabStudents = [
     "website": "www.hbao.info",
     "title": "PhD Student",
     "bioImg": Person
+  },
+  {
+    "name": "Carina Kane",
+    "email": "carinalkane@gmail.com",
+    "affiliation": "University of Chicago",
+    "bio": "Carina is an undergraduate student at the University of Chicago pursuing a B.S. in Data Science and a B.A. in Philosophy. She is interested in studying knowledge representation in AI models, both to improve AI model performance and also deepen our understanding of individual and collective knowledge systems. Her current research at Knowledge Lab is focused on using natural language processing techniques to model the evolution of scientific concepts and capture, on a conceptual level, the dynamics of scientific innovation. Her research is aimed at combining theories from the history and philosophy of science with technically rigorous methods in artificial intelligence and data analysis.",
+    "website": null,
+    "publications": [],
+    "role": "Undergraduate Student",
+    "bioImg": Person
   }
 ]
 
 
 const klabAlumni = [
   {
-    name: "Aabir Abubaker Kar",
-    title: "Graduate student, University of Chicago",
-    bio:
-      "Aabir is currently pursuing an MA in Computational Social Science at The University of Chicago expected May 2021). At the Knowledge Lab, he is using NLP and embedding methods to analyze textual data on job advertisements to better understand up-skilling, labor markets, and teams. He has a BE in Engineering and an MSc in Physics from BITS Pilani, Goa Campus in India - as well as a Minor Certificate in Philosophy, Economics and Politics. He has previously worked on research at the New England Complex Systems Institute and the International Centre for Theoretical Sciences, Bangalore. His research interests are in complex socioeconomic systems - social stratification, information propagation, economic flows amongst them. Methodologically, he works with machine learning, networks, statistics, physics - and enjoys exploring their applications to other disciplines.",
-    size: "half",
-    bioImg: Person
+    "name": "Hsin-Keng Ling",
+    "email": "hkling@umich.edu",
+    "affiliation": "University of Michigan",
+    "bio": "Hsin-Keng Ling is a PhD student at the Department of Sociology, University of Michigan. His interest lies in the intersection of knowledge, politics, culture, cognition, and technology. His work spans various projects that broadly aim to model a 'market of ideas' in information domains such as social media, policy documents, or academia. He previously completed a Master's in Computational Social Science at the University of Chicago, and a BA in Sociology at National Taiwan University.",
+    "website": null,
+    "publications": [],
+    "role": "Alumni", 
+    "bioImg": Hsing
   },
   {
-    name: "Shahab Asoodeh",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "I am interested in the applications of discrete (differential) geometry and information theory in machine learning and network science. In particular, my main research at the Knowledge Lab focuses on the following two broad questions: 1) How to quantify geometry of graphs, simplicial complexes, and more generally, hypergraphs and to interpret them in real-world networks? And 2) How to use geometry and information theory to define and quantify fairness and privacy in machine learning and data mining? I am fortunate to work with James Evans at the Knowledge Lab and Ishanu Chattopadhyay at the Institute of Genomics and System Biology (IGSB). I received my PhD and MSc both in applied mathematics from Queen's University, Canada, in 2017 and 2011 and a MSc in Electrical Engineering from ETH Zurich and TU Delft in 2010.",
-    size: "half",
-    bioImg: Person
+    "name": "Cay del Junco",
+    "email": "caydj@posteo.net",
+    "affiliation": null,
+    "bio": "Currently an academic librarian, Cay trained as a computational chemist and physicist with Suri Vaikuntanathan at the University of Chicago (2014-20), and was a postdoc with the Knowledge Lab in 2020-21. As a practicing science librarian, Cay’s interests lie in critical teaching methods for STEM librarianship, equitable, grassroots models of open access scholarly publishing, and data analysis (bibliometrics, collections analysis, etc.). As a researcher, Cay is broadly interested in power & politics in academic knowledge production and scholarly communication, especially in the natural sciences.",
+    "website": "https://cdeljunco.github.io/",
+    "publications": [],
+    "role": "Alumni", 
+    "bioImg": Person
   },
   {
-    name: "Megan Barnes",
-    title: "Student, University of Chicago",
-    bio:
-      "I graduated from the University of Chicago, studying linguistics and computer science. I am interested in language processing as well as data processing techniques, like machine learning, that help us better understand humans. At Knowledge Lab, I worked on a project to create maps of research activity in key topical areas of interest to research funding agencies. The maps could reveal and help funders analyze a) levels of research activity, b) who is participating, c) and in which topics. Also, I love music, Twitter, comedy, and the Pacific Northwest. I am currently working for an early stage startup in New York City.",
-    size: "half",
-    bioImg: Person
+    "name": "Haohan Shi",
+    "email": "haohanshi2028@u.northwestern.edu",
+    "affiliation": "Northwestern University",
+    "bio": "Haohan Shi is a Ph.D. student in the Media, Technology, and Society program at Northwestern University. At Northwestern, he collaborates in the Lab on Innovation, Networks, and Knowledge under the guidance of Dr. Agnes Horvat. He is broadly interested in misinformation, the science of science, online democracy, computational social science, and AI for social good. His work focuses on advancing online scholarly communication and promoting the democratization of science through digital science dissemination. He holds an M.A. in Computational Social Science from the University of Chicago and a B.S. in Mathematics/Computer Science and Psychology/Linguistics from Emory University.",
+    "website": "https://hshi420.github.io/",
+    "publications": [],
+    "role": "Alumni", 
+    "bioImg": Person
   },
-  {
-    name: "Alexander Belikov",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "Alexander Belikov is interested in applications of machine learning and natural language processing to social phenomena and texts. Of particular interest to him are the relation extraction and the convergence of social consensus, which can be studied in conjunction. Alexander received his B.S. and M.S. from the Moscow Institute of Physics and Technology and his PhD in physics from the University of Chicago. Prior to joining the Knowledge Lab, he held a two-year postdoc at the Institut d'Astrophysique de Paris. He also worked as a quantitative researcher in wholesale risk modeling at JP Morgan Chase and later at the exotic equity derivatives desk at Barclays Capital in New York.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Cody Braun",
-    title: "IMB",
-    bio:
-      "Cody is a masters student in computer science, a veteran of several tech startups, and a University of North Carolina alumnus. Though he is currently studying high-performance computing, machine learning, and data analysis, his wide range of past experiences include jobs at small-town Southern newspapers, Portuguese olive farms, and Australian construction companies. Among other projects, he is currently working on a browser plugin designed to detect phishing, a bound ePaper book dynamically populated by a web crawler, and a handful of Arduino-based gadgets.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "William Catino",
-    title: "Principal Software Engineer, University of Chicago",
-    bio:
-      "William earned a PhD in Electrical and Computer Engineering at the Illinois Institute of Technology in 1997, under the guidance of Joseph L. LoCicero and Henry Stark. His research topic was Constrained Optimization Algorithms for Image Processing, applied to Hologram design. In addition to working at several technology companies, he spent a large portion of his career as an independent consultant. His work has spanned, and often integrated, a variety of areas, including: Adaptive Stochastic Signal Processing, applied to Telecommunications, Efficient / High-Performance Software Implementation, Video Games and Computer Graphics, Simulation and Modeling of Physical and Virtual Systems, Optimization Algorithms, Pattern Recognition, Artificial Intelligence. William currently serves as a Principal Software Engineer for the Knowledge Lab at the University of Chicago, focusing on Database Design and Programming, Machine Learning and Natural Language Processing.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Brendan Chambers",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "Brendan is a creative data scientist specializing in complex interconnected systems. He performed his PhD research in the MacLean Laboratory for Cortical Circuits and Network Neuroscience, studying emergent activity patterns in the neurons of neocortex. His current work is situated at the intersection between machine learning, communication networks, and the sociology of science. Brendan has been recognized as an NSF S-STEM Fellow in Computation & Modeling and an NSF IGERT Fellow in the Neural Control of Movement. His work in collaboration with Dr. Jason MacLean was nominated for a Hot Topic Award by the Society for Neuroscience and distinguished as a Top 50 Most-Downloaded Article by PLOS Computational Biology. Brendan grew up in Iowa and studied computer science at Oberlin College. He is a hobbyist electronic musician and climber. You can find him on Twitter via @societyoftrees.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Yo Hoong “YJ” Choe",
-    title: "PhD Student, Machine Learning, Carnegie Mellon",
-    bio:
-      "I am a PhD student studying Machine Learning at Carnegie Mellon. I was born and raised in Seoul, South Korea. I am broadly interested in the theory of machine learning as well as its applications to social models.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Valentin Danchev",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "Valentin Danchev is a computational sociologist. He uses network analysis, computational models, text analysis, and large-scale databases to study how patterns of connectivity in social, spatial, and semantic networks influence differences in outcomes, such as replicable discoveries, innovation, mobility opportunities, and inequality. At Knowledge Lab, Valentin conducts a large-scale evaluation of the robustness and replicability of tens of thousands of research results published in the biomedical literature and examines what network structures of scientific communities contribute to robust, replicable discoveries. He also examines the interplay of social, biological, and organizational mechanisms inducing robust innovations in oncology research. Valentin holds a DPhil (PhD) in Development Studies from the University of Oxford, where he was also affiliated with the networks research group at the Mathematical Institute. Prior to that, he received his MA from the University of Essex and his BA from the University of Sofia, both in Sociology.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Alexander Dunlap",
-    title: "PhD Student, Mathematics, Stanford University",
-    bio:
-      "Mathematics PhD student at Stanford. I am interested in machine learning and, more generally, using quantitative ideas to understand complex problems. In my free time I enjoy bicycling and baking.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Aaron Gerow",
-    title: "Post-doctoral Scholar, Knowledge Lab",
-    bio:
-      "I grew up in and around Chicago, went to college in Tacoma at Pacific Lutheran University studying computer science and philosophy, liberal arts style. I received my masters degree from University College Dublin in cognitive science and I began my PhD at Trinity in the Fall of 2010. In September, 2013, I submitted my PhD in computational linguistics and started work at the Knowledge Lab as a post-doctoral scholar. My interests have clustered around novel and large-scale natural language processing and figurative language, both with a distinct slant toward cognitive and social sciences. I'm interested, specifically, in how large data-sets of structured linguistic information relate to patterns of information use. One example is tracking how people's description of stock-markets relate to the markets themselves, or tracking trends in the grammatical context of key terms in a corpus. As part of the Knowledge Lab, I hope to explore the how emergent properties of text and information influence the dynamics of knowledge creation and use.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Anuraag Girdhar",
-    title:
-      "First-year student in the MA program in Computational Social Science",
-    bio:
-      "While conferring with Professor Mark Granovetter at Stanford, he spent the past year studying how the structure of social networks affects opinion polarization. He is more broadly interested in operationalizing notions of objective truth and theory of mind on social networks. He is also interested in extending these ideas to designing social networks that optimize social good. Anuraag has an A.B. in Mathematics and Economics from Dartmouth College. Prior to arriving at the University of Chicago, he spent four years in private industry working as a pharmaceutical statistician at Gilead Sciences, and as an economic research associate at Bridgewater Associates.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Clara del Junco",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "My research interests include characterizing and promoting diversity in scientific research, and the importance of language and social context in science-how concepts flow and meaning changes between scientific fields and popular discourse. Before joining the Knowledge Lab in autumn 2020, I did a PhD in theoretical chemistry at the Vaikuntanathan lab at the University of Chicago. My thesis explored how consuming energy allows biological and physical systems to adapt and operate robustly in noisy environments. Personal website: https://cdeljunco.github.io/me/",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Molly Lewis",
-    title: "Special Faculty, Carnegie Mellon University",
-    bio:
-      "My research focuses on understanding how linguistic meaning-semantic space-is acquired in cognitive development, changes over historical time, and varies cross-linguistically. I am also interested in issues related to scientific replicability and reproducibility. I received my PhD in Developmental Psychology from Stanford University, where I worked with Michael Frank. Before that, I received a BA in Linguistics from Reed College. At the Knowledge Lab, my work examined cross-linguistic variability in the alignment of linguistic meaning using large scale corpora. I was co-advised by James Evans at the Knowledge Lab and Gary Lupyan in the Psychology Department at the University of Wisconsin-Madison. I am currently a faculty member in the Department of Psychology and Social and Decision sciences at Carnegie Mellon University. My personal website: https://www.andrew.cmu.edu/user/mollylew/",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Linzhou Li",
-    title: "Graduate student, University of Chicago",
-    bio:
-      "I am a PhD student in Chicago Sociology Department. My research interest is mostly related to economic and cultural change. More specifically, I made efforts in understanding questions such as the substitution and generalization of social, cultural and ideological values; reasoning based upon (and constrained by) the cultural system; and the self-organization of local financial and economic behaviors. I employ intensively state-of-the-art computational methods as well as traditional ethnographic tools to guide my research. A most recent project of mine applies a new embedding technique to embed words and tags into hyperbolic space to uncover the hidden hierarchical structure of 21st century physics. I am also collaborating with my colleague Shilin Jia to uncover cultural and ideological autonomy using China's newspaper People's Daily from 1946 to 2003. Before coming to Chicago, I received my BA and MA degree from Tsinghua University.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Bowen Lou",
-    title: "PhD Student, University of Pennsylvania, Wharton",
-    bio:
-      "Completed my masters study in computer science from University of Chicago and am currently a PhD Student at Wharton. I am a data enthusiast, and passionate about using large amounts of data to solve real world problems. I'm specifically interested in applying or proposing solutions from statistical, natural language processing, and network science in order to understand latent patterns under large-scale texts about individuals and organizations from social media, digital publications and the World Wide Web.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Grace Lu",
-    title: "Student, Uber",
-    bio:
-      "Grace works on self-driving cars at Uber. Grace graduated from the college double majoring in Computer Science and Economics from northeast Ohio. She is interested in big data, data analytics, social media trends, language processing, and using technology to create applications in a variety of different fields. At the Knowledge Lab, she worked on a project to map Wikipedia to understand how past revision history can lead to the creation of new pages. In her free time, she enjoys playing tennis, music, and traveling.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Reid Mcllroy-Young",
-    title: "Researcher at Knowledge Lab",
-    bio:
-      "I have a Masters in Computational Social Science from the University of Chicago and was a researcher at Knowledge Lab. My current research is on developing new machine learning techniques that are useful in the social sciences. What insights into human nature are present in the mass behavior of people? I have primarily worked with collections of source code and bibliographic sources to examine these, but as my PhD progresses I hope to expand the domain. At Knowledge Lab I primarily participated in two projects. First, a collection of Jupyter Notebooks to help with James Evans' Content Analysis class, these are detailed examples working through problems relevant to many social scientists, such as entity extraction, auto-encoders or model selection. Secondly, I was the main researcher on quarter million Sloan grant to study how programming languages impact science and thought with James Evans and Gary Lupyan.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Deblina Mukherjee",
-    title: "Undergraduate student, University of Chicago",
-    bio:
-      "I'm a fourth year in the College at UChicago, majoring in Sociology and minoring in Computer Science and Statistics. I am interested broadly in computational and applied math, both as method and as a field of inquiry in the tradition of science studies. At the Knowledge Lab, I'm working on Genesweep (which is a thesis project investigating the relationship between scientists and games), and with Jerimiah Milbauer and Yutao Chen on the Sloan Languages Project (which is investigating how programming languages shape thought). Personal website: https://deblina.net",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Prateeti Mohapatra",
-    title: "Research Engineer - Modeling and Simulation, Knowledge Lab",
-    bio:
-      "My background is in Statistical Modeling and Analysis, System Dynamics, Speech Processing and Software Engineering. I have also worked in the areas of Parallel Programming, Numerical Methods, Requirements Engineering, Life-cycle Cost Modeling, and Global Software Development at Research Centers (Central Research Laboratory, India, ABB Corporate Research Center, India, and Flash Center for Computational Science, UChicago, USA) and Software Industries (The Mathworks). My current work focuses on developing reliable and scalable data warehouse systems for data contained in different repositories in both structured and unstructured format. I am also currently working on feature identification/extraction from text objects as well as their classification using various machine learning approaches.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Chris Natoli",
-    title: "PhD student in Mathematics at CUNY Graduate Center",
-    bio:
-      "I like learning about and using machine learning and probabilistic methods to rigorously study problems in the social sciences. I care a lot about the left, history, and New York City.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Nate Sauder",
-    title: "Develop deep learning algorithms for medical image diagnosis",
-    bio: "",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Nandana Sengupta",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "My research revolves around improving the predictive performance of traditional Econometric models using modern Statistics and Machine Learning. I'm very interested in developing these techniques with a special focus on Public Policy applications. I am currently a doctoral candidate of Economics at the Tepper School of Business, Carnegie Mellon University. I also hold a Bachelor's degree in Physics from St. Stephen's College (New Delhi, India) and a Master's degree in Development Economics from Indira Gandhi Institute of Development Research (Mumbai, India). I've had the opportunity to participate in a number of interdisciplinary research groups including the Machine Learning in Social Sciences group at Carnegie Mellon University and the Computational Social Science Workshop at the Santa Fe Institute. I'm looking forward to continuing this line of work at the Knowledge Lab, where my projects will include developing computational tools to more deeply engage user input as well as developing new techniques to assess and predict the impact of academic research.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Feng “Bill” Shi",
-    title: "Applied Mathematics Researcher",
-    bio:
-      "My background is in applied mathematics, and complex networks in particular. I have been working on various interacting particle systems such as the evolving voter model, percolation of nanocomposites, and virus-antibody interactions. My work currently focuses on understanding the processes that generate and shape the knowledge in scientific systems, for example, the beliefs, preferences, biases, and strategies that guide scientists in their exploration of the natural world. This research is embedded in a large interdisciplinary collaboration to understand the creation, dissemination, and limit of human knowledge.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Taweewat “Champ” Somboonpanyakul",
-    title: "PhD student in Physics at MIT",
-    bio:
-      "I am originally from Thailand. I have some experience in Astrophysics, specifically gravitational lensing and exoplanets, but I am also interested in social parts of science, and, in particular, how humans gather new knowledge in science.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Jamshid Sourati",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "My research interest revolves around machine learning and its applications in discovering underlying patterns in real-world data. At the Knowledge lab, my goal is to apply computational tools for processing enormous textual data sets and to develop novel learning models that give better insights into how humans think and interact collectively. I received my doctorate in Electrical and Computer Engineering at Northeastern University. During the course of my Ph.D., my focus was primarily on generic analysis of learning models in theoretical levels. Prior to joining Knowledge lab, as a post-doctoral researcher in Harvard medical school, I conducted research in development and rigorous analysis of machine learning algorithms for automatic medical image processing.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Bhargav Srinivasa Desikan",
-    title: "Ph.D. Candidate in Computer Science at EPFL",
-    bio:
-      "Bhargav is a Research Fellow at the Knowledge Lab, currently working with Prof. Evans on a book titled 'Thinking with Deep Learning', where they are trying to work towards a sophisticated deep learning powered approach to representations of social objects. He previously received an MA in Computational Social Science from the University of Chicago, and his research interests lie in the intersection of AI and the social sciences: using computational tools to probe questions of social behavior, as well as critically examining the effects which the information age has had on our species and planet. He has previously co-authored publications in the Journal of Machine Learning Research, the proceedings of the International Conference on Computational Linguistics, and Cognition, and has authored a book on NLP and Computational Linguistics with Python.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Misha Teplitsky",
-    title: "Ph.D. in Sociology from the University of Chicago",
-    bio:
-      "I was a Graduate Research Fellow at KnowledgeLab. My research focuses on academic publishing, particularly on how scientists evaluate the work of others. How do scientists decide if a finding is worthy of publication, and how valid are these judgments? To answer these questions I examine the peer review files of academic journals using a variety of machine learning and text processing techniques. I am also engaged in a variety of collaborative projects. In a KnowledgeLab project with James Evans, we test the robustness of a large sample of claims published in social science journals by testing them on out-of-sample data and 'perturbing' the model specifications. In another KnowledgeLab project with Eamon Duede and Grace Lu, we study which scientific findings move from the scientific literature to Wikipedia.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Di Tong",
-    title: "Graduate Student, University of Chicago",
-    bio:
-      "I'm a student in the Computational Social Science Master's program with a concentration in sociology. My major research interest lies in stratification and inequality, political sociology as well as computational text analysis. Specifically, I'm interested in studying political discourse, cultural norms, public perceptions and attitudes regarding distributive justice; the causes and consequences of economic disparities and the social conditions that mediate and moderate these processes. Currently, at the Knowledge lab, I'm applying word embedding techniques on massive-scale job ads data to examine the underlying geometry of skill coordination that shapes social lives centered at the labor division. I'm also working on a project that examines the relationship between perceived inequality and political trust in East Asian societies. My previous work utilizes topic modeling to trace the transforming biopolitics in China from 1956-2003 through the lens of the changing official discourse on the birth planning policy. Before coming to Chicago, I completed my undergraduate degree at Tsinghua University majoring in English Language and Literature.",
-    size: "half",
-    bioImg: Person
-  },
-  {
-    name: "Lingfei Wu",
-    title: "Postdoctoral Scholar, University of Chicago",
-    bio:
-      "My research interest is the sciences of collaboration and innovation. I apply mathematical models and machine learning techniques to analyze collective knowledge production systems, including Web of Science, U.S. patents, Stack Exchange, GitHub. My works were published in journals including Nature, Physical Review E, Scientific Reports, PloS ONE, and also generated broad interest among diverse audiences in New Scientists and Science Daily. I got my PhD in Communication from the City University of Hong Kong in 2013. Overlapping with the PhD program I spent a year in Baidu as an algorithm engineer (internship). I joined Knowledge Lab in 2016 after working two years in the Center for Behavior, Institutions and the Environment at Arizona State University as a post-doc researcher. I am a core member of Swarma Club, a research network in Beijing with a vision to bridge academia, industry, and government.",
-      size: "half",
-    bioImg: Person
-  }
+  
+  // {
+  //   name: "Aabir Abubaker Kar",
+  //   title: "Graduate student, University of Chicago",
+  //   bio:
+  //     "Aabir is currently pursuing an MA in Computational Social Science at The University of Chicago expected May 2021). At the Knowledge Lab, he is using NLP and embedding methods to analyze textual data on job advertisements to better understand up-skilling, labor markets, and teams. He has a BE in Engineering and an MSc in Physics from BITS Pilani, Goa Campus in India - as well as a Minor Certificate in Philosophy, Economics and Politics. He has previously worked on research at the New England Complex Systems Institute and the International Centre for Theoretical Sciences, Bangalore. His research interests are in complex socioeconomic systems - social stratification, information propagation, economic flows amongst them. Methodologically, he works with machine learning, networks, statistics, physics - and enjoys exploring their applications to other disciplines.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+
+  // {
+  //   name: "Shahab Asoodeh",
+  //   title: "Postdoctoral Scholar, University of Chicago",
+  //   bio:
+  //     "I am interested in the applications of discrete (differential) geometry and information theory in machine learning and network science. In particular, my main research at the Knowledge Lab focuses on the following two broad questions: 1) How to quantify geometry of graphs, simplicial complexes, and more generally, hypergraphs and to interpret them in real-world networks? And 2) How to use geometry and information theory to define and quantify fairness and privacy in machine learning and data mining? I am fortunate to work with James Evans at the Knowledge Lab and Ishanu Chattopadhyay at the Institute of Genomics and System Biology (IGSB). I received my PhD and MSc both in applied mathematics from Queen's University, Canada, in 2017 and 2011 and a MSc in Electrical Engineering from ETH Zurich and TU Delft in 2010.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Megan Barnes",
+  //   title: "Student, University of Chicago",
+  //   bio:
+  //     "I graduated from the University of Chicago, studying linguistics and computer science. I am interested in language processing as well as data processing techniques, like machine learning, that help us better understand humans. At Knowledge Lab, I worked on a project to create maps of research activity in key topical areas of interest to research funding agencies. The maps could reveal and help funders analyze a) levels of research activity, b) who is participating, c) and in which topics. Also, I love music, Twitter, comedy, and the Pacific Northwest. I am currently working for an early stage startup in New York City.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Alexander Belikov",
+  //   title: "Postdoctoral Scholar, University of Chicago",
+  //   bio:
+  //     "Alexander Belikov is interested in applications of machine learning and natural language processing to social phenomena and texts. Of particular interest to him are the relation extraction and the convergence of social consensus, which can be studied in conjunction. Alexander received his B.S. and M.S. from the Moscow Institute of Physics and Technology and his PhD in physics from the University of Chicago. Prior to joining the Knowledge Lab, he held a two-year postdoc at the Institut d'Astrophysique de Paris. He also worked as a quantitative researcher in wholesale risk modeling at JP Morgan Chase and later at the exotic equity derivatives desk at Barclays Capital in New York.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Cody Braun",
+  //   title: "IMB",
+  //   bio:
+  //     "Cody is a masters student in computer science, a veteran of several tech startups, and a University of North Carolina alumnus. Though he is currently studying high-performance computing, machine learning, and data analysis, his wide range of past experiences include jobs at small-town Southern newspapers, Portuguese olive farms, and Australian construction companies. Among other projects, he is currently working on a browser plugin designed to detect phishing, a bound ePaper book dynamically populated by a web crawler, and a handful of Arduino-based gadgets.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "William Catino",
+  //   title: "Principal Software Engineer, University of Chicago",
+  //   bio:
+  //     "William earned a PhD in Electrical and Computer Engineering at the Illinois Institute of Technology in 1997, under the guidance of Joseph L. LoCicero and Henry Stark. His research topic was Constrained Optimization Algorithms for Image Processing, applied to Hologram design. In addition to working at several technology companies, he spent a large portion of his career as an independent consultant. His work has spanned, and often integrated, a variety of areas, including: Adaptive Stochastic Signal Processing, applied to Telecommunications, Efficient / High-Performance Software Implementation, Video Games and Computer Graphics, Simulation and Modeling of Physical and Virtual Systems, Optimization Algorithms, Pattern Recognition, Artificial Intelligence. William currently serves as a Principal Software Engineer for the Knowledge Lab at the University of Chicago, focusing on Database Design and Programming, Machine Learning and Natural Language Processing.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Brendan Chambers",
+  //   title: "Postdoctoral Scholar, University of Chicago",
+  //   bio:
+  //     "Brendan is a creative data scientist specializing in complex interconnected systems. He performed his PhD research in the MacLean Laboratory for Cortical Circuits and Network Neuroscience, studying emergent activity patterns in the neurons of neocortex. His current work is situated at the intersection between machine learning, communication networks, and the sociology of science. Brendan has been recognized as an NSF S-STEM Fellow in Computation & Modeling and an NSF IGERT Fellow in the Neural Control of Movement. His work in collaboration with Dr. Jason MacLean was nominated for a Hot Topic Award by the Society for Neuroscience and distinguished as a Top 50 Most-Downloaded Article by PLOS Computational Biology. Brendan grew up in Iowa and studied computer science at Oberlin College. He is a hobbyist electronic musician and climber. You can find him on Twitter via @societyoftrees.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Yo Hoong “YJ” Choe",
+  //   title: "PhD Student, Machine Learning, Carnegie Mellon",
+  //   bio:
+  //     "I am a PhD student studying Machine Learning at Carnegie Mellon. I was born and raised in Seoul, South Korea. I am broadly interested in the theory of machine learning as well as its applications to social models.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Valentin Danchev",
+  //   title: "Postdoctoral Scholar, University of Chicago",
+  //   bio:
+  //     "Valentin Danchev is a computational sociologist. He uses network analysis, computational models, text analysis, and large-scale databases to study how patterns of connectivity in social, spatial, and semantic networks influence differences in outcomes, such as replicable discoveries, innovation, mobility opportunities, and inequality. At Knowledge Lab, Valentin conducts a large-scale evaluation of the robustness and replicability of tens of thousands of research results published in the biomedical literature and examines what network structures of scientific communities contribute to robust, replicable discoveries. He also examines the interplay of social, biological, and organizational mechanisms inducing robust innovations in oncology research. Valentin holds a DPhil (PhD) in Development Studies from the University of Oxford, where he was also affiliated with the networks research group at the Mathematical Institute. Prior to that, he received his MA from the University of Essex and his BA from the University of Sofia, both in Sociology.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Alexander Dunlap",
+  //   title: "PhD Student, Mathematics, Stanford University",
+  //   bio:
+  //     "Mathematics PhD student at Stanford. I am interested in machine learning and, more generally, using quantitative ideas to understand complex problems. In my free time I enjoy bicycling and baking.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Aaron Gerow",
+  //   title: "Post-doctoral Scholar, Knowledge Lab",
+  //   bio:
+  //     "I grew up in and around Chicago, went to college in Tacoma at Pacific Lutheran University studying computer science and philosophy, liberal arts style. I received my masters degree from University College Dublin in cognitive science and I began my PhD at Trinity in the Fall of 2010. In September, 2013, I submitted my PhD in computational linguistics and started work at the Knowledge Lab as a post-doctoral scholar. My interests have clustered around novel and large-scale natural language processing and figurative language, both with a distinct slant toward cognitive and social sciences. I'm interested, specifically, in how large data-sets of structured linguistic information relate to patterns of information use. One example is tracking how people's description of stock-markets relate to the markets themselves, or tracking trends in the grammatical context of key terms in a corpus. As part of the Knowledge Lab, I hope to explore the how emergent properties of text and information influence the dynamics of knowledge creation and use.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Anuraag Girdhar",
+  //   title:
+  //     "First-year student in the MA program in Computational Social Science",
+  //   bio:
+  //     "While conferring with Professor Mark Granovetter at Stanford, he spent the past year studying how the structure of social networks affects opinion polarization. He is more broadly interested in operationalizing notions of objective truth and theory of mind on social networks. He is also interested in extending these ideas to designing social networks that optimize social good. Anuraag has an A.B. in Mathematics and Economics from Dartmouth College. Prior to arriving at the University of Chicago, he spent four years in private industry working as a pharmaceutical statistician at Gilead Sciences, and as an economic research associate at Bridgewater Associates.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Clara del Junco",
+  //   title: "Postdoctoral Scholar, University of Chicago",
+  //   bio:
+  //     "My research interests include characterizing and promoting diversity in scientific research, and the importance of language and social context in science-how concepts flow and meaning changes between scientific fields and popular discourse. Before joining the Knowledge Lab in autumn 2020, I did a PhD in theoretical chemistry at the Vaikuntanathan lab at the University of Chicago. My thesis explored how consuming energy allows biological and physical systems to adapt and operate robustly in noisy environments. Personal website: https://cdeljunco.github.io/me/",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Molly Lewis",
+  //   title: "Special Faculty, Carnegie Mellon University",
+  //   bio:
+  //     "My research focuses on understanding how linguistic meaning-semantic space-is acquired in cognitive development, changes over historical time, and varies cross-linguistically. I am also interested in issues related to scientific replicability and reproducibility. I received my PhD in Developmental Psychology from Stanford University, where I worked with Michael Frank. Before that, I received a BA in Linguistics from Reed College. At the Knowledge Lab, my work examined cross-linguistic variability in the alignment of linguistic meaning using large scale corpora. I was co-advised by James Evans at the Knowledge Lab and Gary Lupyan in the Psychology Department at the University of Wisconsin-Madison. I am currently a faculty member in the Department of Psychology and Social and Decision sciences at Carnegie Mellon University. My personal website: https://www.andrew.cmu.edu/user/mollylew/",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Linzhou Li",
+  //   title: "Graduate student, University of Chicago",
+  //   bio:
+  //     "I am a PhD student in Chicago Sociology Department. My research interest is mostly related to economic and cultural change. More specifically, I made efforts in understanding questions such as the substitution and generalization of social, cultural and ideological values; reasoning based upon (and constrained by) the cultural system; and the self-organization of local financial and economic behaviors. I employ intensively state-of-the-art computational methods as well as traditional ethnographic tools to guide my research. A most recent project of mine applies a new embedding technique to embed words and tags into hyperbolic space to uncover the hidden hierarchical structure of 21st century physics. I am also collaborating with my colleague Shilin Jia to uncover cultural and ideological autonomy using China's newspaper People's Daily from 1946 to 2003. Before coming to Chicago, I received my BA and MA degree from Tsinghua University.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Bowen Lou",
+  //   title: "PhD Student, University of Pennsylvania, Wharton",
+  //   bio:
+  //     "Completed my masters study in computer science from University of Chicago and am currently a PhD Student at Wharton. I am a data enthusiast, and passionate about using large amounts of data to solve real world problems. I'm specifically interested in applying or proposing solutions from statistical, natural language processing, and network science in order to understand latent patterns under large-scale texts about individuals and organizations from social media, digital publications and the World Wide Web.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Grace Lu",
+  //   title: "Student, Uber",
+  //   bio:
+  //     "Grace works on self-driving cars at Uber. Grace graduated from the college double majoring in Computer Science and Economics from northeast Ohio. She is interested in big data, data analytics, social media trends, language processing, and using technology to create applications in a variety of different fields. At the Knowledge Lab, she worked on a project to map Wikipedia to understand how past revision history can lead to the creation of new pages. In her free time, she enjoys playing tennis, music, and traveling.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Reid Mcllroy-Young",
+  //   title: "Researcher at Knowledge Lab",
+  //   bio:
+  //     "I have a Masters in Computational Social Science from the University of Chicago and was a researcher at Knowledge Lab. My current research is on developing new machine learning techniques that are useful in the social sciences. What insights into human nature are present in the mass behavior of people? I have primarily worked with collections of source code and bibliographic sources to examine these, but as my PhD progresses I hope to expand the domain. At Knowledge Lab I primarily participated in two projects. First, a collection of Jupyter Notebooks to help with James Evans' Content Analysis class, these are detailed examples working through problems relevant to many social scientists, such as entity extraction, auto-encoders or model selection. Secondly, I was the main researcher on quarter million Sloan grant to study how programming languages impact science and thought with James Evans and Gary Lupyan.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Deblina Mukherjee",
+  //   title: "Undergraduate student, University of Chicago",
+  //   bio:
+  //     "I'm a fourth year in the College at UChicago, majoring in Sociology and minoring in Computer Science and Statistics. I am interested broadly in computational and applied math, both as method and as a field of inquiry in the tradition of science studies. At the Knowledge Lab, I'm working on Genesweep (which is a thesis project investigating the relationship between scientists and games), and with Jerimiah Milbauer and Yutao Chen on the Sloan Languages Project (which is investigating how programming languages shape thought). Personal website: https://deblina.net",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Prateeti Mohapatra",
+  //   title: "Research Engineer - Modeling and Simulation, Knowledge Lab",
+  //   bio:
+  //     "My background is in Statistical Modeling and Analysis, System Dynamics, Speech Processing and Software Engineering. I have also worked in the areas of Parallel Programming, Numerical Methods, Requirements Engineering, Life-cycle Cost Modeling, and Global Software Development at Research Centers (Central Research Laboratory, India, ABB Corporate Research Center, India, and Flash Center for Computational Science, UChicago, USA) and Software Industries (The Mathworks). My current work focuses on developing reliable and scalable data warehouse systems for data contained in different repositories in both structured and unstructured format. I am also currently working on feature identification/extraction from text objects as well as their classification using various machine learning approaches.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Chris Natoli",
+  //   title: "PhD student in Mathematics at CUNY Graduate Center",
+  //   bio:
+  //     "I like learning about and using machine learning and probabilistic methods to rigorously study problems in the social sciences. I care a lot about the left, history, and New York City.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Nate Sauder",
+  //   title: "Develop deep learning algorithms for medical image diagnosis",
+  //   bio: "",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Nandana Sengupta",
+  //   title: "Postdoctoral Scholar, University of Chicago",
+  //   bio:
+  //     "My research revolves around improving the predictive performance of traditional Econometric models using modern Statistics and Machine Learning. I'm very interested in developing these techniques with a special focus on Public Policy applications. I am currently a doctoral candidate of Economics at the Tepper School of Business, Carnegie Mellon University. I also hold a Bachelor's degree in Physics from St. Stephen's College (New Delhi, India) and a Master's degree in Development Economics from Indira Gandhi Institute of Development Research (Mumbai, India). I've had the opportunity to participate in a number of interdisciplinary research groups including the Machine Learning in Social Sciences group at Carnegie Mellon University and the Computational Social Science Workshop at the Santa Fe Institute. I'm looking forward to continuing this line of work at the Knowledge Lab, where my projects will include developing computational tools to more deeply engage user input as well as developing new techniques to assess and predict the impact of academic research.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Feng “Bill” Shi",
+  //   title: "Applied Mathematics Researcher",
+  //   bio:
+  //     "My background is in applied mathematics, and complex networks in particular. I have been working on various interacting particle systems such as the evolving voter model, percolation of nanocomposites, and virus-antibody interactions. My work currently focuses on understanding the processes that generate and shape the knowledge in scientific systems, for example, the beliefs, preferences, biases, and strategies that guide scientists in their exploration of the natural world. This research is embedded in a large interdisciplinary collaboration to understand the creation, dissemination, and limit of human knowledge.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Taweewat “Champ” Somboonpanyakul",
+  //   title: "PhD student in Physics at MIT",
+  //   bio:
+  //     "I am originally from Thailand. I have some experience in Astrophysics, specifically gravitational lensing and exoplanets, but I am also interested in social parts of science, and, in particular, how humans gather new knowledge in science.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Jamshid Sourati",
+  //   title: "Postdoctoral Scholar, University of Chicago",
+  //   bio:
+  //     "My research interest revolves around machine learning and its applications in discovering underlying patterns in real-world data. At the Knowledge lab, my goal is to apply computational tools for processing enormous textual data sets and to develop novel learning models that give better insights into how humans think and interact collectively. I received my doctorate in Electrical and Computer Engineering at Northeastern University. During the course of my Ph.D., my focus was primarily on generic analysis of learning models in theoretical levels. Prior to joining Knowledge lab, as a post-doctoral researcher in Harvard medical school, I conducted research in development and rigorous analysis of machine learning algorithms for automatic medical image processing.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Bhargav Srinivasa Desikan",
+  //   title: "Ph.D. Candidate in Computer Science at EPFL",
+  //   bio:
+  //     "Bhargav is a Research Fellow at the Knowledge Lab, currently working with Prof. Evans on a book titled 'Thinking with Deep Learning', where they are trying to work towards a sophisticated deep learning powered approach to representations of social objects. He previously received an MA in Computational Social Science from the University of Chicago, and his research interests lie in the intersection of AI and the social sciences: using computational tools to probe questions of social behavior, as well as critically examining the effects which the information age has had on our species and planet. He has previously co-authored publications in the Journal of Machine Learning Research, the proceedings of the International Conference on Computational Linguistics, and Cognition, and has authored a book on NLP and Computational Linguistics with Python.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Misha Teplitsky",
+  //   title: "Ph.D. in Sociology from the University of Chicago",
+  //   bio:
+  //     "I was a Graduate Research Fellow at KnowledgeLab. My research focuses on academic publishing, particularly on how scientists evaluate the work of others. How do scientists decide if a finding is worthy of publication, and how valid are these judgments? To answer these questions I examine the peer review files of academic journals using a variety of machine learning and text processing techniques. I am also engaged in a variety of collaborative projects. In a KnowledgeLab project with James Evans, we test the robustness of a large sample of claims published in social science journals by testing them on out-of-sample data and 'perturbing' the model specifications. In another KnowledgeLab project with Eamon Duede and Grace Lu, we study which scientific findings move from the scientific literature to Wikipedia.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Di Tong",
+  //   title: "Graduate Student, University of Chicago",
+  //   bio:
+  //     "I'm a student in the Computational Social Science Master's program with a concentration in sociology. My major research interest lies in stratification and inequality, political sociology as well as computational text analysis. Specifically, I'm interested in studying political discourse, cultural norms, public perceptions and attitudes regarding distributive justice; the causes and consequences of economic disparities and the social conditions that mediate and moderate these processes. Currently, at the Knowledge lab, I'm applying word embedding techniques on massive-scale job ads data to examine the underlying geometry of skill coordination that shapes social lives centered at the labor division. I'm also working on a project that examines the relationship between perceived inequality and political trust in East Asian societies. My previous work utilizes topic modeling to trace the transforming biopolitics in China from 1956-2003 through the lens of the changing official discourse on the birth planning policy. Before coming to Chicago, I completed my undergraduate degree at Tsinghua University majoring in English Language and Literature.",
+  //   size: "half",
+  //   bioImg: Person
+  // },
+  // {
+  //   name: "Lingfei Wu",
+  //   title: "Postdoctoral Scholar, University of Chicago",
+  //   bio:
+  //     "My research interest is the sciences of collaboration and innovation. I apply mathematical models and machine learning techniques to analyze collective knowledge production systems, including Web of Science, U.S. patents, Stack Exchange, GitHub. My works were published in journals including Nature, Physical Review E, Scientific Reports, PloS ONE, and also generated broad interest among diverse audiences in New Scientists and Science Daily. I got my PhD in Communication from the City University of Hong Kong in 2013. Overlapping with the PhD program I spent a year in Baidu as an algorithm engineer (internship). I joined Knowledge Lab in 2016 after working two years in the Center for Behavior, Institutions and the Environment at Arizona State University as a post-doc researcher. I am a core member of Swarma Club, a research network in Beijing with a vision to bridge academia, industry, and government.",
+  //     size: "half",
+  //   bioImg: Person
+  // }
 ];
 
 
