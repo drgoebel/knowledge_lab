@@ -109,7 +109,7 @@ const AniNav = () => {
         const attributeValue = `value-${index}`;
         path.setAttribute("data-custom-attribute", attributeValue);
 
-        if (attributeValue === "value-30") {
+        if (attributeValue === "value-30" || attributeValue === "value-35") {
           path.addEventListener("mouseover", handleMouseOver);
           path.addEventListener("mouseleave", handleMouseLeave);
         }
@@ -129,17 +129,17 @@ const AniNav = () => {
           path.addEventListener("mouseleave", handlePubsMouseLeave);
         }
 
-        if (attributeValue === "value-100") {
+        if (attributeValue === "value-99") {
           path.addEventListener("mouseover", handleNewsMouseOver);
           path.addEventListener("mouseleave", handleNewsMouseLeave);
         }
 
-        if (attributeValue === "value-113") {
+        if (attributeValue === "value-112") {
           path.addEventListener("mouseover", handleEventsMouseOver);
           path.addEventListener("mouseleave", handleEventsMouseLeave);
         }
 
-        if (attributeValue === "value-123") {
+        if (attributeValue === "value-122") {
           path.addEventListener("mouseover", handleGiveMouseOver);
           path.addEventListener("mouseleave", handleGiveMouseLeave);
         }
@@ -148,12 +148,16 @@ const AniNav = () => {
         path.addEventListener("click", () => {
           const urlMap = {
             "value-30": "/join",
+            "value-35": "/join",
             "value-53": "/initiatives",
             "value-44": "/team",
+            "value-45": "/team",
             "value-75": "/publications",
             "value-100": "/news",
-            "value-123": "/give",
+            "value-122": "/give",
+            "value-126": "/give",
             "value-113": "/events",
+            "value-114": "/events",
           };
 
           if (urlMap[attributeValue]) {

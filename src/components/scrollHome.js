@@ -21,6 +21,9 @@ import Global from "../images/global-observe.webp";
 import Policy from "../images/policy-lab.webp";
 import Computational from "../images/computational.webp"
 import Digital from "../images/digital-minds.webp"
+import Complementary from "../images/complementary.webp"
+import Science2 from "../images/science2.webp"
+import Existential from "../images/existential.webp"
 
 
 const initiativeFeatures = [
@@ -29,6 +32,12 @@ const initiativeFeatures = [
     "description": "How can we use AI and big data improve our awareness of worldwide investment production position and trajectory in science and technology (S&T)?",
     "image_url": Global,
     "link": "/initiatives"
+  },
+  {
+  "title": "Complementary AI",
+  "description": "Can we build AI that augments rather than replaces human capacity?",
+  "image_url": Complementary,
+  "link":"/initiatives"
   },
   {
     "title": "Innovation Policy Lab",
@@ -59,6 +68,18 @@ const initiativeFeatures = [
     "description": "Can we shine light into the 'black box' to better understand how AIs think?",
     "image_url": Digital,
     "link": "/initiatives"
+  },
+  {
+  "title": "Science<sup>2</sup>",
+  "image_url": Science2,
+  "description": "How can science about the scientific process improve the rate, character, and capacity of knowledge about the world?",
+  "link":"/initiatives"
+  },
+  {
+    "title": "Existential Epistemology",
+    "image_url": Existential,
+    "description": "In order to anticipate and ensure humanity’s flourishing and long future what new forms of knowledge will we need to explore?",
+    "link":"/initiatives"
   }
 ]
 
@@ -158,7 +179,7 @@ function Card({ onClick, selected, title, description, imageUrl, itemId, link })
       >
         <div className="card">
           <a href={link} ><img src={imageUrl} alt={title} style={{ width: "100%", height: "auto" }} /></a>
-          <h3><a href={link}>{title}</a></h3>
+          <h3 dangerouslySetInnerHTML={{ __html: `<a href="${link}">${title}</a>` }} />
           <p>{description}</p>
           {/* <div>Visible: {JSON.stringify(visible)}</div>
           <div>Selected: {JSON.stringify(!!selected)}</div> */}
