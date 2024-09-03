@@ -153,10 +153,10 @@ const AniNav = () => {
             "value-44": "/team",
             "value-45": "/team",
             "value-75": "/publications",
-            "value-100": "/news",
+            "value-99": "/news",
             "value-122": "/give",
             "value-126": "/give",
-            "value-113": "/events",
+            "value-112": "/events",
             "value-114": "/events",
           };
 
