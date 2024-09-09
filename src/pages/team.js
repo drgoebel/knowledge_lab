@@ -49,23 +49,27 @@ import Jacy from "../images/jacy.webp";
 import Sarria from "../images/sarria.webp";
 import Partha from "../images/partha.webp";
 import Hsing from "../images/hsin.jpg";
-import BernardK from "../images/bernardk.webp"
-import YongY from "../images/yongy.webp"
-import BenB from "../images/benb.webp"
-import LevinB from "../images/levinb.webp"
-import IshanuC from "../images/ishanuc.webp"
-import DouglasD from "../images/douglasd.webp"
-import IanF from "../images/ianf.webp"
-import JoshuaJ from "../images/joshuaj.webp"
-import RuiP from "../images/ruip.webp"
-import JamshidS from "../images/jamshids.webp"
-import ChenhaoT from "../images/chenhaot.webp"
-import LavV from "../images/lavv.webp"
-import DavidW from "../images/davidw.webp"
-import AaronS from "../images/aarons.webp"
-import FengliX from "../images/fenglix.webp"
-import PeteA from "../images/petea.webp"
-
+import BernardK from "../images/bernardk.webp";
+import YongY from "../images/yongy.webp";
+import BenB from "../images/benb.webp";
+import LevinB from "../images/levinb.webp";
+import IshanuC from "../images/ishanuc.webp";
+import DouglasD from "../images/douglasd.webp";
+import IanF from "../images/ianf.webp";
+import JoshuaJ from "../images/joshuaj.webp";
+import RuiP from "../images/ruip.webp";
+import JamshidS from "../images/jamshids.webp";
+import ChenhaoT from "../images/chenhaot.webp";
+import LavV from "../images/lavv.webp";
+import DavidW from "../images/davidw.webp";
+import AaronS from "../images/aarons.webp";
+import FengliX from "../images/fenglix.webp";
+import PeteA from "../images/petea.webp";
+import JeffreyL from "../images/jeffreyl.webp"
+import NadvK from "../images/nadavk.webp"
+import ShilinJ from "../images/shilinj.webp"
+import YujinP from "../images/yujinp.webp"
+import NingiL from "../images/ningzil.webp"
 
 const klabLeadership = [
   {
@@ -597,7 +601,7 @@ const klabAffiliated = [
     personal_website: "www.aaronschein.com",
     publications: [],
     position: "Affilicate Faculty",
-    bioImg: AaronS
+    bioImg: AaronS,
   },
   {
     name: "David Wolpert",
@@ -704,117 +708,178 @@ const klabAffiliated = [
       },
     ],
     position: "Affilicate Faculty",
-    bioImg: JoshuaJ
+    bioImg: JoshuaJ,
   },
   {
-    "name": "Ian Foster",
-    "email": "foster@uchicago.edu",
-    "affiliation": "University of Chicago",
-    "bio": "Dr. Ian Foster is Senior Scientist and Distinguished Fellow, and also director of the Data Science and Learning Division, at Argonne National Laboratory, and the Arthur Holly Compton Distinguished Service Professor of Computer Science at the University of Chicago. Ian received a BSc degree from the University of Canterbury, New Zealand, and a PhD from Imperial College, United Kingdom, both in computer science. His research deals with distributed, parallel, and data-intensive computing technologies, and innovative applications of those technologies to scientific problems in such domains as materials science, climate change, and biomedicine. Foster is a fellow of the AAAS, ACM, BCS, and IEEE, and an Office of Science Distinguished Scientists Fellow.",
-    "personal_website": "",
-    "publications": [],
-    "position": "Affilicate Faculty", 
-"bioImg": IanF
+    name: "Ian Foster",
+    email: "foster@uchicago.edu",
+    affiliation: "University of Chicago",
+    bio:
+      "Dr. Ian Foster is Senior Scientist and Distinguished Fellow, and also director of the Data Science and Learning Division, at Argonne National Laboratory, and the Arthur Holly Compton Distinguished Service Professor of Computer Science at the University of Chicago. Ian received a BSc degree from the University of Canterbury, New Zealand, and a PhD from Imperial College, United Kingdom, both in computer science. His research deals with distributed, parallel, and data-intensive computing technologies, and innovative applications of those technologies to scientific problems in such domains as materials science, climate change, and biomedicine. Foster is a fellow of the AAAS, ACM, BCS, and IEEE, and an Office of Science Distinguished Scientists Fellow.",
+    personal_website: "",
+    publications: [],
+    position: "Affilicate Faculty",
+    bioImg: IanF,
   },
   {
-    "name": "Doug Downey",
-    "email": "dougd@allenai.org",
-    "affiliation": "Allen Institute for AI",
-    "bio": "Downey's research is focused on natural language processing, machine learning, and artificial intelligence, with a particular interest in the automatic construction of useful knowledge bases from Web text. One goal is to develop techniques and prototypes that extend the state of the art in Web search. Another goal is to theoretically investigate and establish a formal basis for techniques that can learn from unstructured text alone, without hand-labeled data. More generally, Downey works on ways to utilize human input more effectively in machine learning. Two directions in this effort involve selecting human input carefully (active learning) or utilizing it in concert with unlabeled data (semi-supervised learning).",
-    "personal_website": "",
-    "publications": [
+    name: "Doug Downey",
+    email: "dougd@allenai.org",
+    affiliation: "Allen Institute for AI",
+    bio:
+      "Downey's research is focused on natural language processing, machine learning, and artificial intelligence, with a particular interest in the automatic construction of useful knowledge bases from Web text. One goal is to develop techniques and prototypes that extend the state of the art in Web search. Another goal is to theoretically investigate and establish a formal basis for techniques that can learn from unstructured text alone, without hand-labeled data. More generally, Downey works on ways to utilize human input more effectively in machine learning. Two directions in this effort involve selecting human input carefully (active learning) or utilizing it in concert with unlabeled data (semi-supervised learning).",
+    personal_website: "",
+    publications: [
       {
-        "title": "Penguins Don't Fly",
-        "journal": "Association for Computational Linguistics (ACL)",
-        "year": 2023,
-        "authors": ["Allaway, Emily", "Hwang, Jena D.", "Bhagavatula, Chandra", "McKeown, Kathleen", "Downey, Doug", "Choi, Yejin"]
+        title: "Penguins Don't Fly",
+        journal: "Association for Computational Linguistics (ACL)",
+        year: 2023,
+        authors: [
+          "Allaway, Emily",
+          "Hwang, Jena D.",
+          "Bhagavatula, Chandra",
+          "McKeown, Kathleen",
+          "Downey, Doug",
+          "Choi, Yejin",
+        ],
       },
       {
-        "title": "Embedding Recycling for Language Models",
-        "journal": "Association for Computational Linguistics (ACL)",
-        "year": 2023,
-        "authors": ["Saad-Falcon, Jon", "Singh, Amanpreet", "Soldaini, Luca", "D’Arcy, Mike", "Cohan, Arman", "Downey, Doug"]
+        title: "Embedding Recycling for Language Models",
+        journal: "Association for Computational Linguistics (ACL)",
+        year: 2023,
+        authors: [
+          "Saad-Falcon, Jon",
+          "Singh, Amanpreet",
+          "Soldaini, Luca",
+          "D’Arcy, Mike",
+          "Cohan, Arman",
+          "Downey, Doug",
+        ],
       },
       {
-        "title": "Relatedly",
-        "journal": "Association for Computing Machinery",
-        "year": 2023,
-        "authors": ["Palani, Srishti", "Naik, Aakanksha", "Downey, Doug", "Zhang, Amy X.", "Bragg, Jonathan", "Chang, Joseph Chee"]
+        title: "Relatedly",
+        journal: "Association for Computing Machinery",
+        year: 2023,
+        authors: [
+          "Palani, Srishti",
+          "Naik, Aakanksha",
+          "Downey, Doug",
+          "Zhang, Amy X.",
+          "Bragg, Jonathan",
+          "Chang, Joseph Chee",
+        ],
       },
       {
-        "title": "CiteSee",
-        "journal": "Association for Computing Machinery",
-        "year": 2023,
-        "authors": ["Chang, Joseph Chee", "Zhang, Amy X.", "Bragg, Jonathan", "Head, Andrew", "Lo, Kyle", "Downey, Doug", "Weld, Daniel S."]
+        title: "CiteSee",
+        journal: "Association for Computing Machinery",
+        year: 2023,
+        authors: [
+          "Chang, Joseph Chee",
+          "Zhang, Amy X.",
+          "Bragg, Jonathan",
+          "Head, Andrew",
+          "Lo, Kyle",
+          "Downey, Doug",
+          "Weld, Daniel S.",
+        ],
       },
       {
-        "title": "Few-Shot Self-Rationalization with Natural Language Prompts",
-        "journal": "Association for Computational Linguistics (ACL)",
-        "year": 2022,
-        "authors": ["Marasovic, Ana", "Beltagy, Iz", "Downey, Doug", "Peters, Matthew E."]
+        title: "Few-Shot Self-Rationalization with Natural Language Prompts",
+        journal: "Association for Computational Linguistics (ACL)",
+        year: 2022,
+        authors: [
+          "Marasovic, Ana",
+          "Beltagy, Iz",
+          "Downey, Doug",
+          "Peters, Matthew E.",
+        ],
       },
       {
-        "title": "FeedLens",
-        "journal": "Association for Computing Machinery, Inc",
-        "year": 2022,
-        "authors": ["Kaur, Harmanpreet", "Downey, Doug", "Singh, Amanpreet", "Cheng, Evie Yu Yen", "Weld, Daniel", "Bragg, Jonathan"]
+        title: "FeedLens",
+        journal: "Association for Computing Machinery, Inc",
+        year: 2022,
+        authors: [
+          "Kaur, Harmanpreet",
+          "Downey, Doug",
+          "Singh, Amanpreet",
+          "Cheng, Evie Yu Yen",
+          "Weld, Daniel",
+          "Bragg, Jonathan",
+        ],
       },
       {
-        "title": "S2AMP",
-        "journal": "Institute of Electrical and Electronics Engineers Inc.",
-        "year": 2022,
-        "authors": ["Rohatgi, Shaurya", "Downey, Doug", "King, Daniel", "Feldman, Sergey"]
+        title: "S2AMP",
+        journal: "Institute of Electrical and Electronics Engineers Inc.",
+        year: 2022,
+        authors: [
+          "Rohatgi, Shaurya",
+          "Downey, Doug",
+          "King, Daniel",
+          "Feldman, Sergey",
+        ],
       },
       {
-        "title": "VILA",
-        "journal": "Transactions of the Association for Computational Linguistics",
-        "year": 2022,
-        "authors": ["Shen, Zejiang", "Lo, Kyle", "Wang, Lucy Lu", "Kuehl, Bailey", "Weld, Daniel S.", "Downey, Doug"]
-      }
+        title: "VILA",
+        journal:
+          "Transactions of the Association for Computational Linguistics",
+        year: 2022,
+        authors: [
+          "Shen, Zejiang",
+          "Lo, Kyle",
+          "Wang, Lucy Lu",
+          "Kuehl, Bailey",
+          "Weld, Daniel S.",
+          "Downey, Doug",
+        ],
+      },
     ],
-    "position": "Affilicate Faculty", 
-"bioImg": DouglasD
+    position: "Affilicate Faculty",
+    bioImg: DouglasD,
   },
   {
-    "name": "Ishanu Chattopadhyay",
-    "email": "ishanu@uchicago.edu",
-    "affiliation": "University of Chicago",
-    "bio": "Ishanu Chattopadhyay’s research focuses on the theory of unsupervised machine learning and the interplay of stochastic processes and formal language theory in exploring the mathematical underpinnings of the question of inferring causality from data. His most visible contributions include the algorithms for data smashing, inverse Gillespie inference, and nonparametric nonlinear and zero-knowledge implementations of Granger causal analysis that have crucial implications for biomedical informatics, data-enabled discovery in biomedicine, and personalized precision health care. His current work focuses on analyzing massive clinical databases of disparate variables to distill patterns indicative of hitherto unknown etiologies, dependencies, and relationships, potentially addressing the daunting computational challenge of scale and making way for ab initio and de novo modeling in an age of ubiquitous data. Chattopadhyay received an MS and PhD in mechanical engineering, as well as an MA in mathematics, from the Pennsylvania State University. He completed his postdoctoral training and served as a research associate in the Department of Mechanical Engineering at Penn State. He also held a postdoctoral fellowship simultaneously at the Department of Computer Science and the Sibley School of Mechanical and Aerospace Engineering at Cornell University.",
-    "personal_website": "",
-    "publications": [],
-    "position": "Affilicate Faculty", 
-"bioImg": IshanuC
+    name: "Ishanu Chattopadhyay",
+    email: "ishanu@uchicago.edu",
+    affiliation: "University of Chicago",
+    bio:
+      "Ishanu Chattopadhyay’s research focuses on the theory of unsupervised machine learning and the interplay of stochastic processes and formal language theory in exploring the mathematical underpinnings of the question of inferring causality from data. His most visible contributions include the algorithms for data smashing, inverse Gillespie inference, and nonparametric nonlinear and zero-knowledge implementations of Granger causal analysis that have crucial implications for biomedical informatics, data-enabled discovery in biomedicine, and personalized precision health care. His current work focuses on analyzing massive clinical databases of disparate variables to distill patterns indicative of hitherto unknown etiologies, dependencies, and relationships, potentially addressing the daunting computational challenge of scale and making way for ab initio and de novo modeling in an age of ubiquitous data. Chattopadhyay received an MS and PhD in mechanical engineering, as well as an MA in mathematics, from the Pennsylvania State University. He completed his postdoctoral training and served as a research associate in the Department of Mechanical Engineering at Penn State. He also held a postdoctoral fellowship simultaneously at the Department of Computer Science and the Sibley School of Mechanical and Aerospace Engineering at Cornell University.",
+    personal_website: "",
+    publications: [],
+    position: "Affilicate Faculty",
+    bioImg: IshanuC,
   },
   {
-    "name": "Levin Brinkmann",
-    "email": "brinkmann@mpib-berlin.mpg.de",
-    "affiliation": "MPG-Berlin",
-    "bio": "Levin Brinkmann is a predoctoral fellow at the Center for Human and Machines at the Max Planck Institute for Human Development. In 2014 he received a Master's in Physics from the University of Goettingen. He joined the center after working for several years as a data scientist in the fashion and advertising industry, where he developed inspirational algorithms for creative workers. Levin's current interests are in the influence of algorithms on human-machine hybrid cultural evolution.",
-    "personal_website": "https://www.mpib-berlin.mpg.de/publication-search/248657?person=persons273302",
-    "publications": [],
-    "position": "Affilicate Faculty", 
-"bioImg": LevinB
+    name: "Levin Brinkmann",
+    email: "brinkmann@mpib-berlin.mpg.de",
+    affiliation: "MPG-Berlin",
+    bio:
+      "Levin Brinkmann is a predoctoral fellow at the Center for Human and Machines at the Max Planck Institute for Human Development. In 2014 he received a Master's in Physics from the University of Goettingen. He joined the center after working for several years as a data scientist in the fashion and advertising industry, where he developed inspirational algorithms for creative workers. Levin's current interests are in the influence of algorithms on human-machine hybrid cultural evolution.",
+    personal_website:
+      "https://www.mpib-berlin.mpg.de/publication-search/248657?person=persons273302",
+    publications: [],
+    position: "Affilicate Faculty",
+    bioImg: LevinB,
   },
   {
-    "name": "Ben Blaiszik",
-    "email": "blaiszik@uchicago.edu",
-    "affiliation": "University of Chicago",
-    "bio": "Ben Blaiszik is a researcher in the Data Science and Learning Division within the CELS Directorate. His work includes leveraging machine learning, large language models, high performance computing and big data techniques to meet the unique challenges faced by scientists; leading cross-disciplinary materials design, data infrastructure, and development efforts; and executing complex experimental and computational design planning. His work has culminated in 5 issued patents, and ~100 peer reviewed publications/book chapters/conference papers.",
-    "personal_website": "",
-    "publications": [],
-    "position": "Affilicate Faculty", 
-"bioImg": BenB
+    name: "Ben Blaiszik",
+    email: "blaiszik@uchicago.edu",
+    affiliation: "University of Chicago",
+    bio:
+      "Ben Blaiszik is a researcher in the Data Science and Learning Division within the CELS Directorate. His work includes leveraging machine learning, large language models, high performance computing and big data techniques to meet the unique challenges faced by scientists; leading cross-disciplinary materials design, data infrastructure, and development efforts; and executing complex experimental and computational design planning. His work has culminated in 5 issued patents, and ~100 peer reviewed publications/book chapters/conference papers.",
+    personal_website: "",
+    publications: [],
+    position: "Affilicate Faculty",
+    bioImg: BenB,
   },
   {
-    "name": "Yong-Yeol Ahn",
-    "email": "yyahn@iu.edu",
-    "affiliation": "Indiana University",
-    "bio": "Yong-Yeol Ahn earned his Ph.D. in physics from KAIST in 2008. He was a postdoctoral researcher at the Center for Complex Network Research of Northeastern University and a visiting researcher at the Center for Cancer Systems Biology at Dana-Farber Cancer Institute from 2008-2011. He is interested in various complex systems such as biological and social networks.",
-    "personal_website": "",
-    "publications": [],
-    "position": "Affilicate Faculty", 
-"bioImg": YongY
-  }
+    name: "Yong-Yeol Ahn",
+    email: "yyahn@iu.edu",
+    affiliation: "Indiana University",
+    bio:
+      "Yong-Yeol Ahn earned his Ph.D. in physics from KAIST in 2008. He was a postdoctoral researcher at the Center for Complex Network Research of Northeastern University and a visiting researcher at the Center for Cancer Systems Biology at Dana-Farber Cancer Institute from 2008-2011. He is interested in various complex systems such as biological and social networks.",
+    personal_website: "",
+    publications: [],
+    position: "Affilicate Faculty",
+    bioImg: YongY,
+  },
 ];
 
 const klabResearchPost = [
@@ -1095,7 +1160,7 @@ const klabResearchPost = [
     website: "http://ningzili.com",
     publications: [],
     role: "Postdoctoral Scholar",
-    bioImg: Person,
+    bioImg: NingiL,
   },
   {
     name: "Yujin Potter",
@@ -1116,7 +1181,7 @@ const klabResearchPost = [
       },
     ],
     role: "Postdoctoral Scholar",
-    bioImg: Person,
+    bioImg: YujinP,
   },
   {
     name: "Shilin Jia",
@@ -1127,102 +1192,110 @@ const klabResearchPost = [
     website: "https://shevajia.github.io/",
     publications: [],
     role: "Postdoctoral Scholar",
-    bioImg: Person,
+    bioImg: ShilinJ,
   },
-  // {
-  //   "name": "Yujin Potter",
-  //   "email": "yujinyujin9393@gmail.com",
-  //   "institution": "UC Berkeley",
-  //   "bio": "She is currently a postdoc in EECS at UC Berkeley. Her interests span a wide range of topics within AI alignment/ethics, including examining the societal impacts of AI, identifying AI misalignment, studying AI behaviors in multi-agent settings, and addressing AI bias. Previously, she conducted research on decentralization technologies such as blockchain, DeFi, and DAOs. Before joining UC Berkeley, she got a PhD from KAIST.",
-  //   "publications": "Evolving AI Collectives to Enhance Human Diversity and Enable Self-Regulation, ICML 2024",
-  //   "position": "Affiliate Postdoc",
-  //   "bioImg": Person,
-  // },
-  // {
-  //   "name": "Shilin Jia",
-  //   "email": "shilinj@stanford.edu",
-  //   "institution": "Stanford University",
-  //   "bio": "Shilin Jia is the 2023-24 Shorenstein Postdoctoral Fellow on Contemporary Asia at Stanford University. His scholarly interest lies in applying computational methods to the study of political culture and organizations, with a special focus on post-reform China. Shilin’s research analyzes job transfers of Communist Party elites in China by using machine learning to code party elites' CVs. His objective is to grasp the evolution of the party-state through the division of labor and circulation of its elite members. He also conducts a computational content analysis of 60 years of the People's Daily, the official mouthpiece of the Communist Party of China, tracking ideological changes. More recently, He has been working on building a hundred years of word-embedding models based on multiple languages of Google N-grams and studying identity formation and international relations across language communities. Shilin received a Ph.D. in sociology from the University of Chicago.",
-  //   "website": "https://shevajia.github.io/",
-  //   "position": "Affiliate Postdoc",
-  //   "bioImg": Person,
-  // },
-  // {
-  //   "name": "Haochuan Cui",
-  //   "email": "hcui94@hotmail.com",
-  //   "institution": "Beijing Normal University",
-  //   "bio": "Haochuan earned his PhD in School of System Sciences at Beijing Normal University. He is the Pre-Assistant Professor of School of Information Management at Nanjing University. His interests focus on the complexity of cognitive behavior within scientific discovery and knowledge diffusion. He is currently using big language models and network analysis techniques to study the influence of workforce aging on Science and Technology and the labor division within organizations.",
-  //   "website": "https://hashc.github.io/about/",
-  //   "position": "Affiliate Researcher",
-  //   "bioImg": Person,
-  //   "additionalLink": "https://drive.google.com/file/d/1t1Y_O7Lzb05SEcU62Zw2Xjn3oaKWpmYR/view?usp=drive_link"
-  // },
-  // {
-  //   "name": "Chris Esposito",
-  //   "email": "Christopher.Esposito@anderson.ucla.edu",
-  //   "institution": "UCLA",
-  //   "bio": "Chris is the Osborne Postdoctoral Fellow at the UCLA Anderson School of Management. He studies innovation in science and technology using computational and econometric techniques. His dissertation developed centuries of new historical data to uncover the common processes that cities pass through as they emerge as centers for innovation. More recently, he has studied knowledge obsolescence and its impact on the changing structure of the innovative economy. In ongoing collaborations with the Knowledge Lab, he is analyzing the shifting balance of global power in scientific and technological innovation.",
-  //   "website": "https://cresposito.com",
-  //   "publications": [
-  //     "https://academic.oup.com/joeg/article/23/1/209/6646557",
-  //     "https://www.sciencedirect.com/science/article/pii/S004873332300094X",
-  //     "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4444732#:~:text=Linking%20age%20and%20death%20information,inventors%20who%20lose%20mid%2Dcareer",
-  //     "https://arxiv.org/abs/2406.05917"
-  //   ],
-  //   "position": "Affiliate Researcher",
-  //   "bioImg": Person,
-  //   "additionalLink": "https://drive.google.com/file/d/1s8TtY31eFUhMi564UgoLn94trUxo29yf/view?usp=drive_link"
-  // },
-
-  // {
-  //   "name": "Bill Shi",
-  //   "email": "fbillshi@gmail.com",
-  //   "institution": "Pond",
-  //   "bio": "Bill has been wearing multiple hats – researcher, engineer, and lately, tech adventurer. Currently, he is the co-founder and CTO of Pond, a startup focused on building the foundation model for crypto AI. Throughout his career, whether in industry (TigerGraph, Amazon) or academia (UNC, UChicago), Bill has been driven by a passion for applying mathematical modeling and machine learning to solve real-world challenges. His work spans a wide range of fields, from graph AI, recommender systems, to computational social science and biomedicine.",
-  //   "website": "https://www.billshi.net/",
-  //   "publications": [
-  //     "Zhang, Yang; Shi, Feng; The micro-foundations of elite politics: conversation networks and elite conflict during China’s reform era,Theory and Society,53,1,193-237,2024",
-  //     "Shi, Feng; Evans, James; Surprising combinations of research contents and contexts are related to impact and emerge with scientific outsiders from distant disciplines,Nature Communications,14,1,1641,2023",
-  //     "Evans, James; Shi, Feng; Sourati, Jamshid; Systems and methods for high-order modeling of predictive hypotheses,,,,,2022",
-  //     "Ke, Zheng Tracy; Shi, Feng; Xia, Dong; Community detection for hypergraph networks via regularized tensor power iteration,arXiv preprint arXiv:1909.06503,,,,2019",
-  //     "Shi, Feng; Teplitskiy, Misha; Duede, Eamon; Evans, James A; The wisdom of polarized crowds,Nature human behaviour,3,4,329-336,2019",
-  //     "Gerow, Aaron; Zhou, Mingyang; Matwin, Stan; Shi, Feng; Reflexive Regular Equivalence for Bipartite Data,Advances in Artificial Intelligence: 30th Canadian Conference on Artificial Intelligence, Canadian AI 2017, Edmonton, AB, Canada, May 16-19, 2017, Proceedings 30,,,71-77,2017",
-  //     "Shi, Feng; Shi, Yongren; Dokshin, Fedor A; Evans, James A; Macy, Michael W; Millions of online book co-purchases reveal partisan differences in the consumption of science,Nature Human Behaviour,1,4,0079,2017",
-  //     "Shi, Feng; Foster, Jacob G; Evans, James A; Weaving the fabric of science: Dynamic network models of science's unfolding structure,Social Networks,43,,73-85,2015"
-  //   ],
-  //   "position": "Affiliate Researcher",
-  //   "bioImg": Person,
-  //   "additionalLink": "https://drive.google.com/file/d/1PVchSEg62x3cK0WyS8BiFFcQ3w8AQtTw/view?usp=drive_link"
-  // },
-  // {
-  //   "name": "Nicolás Torres-Echeverry",
-  //   "email": "nte@uchicago.edu",
-  //   "institution": "University of Chicago",
-  //   "bio": "tbd",
-  //   "position": "Affiliate Researcher",
-  //   "bioImg": Person,
-  // },
-  // {
-  //   "name": "Dashun Wang",
-  //   "email": "dashun.wang@kellogg.northwestern.edu",
-  //   "institution": "Northwestern University",
-  //   "bio": "Dashun Wang is a Professor of Management and Organizations at the Kellogg School of Management, and the McCormick School of Engineering, at Northwestern University. At Kellogg, he is the Founding Co-Director of the Ryan Institute on Complexity and the Founding Director of the Center for Science of Science and Innovation (CSSI). He is also a core faculty at the Northwestern Institute on Complex Systems (NICO). Dashun is a recipient of multiple awards for his research and teaching, including the AFOSR Young Investigator award, Poets & Quants Best 40 Under 40 Professors, Junior Scientific Award from the Complex Systems Society, the Erdos-Renyi Prize, Thinkers50 Radar 2021, and more.",
-  //   "website": "www.dashunwang.com",
-  //   "publications": "https://www.dashunwang.com/academic-articles.",
-  //   "position": "Affiliate Researcher",
-  //   "bioImg": Person,
-  //   "additionalLink": "https://drive.google.com/file/d/1x54WQ5dPRj955B9_HC_DGNEMf2SMOFwk/view?usp=drive_link"
-  // },
-
-  // {
-  //   "name": "Haizi Yu",
-  //   "email": "haiziyu@uchicago.edu",
-  //   "institution": "University of Chicago",
-  //   "bio": "Haizi has a Ph.D. in Computer Science. His research interests include white-box AGI, interpretable machine learning, automatic knowledge discovery, and music intelligence. He received his doctoral degree from the University of Illinois at Urbana-Champaign, his M.S. degree in Computer Science from Stanford University, and his B.S. degree from the Department of Automation at Tsinghua University.",
-  //   "position": "Affiliate Researcher",
-  //   "bioImg": Person,
-  //   "additionalLink": "https://drive.google.com/file/d/1LdiAciLoFfQ6BYP3_KlDKptI5eEfli5K/view?usp=drive_link"
-  // }
+  {
+    name: "Nadav Kunievsky",
+    email: "nadavkunievsky@uchicago.edu",
+    affiliation: "University of Chicago",
+    bio:
+      "Nadav Kunievsky is an economist specializing in quantifying and measuring information environments. His research focuses on developing methods to assess the knowledge and information accessible to agents in different social groups and quantifying the impact of these differences on labor market disparities. His work is characterized by a blend of theoretical and empirical economics, with a strong emphasis on interpretability. Before beginning his postdoctoral research at the Knowledge Lab, Nadav earned a PhD in Economics from the University of Chicago and both a BA and MA from Tel Aviv University.",
+    personal_website: "https://nkunievsky.github.io/",
+    publications: [],
+    role: "Postdoctoral Scholar",
+    bioImg: NadvK
+  },
+  {
+    name: "Jeffrey Lockhart",
+    email: "jlockhart@uchicago.edu",
+    affiliation: "University of Chicago",
+    bio:
+      "Jeff Lockhart is a James S. McDonnell Postdoctoral Fellow at the University of Chicago, in the Department of Sociology and the Knowledge Lab. He holds a PhD in Sociology from the University of Michigan as well as masters degrees in both gender studies and computer science. His research examines how identities such as sex, gender, sexuality, and race are constructed and contested in scientific, technological, and political arenas. Lockhart uses a mix of computational social science and qualitative archival methods in his research.",
+    personal_website: "https://voices.uchicago.edu/jlockhart",
+    publications: [
+      {
+        title:
+          "Incorporating Physical Knowledge Into Machine Learning for Planetary Space Physics",
+        journal: "Frontiers in Astronomy and Space Sciences",
+        volume: 7,
+        issue: "July",
+        pages: 36,
+        year: 2020,
+        doi: "https://doi.org/10.3389/fspas.2020.00036",
+      },
+      {
+        title:
+          "`A Large and Long Standing Body`: Historical Authority in the Science of Sex",
+        journal: "Far Right Revisionism and the End of History: Alt/Histories",
+        location: "New York: Routledge",
+        pages: "359–86",
+        year: 2020,
+        doi: "https://doi.org/10.4324/9781003026433",
+      },
+      {
+        title: "Paradigms of Sex Research and Women in STEM",
+        journal: "Gender & Society",
+        volume: 35,
+        issue: 3,
+        pages: "449–75",
+        year: 2021,
+        doi: "https://doi.org/10.1177/08912432211001384",
+      },
+      {
+        title:
+          "Because the Machine Can Discriminate: How Machine Learning Serves and Transforms Biological Explanations of Human Difference",
+        journal: "Big Data & Society",
+        volume: 10,
+        issue: 1,
+        year: 2023,
+        doi: "https://doi.org/10.1177/20539517231155060",
+      },
+      {
+        title: "Gender, Sex, and the Constraints of Machine Learning Methods",
+        journal: "The Oxford Handbook of the Sociology of Machine Learning",
+        location: "Oxford University Press",
+        year: 2023,
+        doi: "https://doi.org/10.1093/oxfordhb/9780197653609.013.24",
+      },
+      {
+        title: "Scientific Argument with Supervised Learning",
+        journal: "NeurIPS 2021 AI for Science Workshop",
+        year: 2021,
+        doi: "https://openreview.net/pdf?id=uGe5cXJXkib",
+      },
+      {
+        title:
+          "Name-Based Demographic Inference and the Unequal Distribution of Misrecognition",
+        journal: "Nature Human Behaviour",
+        volume: 7,
+        issue: "July",
+        pages: "1084–95",
+        year: 2023,
+        doi: "https://doi.org/10.1038/s41562-023-01587-9",
+      },
+      {
+        title:
+          "Who Authors Social Science? Demographics and the Production of Knowledge",
+        journal: "Social Currents",
+        volume: 0,
+        issue: 0,
+        pages: "1–13",
+        year: 2024,
+        doi: "https://doi.org/10.1177/23294965241246805",
+      },
+      {
+        title: "Diagnosing Gender Bias in Image Recognition Systems",
+        journal: "Socius",
+        volume: 6,
+        issue: "November",
+        pages: "1–17",
+        year: 2020,
+        doi: "https://doi.org/10.1177/2378023120967171",
+      },
+    ],
+    role: "Postdoctoral Scholar",
+    bioImg: JeffreyL
+  },
 ];
 
 const klabStudents = [
