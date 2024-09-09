@@ -34,9 +34,9 @@ const pubFeatures = [
             "link": "https://www.nature.com/articles/s41586-019-0941-9"
         },
         {
-            "title": "Scientific Science",
-            "image_url": Scienctific,
-            "link": "https://www.science.org/doi/10.1126/science.aav2484"
+            "title": "Science of Science",
+            "image_url": ScienctificSci,
+            "link": "https://www.science.org/doi/10.1126/science.aao0185"
         },
         {
             "title": "Quantifying Failures",
@@ -53,11 +53,8 @@ const pubFeatures = [
             "image_url": Macy,
             "link": "https://www.nature.com/articles/s41562-017-0079"
         },
-        {
-            "title": "Science of Science",
-            "image_url": ScienctificSci,
-            "link": "https://www.science.org/doi/10.1126/science.aao0185"
-        },
+        
+        
         {
             "title": "Soft Skills Matter",
             "image_url": PNAS1,
@@ -67,6 +64,11 @@ const pubFeatures = [
             "title": "Machine Science",
             "image_url": Machine,
             "link": "https://www.science.org/doi/10.1126/science.1189416"
+        },
+        {
+            "title": "Scientific Science",
+            "image_url": Scienctific,
+            "link": "https://www.science.org/doi/10.1126/science.aav2484"
         },
         {
             "title": "Flat Teams Innovate",

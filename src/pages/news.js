@@ -163,14 +163,14 @@ const News = () => (
               <Row>
 
                 <Col xs={3} sm={12} className="d-sm-block">
-                <a href={item.url} target="_blank" ><img src={item.image} /></a>
+                <a href={item.url} target="_blank" ><img src={item.image} alt={item.title}/></a>
                   {/* <img src="https://placeholder.com/400x200" /> */}
                 </Col>
 
-                <Col xs={9} sm={12}>
+                {/* <Col xs={9} sm={12}>
                   <h3><a href={item.url} target="_blank" >{item.title}</a></h3>
                 
-                </Col>
+                </Col> */}
                 </Row>
                 
                    

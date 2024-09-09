@@ -27,7 +27,7 @@ const newsFeatures = [
     "title": "Are We Doomed?",
     "description": "The New Yorker features James Evans & Daniel Holz' class exploring existential risk",
     "image_url": AreWeDoomed,
-    "link": "https://drive.google.com/file/d/1cFWy_3cDGv-xrjwT4vTt7wl2-D2RM1fK/view?usp=sharing"
+    "link": "https://www.newyorker.com/magazine/2024/06/10/are-we-doomed-heres-how-to-think-about-it"
   },
   {
     "title": "$20M for Tech Futures",
@@ -39,7 +39,7 @@ const newsFeatures = [
     "title": "Wendy Schmidt Award",
     "description": "Wendy Schmidt receives Science of Science Policy Leadership Award",
     "image_url": Schmidt,
-    "link": "ACCEPTANCE VIDEO LINK YOUTUBE"
+    "link": "https://www.youtube.com/watch?v=1zGw8Ex1aGY"
   },
   {
     "title": "Science of Science & Innovation",
