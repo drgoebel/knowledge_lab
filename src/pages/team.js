@@ -65,11 +65,23 @@ import DavidW from "../images/davidw.webp";
 import AaronS from "../images/aarons.webp";
 import FengliX from "../images/fenglix.webp";
 import PeteA from "../images/petea.webp";
-import JeffreyL from "../images/jeffreyl.webp"
-import NadvK from "../images/nadavk.webp"
-import ShilinJ from "../images/shilinj.webp"
-import YujinP from "../images/yujinp.webp"
-import NingiL from "../images/ningzil.webp"
+import JeffreyL from "../images/jeffreyl.webp";
+import NadvK from "../images/nadavk.webp";
+import ShilinJ from "../images/shilinj.webp";
+import YujinP from "../images/yujinp.webp";
+import NingiL from "../images/ningzil.webp";
+import NicolasT from "../images/nicolast.webp"
+import RuiW from "../images/ruiw.webp"
+import HongKaiM from "../images/hongkaim.webp"
+import ChenL from "../images/chenl.webp"
+import ShiyangL from "../images/shiyangl.webp"
+import HyunkuK from "../images/hyunkuk.webp"
+import BurchardJ from "../images/burchardj.webp"
+import ZiwenC from "../images/ziwenc.webp"
+import HonglinB from "../images/honglinb.webp"
+import CarinaK from "../images/karinak.webp"
+import CayD from "../images/cayd.webp"
+import HaohanS from "../images/haohans.webp"
 
 const klabLeadership = [
   {
@@ -1160,7 +1172,7 @@ const klabResearchPost = [
     website: "http://ningzili.com",
     publications: [],
     role: "Postdoctoral Scholar",
-    bioImg: NingiL,
+    bioImg: NingiL
   },
   {
     name: "Yujin Potter",
@@ -1203,7 +1215,7 @@ const klabResearchPost = [
     personal_website: "https://nkunievsky.github.io/",
     publications: [],
     role: "Postdoctoral Scholar",
-    bioImg: NadvK
+    bioImg: NadvK,
   },
   {
     name: "Jeffrey Lockhart",
@@ -1294,7 +1306,7 @@ const klabResearchPost = [
       },
     ],
     role: "Postdoctoral Scholar",
-    bioImg: JeffreyL
+    bioImg: JeffreyL,
   },
 ];
 
@@ -1381,7 +1393,7 @@ const klabStudents = [
       "I am a Ph.D. student in the Department of Sociology at the University of Chicago. Before this, I held a visiting fellow position at Northwestern University's Kellogg School of Management and received an M.A. in Computational Social Science from the University of Chicago. My current research agenda broadly encompasses societal computing and collective intelligence. In societal computing, I am developing a new computational framework to model social entities and systems, drawing inspiration from quantum physics. This approach aims to introduce a new lens for understanding the social world and to improve inference and predictions of a wide range of social activities, with an initial focus on scientific and technological innovations. In the realm of collective intelligence, my work explores the emergence of the wisdom of crowds and how it can be more effectively harnessed in open environments with minimal regulations from an evolutionary perspective. My scope extends beyond merely human entities to include artificial intelligence, acknowledging their increasing significance in the contemporary landscape of social learning.",
     website: "https://shiyang-term.com/",
     title: "PhD Student",
-    bioImg: Person,
+    bioImg: ShiyangL,
   },
   {
     name: "Ningzi Li",
@@ -1391,7 +1403,7 @@ const klabStudents = [
       "Ningzi is a professional research specialist at the Data Science Institute (DSI) and an adjunct assistant professor at the Booth School of Business at the University of Chicago. She obtained Ph.D. in sociology from Cornell University. Ningzi studies communication and behavior in organizations. She particularly focuses on how firms strategically communicate to influence stakeholder behaviors in the context of earnings calls, venture capital investments, and ESG reports. She also studies how stakeholders' communication influences firm behaviors in the context of employee reviews and product recalls. Her analysis heavily relies on natural experiments and natural language processing tools.",
     website: "https://ningzili.com",
     title: "PhD Student",
-    bioImg: Person,
+    bioImg: NingiL,
   },
   {
     name: "Chen Lin",
@@ -1421,7 +1433,7 @@ const klabStudents = [
       },
     ],
     role: "PhD Student",
-    bioImg: Person,
+    bioImg: ChenL,
   },
   {
     name: "Hongkai Mao",
@@ -1431,17 +1443,8 @@ const klabStudents = [
       "Hongkai Mao is a PhD student in the Organizational Behavior Program at the Graduate School of Business, Stanford University. His research focuses on negative social interactions, such as toxicity, conflicts, and polarization, across both interpersonal and organizational levels. He aims to understand how people perceive their surroundings and how these perceptions can lead to unfavorable behavior in a socio-techno environment. As a potential approach to achieving this, he is interested in leveraging Large Language Models as digital doubles for simulated experiments to explore these complex dynamics.",
     website: "",
     title: "PhD Student",
-    bioImg: Person,
+    bioImg: HongKaiM,
   },
-  // {
-  //   "name": "Rui Pan",
-  //   "email": "rui.pan@kellogg.northwestern.edu",
-  //   "institution": "Northwestern University",
-  //   "bio": "tbd",
-  //   "website": "tbd",
-  //   "title": "PhD Student",
-  //   "bioImg": Person
-  // },
   {
     name: "Nakwon Rim",
     email: "nwrim@uchicago.edu",
@@ -1541,7 +1544,7 @@ const klabStudents = [
       },
     ],
     role: "PhD Student",
-    bioImg: Person,
+    bioImg: HyunkuK,
   },
   {
     name: "Honglin Bao",
@@ -1551,7 +1554,7 @@ const klabStudents = [
       "Honglin Bao (he/him) is a doctoral student in the Knowledge Lab and Data Science Institute at the University of Chicago. His research focuses on uncovering the driving forces behind science and innovation. In his research he uses and develops computational tools, including network analysis, machine learning, and simulation modeling.",
     website: "www.hbao.info",
     title: "PhD Student",
-    bioImg: Person,
+    bioImg: HonglinB,
   },
   {
     name: "Carina Kane",
@@ -1562,7 +1565,75 @@ const klabStudents = [
     website: null,
     publications: [],
     role: "Undergraduate Student",
-    bioImg: Person,
+    bioImg: CarinaK,
+  },
+  {
+    name: "Jake Burchard",
+    email: "jburchard@uchicago.edu",
+    affiliation: "University of Chicago",
+    bio:
+      "Jake Burchard is a PhD candidate in the department of sociology at the University of Chicago. He is an economic and political sociologist studying the causes and consequences of inequality in post-industrial economies. He also has a strong interest in quantitative research methods, including computational, network, and causal inference methods. His work has been published in Social Networks and the Journal of Mathematical Sociology.",
+    personal_website: "https://www.jakeburchard.com",
+    publications: [
+      {
+        title: "Structural Cohesion and Embeddedness in Two-Mode Networks",
+        journal: "The Journal of Mathematical Sociology",
+        volume: 43,
+        issue: 4,
+        pages: "179-194",
+        year: 2019,
+      },
+      {
+        title: "Structural Holes and Bridging in Two-Mode Networks",
+        journal: "Social Networks",
+        volume: 55,
+        pages: "11–20",
+        year: 2018,
+      },
+    ],
+    role: "PhD Student",
+    bioImg: BurchardJ
+  },
+  {
+    name: "Ziwen Chen",
+    email: "ziwench@stanford.edu",
+    affiliation: "Stanford University",
+    bio:
+      "Ziwen Chen is a Ph.D. student in Organizational Behavior at Stanford Graduate School of Business. She studies markets and cultures via computational tools such as big data analysis, natural language processing, and digital experiments. Before her Ph.D., she received an M.A. in Computational Social Science from the University of Chicago, and a B.S. in Geographic Information Science from Wuhan University.",
+    personal_website: "https://ziwnchen.github.io/",
+    publications: [],
+    role: "PhD Student",
+    bioImg: ZiwenC
+  },
+  {
+    name: "Nicolás Torres-Echeverry",
+    email: "nte@uchicago.edu",
+    affiliation: "University of Chicago",
+    bio:
+      "Nicolas Torres-Echeverry is a Ph.D. candidate in the Sociology Department at the University of Chicago, a Neubauer Distinguished Doctoral Fellow, and a 2024-2025 Jennings Randolph Peace Scholar Fellow at USIP. His research and teaching interests intersect political sociology, war and peace, political organization, internet and society, sociology of culture, and urban sociology, with a regional focus on Latin America. His multi-method research examines the link between civil society and political organization in the Global South and their interaction with cultural representations in contemporary political transformations. He is particularly interested in bridging qualitative and computational methods through abductive research.",
+    personal_website: "https://voices.uchicago.edu/nte/",
+    publications: [
+      {
+        title:
+          "Social media, meet old politics: preservation and innovation in Colombian presidential elections, 2010–2018",
+        journal: "Theory and Society",
+        year: 2023,
+        doi: "https://doi.org/10.1007/s11186-022-09509-w",
+      },
+    ],
+    role: "PhD Student",
+    bioImg: NicolasT
+  },
+  {
+    name: "Rui Wang",
+    email: "rui_w@gwmail.gwu.edu",
+    affiliation: "GW School of Business",
+    bio:
+      "Rui (pronounced “ray”) Wang is a sixth-year Ph.D. student in the Strategic Management and Public Policy department at the GW School of Business. Her research broadly focuses on the role of emerging information and multimodal communication in advancing innovation and sustainability. She is currently working on projects related to climate risk disclosure and multimodal entrepreneurial storytelling on online platforms. Rui completed her graduate coursework at Nanjing University and earned a BA from Southeast University.",
+    personal_website: "www.wang-rui.com",
+    publications: [],
+    role: "PhD Student",
+    bioImg: RuiW
   },
 ];
 
@@ -1587,7 +1658,7 @@ const klabAlumni = [
     website: "https://cdeljunco.github.io/",
     publications: [],
     role: "Alumni",
-    bioImg: Person,
+    bioImg: CayD,
   },
   {
     name: "Haohan Shi",
@@ -1598,7 +1669,7 @@ const klabAlumni = [
     website: "https://hshi420.github.io/",
     publications: [],
     role: "Alumni",
-    bioImg: Person,
+    bioImg: HaohanS,
   },
 
   // {
