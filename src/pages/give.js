@@ -63,8 +63,8 @@ const Give = () => (
             </p>
           </Col>
           <Col xs={12} sm={4}>
-            <div className="give-div"><a href="https://giving.uchicago.edu/site/Donation2" target="_blank"><span>Give to</span><h3>Knowledge Lab</h3>
-            <small><strong>School or Division</strong>: Social Sciences<br /><strong>Specific Fund</strong>: Knowledge Lab</small></a></div>
+            <div className="give-div"><a href="https://giving.uchicago.edu/site/Donation2?idb=1156375306&1838.donation=form1&df_id=1838&mfc_pref=T&1838_donation=form1&set.Designee=2622" target="_blank"><span>Give to</span><h3>Knowledge Lab</h3>
+            </a></div>
             
           </Col>
         </Row>
