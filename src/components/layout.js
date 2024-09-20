@@ -2,7 +2,8 @@ import * as React from "react";
 import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Header from "./header";
 import "./layout.css";
 import "../components/gridder.css";
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
     paddingRight: "clamp(var(--space-5), var(--space-6), var(--space-6))",
     position: `relative`,
     zIndex: 1,
+    marginTop: `2rem`,
   };
 
   const location = useLocation();
@@ -71,12 +73,14 @@ const Layout = ({ children }) => {
                 <small>
                   1155 E 60th Street Room 211
                   <br />
-                  Chicago, IL 60637
+                  Chicago, IL 60637<br />
+                  
                 </small>
               </Col>
-              <Col xs={9} sm={9}>
+              <Col xs={9} sm={9} className="footer-deets">
                 {" "}
-                © {new Date().getFullYear()} &middot; Knowledge Lab
+                <p><a href="mailto:knowledgelab@uchicago.edu"><FontAwesomeIcon icon={faEnvelope}/> knowledgelab@uchicago.edu</a></p>
+                © {new Date().getFullYear()} | Knowledge Lab
               </Col>
             </Row>
           </footer>

@@ -39,11 +39,12 @@ const SecondPage = () => (
           <Col xs={12} sm={8}>
             <h1>Join Knowledge Lab</h1>
             <p>
-            There are many ways to be a part of Knowledge Lab. Current positions are advertised below, and we are always open to proposals for collaboration with students, researchers (or artificial intelligences) who share our intellectual vision. We consistently seek new collaborations with interested individuals working in industry, non-profits, universities, and government. Please <a href="https://form.jotform.com/242426215800043" target="_blank">get in touch if you want to join our team</a>!
+            There are many ways to be a part of Knowledge Lab. Current positions are advertised below, and we are always open to proposals for collaboration with students, researchers (or artificial intelligences) who share our intellectual vision. We consistently seek new collaborations with interested individuals working in industry, non-profits, universities, and government. Please <a href="https://form.jotform.com/242426215800043" target="_blank">get in touch if you want to join, visit, or connect with our team!</a>
             </p>
           </Col>
           <Col sm={4} >
             <div className="apply-now"><a href="https://form.jotform.com/241295631499062" target="_blank">Apply to Knowledge Lab</a></div>
+            <div className="join-now"><a href="https://form.jotform.com/242426215800043" target="_blank">Connect with KLab</a></div>
           </Col>
         </Row>
       </Container>
