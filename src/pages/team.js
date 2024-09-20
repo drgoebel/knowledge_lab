@@ -2265,16 +2265,7 @@ const Team = () => {
             <Col xs={12} sm={9}>
               <h1>Knowledge Lab Team</h1>
               <p>
-                Our multidisciplinary teams are at the center of everything we
-                do. Comprising experts from diverse fields such as data science,
-                social sciences, computational modeling, and artificial
-                intelligence, we collaborate to push the boundaries of research
-                and innovation. Working in partnership with universities,
-                industry leaders, and government organizations, we tackle some
-                of the most pressing challenges of our time. By blending
-                academic rigor with cutting-edge technology, our teams are
-                dedicated to generating impactful insights that drive meaningful
-                change across sectors.
+              Knowledge Lab brings together scholars from the social sciences, data science, artificial intelligence, and other fields to foster innovation and push the boundaries of research. Our team builds partnerships between universities, industry leaders, and government organizations to tackle some of the most pressing challenges of our time. By blending academic rigor and cutting-edge technology, our team generates novel insights that drive meaningful change across sectors.
               </p>
             </Col>
             <Col sm={3} className="d-none d-sm-block">

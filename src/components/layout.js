@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -24,46 +25,22 @@ const Layout = ({ children }) => {
       "linear-gradient(0deg, #34224D  0%, #34224D 32%,  #9F1FA1 100%)",
     paddingLeft: "clamp(var(--space-5),var(--space-6), var(--space-6))",
     paddingRight: "clamp(var(--space-5), var(--space-6), var(--space-6))",
-    // paddingBottom: "clamp(var(--space-5),var(--space-6), var(--space-6))",
     position: `relative`,
     zIndex: 1,
   };
 
+  const location = useLocation();
+  const isInitiativesPage = location.pathname === "/initiatives/";
+  
   return (
     <>
-          <div className={`grid-container`}
-      >
-          
-              <div className={`grid-div`}></div>
-              <div className={`grid-div`}></div>
-              <div className={`grid-div`}></div>
-              <div className={`grid-div `}></div>
-              <div className={`grid-div-last`}></div>
-           
-            </div>
-         
-      
-      {/* <Container class="grid-container">
-        <Row style={{ position: `relative` }}>
-          <Col xs={12}className={`grid-div-container`}>
-            <Col xs={3}>
-              <div className={`grid-div`}></div>
-            </Col>
-            <Col xs={3}>
-              <div className={`grid-div`}></div>
-            </Col>
-            <Col xs={3}>
-              <div className={`grid-div`}></div>
-            </Col>
-            <Col xs={3}>
-              <div className={`grid-div `}>
-                
-              </div>
-              <div className={`grid-div-last`}></div>
-            </Col>
-          </Col>
-        </Row>
-      </Container> */}
+      <div className={isInitiativesPage ? 'grid-container thirds' : 'grid-container'}>
+        <div className={`grid-div`}></div>
+        <div className={`grid-div`}></div>
+        <div className={`grid-div`}></div>
+        {!isInitiativesPage ? <div className={`grid-div`}></div>: null}
+        <div className={`grid-div-last`}></div>
+      </div>
 
       <Container fluid style={{ flexGrow: `1`, minHeight: `100vh` }}>
         <Header siteTitle={data.site.siteMetadata?.title || `Knowlege Lab`} />

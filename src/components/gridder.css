@@ -13,6 +13,12 @@
     transform: translateX(-50%);
     z-index: -2;
 }
+.grid-container.thirds {
+
+    grid-template-columns: repeat(3, 1fr);
+
+    
+}
 .grid-gradient {
     width: 100%;
     position: absolute;
@@ -30,19 +36,6 @@
     right: 0;
     bottom: 0;
     pointer-events: none;
-}
-.grid-container::before{
-    /* background: linear-gradient(to bottom, 
-    rgb(0, 0, 0) 0px, 
-    rgb(0, 0, 0) 4px, 
-    transparent 4px, 
-    transparent 8px, 
-    rgb(0, 0, 0) 8px, 
-    rgb(0, 0, 0) 12px, 
-    transparent 12px,
-    transparent 16px);
-    background-size: 2px 16px;
-    background-repeat: repeat-y; */
 }
 
 .grid-item::before {
@@ -63,7 +56,6 @@
     width: 100%;
 }
 .grid-item {
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,6 +79,8 @@
     z-index: -1;
     padding: 0 !important;
 }
+
+
 .grid-div-last{
     background: linear-gradient(3600deg, rgb(235, 288, 243), rgb(198, 188, 188) 51%,transparent 0,transparent);
     background-size: 1px 8px;

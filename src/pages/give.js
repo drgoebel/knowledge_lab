@@ -33,33 +33,7 @@ const Give = () => (
           <Col xs={12} sm={8}>
             <h1>Give to Knowledge Lab</h1>
             <p>
-              Knowledge Lab stands at the intersection of transformative
-              technology and pioneering research, driven to decode complex
-              social and biological phenomena. Our commitment to advancing
-              Artificial Intelligence (AI), particularly within Big Data,
-              machine learning, and crowd-sourcing, underscores our mission to
-              harness the vast potential of these tools for societal benefit.
-              Your support is crucial as we expand our capabilities in tackling
-              large-scale data analysis and develop innovative models that
-              inform policy, improve health outcomes, and accelerate scientific
-              discovery. By investing in our work, institutional and individual
-              donors play a pivotal role in propelling forward the frontiers of
-              knowledge and technology.
-            </p>
-
-            <p>
-              In an era where data is omnipresent and growing exponentially, the
-              role of sophisticated AI methodologies in making sense of this
-              data cannot be overstated. At Knowledge Lab, we leverage
-              cutting-edge AI research to refine and innovate crowd-sourcing
-              techniques and machine learning models that not only enhance our
-              understanding of data patterns but also foster collaborations
-              across diverse fields. Your donations will empower us to continue
-              developing robust analytical tools and solutions that address
-              critical challenges and lead to actionable insights. Join us in
-              shaping a future where data-driven research translates into
-              real-world applications, creating a profound impact on our global
-              community.
+            In an era of rapid social and technological change, it is essential that we understand the forces shaping our world and the new trajectories that we are charting. Donations to Knowledge Lab play a crucial role in fostering research that interprets the current state of global science and anticipates fruitful pathways toward new discovery. Your investment in Knowledge Lab helps bring about a future where data-driven research delivers tangible benefits to society at large, informing public policy and accelerating scientific progress.
             </p>
           </Col>
           <Col xs={12} sm={4}>

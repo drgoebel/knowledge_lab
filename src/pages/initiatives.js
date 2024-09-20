@@ -519,7 +519,7 @@ const Initiatives = () => {
           <Row>
             <Col xs={12} sm={8}>
               <h1>Initiatives at Knowledge Lab</h1>
-              <p>Knowledge Lab harnesses the power of artificial intelligence to unravel complex scientific and societal problems, bridging the gap between data-driven insights and real-world applications. This innovative group collaborates with interdisciplinary experts to develop AI tools and methodologies that advance our understanding of knowledge creation and dissemination.
+              <p>Knowledge Lab leverages advanced computational tools to unravel complex scientific and societal problems, bridging the gap between data-driven insights and real-world applications. The scope of our research is broad, ranging from historical social change to the latest technological developments, from global economic trajectories to local cultural practices, and from lone maverick scholars to massive scientific revolutions. The initiatives below capture some of our lab’s diverse intellectual output.
               </p>
             </Col>
             <Col xs={12} sm={4} className="d-sm-block">
@@ -534,8 +534,7 @@ const Initiatives = () => {
             {initiatives.map((initiative, index) => (
               <Col
                 xs={12}
-                sm={6}
-                md={3}
+                md={4}
                 key={index}
                 style={{ marginBottom: "30px" }}
               >

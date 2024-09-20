@@ -39,9 +39,7 @@ const SecondPage = () => (
           <Col xs={12} sm={8}>
             <h1>Join Knowledge Lab</h1>
             <p>
-              Become part of the research and innovation at Knowledge Lab. Apply
-              Now for New Postdoctoral Scholar Positions at the Knowledge Lab at
-              the University of Chicago
+            There are many ways to be a part of Knowledge Lab. Current positions are advertised below, and we are always open to proposals for collaboration with students, researchers (or artificial intelligences) who share our intellectual vision. We consistently seek new collaborations with interested individuals working in industry, non-profits, universities, and government. Please <a href="https://form.jotform.com/242426215800043" target="_blank">get in touch if you want to join our team</a>!
             </p>
           </Col>
           <Col sm={4} >

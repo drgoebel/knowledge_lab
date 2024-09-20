@@ -53,14 +53,7 @@ const Events = () => (
           <Col xs={12} sm={9}>
             <h1>Workshops and Conferences</h1>
             <p>
-              Knowledge Lab participates in the vibrant A.I. community which is
-              dedicated to pushing the boundaries of computational social
-              science. Our aim is foster collaboration, ignite innovation, and
-              facilitate the exchange of groundbreaking ideas that propel our
-              understanding of informational ecosystems. Our involvement is
-              crucial in helping advance the Knowledge Lab mission to understand
-              complex patterns and build effective strategies for managing
-              knowledge.
+            Knowledge Lab participates in a vibrant intellectual community at the intersection of artificial intelligence and social science. Our team hosts everything from small convenings to major conferences to kindle collaboration and foster intellectual exchange across disciplinary lines. Knowledge Lab scholars also present original research at conferences in computer science, sociology, computational linguistics, and psychology at venues around the world.
             </p>
           </Col>
           <Col sm={3} className="d-none d-sm-block">

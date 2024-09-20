@@ -125,12 +125,7 @@ const News = () => (
           <Col xs={12} sm={9}>
             <h1>Knowledge Lab News</h1>
             <p>
-              Knowledge Lab harnesses the power of artificial intelligence to
-              unravel complex scientific and societal problems, bridging the gap
-              between data-driven insights and real-world applications. This
-              innovative group collaborates with interdisciplinary experts to
-              develop AI tools and methodologies that advance our understanding
-              of knowledge creation and dissemination.
+            Our research has been cited in a wide variety of news outlets. On topics ranging from the future of science to the fate of humanity, the work at Knowledge Lab generates insight and gives interpretation to timely questions of public concern. You can learn more below about the ways that Knowledge Lab’s research is making the news.
             </p>
           </Col>
           <Col sm={3} className="d-none d-sm-block">
