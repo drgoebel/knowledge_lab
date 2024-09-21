@@ -9,6 +9,10 @@ import Nav from "../components/nav";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faDesktop } from "@fortawesome/free-solid-svg-icons";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import "../components/gridder.css";
 import Trianges from "../images/triangles.svg";
 import James from "../images/james-evans.png";
@@ -94,6 +98,9 @@ const klabLeadership = [
     bioLink: "this",
     bioImg: James,
     size: "full",
+    email: "jevans@uchicago.edu",
+    website: "https://sociology.uchicago.edu/directory/James-A-Evans",
+    cv: "https://docs.google.com/document/d/1heUzBmiw0z7xE5RJZwJBy-knVNfG3h8TKQxLieatN_4/edit?usp=sharing",
   },
   {
     bioImg: Person,
@@ -532,7 +539,7 @@ const klabAffiliated = [
     affiliation: "Johns Hopkins University",
     bio:
       "Pedro (Pete) Aceves is an Assistant Professor of Management and Organization at the Carey Business School at Johns Hopkins University. His research bridges multiple disciplinary domains, including organization theory, linguistics, cognitive science, and information theory. By linking these domains of scientific work with computational and natural language processing tools, he aims to bring a dynamic and interactional lens to the study of organizational and economic life. He is studying these themes in contexts ranging from small groups such as mountaineering expeditions and innovation teams to large-scale social systems such as online platforms, markets, and scientific disciplines.",
-    personal_website: "www.peteaceves.com",
+    website: "https://www.peteaceves.com",
     publications: [
       {
         title:
@@ -561,7 +568,7 @@ const klabAffiliated = [
     affiliation: "Tsinghua University",
     bio:
       "Fengli Xu is a tenure-track assistant professor at the Department of Electronic Engineering in Tsinghua University. His research explores the interdisciplinary realms of Artificial Intelligence, Data Science, Social Computing and Urban Science. His latest research focuses on creating autonomous Large Language Model agents, capable of learning from the interactions with environment, simulating realistic human behavior, and revealing the collective dynamics of societies. Prior to his current position, he was a postdoctoral scholar at the Knowledge Lab.",
-    personal_website: "https://fenglixu.github.io/",
+    website: "https://fenglixu.github.io/",
     publications: [
       {
         title: "Flat teams drive scientific innovation",
@@ -610,7 +617,7 @@ const klabAffiliated = [
     affiliation: "University of Chicago",
     bio:
       "Aaron Schein is an assistant professor of statistics and data science at the University of Chicago. His research develops methodology in Bayesian statistics, machine learning, and causal inference for data-intensive applications in the social and natural sciences.",
-    personal_website: "www.aaronschein.com",
+    website: "www.aaronschein.com",
     publications: [],
     position: "Affilicate Faculty",
     bioImg: AaronS,
@@ -621,7 +628,7 @@ const klabAffiliated = [
     affiliation: "Santa Fe Institute",
     bio:
       "David Wolpert is a professor at the Santa Fe Institute, external professor at the Complexity Science Hub in Vienna, adjunct professor at ASU, and research associate at the ICTP in Trieste. He is the author of three books (and co-editor of several more), over 200 papers, has three patents, is an associate editor at over half a dozen journals, has received numerous awards, and is a fellow of the IEEE. Before his current position, he was the Ulam Scholar at the Center for Nonlinear Studies, and before that he was at NASA Ames Research Center and a consulting professor at Stanford University, where he formed the Collective Intelligence group. He has worked at IBM and a data mining startup and is external faculty at numerous international institutions. His degrees in Physics are from Princeton and the University of California.",
-    personal_website: "",
+    website: "",
     publications: [],
     position: "Affilicate Faculty",
     bioImg: DavidW,
@@ -632,7 +639,7 @@ const klabAffiliated = [
     affiliation: "University of Illinois",
     bio:
       "Lav R. Varshney was born in Syracuse, New York on October 28, 1982. He received the B. S. degree with honors in electrical and computer engineering (magna cum laude) from Cornell University, Ithaca, New York in 2004. He received the S. M., E. E., and Ph. D. degrees in electrical engineering and computer science from the Massachusetts Institute of Technology (MIT), Cambridge in 2006, 2008, and 2010, respectively, where his theses received the E. A. Guillemin thesis award and the J.-A. Kong award honorable mention. Since 2014, he has been with the Department of Electrical and Computer Engineering, University of Illinois Urbana-Champaign, where he is currently an associate professor. He has further affiliations in Computer Science, Neuroscience, Industrial and Enterprise Systems Engineering, Digital Agriculture, and Personalized Nutrition, as well as the Discovery Partners Institute of the University of Illinois System. Dr. Varshney holds a joint appointment at Brookhaven National Laboratory, Upton, NY, where he is a Computational Scientist in the Computational Science Initiative (CSI).",
-    personal_website: "http://www.varshney.csl.illinois.edu/",
+    website: "http://www.varshney.csl.illinois.edu/",
     publications: [],
     position: "Affilicate Faculty",
     bioImg: LavV,
@@ -643,7 +650,7 @@ const klabAffiliated = [
     affiliation: "University of Chicago",
     bio:
       "Chenhao Tan is an assistant professor of computer science at the University of Chicago. He obtained his PhD degree in the Department of Computer Science at Cornell University and bachelor’s degrees in computer science and in economics from Tsinghua University. Prior to joining UChicago, he spent a year at University of Washington as a postdoc and three years at CU Boulder as an assistant professor. His research interests include human-centered machine learning, natural language processing, and computational social science. He has published papers primarily at ACL and WWW, and also at KDD, WSDM, ICWSM, etc. His work has been covered by many news media outlets, such as the New York Times and the Washington Post. He also won an NSF CAREER award, an NSF CRII award, a Salesforce research award, an Amazon research award, a Facebook fellowship, and a Yahoo! Key Scientific Challenges award.",
-    personal_website: "https://chenhaot.com/",
+    website: "https://chenhaot.com/",
     publications: [],
     position: "Affilicate Faculty",
     bioImg: ChenhaoT,
@@ -653,7 +660,7 @@ const klabAffiliated = [
     email: "",
     affiliation: "Depaul University",
     bio: "",
-    personal_website: "",
+    website: "",
     publications: [],
     position: "Affilicate Faculty",
     bioImg: JamshidS,
@@ -663,7 +670,7 @@ const klabAffiliated = [
     email: "rui.pan@kellogg.northwestern.edu",
     affiliation: "Northwestern University",
     bio: "tbd",
-    personal_website: "tbd",
+    website: "tbd",
     publications: [],
     position: "Affilicate Faculty",
     bioImg: RuiP,
@@ -674,7 +681,7 @@ const klabAffiliated = [
     affiliation: "University of Chicago",
     bio:
       "Joshua Conrad Jackson is a Neubauer Family Assistant Professor at the Booth School of Business, and a co-PI of the Chicago Culture Lab. His research focuses on how culture and psychology co-evolve over time. He is especially interested in how social psychology adapted to the evolution of large and diverse human societies throughout human history, and how new trends involving technology and globalization may change our social psychologies in the future. He received his PhD from the University of North Carolina, Chapel Hill, in 2021, and worked at the Kellogg School of Management for two years as a post-doctoral fellow before joining Booth.",
-    personal_website: "https://www.joshuaconradjackson.com/",
+    website: "https://www.joshuaconradjackson.com/",
     publications: [
       {
         title:
@@ -728,7 +735,7 @@ const klabAffiliated = [
     affiliation: "University of Chicago",
     bio:
       "Dr. Ian Foster is Senior Scientist and Distinguished Fellow, and also director of the Data Science and Learning Division, at Argonne National Laboratory, and the Arthur Holly Compton Distinguished Service Professor of Computer Science at the University of Chicago. Ian received a BSc degree from the University of Canterbury, New Zealand, and a PhD from Imperial College, United Kingdom, both in computer science. His research deals with distributed, parallel, and data-intensive computing technologies, and innovative applications of those technologies to scientific problems in such domains as materials science, climate change, and biomedicine. Foster is a fellow of the AAAS, ACM, BCS, and IEEE, and an Office of Science Distinguished Scientists Fellow.",
-    personal_website: "",
+    website: "",
     publications: [],
     position: "Affilicate Faculty",
     bioImg: IanF,
@@ -739,7 +746,7 @@ const klabAffiliated = [
     affiliation: "Allen Institute for AI",
     bio:
       "Downey's research is focused on natural language processing, machine learning, and artificial intelligence, with a particular interest in the automatic construction of useful knowledge bases from Web text. One goal is to develop techniques and prototypes that extend the state of the art in Web search. Another goal is to theoretically investigate and establish a formal basis for techniques that can learn from unstructured text alone, without hand-labeled data. More generally, Downey works on ways to utilize human input more effectively in machine learning. Two directions in this effort involve selecting human input carefully (active learning) or utilizing it in concert with unlabeled data (semi-supervised learning).",
-    personal_website: "",
+    website: "",
     publications: [
       {
         title: "Penguins Don't Fly",
@@ -853,7 +860,7 @@ const klabAffiliated = [
     affiliation: "University of Chicago",
     bio:
       "Ishanu Chattopadhyay’s research focuses on the theory of unsupervised machine learning and the interplay of stochastic processes and formal language theory in exploring the mathematical underpinnings of the question of inferring causality from data. His most visible contributions include the algorithms for data smashing, inverse Gillespie inference, and nonparametric nonlinear and zero-knowledge implementations of Granger causal analysis that have crucial implications for biomedical informatics, data-enabled discovery in biomedicine, and personalized precision health care. His current work focuses on analyzing massive clinical databases of disparate variables to distill patterns indicative of hitherto unknown etiologies, dependencies, and relationships, potentially addressing the daunting computational challenge of scale and making way for ab initio and de novo modeling in an age of ubiquitous data. Chattopadhyay received an MS and PhD in mechanical engineering, as well as an MA in mathematics, from the Pennsylvania State University. He completed his postdoctoral training and served as a research associate in the Department of Mechanical Engineering at Penn State. He also held a postdoctoral fellowship simultaneously at the Department of Computer Science and the Sibley School of Mechanical and Aerospace Engineering at Cornell University.",
-    personal_website: "",
+    website: "",
     publications: [],
     position: "Affilicate Faculty",
     bioImg: IshanuC,
@@ -864,7 +871,7 @@ const klabAffiliated = [
     affiliation: "MPG-Berlin",
     bio:
       "Levin Brinkmann is a predoctoral fellow at the Center for Human and Machines at the Max Planck Institute for Human Development. In 2014 he received a Master's in Physics from the University of Goettingen. He joined the center after working for several years as a data scientist in the fashion and advertising industry, where he developed inspirational algorithms for creative workers. Levin's current interests are in the influence of algorithms on human-machine hybrid cultural evolution.",
-    personal_website:
+    website:
       "https://www.mpib-berlin.mpg.de/publication-search/248657?person=persons273302",
     publications: [],
     position: "Affilicate Faculty",
@@ -876,7 +883,7 @@ const klabAffiliated = [
     affiliation: "University of Chicago",
     bio:
       "Ben Blaiszik is a researcher in the Data Science and Learning Division within the CELS Directorate. His work includes leveraging machine learning, large language models, high performance computing and big data techniques to meet the unique challenges faced by scientists; leading cross-disciplinary materials design, data infrastructure, and development efforts; and executing complex experimental and computational design planning. His work has culminated in 5 issued patents, and ~100 peer reviewed publications/book chapters/conference papers.",
-    personal_website: "",
+    website: "",
     publications: [],
     position: "Affilicate Faculty",
     bioImg: BenB,
@@ -887,7 +894,7 @@ const klabAffiliated = [
     affiliation: "Indiana University",
     bio:
       "Yong-Yeol Ahn earned his Ph.D. in physics from KAIST in 2008. He was a postdoctoral researcher at the Center for Complex Network Research of Northeastern University and a visiting researcher at the Center for Cancer Systems Biology at Dana-Farber Cancer Institute from 2008-2011. He is interested in various complex systems such as biological and social networks.",
-    personal_website: "",
+    website: "",
     publications: [],
     position: "Affilicate Faculty",
     bioImg: YongY,
@@ -1212,7 +1219,7 @@ const klabResearchPost = [
     affiliation: "University of Chicago",
     bio:
       "Nadav Kunievsky is an economist specializing in quantifying and measuring information environments. His research focuses on developing methods to assess the knowledge and information accessible to agents in different social groups and quantifying the impact of these differences on labor market disparities. His work is characterized by a blend of theoretical and empirical economics, with a strong emphasis on interpretability. Before beginning his postdoctoral research at the Knowledge Lab, Nadav earned a PhD in Economics from the University of Chicago and both a BA and MA from Tel Aviv University.",
-    personal_website: "https://nkunievsky.github.io/",
+    website: "https://nkunievsky.github.io/",
     publications: [],
     role: "Postdoctoral Scholar",
     bioImg: NadvK,
@@ -1223,7 +1230,7 @@ const klabResearchPost = [
     affiliation: "University of Chicago",
     bio:
       "Jeff Lockhart is a James S. McDonnell Postdoctoral Fellow at the University of Chicago, in the Department of Sociology and the Knowledge Lab. He holds a PhD in Sociology from the University of Michigan as well as masters degrees in both gender studies and computer science. His research examines how identities such as sex, gender, sexuality, and race are constructed and contested in scientific, technological, and political arenas. Lockhart uses a mix of computational social science and qualitative archival methods in his research.",
-    personal_website: "https://voices.uchicago.edu/jlockhart",
+    website: "https://voices.uchicago.edu/jlockhart",
     publications: [
       {
         title:
@@ -1573,7 +1580,7 @@ const klabStudents = [
     affiliation: "University of Chicago",
     bio:
       "Jake Burchard is a PhD candidate in the department of sociology at the University of Chicago. He is an economic and political sociologist studying the causes and consequences of inequality in post-industrial economies. He also has a strong interest in quantitative research methods, including computational, network, and causal inference methods. His work has been published in Social Networks and the Journal of Mathematical Sociology.",
-    personal_website: "https://www.jakeburchard.com",
+    website: "https://www.jakeburchard.com",
     publications: [
       {
         title: "Structural Cohesion and Embeddedness in Two-Mode Networks",
@@ -1600,7 +1607,7 @@ const klabStudents = [
     affiliation: "Stanford University",
     bio:
       "Ziwen Chen is a Ph.D. student in Organizational Behavior at Stanford Graduate School of Business. She studies markets and cultures via computational tools such as big data analysis, natural language processing, and digital experiments. Before her Ph.D., she received an M.A. in Computational Social Science from the University of Chicago, and a B.S. in Geographic Information Science from Wuhan University.",
-    personal_website: "https://ziwnchen.github.io/",
+    website: "https://ziwnchen.github.io/",
     publications: [],
     role: "PhD Student",
     bioImg: ZiwenC
@@ -1611,7 +1618,7 @@ const klabStudents = [
     affiliation: "University of Chicago",
     bio:
       "Nicolas Torres-Echeverry is a Ph.D. candidate in the Sociology Department at the University of Chicago, a Neubauer Distinguished Doctoral Fellow, and a 2024-2025 Jennings Randolph Peace Scholar Fellow at USIP. His research and teaching interests intersect political sociology, war and peace, political organization, internet and society, sociology of culture, and urban sociology, with a regional focus on Latin America. His multi-method research examines the link between civil society and political organization in the Global South and their interaction with cultural representations in contemporary political transformations. He is particularly interested in bridging qualitative and computational methods through abductive research.",
-    personal_website: "https://voices.uchicago.edu/nte/",
+    website: "https://voices.uchicago.edu/nte/",
     publications: [
       {
         title:
@@ -1630,7 +1637,7 @@ const klabStudents = [
     affiliation: "GW School of Business",
     bio:
       "Rui (pronounced “ray”) Wang is a sixth-year Ph.D. student in the Strategic Management and Public Policy department at the GW School of Business. Her research broadly focuses on the role of emerging information and multimodal communication in advancing innovation and sustainability. She is currently working on projects related to climate risk disclosure and multimodal entrepreneurial storytelling on online platforms. Rui completed her graduate coursework at Nanjing University and earned a BA from Southeast University.",
-    personal_website: "www.wang-rui.com",
+    website: "www.wang-rui.com",
     publications: [],
     role: "PhD Student",
     bioImg: RuiW
@@ -1924,18 +1931,28 @@ function CenteredModal(props) {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter"></Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">
+        <div className="title-img">
+         {props.bioImg && <img src={props.bioImg} />}
+        {props.name && <h4>{props.name}</h4>}
+        </div>
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>{props.name}</h4>
-        <p>{props.bio}</p>
+        
+        
+        {props.bio && <p>{props.bio}</p>}
+        {props.website && <p><FontAwesomeIcon icon={faDesktop}/> <a href={props.website} target="_blank" rel="noopener noreferrer"> Website <FontAwesomeIcon icon={faChevronRight}/></a></p>}
+        {props.email && <p><FontAwesomeIcon icon={faEnvelope}/><a href={`mailto:${props.email}`} target="_blank" rel="noopener noreferrer"> {props.email} <FontAwesomeIcon icon={faChevronRight}/></a></p>}
+        {props.cv && <p><FontAwesomeIcon icon={faFile}/> <a href={props.cv} target="_blank" rel="noopener noreferrer">CV <FontAwesomeIcon icon={faChevronRight}/></a></p>}
       </Modal.Body>
-      <Modal.Footer>
+      {/* <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
+      </Modal.Footer> */}
     </Modal>
   );
 }
+
 
 const TabsComponent = () => {
   // State to track the active tab
@@ -1983,6 +2000,10 @@ const TabsComponent = () => {
                     onHide={() => setOpenModalIndex(null)}
                     bio={team.bio}
                     name={team.name}
+                    email={team.email}
+                    website={team.website}
+                    cv={team.cv}
+                    bioImg={team.bioImg}
                   />
                 </Col>
               </>
@@ -2056,6 +2077,10 @@ const TabsComponent = () => {
                           onHide={() => setOpenModalIndex(null)}
                           bio={team.bio}
                           name={team.name}
+                          email={team.email}
+                          website={team.website}
+                          cv={team.cv}
+                          bioImg={team.bioImg}
                         />
                       </Col>
                     </Row>
@@ -2106,6 +2131,10 @@ const TabsComponent = () => {
                               onHide={() => setOpenModalIndex(null)}
                               bio={team.bio}
                               name={team.name}
+                              email={team.email}
+                              website={team.website}
+                              cv={team.cv}
+                              bioImg={team.bioImg}
                             />
                           </Col>
                         </Row>
@@ -2142,6 +2171,10 @@ const TabsComponent = () => {
                           onHide={() => setOpenModalIndex(null)}
                           bio={team.bio}
                           name={team.name}
+                          email={team.email}
+                          website={team.website}
+                          cv={team.cv}
+                          bioImg={team.bioImg}
                         />
                       </Col>
                     </Row>
@@ -2172,6 +2205,10 @@ const TabsComponent = () => {
                               onHide={() => setOpenModalIndex(null)}
                               bio={team.bio}
                               name={team.name}
+                              email={team.email}
+                              website={team.website}
+                              cv={team.cv}
+                              bioImg={team.bioImg}
                             />
                           </Col>
                         </Row>
@@ -2212,6 +2249,10 @@ const TabsComponent = () => {
                           onHide={() => setOpenModalIndex(null)}
                           bio={team.bio}
                           name={team.name}
+                          email={team.email}
+                          website={team.website}
+                          cv={team.cv}
+                          bioImg={team.bioImg}
                         />
                       </Col>
                     </Row>
@@ -2237,6 +2278,10 @@ const TabsComponent = () => {
                               onHide={() => setOpenModalIndex(null)}
                               bio={team.bio}
                               name={team.name}
+                              email={team.email}
+                              website={team.website}
+                              cv={team.cv}
+                              bioImg={team.bioImg}
                             />
                           </Col>
                         </Row>
