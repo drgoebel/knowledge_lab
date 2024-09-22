@@ -1361,7 +1361,8 @@ nav ul li:hover {
     align-self: center;
     color: white;
     text-decoration: none;
-    font-size: clamp(16px, 2cqw, 32px);
+    font-size: clamp(16px, 1.75cqw, 32px);
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
   }
 }
 
