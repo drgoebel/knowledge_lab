@@ -666,16 +666,6 @@ const klabAffiliated = [
     bioImg: JamshidS,
   },
   {
-    name: "Rui Pan",
-    email: "rui.pan@kellogg.northwestern.edu",
-    affiliation: "Northwestern University",
-    bio: "tbd",
-    website: "tbd",
-    publications: [],
-    position: "Affilicate Faculty",
-    bioImg: RuiP,
-  },
-  {
     name: "Joshua Jackson",
     email: "joshua.jackson@chicagobooth.edu",
     affiliation: "University of Chicago",
