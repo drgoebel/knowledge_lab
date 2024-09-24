@@ -1033,8 +1033,8 @@ font-size: clamp(11px, 1cqw, 16px)
   margin-top: var(--space-1);
 }
 #publications .single-button {
-  width: clamp(70px, 8cqw, 140px);
-  height: clamp(70px, 8cqw, 140px);
+  width: clamp(70px, 8cqw, 110px);
+  height: clamp(70px, 8cqw, 110px);
   border-radius: 50%;
   background-color: var(--color-quadrary);
   display: flex;
@@ -1056,6 +1056,15 @@ font-size: clamp(11px, 1cqw, 16px)
   line-height: var(--line-height-dense);
   color: white;
 }
+/* Sticky filters */
+#publications .sticky-filters {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px; /* Adjust as needed */
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
 #publications #pub-filters .justify-content-center.row:nth-of-type(1) .single-button:nth-of-type(1) {
   background-color: var(--color-klab-blue);
 }

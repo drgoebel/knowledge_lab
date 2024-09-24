@@ -129,41 +129,6 @@ const Pubby = () => {
 
       <Container fluid id="publications">
         <Container>
-          {/* <Row id="feature-pubs">
-            {features.map((pub) => {
-              return (
-                <>
-                  <Col xs={6} sm={3}>
-                    <Col xs={12} className="d-sm-block">
-                      <a href={pub.link} target="_blank">
-                        <img src={pub.image} />
-                      </a>
-                    </Col>
-                    <Col xs={12}>
-                      <h3>
-                        <a href={pub.link} target="_blank">
-                          {pub.title}
-                        </a>
-                      </h3>
-                      <p>
-                       {pub["author(s)"]}
-                      </p>
-                      <p>
-                       
-                        {pub.publication}
-                      </p>
-                      <p>
-                        <a href={pub.link} target="_blank">
-                          Read Publication
-                          <FontAwesomeIcon icon={faCaretRight} />
-                        </a>
-                      </p>
-                    </Col>
-                  </Col>
-                </>
-              );
-            })}
-          </Row> */}
 
           <Row>
             <h3>Publications</h3>
@@ -172,17 +137,16 @@ const Pubby = () => {
           {/* Buttons for group selection */}
 
           <Row id="pub-filters" className="justify-content-center">
-            <Col
-              xs={12}
-              sm={{ span: 10, offset: 1 }}
-              md={{ span: 8, offset: 2 }}
-            >
+            
+            <Col xs={12} sm={6} className="sticky-filters">
+
+              <Col className="sticky-filters">
               {/* First Row: 3 Buttons */}
               <Row className="justify-content-center">
                 {Object.keys(groupedEntries)
                   .slice(0, 4)
                   .map((groupKey) => (
-                    <Col xs={4} className="single-button" key={groupKey}>
+                    <Col xs={3} className="single-button" key={groupKey}>
                       <Button
                         variant={
                           selectedGroup === groupKey
@@ -222,7 +186,7 @@ const Pubby = () => {
               {/* Third Row: 4 Buttons */}
               <Row className="justify-content-center">
                 {Object.keys(groupedEntries)
-                  .slice(9, 14)
+                  .slice(10, 15)
                   .map((groupKey) => (
                     <Col xs={3} className="single-button" key={groupKey}>
                       <Button
@@ -240,44 +204,10 @@ const Pubby = () => {
                   ))}
               </Row>
 
-              {/* Fourth Row: 3 Buttons */}
-              {/* <Row className="justify-content-center">
-                {Object.keys(groupedEntries)
-                  .slice(14, 19)
-                  .map((groupKey) => (
-                    <Col xs={4} className="single-button" key={groupKey}>
-                      <Button
-                        variant={
-                          selectedGroup === groupKey
-                            ? "primary"
-                            : "outline-primary"
-                        }
-                        onClick={() => handleButtonClick(groupKey)}
-                        style={{ marginRight: "10px", marginBottom: "10px" }}
-                      >
-                        {groupKey}
-                      </Button>
-                    </Col>
-                  ))}
-              </Row> */}
-
-              {/* Show All button */}
-              {/* <Row className="justify-content-center">
-                <Col xs={4} className="single-button">
-                  <Button
-                    key="all"
-                    variant={
-                      selectedGroup === null ? "primary" : "outline-primary"
-                    }
-                    onClick={() => handleButtonClick("all")}
-                    style={{ marginRight: "10px", marginBottom: "10px" }}
-                  >
-                    Show All
-                  </Button>
-                </Col>
-              </Row> */}
-            </Col>
-          </Row>
+             
+              </Col>
+          </Col>
+          <Col xs={12} sm={6}>
 
           {/* Displaying the filtered entries */}
           {Object.keys(groupedEntries)
@@ -286,7 +216,7 @@ const Pubby = () => {
               <Row id="pub-group" key={groupKey}>
                 <h3>{groupKey}</h3>
                 {groupedEntries[groupKey].map((entry, index) => (
-                  <Col xs={12} sm={9} key={index}>
+                  <Col xs={12} key={index}>
                     <Row>
                       {/* <Col xs={2} sm={12}>
                       <a
@@ -298,7 +228,7 @@ const Pubby = () => {
                           className="document-icon"
                         /></a>
                       </Col> */}
-                      <Col xs={9} sm={9}>
+                      <Col xs={12} sm={12}>
                         <h5>
                           <a
                             href={entry.link}
@@ -322,9 +252,15 @@ const Pubby = () => {
                       </Col>
                     </Row>
                   </Col>
+                  
                 ))}
+                
+            
               </Row>
+              
             ))}
+            </Col></Row>
+            
         </Container>
       </Container>
     </Layout>
