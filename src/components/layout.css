@@ -1299,6 +1299,9 @@ font-size: clamp(11px, 1cqw, 16px)
 #give-header p {
   font-size: x-large
 }
+#give p {
+  font-size: 1rem;
+}
 
 #give-header a {
   text-decoration: none !important;
@@ -1321,7 +1324,10 @@ font-size: clamp(11px, 1cqw, 16px)
  color: white;
  padding: 0;
  margin: var(--space-1);
- font-size: clamp(16px, 3cqw, 68px);
+ font-size: clamp(20px, 3cqw, 68px);
+}
+.give-div span {
+  font-size: clamp(16px, 2cqw, 38px)
 }
 
 nav ul li:hover {

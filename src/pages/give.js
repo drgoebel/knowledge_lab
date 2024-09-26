@@ -44,6 +44,10 @@ const Give = () => (
         </Row>
       </Container>
     </Container>
+    <Container fluid id="give">
+      <Container><Row><Col><p>Integral to the Knowledge Lab are student fellowships and awards, faculty research, and special initiatives, all of which can be boosted and sustained through philanthropy. Learn about opportunities to make a substantial Knowledge Lab impact by contacting Yasmin Omer, Associate Dean and Director of Development for the Division of the Social Sciences at <a href="mailto:yasminomer@uchicago.edu">yasminomer@uchicago.edu</a>.</p></Col></Row></Container>
+
+    </Container>
     {/* <Container fluid id="give">
       <Container>
         <Row>
