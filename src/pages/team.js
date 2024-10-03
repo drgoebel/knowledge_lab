@@ -1549,7 +1549,7 @@ const klabStudents = [
     institution: "University of Chicago",
     bio:
       "Honglin Bao (he/him) is a doctoral student in the Knowledge Lab and Data Science Institute at the University of Chicago. His research focuses on uncovering the driving forces behind science and innovation. In his research he uses and develops computational tools, including network analysis, machine learning, and simulation modeling.",
-    website: "www.hbao.info",
+    website: "https://www.hbao.info",
     title: "PhD Student",
     bioImg: HonglinB,
   },
