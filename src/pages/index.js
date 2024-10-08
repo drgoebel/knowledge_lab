@@ -60,7 +60,7 @@ const IndexPage = () => {
       
         <Container>
           <Row>
-            <StaticImage
+           <h1> <StaticImage
               src="../images/klab-logo.svg"
               loading="eager"
               quality={100}
@@ -68,6 +68,7 @@ const IndexPage = () => {
               alt="Knowledge Lab"
               placeholder="blurred"
               layout="fullWidth"
+              aria-hidden="true"
               style={{
                 marginBottom: `0`,
                 marginTop: `var(--space-5)`,
@@ -80,7 +81,7 @@ const IndexPage = () => {
                 zIndex: "100",
                 padding: "0",
               }}
-            />
+            /><span class="visually-hidden">Knowledge Lab</span></h1>
           </Row>
         </Container>
        

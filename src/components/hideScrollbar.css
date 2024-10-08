@@ -68,7 +68,7 @@
   color: var(--color-text);
   text-decoration: none;
   font-weight: 900;
-  font-size: clamp(20px, 2cqw, 32px);
+  font-size: clamp(20px, 1.5cqw, 32px);
   line-height: 1;
   display: inline-block;
 }

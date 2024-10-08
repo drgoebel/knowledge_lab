@@ -1982,7 +1982,7 @@ const TabsComponent = () => {
                     variant="primary"
                     onClick={() => setOpenModalIndex(`L` + index)}
                   >
-                    Read Bio <FontAwesomeIcon icon={faCaretRight} />
+                    {team.name} Bio <FontAwesomeIcon icon={faCaretRight} />
                   </Button>
 
                   <CenteredModal
@@ -2059,7 +2059,7 @@ const TabsComponent = () => {
                           variant="primary"
                           onClick={() => setOpenModalIndex(`A` + index)}
                         >
-                          Read Bio <FontAwesomeIcon icon={faCaretRight} />
+                         {team.name} Bio <FontAwesomeIcon icon={faCaretRight} />
                         </Button>
 
                         <CenteredModal
@@ -2094,7 +2094,7 @@ const TabsComponent = () => {
                         <h3>{team.name}</h3>
                         <p>{team.title}</p>
                         <Link to={team.url}>
-                          <button>Read Bio</button>
+                          <button>{team.name} Bio</button>
                         </Link>
                       </Col>
                     </Row>
@@ -2113,7 +2113,7 @@ const TabsComponent = () => {
                               variant="primary"
                               onClick={() => setOpenModalIndex(`R` + index)}
                             >
-                              Read Bio <FontAwesomeIcon icon={faCaretRight} />
+                              {team.name} Bio <FontAwesomeIcon icon={faCaretRight} />
                             </Button>
 
                             <CenteredModal
@@ -2153,7 +2153,7 @@ const TabsComponent = () => {
                           variant="primary"
                           onClick={() => setOpenModalIndex(`A` + index)}
                         >
-                          Read Bio <FontAwesomeIcon icon={faCaretRight} />
+                          {team.name} Bio <FontAwesomeIcon icon={faCaretRight} />
                         </Button>
 
                         <CenteredModal
@@ -2187,7 +2187,7 @@ const TabsComponent = () => {
                               variant="primary"
                               onClick={() => setOpenModalIndex(`A` + index)}
                             >
-                              Read Bio <FontAwesomeIcon icon={faCaretRight} />
+                              {team.name} Bio <FontAwesomeIcon icon={faCaretRight} />
                             </Button>
 
                             <CenteredModal
@@ -2231,7 +2231,7 @@ const TabsComponent = () => {
                           variant="primary"
                           onClick={() => setOpenModalIndex(`S` + index)}
                         >
-                          Read Bio <FontAwesomeIcon icon={faCaretRight} />
+                          {team.name} Bio <FontAwesomeIcon icon={faCaretRight} />
                         </Button>
 
                         <CenteredModal
@@ -2260,7 +2260,7 @@ const TabsComponent = () => {
                               variant="primary"
                               onClick={() => setOpenModalIndex(`S` + index)}
                             >
-                              Read Bio <FontAwesomeIcon icon={faCaretRight} />
+                              {team.name} Bio <FontAwesomeIcon icon={faCaretRight} />
                             </Button>
 
                             <CenteredModal

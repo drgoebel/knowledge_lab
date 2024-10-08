@@ -117,7 +117,8 @@ const Pubby = () => {
         <div className="background"></div>
         <Container fluid id="scroller-pubs" style={{backgroundColor: "#efefef"}}>
           <Container>
-            <Row><h2>Featured Publications</h2></Row>
+            <Row><h1>Publications</h1><h2>Featured Publications</h2>
+            </Row>
           <Row>
             <Col>
               <ScrollPubs />
@@ -131,7 +132,7 @@ const Pubby = () => {
         <Container>
 
           <Row>
-            <h3>Publications</h3>
+            <h2>Additional Publications</h2>
           </Row>
 
           {/* Buttons for group selection */}
@@ -229,7 +230,7 @@ const Pubby = () => {
                         /></a>
                       </Col> */}
                       <Col xs={12} sm={12}>
-                        <h5>
+                        <h4>
                           <a
                             href={entry.link}
                             target="_blank"
@@ -237,7 +238,7 @@ const Pubby = () => {
                           >
                             <strong>{entry.title}</strong>
                           </a>
-                        </h5>
+                        </h4>
                         <small>{entry.authors}</small>
                         <br />
                         <a
