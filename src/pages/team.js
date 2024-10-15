@@ -86,6 +86,7 @@ import HonglinB from "../images/honglinb.webp"
 import CarinaK from "../images/karinak.webp"
 import CayD from "../images/cayd.webp"
 import HaohanS from "../images/haohans.webp"
+import Kamran from "../images/kamran.webp"
 
 const klabLeadership = [
   {
@@ -110,6 +111,7 @@ const klabLeadership = [
     bio:
       "Austin Kozlowski is the Assistant Director and Senior Research Associate at the Knowledge Lab. His work combines machine learning with theories of culture to investigate how ideas come together to form systems of meaning, both in human and in algorithms. He has published research on the evolution of political polarization, the roles of status and politics in the social sciences, and the representation of cultural categories in neural network models of language. In his current research, Kozlowski is developing techniques to explore the “world models” contained within large language models and multimodal AI systems. He leads the AI Interpretability Group at Knowledge Lab.",
     size: "half",
+    email: "akozlo@uchicago.edu",
   },
   {
     name: "Alexis Puzon",
@@ -120,6 +122,18 @@ const klabLeadership = [
     bioLink: "this",
     bioImg: Alexis,
     size: "full",
+    email: "apuzon@uchicago.edu",
+  },
+  {
+    name: "Kamran Mobarhan",
+    title: "Director of Business Management and Strategic Initiatives",
+    bio:
+      "Dr. Kamran Mobarhan is a business leader with over 25 years of experience in marketing, product management, and business development across high-tech industries. Currently, he serves as the Director of Business Management and Strategic Initiatives at the University of Chicago, overseeing large NSF-funded research programs in Quantum Technologies, Bioengineering, and AI. Kamran's expertise lies in guiding technological innovations from concept to successful commercial products, with a focus on client management, customer experience, and building strategic alliances between universities and corporations. Kamran has extensive experience working in Silicon Valley, where he helped companies commercialize innovations and optimize manufacturing operations in the semiconductor, telecommunication, laser, and electronics industries. He has also prepared over 350 patent applications, assisted IP law firms, and written numerous grant proposals, business plans, and technical documents. He holds BS, MS, and PhD degrees in electrical engineering from Northwestern University, specializing in microelectronics, nanotechnology, and quantum devices.",
+    url: "page-2",
+    bioLink: "this",
+    bioImg: Kamran,
+    size: "full",
+    email: "kmobarhan@uchicago.edu",
   },
 ];
 
