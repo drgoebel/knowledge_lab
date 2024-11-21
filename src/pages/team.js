@@ -87,6 +87,7 @@ import CarinaK from "../images/karinak.webp"
 import CayD from "../images/cayd.webp"
 import HaohanS from "../images/haohans.webp"
 import Kamran from "../images/kamran.webp"
+import JLuo from "../images/jluo.webp"
 
 const klabLeadership = [
   {
@@ -1027,6 +1028,17 @@ const klabResearchPost = [
     ],
     role: "Affiliate Researcher",
     bioImg: Billshi,
+  },
+  {
+    name: "Jiajie (Jerry) Luo",
+    email: "luojerry8@gmail.com",
+    affiliation: "University of Chicago",
+    bio:
+      "I'm a mathematician interested in socially motivated applications and problems. Before coming to UChicago, I was a graduate student in the mathematics department at UCLA, where my advisor was Professor Mason Porter. My research can be summarized as a blend of topological data analysis and complex social systems. I'm particularly interested in applying topological and geometric tools to understand the structure of social systems.",
+    website: "https://jerryluo8.github.io",
+    publications: [],
+    role: "Affiliate Researcher",
+    bioImg: JLuo,
   },
   {
     name: "Haizi Yu",
