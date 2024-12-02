@@ -1031,7 +1031,7 @@ const klabResearchPost = [
   },
   {
     name: "Jiajie (Jerry) Luo",
-    email: "luojerry8@gmail.com",
+    email: "jerryluo8@uchicago.edu",
     affiliation: "University of Chicago",
     bio:
       "I'm a mathematician interested in socially motivated applications and problems. Before coming to UChicago, I was a graduate student in the mathematics department at UCLA, where my advisor was Professor Mason Porter. My research can be summarized as a blend of topological data analysis and complex social systems. I'm particularly interested in applying topological and geometric tools to understand the structure of social systems.",
