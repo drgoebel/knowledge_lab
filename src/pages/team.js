@@ -1647,17 +1647,7 @@ const klabStudents = [
     role: "PhD Student",
     bioImg: NicolasT
   },
-  {
-    name: "Rui Wang",
-    email: "rui_w@gwmail.gwu.edu",
-    affiliation: "GW School of Business",
-    bio:
-      "Rui (pronounced “ray”) Wang is a sixth-year Ph.D. student in the Strategic Management and Public Policy department at the GW School of Business. Her research broadly focuses on the role of emerging information and multimodal communication in advancing innovation and sustainability. She is currently working on projects related to climate risk disclosure and multimodal entrepreneurial storytelling on online platforms. Rui completed her graduate coursework at Nanjing University and earned a BA from Southeast University.",
-    website: "www.wang-rui.com",
-    publications: [],
-    role: "PhD Student",
-    bioImg: RuiW
-  },
+  
 ];
 
 const klabAlumni = [
