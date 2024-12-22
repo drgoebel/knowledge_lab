@@ -7,6 +7,18 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+
+if (process.env.STAGING) {
+  require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}.staging`,
+  });
+} else {
+  require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+  });
+}
+
 module.exports = {
   siteMetadata: {
     title: `Knowledge Lab at The University of Chicago`,
@@ -16,6 +28,14 @@ module.exports = {
     siteUrl: `https://knowledgelab.org`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        useNameForId: false,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

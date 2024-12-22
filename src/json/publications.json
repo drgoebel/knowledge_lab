@@ -1,4 +1,20 @@
 [
+  const keyToNameMap = {
+    G: "Global S&T Observatory",
+    P: "AI-Driven S&T Policy Forge",
+    C: "Computational Creativity",
+    D: "Digital Minds",
+    A: "Complementary AI",
+    S: "AI Societies",
+    M: "Modeling Cultural Worlds",
+    I: "Innovation Theory",
+    E: "Existential Epistemology",
+    H: "Human Language",
+    L: "Deep Learning",
+    SS: "Computational Social Science",
+    PP: "Political Polarization",
+  };
+
       {
         "title": "Limited Diffusion of Scientific Knowledge Forecasts Collapse",
         "authors": "Kang, Donghyun, Robert S. Danziger, Jalees Rehman, James A. Evans",

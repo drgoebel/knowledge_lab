@@ -224,7 +224,7 @@ p *:last-child {
 }
 
 li>p {
-  margin-bottom: calc(var(--space-4) / 2);
+  margin-bottom: calc(var(--space-1));
 }
 
 p {
@@ -744,7 +744,7 @@ font-size: clamp(11px, 1cqw, 16px)
   color: var(--color-text);
 }
 
-#careers .container .sidebar>div>ol {
+#careers .container .sidebar>div> p >ol {
   font-size: var(--font-sm);
   margin-left: 0;
   padding-left: var(--font-sm);
@@ -839,7 +839,6 @@ font-size: clamp(11px, 1cqw, 16px)
 #team .team-tabber {
   display: flex;
   flex-direction: row;
-  margin: 0;
   padding: 0;
   margin-bottom: 10cqh;
 }
@@ -1040,8 +1039,8 @@ font-size: clamp(11px, 1cqw, 16px)
   margin-top: var(--space-1);
 }
 #publications .single-button {
-  width: clamp(70px, 8cqw, 110px);
-  height: clamp(70px, 8cqw, 110px);
+  width: clamp(70px, 8cqw, 120px);
+  height: clamp(70px, 8cqw, 120px);
   border-radius: 50%;
   background-color: var(--color-quadrary);
   display: flex;
@@ -1062,6 +1061,7 @@ font-size: clamp(11px, 1cqw, 16px)
   font-size: clamp(9px, 1cqw, 14px);
   line-height: var(--line-height-dense);
   color: white;
+  letter-spacing: -1px;
 }
 /* Sticky filters */
 #publications .sticky-filters {
@@ -1071,6 +1071,13 @@ font-size: clamp(11px, 1cqw, 16px)
   z-index: 1;
   padding-top: clamp(24px, 2cqw, 48px);
   padding-bottom: clamp(24px, 2cqw, 48px);
+}
+
+#publications .sticky-filters.col-sm-6 > .sticky-filters {
+
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+
 }
 
 #publications #pub-filters .justify-content-center.row:nth-of-type(1) .single-button:nth-of-type(1) {
@@ -1322,7 +1329,7 @@ font-size: clamp(11px, 1cqw, 16px)
 .give-div a h3 {
   color: var(--color-klab-yellow);
 }
-.give-div a span, .give-div a h3 {
+.give-div a p, .give-div a h3 {
   text-decoration: none;
 }
  .give-div a small {
@@ -1330,14 +1337,15 @@ font-size: clamp(11px, 1cqw, 16px)
  color:white;
  font-size: clamp(11px, 1cqw, 20px);
 }
-.give-div h3, .give-div span {
+.give-div h3, .give-div p {
  color: white;
  padding: 0;
  margin: var(--space-1);
  font-size: clamp(20px, 3cqw, 68px);
 }
-.give-div span {
-  font-size: clamp(16px, 2cqw, 38px)
+.give-div p{
+  font-size: clamp(16px, 2cqw, 38px);
+  color: white;
 }
 
 nav ul li:hover {
@@ -1364,9 +1372,16 @@ nav ul li:hover {
 
 @media only screen and (min-width: 767px) {
 
+  #publications .sticky-filters.col-sm-6 > .sticky-filters {
+
+    background: initial;
+    box-shadow: initial;
+  
+  }
   #partners .row .col-3 > img {
-    width: 60%;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
   }
   #news .news-item img {
     margin-top: var(--space-7);
@@ -1389,12 +1404,11 @@ nav ul li:hover {
     font-size: clamp(16px, 1.75cqw, 32px);
     text-shadow: 1px 1px 1px rgba(0,0,0,.5);
   }
+
+  #partners .row .col-3 > img {
+    width: fit-content;
+      height: fit-content;
+      align-self: center;
+  }
 }
 
-@media only screen and (min-width: 576px) {
-
-#partners .row .col-3 > img {
-  width: 70%;
-  height: auto;
-}
-}
