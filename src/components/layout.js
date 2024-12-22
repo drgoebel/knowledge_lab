@@ -5,10 +5,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Header from "./header";
+import Nav from "./nav";
 import "./layout.css";
 import "../components/gridder.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import UCShield from "../images/ucshield.svg";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,6 +22,9 @@ const Layout = ({ children }) => {
       }
     }
   `);
+
+
+
 
   const footerStyle = {
     background:
@@ -33,6 +38,7 @@ const Layout = ({ children }) => {
 
   const location = useLocation();
   const isInitiativesPage = location.pathname === "/initiatives/";
+  const isHomepage = location.pathname === "/";
   
   return (
     <>
@@ -46,7 +52,7 @@ const Layout = ({ children }) => {
 
       <Container fluid style={{ flexGrow: `1`, minHeight: `100vh` }}>
         <Header siteTitle={data.site.siteMetadata?.title || `Knowlege Lab`} />
-
+        {!isHomepage && <Nav />}
         <Container fluid>{children}</Container>
       </Container>
 
@@ -79,7 +85,7 @@ const Layout = ({ children }) => {
               </Col>
               <Col xs={9} sm={9} className="footer-deets">
                 {" "}
-                <p><a href="mailto:knowledgelab@uchicago.edu"><FontAwesomeIcon icon={faEnvelope}/> knowledgelab@uchicago.edu</a></p>
+                <p><a href="mailto:knowledgelab@uchicago.edu"><i class="fa-solid fa-envelope"></i> {" "}knowledgelab@uchicago.edu</a></p>
                 © {new Date().getFullYear()} | Knowledge Lab
               </Col>
             </Row>

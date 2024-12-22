@@ -18,7 +18,12 @@ const NotFoundPage = () => {
     script1.src = "https://lab.hakim.se/blob/03/js/blob.js";
     // "../components/blob.js";
 
+    if (typeof window !== 'undefined') {
+        // Browser-specific code here
+      
+
     document.body.appendChild(script1);
+    }
   }, []);
   return (
   <Layout>
