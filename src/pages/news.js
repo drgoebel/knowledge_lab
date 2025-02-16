@@ -118,7 +118,6 @@ const newsItems = [
 const News = ({ data }) => {
   const pageData = data.contentfulKLabPage;
 
-
   return (
     <Layout>
       <Container fluid id="news-header">
@@ -172,7 +171,7 @@ const News = ({ data }) => {
                     !featuredItem
                 )
                 .map((content) => (
-                  <><Col xs={12} sm={3} className="h-100 news-item">
+                  <><Col xs={12} sm={3} className="news-item">
                     <a href={content.url} target="_blank">
                       <img src={content.image.url} alt={content.title} />
                       {/* <h3>{content.title}</h3> */}

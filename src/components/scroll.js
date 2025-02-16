@@ -195,13 +195,13 @@ function Card({
       <div
         onClick={() => onClick(itemId)}
         style={{
-          width: "30cqw",
+          width: "24cqw",
           height: "100%",
           backgroundColor: "#efefef",
           padding: "10px",
           cursor: "pointer",
           paddingTop: "2cqw",
-          marginBottom: "3cqw",
+          marginBottom: "0",
         }}
         tabIndex={0}
       >
