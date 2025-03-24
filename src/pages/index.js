@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { graphql, Link } from "gatsby";
-import Scroll from "../components/scroll";
+import ScrollHome from "../components/scrollHome";
 import { StaticImage } from "gatsby-plugin-image";
 import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../components/layout";
-import ScrollHome from "../components/scrollHome";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import { MARKS, INLINES, BLOCKS } from "@contentful/rich-text-types";
-import ScrollTest from "../components/scrollTest";
 import Seo from "../components/seo";
 import "../components/index.module.css";
 import "../components/oval.css";
@@ -15,13 +13,12 @@ import "../components/gridder.css";
 import Rings from "../images/rings.svg";
 import AniNav from "../components/animatedNav";
 
-
 const IndexPage = ({ data }) => {
   const { nodes: pages } = data.allContentfulKLabPage;
   const { nodes: imageContent } = data.allContentfulBlockImage;
-
+  const pageData = data.contentfulKLabPage;
   const currentPage = pages.find((conts) => conts.title === "Home");
-
+  console.log(data);
 
   // *********************************** IF THE LINKS DO NOT LOAD ON THE FIRST CLICK REVISE THIS SECTION ***********************************
   function getEntryWithId(pageId) {
@@ -180,63 +177,26 @@ const IndexPage = ({ data }) => {
           </Row>
         </Container>
         <Container fluid style={{ backgroundColor: "#efefef" }}>
-          <Container style={{ width: "100%", maxWidth: "1400px" }}>
+          <Container style={{ width: "100%", maxWidth: "1400px" }} id="scroller-home">
             <Row>
-              <ScrollHome />
+              <Col xs={12}><h2>In the News</h2></Col>
+              {(() => {
+                const filteredContent = currentPage.kLabContents.filter(
+                  ({ __typename, typeNewsEvent, homePageFeature }) =>
+                    __typename === "ContentfulNewsOrEvent" &&
+                    typeNewsEvent &&
+                    homePageFeature
+                );
+
+                return <ScrollHome contentList={filteredContent} />;
+              })()}
             </Row>
+            <Row><Col xs={12} className="allnews"><p><a href="/news">All KLab News</a></p></Col></Row>
           </Container>
         </Container>
 
-        <Container id="numbers">
-          <Row>
-            {currentPage.kLabContents.map((klabCont) => {
-              const isBigNumber =
-                klabCont.__typename === "ContentfulBigNumber" && klabCont.title;
-              const description = klabCont.numberDescription;
+        
 
-              return isBigNumber || description ? (
-                <Col xs={6} md={3} key={klabCont.id || klabCont.title}>
-                  {isBigNumber && <h2>{klabCont.title}</h2>}
-                  {description && <p>{renderRichText(description, options)}</p>}
-                </Col>
-              ) : null;
-            })}
-          </Row>
-        </Container>
-        {/* <Container id="numbers">
-          <Row>
-            <Col xs={6} md={3}>
-              <h2>$20M</h2>
-              <p>
-                Knowledge Lab was recently awarded <strong>$20 million</strong>{" "}
-                by NSF Assessing and Predicting Technology Outcomes (APTO)
-              </p>
-            </Col>
-            <Col xs={6} md={3}>
-              <h2>100+</h2>
-              <p>
-                Knowledge Lab has published over{" "}
-                <strong>100 peer-reviewed articles</strong> in top journals
-                across disciplines
-              </p>
-            </Col>
-            <Col xs={6} md={3}>
-              <h2>10,000+</h2>
-              <p>
-                Knowledge Lab publications have been{" "}
-                <strong>cited more than 10,000</strong> times in academic
-                literature.
-              </p>
-            </Col>
-            <Col xs={6} md={3}>
-              <h2>50+</h2>
-              <p>
-                More than <strong>50 research affiliates</strong> contribute to
-                the projects conducted at Knowledge Lab.
-              </p>
-            </Col>
-          </Row>
-        </Container> */}
         <Container fluid id="research" style={researchStyle}>
           <Container>
             <Row>
@@ -257,45 +217,23 @@ const IndexPage = ({ data }) => {
           </Container>
         </Container>
 
-        {/* <Container fluid id={`research`} style={researchStyle}>
-          <Container id="research">
-            <Row>
-              <Col xs={12} md={9}>
-                <p>
-                  <strong>Knowledge</strong> underlies society’s potential to
-                  adapt, innovate, and flourish. Artificial intelligence and the
-                  explosion of digital information offer unprecedented
-                  opportunities to study, model, and transform the nature of
-                  human and post-human understanding, from its emergence in
-                  discovery and invention to its realization in innovation and
-                  growth.
-                </p>
-                <p>
-                  <strong>Knowledge Lab</strong> develops novel artificial
-                  intelligence, big data, and crowdsourced approaches to:
-                  <ul>
-                    <li>
-                      Discover, harvest, and represent knowledge from humans,
-                      artifacts, and machines
-                    </li>
-                    <li>
-                      Understand how knowledge is constructed, deployed, and
-                      destroyed
-                    </li>
-                    <li>
-                      Recombine and generate new knowledge for new problems
-                    </li>
-                    <li>
-                      Improve knowledge creation, management and
-                      innovation…everywhere.
-                    </li>
-                  </ul>
-                </p>
-              </Col>
-              <Col></Col>
-            </Row>
-          </Container>
-        </Container> */}
+        <Container id="numbers">
+          <Row>
+            {currentPage.kLabContents.map((klabCont) => {
+              const isBigNumber =
+                klabCont.__typename === "ContentfulBigNumber" && klabCont.title;
+              const description = klabCont.numberDescription;
+
+              return isBigNumber || description ? (
+                <Col xs={6} md={3} key={klabCont.id || klabCont.title}>
+                  {isBigNumber && <h2>{klabCont.title}</h2>}
+                  {description && <p>{renderRichText(description, options)}</p>}
+                </Col>
+              ) : null;
+            })}
+          </Row>
+        </Container>
+
         <Container fluid id="partners">
           <Container>
             <>
@@ -317,18 +255,16 @@ const IndexPage = ({ data }) => {
                         </Col>
                       </Row>
                       <Row>
-                      {sponsors.map((klabs) => {
-                        const isLogo = klabs.sponsorLogo;
-                        return (
-                          <Col xs={3} key={klabs.id || klabs.title}>
-                            
+                        {sponsors.map((klabs) => {
+                          const isLogo = klabs.sponsorLogo;
+                          return (
+                            <Col xs={3} key={klabs.id || klabs.title}>
                               {isLogo && (
                                 <img src={isLogo.url} alt={klabs.title} />
                               )}
                             </Col>
-                          
-                        );
-                      })}
+                          );
+                        })}
                       </Row>
                     </div>
                   );
@@ -339,94 +275,7 @@ const IndexPage = ({ data }) => {
           </Container>
         </Container>
 
-        {/* <Container fluid id="partners">
-          <Container>
-            <Row>
-              <Col xs={12}>
-                <h2>Supported By</h2>
-              </Col>
-            </Row>
-            <Row className="justify-content-center">
-              <Col xs={6} md={3}>
-                <img src={UsScience} alt="US Science Foundation" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Nih} alt="National Insitute of Health" />
-              </Col>
-
-              <Col xs={6} md={3}>
-                <img
-                  src={Afosr}
-                  alt="Air Force Office of Scientific Research"
-                />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Darpa} alt="DARPA" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Novo} alt="Novo Nordisk Foundation" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Templeton} alt="John Templeton Foundation" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Sloan} alt="Alfred P. Sloan Foundation" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Microsoft} alt="Microsoft" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Meta} alt="Meta" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={OpenPhil} alt="Open Philanthropy" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Mellon} alt="Mellon Foundation" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Minerva} alt="Minerva Research Institute" />
-              </Col>
-            </Row>
-            <Row>
-              <Col xs={12}>
-                <h2>Partners</h2>
-              </Col>
-            </Row>
-            <Row className="justify-content-center">
-              <Col xs={6} md={3}>
-                <img src={Dsi} alt="Data Science Institute" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Cfaai} alt="Center for Applied AI" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={SantaFe} alt="Santa Fe Institute" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Complexity} alt="Complexity" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img
-                  src={Computational}
-                  alt="UChicago Computational Social Science"
-                />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Allen} alt="Allen AI Institute" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img src={Planck} alt="Max Planck Institute" />
-              </Col>
-              <Col xs={6} md={3}>
-                <img
-                  src={Sicss}
-                  alt="Summer Institute of Computational Social Science"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </Container> */}
+       
       </Layout>
     </>
   );
@@ -475,6 +324,20 @@ export const query = graphql`
             title
             numberDescription {
               raw
+            }
+          }
+          ... on ContentfulNewsOrEvent {
+            id
+            title
+            url
+            typeNewsEvent
+            featuredItem
+            homePageFeature
+            description {
+              raw
+            }
+            image {
+              url
             }
           }
         }

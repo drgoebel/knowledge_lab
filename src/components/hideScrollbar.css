@@ -52,7 +52,7 @@
 /* scroller home */
 #scroller-home h2 {
   font-size: clamp(20px, 1.85cqw, 32px);
-  color: var(--color-secondary);
+  color: var(--color-text);
   padding-top: clamp(18px, 1.25cqw, 32px);
 }
 
@@ -68,7 +68,7 @@
 }
 
 #scroller-home .card h3 a{
-  color: var(--color-text);
+  color: var(--color-secondary);
   text-decoration: none;
   font-weight: 900;
   font-size: clamp(20px, 1.5cqw, 32px);
@@ -114,3 +114,33 @@
   margin-top: clamp(16px, 2cqw, 32px) !important;
   line-height: 1;
 }
+#scroller-home #scroller .card h2{
+  margin-top: 0 !important;
+  line-height: 1;
+}
+#scroller-home #scroller .card h2 a{
+  padding-top: 0;
+  font-size: clamp(20px, 1.5cqw, 32px);
+  color: var(--color-secondary);
+}
+#scroller-home #scroller .card {
+    height: 100%;
+    background-color: #efefef;
+    cursor: pointer;
+    margin-bottom: 0;
+  
+}
+#scroller-home #scroller .svg-inline--fa {
+  height: clamp(20px, 2.2cqw, 32px);
+}
+
+#scroller-home #scroller [type=button]:not(:disabled), 
+#scroller-home #scroller [type=reset]:not(:disabled),
+#scroller-home #scroller [type=submit]:not(:disabled),
+#scroller-home #scroller button:not(:disabled),
+#scroller-home #scroller button:disabled {
+  height: 100%;
+  background-color: initial;
+}
+
+

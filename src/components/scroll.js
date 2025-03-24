@@ -3,10 +3,7 @@ import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+import {faChevronLeft,faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import "../components/hideScrollbar.css";
 import BigTeams from "../images/bigteams.webp";
 import AreWeDoomed from "../images/arewedoomed.webp";
@@ -97,6 +94,8 @@ const newsFeatures = [
 
 function Scroll({ contentList }) {
 
+  console.log(contentList)
+
   const [selected, setSelected] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [modalContent, setModalContent] = useState(null);
@@ -127,7 +126,7 @@ function Scroll({ contentList }) {
 
   return (
     <>
-      <div id="scroller" className="container" style={{ position: "relative" }}>
+      <div id="scroller" className={`container `} style={{ position: "relative" }}>
         {initialized && (
           <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
             
