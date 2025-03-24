@@ -1464,7 +1464,7 @@ nav ul li:hover {
   padding-left: var(--space-3);
   padding-right: var(--space-3);
   text-decoration: none;
-  border-radius: 13px;
+  border-radius: 25px;
   background-color: pink;
   transition: .3s all;
 }
