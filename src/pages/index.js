@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { graphql, Link } from "gatsby";
 import ScrollHome from "../components/scrollHome";
+import VerticalScrollMenu from "../components/scrollInitatives";
 import { StaticImage } from "gatsby-plugin-image";
 import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../components/layout";
@@ -18,7 +19,7 @@ const IndexPage = ({ data }) => {
   const { nodes: imageContent } = data.allContentfulBlockImage;
   const pageData = data.contentfulKLabPage;
   const currentPage = pages.find((conts) => conts.title === "Home");
-  console.log(data);
+  // console.log(data);
 
   // *********************************** IF THE LINKS DO NOT LOAD ON THE FIRST CLICK REVISE THIS SECTION ***********************************
   function getEntryWithId(pageId) {
@@ -71,7 +72,8 @@ const IndexPage = ({ data }) => {
   }
 
   const researchStyle = {
-    backgroundImage: `url(${Rings}), linear-gradient(-22deg, #B9529F  -10%, #B9529F 32%,  #3953A4 100%)`,
+    //backgroundImage: `url(${Rings}), linear-gradient(-22deg, #B9529F  -10%, #B9529F 32%,  #3953A4 100%)`,
+    backgroundImage: ` linear-gradient(-22deg, #B9529F  -10%, #B9529F 32%,  #3953A4 100%)`,
     backgroundSize: "initial", // Adjust this as needed to control the size of the SVG
     backgroundPosition: "120% 40%",
     backgroundRepeat: "no-repeat", // Prevent the SVG from repeating
@@ -177,9 +179,14 @@ const IndexPage = ({ data }) => {
           </Row>
         </Container>
         <Container fluid style={{ backgroundColor: "#efefef" }}>
-          <Container style={{ width: "100%", maxWidth: "1400px" }} id="scroller-home">
+          <Container
+            style={{ width: "100%", maxWidth: "1400px" }}
+            id="scroller-home"
+          >
             <Row>
-              <Col xs={12}><h2>In the News</h2></Col>
+              <Col xs={12}>
+                <h2>In the News</h2>
+              </Col>
               {(() => {
                 const filteredContent = currentPage.kLabContents.filter(
                   ({ __typename, typeNewsEvent, homePageFeature }) =>
@@ -191,11 +198,15 @@ const IndexPage = ({ data }) => {
                 return <ScrollHome contentList={filteredContent} />;
               })()}
             </Row>
-            <Row><Col xs={12} className="allnews"><p><a href="/news">All KLab News</a></p></Col></Row>
+            <Row>
+              <Col xs={12} className="allnews">
+                <p>
+                  <a href="/news">All KLab News</a>
+                </p>
+              </Col>
+            </Row>
           </Container>
         </Container>
-
-        
 
         <Container fluid id="research" style={researchStyle}>
           <Container>
@@ -207,10 +218,26 @@ const IndexPage = ({ data }) => {
                 const body = klabCont.body;
 
                 return isKlContent || body ? (
-                  <Col xs={9} key={klabCont.id || klabCont.title}>
-                    {/* {isKlContent && <h2>{klabCont.title}</h2>} */}
-                    {body && <p>{renderRichText(body, options)}</p>}
-                  </Col>
+                  <>
+                    <Col xs={12} md={6} key={klabCont.id || klabCont.title}>
+                      {/* {isKlContent && <h2>{klabCont.title}</h2>} */}
+                      {body && <p>{renderRichText(body, options)}</p>}
+                    </Col>
+                    <Col xs={12} md={6}>
+                      {(() => {
+                        const filteredInitiatives = currentPage.kLabContents.filter(
+                          (klabCont) =>
+                            klabCont.__typename ===
+                              "ContentfulContentInitiative" &&
+                            klabCont.homePageFeature === true
+                        );
+
+                        return filteredInitiatives.length > 0 ? (
+                          <VerticalScrollMenu data={filteredInitiatives} />
+                        ) : null;
+                      })()}
+                    </Col>
+                  </>
                 ) : null;
               })}
             </Row>
@@ -274,8 +301,6 @@ const IndexPage = ({ data }) => {
             </>
           </Container>
         </Container>
-
-       
       </Layout>
     </>
   );
@@ -339,6 +364,20 @@ export const query = graphql`
             image {
               url
             }
+          }
+
+          ... on ContentfulContentInitiative {
+            __typename
+            homePageFeature
+            image {
+              file {
+                url
+              }
+            }
+            tagline {
+              tagline
+            }
+            title
           }
         }
       }

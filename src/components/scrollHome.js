@@ -94,7 +94,7 @@ const newsFeatures = [
 
 function ScrollHome({ contentList }) {
 
-  console.log(contentList)
+  // console.log(contentList)
 
   const [selected, setSelected] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);

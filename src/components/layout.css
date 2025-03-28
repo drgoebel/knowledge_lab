@@ -377,19 +377,26 @@ button {
 }
 
 #research p {
-  font-size: clamp(16px, 2cqw, 24px);
+  font-size: clamp(16px, 1.75cqw, 20px);
+  line-height: 1.6;
   max-width: inherit;
+
 }
 
 #research p strong {
   font-weight: 900;
   font-size: clamp(24px, 3cqw, 42px);
 }
+#research p strong:nth-of-type(2){
+  display: inline-block;
+  margin-top: clamp(24px, 3cqw, 42px);
+}
 
 #research ul li {
   line-height: 1.2;
   margin-top: clamp(12px, 1cqw, 30px);
 }
+
 
 /* PARTNERS SECTION */
 
@@ -647,7 +654,7 @@ button {
 #careers-header .apply-now {
   width: 60%;
   border-radius: 50%;
-  background-image: linear-gradient(-24deg, var(--color-klab-blue) 30%, var(--color-klab-sky) 70%);
+  background-image: linear-gradient(-20deg, var(--color-klab-blue) 45%, var(--color-klab-sky) 70%);
   position: relative;
   padding-top: 60%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);

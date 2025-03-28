@@ -10,6 +10,7 @@ import Trianges from "../images/triangles.svg";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import ReactMarkdown from "react-markdown";
 
+
 const sampleCareers = [
   {
     title: "Outreach Director and Senior Project Manager",
