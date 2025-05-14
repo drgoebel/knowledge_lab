@@ -10,7 +10,7 @@ import "../components/gridder.css";
 import Person from "../images/person.jpg";
 
 function CenteredModal(props) {
-  console.log(props);
+  
   return (
     <Modal
       {...props}

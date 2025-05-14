@@ -57,13 +57,11 @@ const Publications = ({ data }) => {
               <Col>
                 {(() => {
                   const filteredContent = pageData.kLabContents.filter(
-                    
                     ({ __typename, featuredItem }) =>
-                     
                       __typename === "ContentfulPublicationItem" && featuredItem
                   );
 
-                  return (<ScrollPubs contentList={filteredContent} />)
+                  return <ScrollPubs contentList={filteredContent} />;
                 })()}
               </Col>
             </Row>
@@ -145,7 +143,13 @@ const Publications = ({ data }) => {
                 {groupedPublications[selectedCategory]?.map((item) => (
                   <Col key={item.id} xs={12} className="publication-item">
                     <Row>
-                      <Col xs={12}>
+                      {/* <Col xs={2}><img src="https://placehold.co/130x160/png" /></Col> */}
+                      {item.image?.file?.url && (
+                        <Col xs={2}>
+                          <img src={item.image.file.url} />
+                        </Col>
+                      )}
+                      <Col xs={10}>
                         <h4>{item.title}</h4>
                         <p>{item.authors}</p>
                         <a
@@ -210,9 +214,11 @@ export const query = graphql`
           title
           publication
           url
-
           image {
             url
+            file {
+              url
+            }
           }
         }
       }
