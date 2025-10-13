@@ -50,7 +50,7 @@ const Join = ({ data }) => {
                   </Col>
 
                   <Col xs={12} sm={4}>
-                    <div className="give-div">
+                    <div className="join-div">
                       <div className="apply-now">
                         <a
                           href="https://form.jotform.com/241295631499062"
