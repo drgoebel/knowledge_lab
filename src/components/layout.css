@@ -1416,7 +1416,7 @@ button {
 }
 
 .give-div:hover {
-  background-color: var(--color-quadrary)
+  /* background-color: var(--color-quadrary) */
 }
 
 .give-div a h3 {
