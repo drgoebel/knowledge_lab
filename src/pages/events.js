@@ -16,6 +16,7 @@ import ic2s2 from "../images/ic2s2.webp";
 const Events = ({ data }) => {
   const pageData = data.contentfulKLabPage;
   console.log(pageData);
+
   return (
     <Layout>
       <Container fluid id="workshops-header">
@@ -54,11 +55,19 @@ const Events = ({ data }) => {
             .map((content) => (
               <>
                 <Row className="h-100 news-item">
-                  <Col xs={6} sm={3}>
-                    <a href={content.url} target="_blank">
-                      <img src={content.image.url} alt={content.title} />
-                    </a>
-                  </Col>
+                
+                    <Col xs={6} sm={3}>
+                      {content?.image?.url && (
+                      <a
+                        href={content.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={content.image.url} alt={content.title} />
+                      </a>
+                       )}
+                    </Col>
+                 
                   <Col xs={6} sm={9}>
                     <h3>{content.title}</h3>
                     <p>{renderRichText(content.description)}</p>
