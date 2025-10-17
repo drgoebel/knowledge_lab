@@ -51,22 +51,22 @@ const Join = ({ data }) => {
 
                   <Col xs={12} sm={4}>
                     <div className="join-div">
-                      <div className="apply-now">
+                      <div className="join-now">
                         <a
-                          href="https://form.jotform.com/241295631499062"
+                          href="https://lists.uchicago.edu/web/info/knowledgelab"
                           target="_blank"
                         >
-                          Apply to Knowledge Lab
+                          Join Our Email List
                         </a>
                       </div>
-                      <div className="join-now">
+                      {/* <div className="join-now">
                         <a
                           href="https://form.jotform.com/242426215800043"
                           target="_blank"
                         >
                           Connect with KLab
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </Col>
                 </>
