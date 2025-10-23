@@ -14,8 +14,8 @@
   #scroller [type=button]:not(:disabled), #scroller [type=reset]:not(:disabled),
   #scroller [type=submit]:not(:disabled),#scroller button:not(:disabled) {
     cursor: pointer;
-    width: 3cqw;
-    height: 3cqw;
+    width: auto;
+    height: auto;
     border-radius: 10px !important;
     background-color: var(--color-gray);
 }
@@ -24,8 +24,8 @@
 #scroller [type=submit]:disabled,
 #scroller button:disabled {
   cursor: pointer;
-  width: 3cqw;
-  height: 3cqw;
+  width: auto;
+  height: auto;
   border-radius: 10px !important;
   background-color: var(--color-gray);
 }

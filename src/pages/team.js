@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -10,6 +11,7 @@ import "../components/gridder.css";
 import Person from "../images/person.jpg";
 
 function CenteredModal(props) {
+  const bioImage = props.bioImg ? getImage(props.bioImg) : null;
   
   return (
     <Modal
@@ -21,7 +23,11 @@ function CenteredModal(props) {
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
           <div className="title-img">
-            {props.bioImg && <img src={props.bioImg} alt={props.name} />}
+            {bioImage ? (
+              <GatsbyImage image={bioImage} alt={props.name} />
+            ) : (
+              <img src={Person} alt={props.name} />
+            )}
             {props.name && <h4>{props.name}</h4>}
           </div>
         </Modal.Title>
@@ -30,33 +36,32 @@ function CenteredModal(props) {
         {props.bio && <p>{props.bio}</p>}
         {props.website && (
           <p>
-            <i class="fa-solid fa-desktop"></i>{" "}
+            <i className="fa-solid fa-desktop"></i>{" "}
             <a href={props.website} target="_blank" rel="noopener noreferrer">
               {" "}
-              Website <i class="fa-solid fa-chevron-right"></i>
+              Website <i className="fa-solid fa-chevron-right"></i>
             </a>
           </p>
         )}
 
         {props.email && (
           <p>
-            <i class="fa-solid fa-envelope"></i>
-            <a
-              href={`mailto:${props.email}`}
+            <i className="fa-solid fa-envelope"></i>
+            <a  href={`mailto:${props.email}`}
               target="_blank"
               rel="noopener noreferrer"
             >
               {" "}
-              {props.email} <i class="fa-solid fa-chevron-right"></i>
+              {props.email} <i className="fa-solid fa-chevron-right"></i>
             </a>
           </p>
         )}
 
         {props.cv && (
           <p>
-            <i class="fa-solid fa-file"></i>
+            <i className="fa-solid fa-file"></i>
             <a href={props.cv} target="_blank" rel="noopener noreferrer">
-              CV <i class="fa-solid fa-chevron-right"></i>
+              CV <i className="fa-solid fa-chevron-right"></i>
             </a>
           </p>
         )}
@@ -64,6 +69,7 @@ function CenteredModal(props) {
     </Modal>
   );
 }
+
 const TabsComponent = ({ personData }) => {
   const [activeTab, setActiveTab] = useState();
   const [modalShow, setModalShow] = useState(false);
@@ -101,8 +107,6 @@ const TabsComponent = ({ personData }) => {
     setActiveTab(categories[0]);
   }
 
-  
-
   return (
     <Container>
       <Row>
@@ -111,29 +115,36 @@ const TabsComponent = ({ personData }) => {
         </Col>
       </Row>
       <Row>
-        {leadershipPersons.map((person, index) => (
-          <>
-            <Col xs={6} md={2}>
-              {/* <img src={person.personImage?.url || Person} alt={person.name} /> */}
-              <img src={person.personImage?.url || Person} alt={person.name} />
-            </Col>
+        {leadershipPersons.map((person, index) => {
+          const personImage = person.personImage ? getImage(person.personImage) : null;
+          
+          return (
+            <React.Fragment key={person.id}>
+              <Col xs={6} md={2}>
+                {personImage ? (
+                  <GatsbyImage image={personImage} alt={person.name} />
+                ) : (
+                  <img src={Person} alt={person.name} />
+                )}
+              </Col>
 
-            <Col xs={6} md={4}>
-              <h3>{person.name}</h3>
-              <p>{person.title}</p>
-              <Button
-                variant="primary"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedPerson(person);
-                  setModalShow(true);
-                }}
-              >
-                {person.name} Bio <i class="fa-solid fa-caret-right"></i>
-              </Button>
-            </Col>
-          </>
-        ))}
+              <Col xs={6} md={4}>
+                <h3>{person.name}</h3>
+                <p>{person.title}</p>
+                <Button
+                  variant="primary"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSelectedPerson(person);
+                    setModalShow(true);
+                  }}
+                >
+                  {person.name} Bio <i className="fa-solid fa-caret-right"></i>
+                </Button>
+              </Col>
+            </React.Fragment>
+          );
+        })}
       </Row>
       <Container id="tabs">
         <Row className="team-tabber">
@@ -143,7 +154,7 @@ const TabsComponent = ({ personData }) => {
               xs={3}
               className={`team-tab ${activeTab === category ? "active" : ""}`}
               onClick={(e) => {
-                e.stopPropagation(); // Prevent event from bubbling up
+                e.stopPropagation();
                 setActiveTab(category);
               }}
             >
@@ -153,33 +164,37 @@ const TabsComponent = ({ personData }) => {
         </Row>
 
         <Row>
-          {groupedPersons[activeTab]?.map((person, index) => (
-            <Col xs={6} sm={3} key={person.id}>
-              <Row>
-                <Col xs={12}>
-                  <img
-                    src={person.personImage?.url || Person}
-                    alt={person.name}
-                  />
-                </Col>
-                <Col xs={12}>
-                  <h3>{person.name}</h3>
-                  <p>{person.title}</p>
-                  <Button
-                    variant="primary"
-                    onClick={(e) => {
-                      
-                      e.stopPropagation();
-                      setSelectedPerson(person);
-                      setModalShow(true);
-                    }}
-                  >
-                    {person.name} Bio <i class="fa-solid fa-caret-right"></i>
-                  </Button>
-                </Col>
-              </Row>
-            </Col>
-          ))}
+          {groupedPersons[activeTab]?.map((person) => {
+            const personImage = person.personImage ? getImage(person.personImage) : null;
+            
+            return (
+              <Col xs={6} sm={3} key={person.id}>
+                <Row>
+                  <Col xs={12}>
+                    {personImage ? (
+                      <GatsbyImage image={personImage} alt={person.name} />
+                    ) : (
+                      <img src={Person} alt={person.name} />
+                    )}
+                  </Col>
+                  <Col xs={12}>
+                    <h3>{person.name}</h3>
+                    <p>{person.title}</p>
+                    <Button
+                      variant="primary"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedPerson(person);
+                        setModalShow(true);
+                      }}
+                    >
+                      {person.name} Bio <i className="fa-solid fa-caret-right"></i>
+                    </Button>
+                  </Col>
+                </Row>
+              </Col>
+            );
+          })}
         </Row>
 
         {selectedPerson && (
@@ -190,7 +205,7 @@ const TabsComponent = ({ personData }) => {
             name={selectedPerson.name}
             email={selectedPerson.email}
             website={selectedPerson.website}
-            bioImg={selectedPerson.personImage?.url || Person}
+            bioImg={selectedPerson.personImage}
           />
         )}
       </Container>
@@ -212,20 +227,26 @@ const Team = ({ data }) => {
           <Row>
             {pageData.kLabContents
               .filter((content) => content.__typename === "ContentfulHero")
-              .map((content) => (
-                <>
-                  <Col xs={12} sm={8}>
-                    <h1>{pageData.title}</h1>
-                    <div key={content.id}>
-                      {content.body && <p>{renderRichText(content.body)}</p>}
-                    </div>
-                  </Col>
+              .map((content) => {
+                const sideImage = content.sideImage ? getImage(content.sideImage) : null;
+                
+                return (
+                  <React.Fragment key={content.id}>
+                    <Col xs={12} sm={8}>
+                      <h1>{pageData.title}</h1>
+                      <div>
+                        {content.body && <p>{renderRichText(content.body)}</p>}
+                      </div>
+                    </Col>
 
-                  <Col className="d-none d-md-block" sm={3}>
-                    <img src={content.sideImage.file.url} />
-                  </Col>
-                </>
-              ))}
+                    <Col className="d-none d-md-block" sm={3}>
+                      {sideImage && (
+                        <GatsbyImage image={sideImage} alt={content.title || "Hero image"} />
+                      )}
+                    </Col>
+                  </React.Fragment>
+                );
+              })}
           </Row>
         </Container>
       </Container>
@@ -265,9 +286,7 @@ export const query = graphql`
             sideButton
           }
           sideImage {
-            file {
-              url
-            }
+            gatsbyImageData(width: 500, placeholder: BLURRED)
           }
         }
         ... on ContentfulPersonItem {
@@ -279,7 +298,7 @@ export const query = graphql`
             raw
           }
           personImage {
-            url
+            gatsbyImageData(width: 400, placeholder: BLURRED)
           }
           email
           cv

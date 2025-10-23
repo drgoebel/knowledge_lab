@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
 import Seo from "../components/seo";
@@ -140,30 +141,38 @@ const Publications = ({ data }) => {
               <Row id="pub-group">
                 <h3>{selectedCategory}</h3>
 
-                {groupedPublications[selectedCategory]?.map((item) => (
-                  <Col key={item.id} xs={12} className="publication-item">
-                    <Row>
-                      {/* <Col xs={2}><img src="https://placehold.co/130x160/png" /></Col> */}
-                      {item.image?.file?.url && (
-                        <Col xs={2}>
-                          <img src={item.image.file.url} />
+                {groupedPublications[selectedCategory]?.map((item) => {
+                  const publicationImage = item.image ? getImage(item.image) : null;
+                  
+                  return (
+                    <Col key={item.id} xs={12} className="publication-item">
+                      <Row>
+                        {publicationImage && (
+                          <Col xs={2}>
+                            <GatsbyImage 
+                              image={publicationImage} 
+                              alt={item.title} 
+                              style={{maxHeight: "100px"}}
+                              
+                            />
+                          </Col>
+                        )}
+                        <Col xs={10}>
+                          <h4>{item.title}</h4>
+                          <p>{item.authors}</p>
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item.publication}{" "}
+                            <i className="fa-solid fa-caret-right"></i>
+                          </a>
                         </Col>
-                      )}
-                      <Col xs={10}>
-                        <h4>{item.title}</h4>
-                        <p>{item.authors}</p>
-                        <a
-                          href={item.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {item.publication}{" "}
-                          <i class="fa-solid fa-caret-right"></i>
-                        </a>
-                      </Col>
-                    </Row>
-                  </Col>
-                ))}
+                      </Row>
+                    </Col>
+                  );
+                })}
               </Row>
             </Col>
           </Row>
@@ -215,10 +224,7 @@ export const query = graphql`
           publication
           url
           image {
-            url
-            file {
-              url
-            }
+            gatsbyImageData(width: 200, height: 400, placeholder: BLURRED)
           }
         }
       }

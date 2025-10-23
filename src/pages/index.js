@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import ScrollHome from "../components/scrollHome";
 import VerticalScrollMenu from "../components/scrollInitatives";
 import { StaticImage } from "gatsby-plugin-image";
@@ -284,10 +285,23 @@ const IndexPage = ({ data }) => {
                       <Row>
                         {sponsors.map((klabs) => {
                           const isLogo = klabs.sponsorLogo;
+                          const image = getImage(isLogo);
+
                           return (
                             <Col xs={3} key={klabs.id || klabs.title}>
-                              {isLogo && (
-                                <img src={isLogo.url} alt={klabs.title} />
+                              {image && (
+                                <GatsbyImage
+                                  image={image}
+                                  alt={klabs.title}
+                                  style={{
+                                    maxWidth: "90%",
+                                    display: "flex",
+                                    justifySelf: "flex-end",
+                                  }}
+                                  imgStyle={{
+                                    objectFit: "cover",
+                                  }}
+                                />
                               )}
                             </Col>
                           );
@@ -337,10 +351,12 @@ export const query = graphql`
             sponsorType
             title
             sponsorLogo {
-              url
-              file {
-                url
-              }
+              gatsbyImageData(
+                width: 400
+                placeholder: BLURRED
+                formats: [AUTO, WEBP]
+              )
+              title
             }
           }
           ... on ContentfulBigNumber {
@@ -362,7 +378,12 @@ export const query = graphql`
               raw
             }
             image {
-              url
+              gatsbyImageData(
+                width: 800
+                placeholder: BLURRED
+                formats: [AUTO, WEBP]
+              )
+              title
             }
           }
 
@@ -370,9 +391,12 @@ export const query = graphql`
             __typename
             homePageFeature
             image {
-              file {
-                url
-              }
+              gatsbyImageData(
+                width: 800
+                placeholder: BLURRED
+                formats: [AUTO, WEBP]
+              )
+              title
             }
             tagline {
               tagline
@@ -386,9 +410,12 @@ export const query = graphql`
       __typename
       nodes {
         image {
-          file {
-            url
-          }
+          gatsbyImageData(
+            width: 1200
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
+          title
         }
       }
     }

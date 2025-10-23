@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { Col } from "react-bootstrap";
 import "react-horizontal-scrolling-menu/dist/styles.css";
@@ -38,23 +39,19 @@ function ScrollPubs({contentList}) {
 
   return (
     <>
-    
       <div id="scroller-home" className="container" style={{ position: "relative", paddingBottom: "clamp(16px, 2cqw, 32px)"}}>
-      
         {initialized && (
           <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-            
             {contentList.map((cont, index) => (
               <Card
-                key={cont.id} // Ensure unique keys
+                key={cont.id}
                 itemId={cont.id}
                 title={cont.title}
                 link={cont.url}
-                imageUrl={cont.image.url}
+                image={cont.image}
                 onClick={handleClick(cont.id)}
               />
             ))}
-
           </ScrollMenu>
         )}
       </div>
@@ -90,9 +87,11 @@ const RightArrow = () => {
   );
 };
 
-function Card({ onClick, selected, title, description, imageUrl, itemId, link }) {
+function Card({ onClick, selected, title, description, image, itemId, link }) {
   const visibility = useContext(VisibilityContext);
   const visible = visibility.useIsVisible(itemId, true);
+  
+  const gatsbyImage = getImage(image);
 
   return (
     <>
@@ -102,11 +101,21 @@ function Card({ onClick, selected, title, description, imageUrl, itemId, link })
         tabIndex={0}
       >
         <div className="card">
-          <a href={link} target="_blank"><img src={imageUrl} target="_blank" alt={title} style={{ width: "100%", height: "auto" }} /></a>
-          <h3><a href={link} target="_blank" >{title}</a></h3>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            {gatsbyImage && (
+              <GatsbyImage 
+                image={gatsbyImage} 
+                alt={title} 
+                style={{ width: "100%" }}
+              />
+            )}
+          </a>
+          <h3>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              {title}
+            </a>
+          </h3>
           <p>{description}</p>
-          {/* <div>Visible: {JSON.stringify(visible)}</div>
-          <div>Selected: {JSON.stringify(!!selected)}</div> */}
         </div>
       </div>
     </>

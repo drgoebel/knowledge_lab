@@ -2,6 +2,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -38,12 +39,11 @@ function CenteredModal(props) {
           ) : (
             <h2>{props.title}</h2>
           )}
-          {/* {props.title} */}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <h4>{props.shorter}</h4>
-        <p>{props.description}</p>
+        <div>{props.description}</div>
         <p>{props.grants}</p>
         <p>{props.partners}</p>
         <p>{props.talks}</p>
@@ -63,6 +63,7 @@ const Initiatives = ({ data }) => {
 
   const [modalShow, setModalShow] = React.useState(false);
   const [openModalIndex, setOpenModalIndex] = useState(null);
+  
   return (
     <Layout>
       <Container fluid id="initiatives-header">
@@ -71,20 +72,29 @@ const Initiatives = ({ data }) => {
           <Row>
             {pageData.kLabContents
               .filter((content) => content.__typename === "ContentfulHero")
-              .map((content) => (
-                <>
-                  <Col xs={12} sm={8}>
-                    <h1>{pageData.title}</h1>
-                    <div key={content.id}>
-                      {content.body && <p>{renderRichText(content.body)}</p>}
-                    </div>
-                  </Col>
+              .map((content) => {
+                const sideImage = content.sideImage ? getImage(content.sideImage) : null;
+                
+                return (
+                  <React.Fragment key={content.id}>
+                    <Col xs={12} sm={8}>
+                      <h1>{pageData.title}</h1>
+                      <div>
+                        {content.body && <p>{renderRichText(content.body)}</p>}
+                      </div>
+                    </Col>
 
-                  <Col xs={12} sm={4}>
-                    <img src={content.sideImage.file.url} />
-                  </Col>
-                </>
-              ))}
+                    <Col xs={12} sm={4}>
+                      {sideImage && (
+                        <GatsbyImage 
+                          image={sideImage} 
+                          alt={content.title || "Hero image"} 
+                        />
+                      )}
+                    </Col>
+                  </React.Fragment>
+                );
+              })}
           </Row>
         </Container>
       </Container>
@@ -96,98 +106,94 @@ const Initiatives = ({ data }) => {
                 (content) =>
                   content.__typename === "ContentfulContentInitiative"
               )
-              .map((initiative, index) => (
-                <Col
-                  xs={12}
-                  md={4}
-                  key={index}
-                  style={{ marginBottom: "30px" }}
-                >
-                  <a
-                    variant="primary"
-                    onClick={() => setOpenModalIndex(`L` + index)}
+              .map((initiative, index) => {
+                const initiativeImage = initiative.image ? getImage(initiative.image) : null;
+                
+                return (
+                  <Col
+                    xs={12}
+                    md={4}
+                    key={initiative.id}
+                    style={{ marginBottom: "30px" }}
                   >
-                    <img src={initiative.image.url} />
-                  </a>
-                  {/* Initiative Name */}
-                  <a
-                    variant="primary"
-                    onClick={() => setOpenModalIndex(`L` + index)}
-                  >
-                    {initiative.title === "Science2" ? (
-                      <h2>
-                        Science<sup>2</sup>
-                      </h2>
-                    ) : (
-                      <h2>{initiative.title}</h2>
+                    <a
+                      variant="primary"
+                      onClick={() => setOpenModalIndex(`L` + index)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      {initiativeImage && (
+                        <GatsbyImage 
+                          image={initiativeImage} 
+                          alt={initiative.title} 
+                        />
+                      )}
+                    </a>
+                    {/* Initiative Name */}
+                    <a
+                      variant="primary"
+                      onClick={() => setOpenModalIndex(`L` + index)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      {initiative.title === "Science2" ? (
+                        <h2>
+                          Science<sup>2</sup>
+                        </h2>
+                      ) : (
+                        <h2>{initiative.title}</h2>
+                      )}
+                    </a>
+
+                    {/* Tagline */}
+                    {initiative.tagline?.tagline && (
+                      <p>
+                        <a
+                          variant="primary"
+                          onClick={() => setOpenModalIndex(`L` + index)}
+                          style={{ cursor: "pointer" }}
+                        >
+                          {initiative.tagline.tagline}
+                        </a>
+                      </p>
                     )}
-                  </a>
 
-                  {/* Tagline */}
-                  {initiative.tagline.tagline && (
-                    <p>
-                      <a
-                        variant="primary"
-                        onClick={() => setOpenModalIndex(`L` + index)}
-                      >
-                        {initiative.tagline.tagline}
-                      </a>
-                    </p>
-                  )}
-
-                  {/* <a
-                  variant="primary"
-                  onClick={() => setOpenModalIndex(`L` + index)}
-                >
-                  Read More <FontAwesomeIcon icon={faCaretRight} />
-                </a> */}
-                  <CenteredModal
-                    title={initiative.title}
-                    show={openModalIndex === `L` + index}
-                    onHide={() => setOpenModalIndex(null)}
-                    // shorter={
-                    //   initiative.tagline.tagline && (
-                    //     <p>
-                    //       <strong>{initiative.tagline.tagline}</strong>
-                    //     </p>
-                    //   )
-                    // }
-                    description={
-                      initiative.initiativeDescription && (
-                        <p>
-                          {renderRichText(initiative.initiativeDescription)}
-                        </p>
-                      )
-                    }
-                    partners={
-                      initiative.partners && (
-                        <p>
-                          <strong>Partners: </strong>
-                          {initiative.partners}
-                        </p>
-                      )
-                    }
-                    grants={
-                      initiative.founders && (
-                        <p>
-                          <strong>Founders: </strong>
-                          {initiative.founders}
-                        </p>
-                      )
-                    }
-                    papers={
-                      initiative.papers && (
-                        <>
-                          <p>
-                            <strong>Papers: </strong>
-                          </p>
-                          <p>{renderRichText(initiative.papers)}</p>
-                        </>
-                      )
-                    }
-                  />
-                </Col>
-              ))}
+                    <CenteredModal
+                      title={initiative.title}
+                      show={openModalIndex === `L` + index}
+                      onHide={() => setOpenModalIndex(null)}
+                      description={
+                        initiative.initiativeDescription &&
+                        renderRichText(initiative.initiativeDescription)
+                      }
+                      partners={
+                        initiative.partners && (
+                          <>
+                            <strong>Partners: </strong>
+                            {initiative.partners}
+                          </>
+                        )
+                      }
+                      grants={
+                        initiative.founders && (
+                          <>
+                            <strong>Founders: </strong>
+                            {initiative.founders}
+                          </>
+                        )
+                      }
+                      papers={
+                        initiative.papers && (
+                          <>
+                            <p>
+                              <strong>Papers: </strong>
+                            </p>
+                            {renderRichText(initiative.papers)}
+                          </>
+                        )
+                      }
+                    />
+                  </Col>
+                );
+              })}
           </Row>
         </Container>
       </Container>
@@ -224,9 +230,7 @@ export const query = graphql`
             sideButton
           }
           sideImage {
-            file {
-              url
-            }
+            gatsbyImageData(width: 600, placeholder: BLURRED)
           }
         }
         ... on ContentfulPersonItem {
@@ -261,7 +265,7 @@ export const query = graphql`
             raw
           }
           image {
-            url
+            gatsbyImageData(width: 400, placeholder: BLURRED)
           }
         }
         ... on ContentfulContentInitiative {
@@ -271,7 +275,7 @@ export const query = graphql`
             tagline
           }
           image {
-            url
+            gatsbyImageData(width: 500, placeholder: BLURRED)
           }
           initiativeDescription {
             raw

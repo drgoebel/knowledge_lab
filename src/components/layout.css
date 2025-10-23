@@ -871,7 +871,7 @@ button {
 
 #team #tabs img {
   width: 66%;
-  margin-top: clamp(16px, 3cqw, 40px);
+  /* margin-top: clamp(16px, 3cqw, 40px); */
 
 }
 
@@ -1298,7 +1298,13 @@ button {
 #publications.container-fluid .container [class^="col-"] {
   align-self: self-start;
 }
+#publications .publication-item img {
+  /* max-height: 100px !important; */
 
+}
+#publications .gatsby-image-wrapper > div {
+  border: 10px solid green;
+}
 
 
 /* NEWS SECTION */
@@ -1352,6 +1358,7 @@ button {
   margin-top: var(--space-2);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, .2);
   width: 66%;
+  height: inherit;
 }
 
 #news .news-item h3 a {
@@ -1536,6 +1543,7 @@ nav ul li:hover {
     margin-top: var(--space-7);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, .2);
     width: 66%;
+    height: inherit;
   }
 
   #careers-header .apply-now a,

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import Nav from "../components/nav";
@@ -25,20 +26,29 @@ const Events = ({ data }) => {
           <Row>
             {pageData.kLabContents
               .filter((content) => content.__typename === "ContentfulHero")
-              .map((content) => (
-                <>
-                  <Col xs={12} sm={8}>
-                    <h1>{pageData.title}</h1>
-                    <div key={content.id}>
-                      {content.body && <p>{renderRichText(content.body)}</p>}
-                    </div>
-                  </Col>
+              .map((content) => {
+                const sideImage = content.sideImage ? getImage(content.sideImage) : null;
+                
+                return (
+                  <React.Fragment key={content.id}>
+                    <Col xs={12} sm={8}>
+                      <h1>{pageData.title}</h1>
+                      <div>
+                        {content.body && <p>{renderRichText(content.body)}</p>}
+                      </div>
+                    </Col>
 
-                  <Col className="d-none d-md-block" sm={3}>
-                    <img src={content.sideImage.file.url} />
-                  </Col>
-                </>
-              ))}
+                    <Col className="d-none d-md-block" sm={3}>
+                      {sideImage && (
+                        <GatsbyImage 
+                          image={sideImage} 
+                          alt={content.title || "Hero image"} 
+                        />
+                      )}
+                    </Col>
+                  </React.Fragment>
+                );
+              })}
           </Row>
         </Container>
       </Container>
@@ -52,29 +62,33 @@ const Events = ({ data }) => {
                 !typeNewsEvent &&
                 !featuredItem
             )
-            .map((content) => (
-              <>
-                <Row className="h-100 news-item">
-                
-                    <Col xs={6} sm={3}>
-                      {content?.image?.url && (
+            .map((content) => {
+              const eventImage = content.image ? getImage(content.image) : null;
+              
+              return (
+                <Row className="h-100 news-item" key={content.id}>
+                  <Col xs={6} sm={3}>
+                    {eventImage && (
                       <a
                         href={content.url}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img src={content.image.url} alt={content.title} />
+                        <GatsbyImage 
+                          image={eventImage} 
+                          alt={content.title} 
+                        />
                       </a>
-                       )}
-                    </Col>
-                 
+                    )}
+                  </Col>
+                  
                   <Col xs={6} sm={9}>
                     <h3>{content.title}</h3>
-                    <p>{renderRichText(content.description)}</p>
+                    <div>{renderRichText(content.description)}</div>
                   </Col>
                 </Row>
-              </>
-            ))}
+              );
+            })}
         </Container>
       </Container>
     </Layout>
@@ -110,9 +124,7 @@ export const query = graphql`
             sideButton
           }
           sideImage {
-            file {
-              url
-            }
+            gatsbyImageData(width: 500, placeholder: BLURRED)
           }
         }
         ... on ContentfulPersonItem {
@@ -147,7 +159,7 @@ export const query = graphql`
             raw
           }
           image {
-            url
+            gatsbyImageData(width: 400, placeholder: BLURRED)
           }
         }
         ... on ContentfulContentInitiative {

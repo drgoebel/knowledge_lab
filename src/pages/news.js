@@ -1,5 +1,6 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Scroll from "../components/scroll";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
@@ -126,20 +127,29 @@ const News = ({ data }) => {
           <Row>
             {pageData.kLabContents
               .filter((content) => content.__typename === "ContentfulHero")
-              .map((content) => (
-                <>
-                  <Col xs={12} sm={8}>
-                    <h1>{pageData.title}</h1>
-                    <div key={content.id}>
-                      {content.body && <p>{renderRichText(content.body)}</p>}
-                    </div>
-                  </Col>
+              .map((content) => {
+                const sideImage = content.sideImage ? getImage(content.sideImage) : null;
+                
+                return (
+                  <React.Fragment key={content.id}>
+                    <Col xs={12} sm={8}>
+                      <h1>{pageData.title}</h1>
+                      <div>
+                        {content.body && <p>{renderRichText(content.body)}</p>}
+                      </div>
+                    </Col>
 
-                  <Col xs={12} sm={4}>
-                    <img src={content.sideImage.file.url} />
-                  </Col>
-                </>
-              ))}
+                    <Col xs={12} sm={4}>
+                      {sideImage && (
+                        <GatsbyImage 
+                          image={sideImage} 
+                          alt={content.title || "Hero image"} 
+                        />
+                      )}
+                    </Col>
+                  </React.Fragment>
+                );
+              })}
           </Row>
         </Container>
       </Container>
@@ -162,24 +172,29 @@ const News = ({ data }) => {
       <Container fluid id="news">
         <Container>
           <Row>
-            
-              {pageData.kLabContents
-                .filter(
-                  ({ __typename, typeNewsEvent, featuredItem }) =>
-                    __typename === "ContentfulNewsOrEvent" &&
-                    typeNewsEvent &&
-                    !featuredItem
-                )
-                .map((content) => (
-                  <><Col xs={12} sm={3} className="news-item">
-                    <a href={content.url} target="_blank">
-                      <img src={content.image.url} alt={content.title} />
-                      {/* <h3>{content.title}</h3> */}
+            {pageData.kLabContents
+              .filter(
+                ({ __typename, typeNewsEvent, featuredItem }) =>
+                  __typename === "ContentfulNewsOrEvent" &&
+                  typeNewsEvent &&
+                  !featuredItem
+              )
+              .map((content) => {
+                const newsImage = content.image ? getImage(content.image) : null;
+                
+                return (
+                  <Col xs={12} sm={3} className="news-item" key={content.id}>
+                    <a href={content.url} target="_blank" rel="noopener noreferrer">
+                      {newsImage && (
+                        <GatsbyImage 
+                          image={newsImage} 
+                          alt={content.title} 
+                        />
+                      )}
                     </a>
-                    </Col>
-                  </>
-                ))}
-            
+                  </Col>
+                );
+              })}
           </Row>
         </Container>
       </Container>
@@ -216,9 +231,7 @@ export const query = graphql`
             sideButton
           }
           sideImage {
-            file {
-              url
-            }
+            gatsbyImageData(width: 600, placeholder: BLURRED)
           }
         }
         ... on ContentfulPersonItem {
@@ -253,7 +266,7 @@ export const query = graphql`
             raw
           }
           image {
-            url
+            gatsbyImageData(width: 400, placeholder: BLURRED)
           }
         }
         ... on ContentfulContentInitiative {
