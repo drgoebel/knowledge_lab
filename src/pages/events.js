@@ -57,55 +57,76 @@ const Events = ({ data }) => {
 
       <Container fluid id="workshops">
         <Container>
-          {pageData.kLabContents
-            .filter(
-              ({ __typename, typeNewsEvent, featuredItem }) =>
-                __typename === "ContentfulNewsOrEvent" &&
-                !typeNewsEvent &&
-                !featuredItem
-            )
-            .map((content) => {
-              const eventImage = content.image ? getImage(content.image) : null;
+          <Row className="h-100 news-item">
+            <Col xs={12} sm={8}>
+              {pageData.kLabContents
+                .filter(
+                  ({ __typename, typeNewsEvent, featuredItem }) =>
+                    __typename === "ContentfulNewsOrEvent" &&
+                    !typeNewsEvent &&
+                    !featuredItem
+                )
+                .map((content) => {
+                  const eventImage = content.image
+                    ? getImage(content.image)
+                    : null;
+                  return (
+                    <Row className="news-item" key={content.id}>
+                      {eventImage && (
+                        <Col xs={6} sm={4} id={content.styleId || undefined}>
+                          <a
+                            href={content.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <GatsbyImage
+                              image={eventImage}
+                              alt={content.title}
+                            />
+                          </a>
+                        </Col>
+                      )}
 
+                      {content.styleId === "event-calendar" ? (
+                        <Col xs={6} sm={12} id={content.styleId || undefined}>
+                          {content.title && <h3>{content.title}</h3>}
+                          {content.description && (
+                            <div>{renderRichText(content.description)}</div>
+                          )}
+                          <iframe
+                            style={{ width: "100%", height: "900px" }}
+                            scrolling="auto"
+                            id="calendarWidget"
+                            name="calendarWidget"
+                            src="https://events.uchicago.edu/cal_widget.php?group=Knowledge%20Lab"
+                          />
+                        </Col>
+                      ) : (
+                        <Col xs={6} sm={8}>
+                          {content.title && <h3>{content.title}</h3>}
+                          {content.description && (
+                            <div>{renderRichText(content.description)}</div>
+                          )}
+                        </Col>
+                      )}
+                    </Row>
+                  );
+                })}
+            </Col>
+            {pageData.kLabContents.map((content) => {
               return (
-                <Row className="h-100 news-item" key={content.id}>
-                  <Col xs={6} sm={3}>
-                    {eventImage && (
-                      <a
-                        href={content.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <GatsbyImage image={eventImage} alt={content.title} />
-                      </a>
+                content.styleId === "upcoming-events" && (
+                  <Col xs={12} sm={4} key={content.id} className="sidebar">
+                    {content.body && (
+                      <div className="sidebar-event">
+                        {renderRichText(content.body)}
+                      </div>
                     )}
                   </Col>
-
-                  {content.styleId === "event-calendar" ? (
-                    <Col xs={6} sm={9} id={content.styleId || undefined}>
-                      {content.title && <h3>{content.title}</h3>}
-                      {content.description && (
-                        <div>{renderRichText(content.description)}</div>
-                      )}
-                      <iframe
-                        style={{ width: "100%", height: "900px" }}
-                        scrolling="auto"
-                        id="calendarWidget"
-                        name="calendarWidget"
-                        src="https://events.uchicago.edu/cal_widget.php?group=Knowledge%20Lab"
-                      />
-                    </Col>
-                  ) : (
-                    <Col xs={6} sm={9}>
-                      {content.title && <h3>{content.title}</h3>}
-                      {content.description && (
-                        <div>{renderRichText(content.description)}</div>
-                      )}
-                    </Col>
-                  )}
-                </Row>
+                )
               );
             })}
+          </Row>
         </Container>
       </Container>
     </Layout>
@@ -127,6 +148,7 @@ export const query = graphql`
         ... on ContentfulKLabContent {
           id
           title
+          styleId
           body {
             raw
           }

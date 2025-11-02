@@ -1014,6 +1014,45 @@ button {
 
 /* WORKSHOPS SECTION */
 
+#workshops .container .sidebar>div:nth-of-type(1)
+ {
+
+  background-color: var(--color-tertiary);
+  border-left: 10px solid rgba(0, 0, 0, .2);
+  margin-bottom: var(--space-5);
+  padding: 10px;
+}
+
+#workshops .container .sidebar>div:nth-of-type(1) h2{
+  font-size: var(--font-md);
+  color: var(--color-text);
+}
+#workshops .container .sidebar>div:nth-of-type(1) h3{
+  font-size: var(--font-sm);
+  margin-top: var(--space-4);
+}
+
+#workshops .container .sidebar>div:nth-of-type(1) p {
+
+  margin-bottom: 5px;
+  line-height: 1.4;
+
+}
+#workshops .container .sidebar>div:nth-of-type(1) a{
+  font-weight: 900;
+}
+
+#workshops .container .sidebar>div:nth-of-type(1) a:after {
+  content: '\f054';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: clamp(11px, .875cqw, 30px);
+  color: #981D9A;
+  /* position: absolute; */
+  margin-left: var(--space-1);
+  transition: .3s all;
+}
+
 #workshops-header.container-fluid {
   position: relative;
   padding-top: var(--space-5);

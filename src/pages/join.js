@@ -59,14 +59,7 @@ const Join = ({ data }) => {
                           Join Our Email List
                         </a>
                       </div>
-                      {/* <div className="join-now">
-                        <a
-                          href="https://form.jotform.com/242426215800043"
-                          target="_blank"
-                        >
-                          Connect with KLab
-                        </a>
-                      </div> */}
+
                     </div>
                   </Col>
                 </>
