@@ -12,7 +12,7 @@ import Person from "../images/person.jpg";
 
 function CenteredModal(props) {
   const bioImage = props.bioImg ? getImage(props.bioImg) : null;
-  
+
   return (
     <Modal
       {...props}
@@ -47,7 +47,8 @@ function CenteredModal(props) {
         {props.email && (
           <p>
             <i className="fa-solid fa-envelope"></i>
-            <a  href={`mailto:${props.email}`}
+            <a
+              href={`mailto:${props.email}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -56,10 +57,9 @@ function CenteredModal(props) {
             </a>
           </p>
         )}
-
         {props.cv && (
           <p>
-            <i className="fa-solid fa-file"></i>
+            <i className="fa-solid fa-file"></i> {" "}
             <a href={props.cv} target="_blank" rel="noopener noreferrer">
               CV <i className="fa-solid fa-chevron-right"></i>
             </a>
@@ -116,8 +116,10 @@ const TabsComponent = ({ personData }) => {
       </Row>
       <Row>
         {leadershipPersons.map((person, index) => {
-          const personImage = person.personImage ? getImage(person.personImage) : null;
-          
+          const personImage = person.personImage
+            ? getImage(person.personImage)
+            : null;
+
           return (
             <React.Fragment key={person.id}>
               <Col xs={6} md={2}>
@@ -165,8 +167,10 @@ const TabsComponent = ({ personData }) => {
 
         <Row>
           {groupedPersons[activeTab]?.map((person) => {
-            const personImage = person.personImage ? getImage(person.personImage) : null;
-            
+            const personImage = person.personImage
+              ? getImage(person.personImage)
+              : null;
+
             return (
               <Col xs={6} sm={3} key={person.id}>
                 <Row>
@@ -188,7 +192,8 @@ const TabsComponent = ({ personData }) => {
                         setModalShow(true);
                       }}
                     >
-                      {person.name} Bio <i className="fa-solid fa-caret-right"></i>
+                      {person.name} Bio{" "}
+                      <i className="fa-solid fa-caret-right"></i>
                     </Button>
                   </Col>
                 </Row>
@@ -206,6 +211,7 @@ const TabsComponent = ({ personData }) => {
             email={selectedPerson.email}
             website={selectedPerson.website}
             bioImg={selectedPerson.personImage}
+            cv={selectedPerson.cv}
           />
         )}
       </Container>
@@ -228,8 +234,10 @@ const Team = ({ data }) => {
             {pageData.kLabContents
               .filter((content) => content.__typename === "ContentfulHero")
               .map((content) => {
-                const sideImage = content.sideImage ? getImage(content.sideImage) : null;
-                
+                const sideImage = content.sideImage
+                  ? getImage(content.sideImage)
+                  : null;
+
                 return (
                   <React.Fragment key={content.id}>
                     <Col xs={12} sm={8}>
@@ -241,7 +249,10 @@ const Team = ({ data }) => {
 
                     <Col className="d-none d-md-block" sm={3}>
                       {sideImage && (
-                        <GatsbyImage image={sideImage} alt={content.title || "Hero image"} />
+                        <GatsbyImage
+                          image={sideImage}
+                          alt={content.title || "Hero image"}
+                        />
                       )}
                     </Col>
                   </React.Fragment>
